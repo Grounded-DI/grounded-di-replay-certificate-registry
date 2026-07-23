@@ -1,0 +1,128 @@
+MASTER CERTIFICATE INTAKE RECORD
+
+Demo Number: 05
+Demo Label: Erdos 124 Fixed Certificate
+Canonical Demo ID: MATHWISE-DEMO-0005
+Registration Status: COMPLETE
+Assessment: FULL PASS - FRESH LOCAL REPLAY
+External-Review Status: REVIEW-READY; NOT CLAIMED AS EXTERNALLY VERIFIED
+
+1. FIXED SCOPE
+
+D = {3,4,7}
+k = 1
+
+Supported fixed-case theorem:
+[582,infinity) subset A_1({3,4,7})
+
+Express non-claims:
+- No general BEGL result is claimed.
+- No result for another set D is claimed.
+- No result for k != 1 is claimed.
+- No endpoint below 582 is claimed.
+- No optimality, density, or asymptotic result is claimed.
+
+2. CORE PACKAGE ARTIFACTS AND VERIFIED SHA-256
+
+FixedCase_D347_k1_Proof_EXTERNAL_REVIEW_REPLAYABLE.tex
+434f6fb97f0d50c8e4967a77804cb584fe56c3058d4372d12ade97bbb387cb41
+
+FixedCase_D347_k1_Proof_EXTERNAL_REVIEW_REPLAYABLE.pdf
+a730c1403c9213d29f0adaf1982f91c01dce9be6c9e612ad4044222d1190bbe8
+
+WEIGHTED_GAP_CERTIFICATE_TABLES.md
+4c3ad16e79de597cc926fb7d6eb1ad8d4f068e7ac5f13e7487de1f615ba5cb62
+
+verify_weighted_gap_certificates.py
+80de885335bb07f3b1991c19543da14c1f125873788a9d6fcf039a45741d7882
+
+WEIGHTED_GAP_CERTIFICATE_REPLAY_PASS.log
+9b410acb320f7d0fa40e46b67eba4dcbffa8ec47b678c45cf02826fda98fa24c
+
+FIXED_CASE_EXTERNAL_REVIEW_MANIFEST.txt
+4fba97804ca21eb9db80db761ce0c8c2755679a504cd7475ab42b373bebd8ad7
+
+README_EXTERNAL_REVIEW.md
+73097fd12706fb334ff378966f6506b25b6a527f87e6631939ea511ad8e56fb8
+
+Sidecar verification: 7 of 7 listed artifact hashes matched the uploaded files.
+
+3. SUPPORT / HISTORICAL ARTIFACTS
+
+RAW_CHECKPOINT_LEDGER.txt
+SHA-256: 7549a9aed59d1f6282cbc2eb906e2064bf48be59bb481de0e0dc8e3293ee6e5c
+Role: Chronological fixed-case checkpoint ledger.
+
+FIXED_CASE_PACKAGE_MANIFEST.txt
+SHA-256: 9e86448ab9613fff6a41f2e9131d16a97fe858ca24c64cb5d2adedd8a6cef618
+Role: Earlier package manifest retained for history.
+Qualification: Its older "imported from sealed checkpoint" treatment of the Weighted Gap Lemma is superseded by the external-review manifest, attached certificate tables, and standalone replay verifier.
+
+PACKAGE_SHA256SUMS.txt
+SHA-256: c6220fab476cedf5c9f4b821421559f7c72649fa5ea6e3e12e6cbc5b5a17ff5b
+Role: External package hash sidecar.
+
+4. FRESH REPLAY EXECUTION
+
+Command executed in a clean working invocation:
+python3 verify_weighted_gap_certificates.py
+
+Exit code: 0
+Fresh elapsed time: 3.323 seconds
+Provided replay-log elapsed time: 3.851 seconds
+Timing variation classification: Non-semantic runtime measurement; no byte-identical log claim made.
+
+Fresh replay result:
+WEIGHTED GAP CERTIFICATE REPLAY - PASS
+Case A: initial = 1,361,889; final survivors = 0
+Case B: initial = 255,938; final survivors = 0
+Case C: initial = 1,501,666; final survivors = 0
+Total residue-admissible systems checked = 3,119,493
+Weighted Gap Lemma: PASS
+Global overlap inequality: PASS
+Fixed theorem chain: PASS
+FINAL STATUS: PASS - WEIGHTED_GAP_PROVED
+
+The fresh result matched the provided replay log on all invariant counts, survivor totals, and final PASS determinations.
+
+5. PROOF CHAIN RECORDED
+
+- Finite interval certificate:
+  [582,4460] subset SubSum(3,4,7,9,16,27,49,64,81,243,256,343,729,1024,2187)
+- Interval-overlap propagation lemma.
+- Weighted next-gap identities.
+- Weighted Gap Lemma certified through full paired modular systems.
+- Global overlap inequality S(t) - t >= 1163 for every future ordered power t > 2187.
+- Indefinite interval-overlap propagation.
+- Fixed-case conclusion:
+  [582,infinity) subset A_1({3,4,7}).
+
+6. PDF CHECK
+
+Filename: FixedCase_D347_k1_Proof_EXTERNAL_REVIEW_REPLAYABLE.pdf
+SHA-256: a730c1403c9213d29f0adaf1982f91c01dce9be6c9e612ad4044222d1190bbe8
+Pages: 8
+Page size: Letter
+Encryption: None
+PDF version: 1.7
+File size: 185,131 bytes
+
+The PDF and TeX theorem statement, fixed scope, modular-certificate counts, propagation step, final conclusion, and non-claims are aligned.
+
+7. MASTER-CERTIFICATE CLASSIFICATION
+
+Demo 05 is accepted as a fixed-case mathematical certificate package with:
+- a hash-verified seven-artifact external-review core;
+- a fresh successful local replay;
+- zero survivors across Cases A, B, and C;
+- 3,119,493 residue-admissible systems checked;
+- an eight-page reviewer-facing proof;
+- explicit and preserved limitations.
+
+Use approved status language:
+"Fixed-case proof package for D={3,4,7}, k=1 with a replayable Weighted Gap Certificate attached and freshly locally replayed to PASS."
+
+Do not use "externally verified" unless an independent reviewer separately runs and accepts the verifier.
+
+FINAL INTAKE VERDICT: FULL PASS
+MASTER CERTIFICATE ELIGIBILITY: YES

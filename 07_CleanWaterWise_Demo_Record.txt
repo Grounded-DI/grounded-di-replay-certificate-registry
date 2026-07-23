@@ -1,0 +1,45 @@
+DEMO 07 — CLEANWATERWISE DETERMINISTIC ROUTING REPLAY
+
+Demo ID: CLEANWATERWISE-DEMO-0007
+Classification: Synthetic demonstration only
+
+STATUS
+
+PASS — artifact identity, rule execution, state routing, and replay verified.
+Fresh-generation provenance for the separate prompt runs was not independently established from the delivered files.
+
+SUMMARY
+
+Seven synthetic water-quality records were evaluated under fixed demonstration rules.
+
+Result totals:
+PASS: 1
+REVIEW: 2
+HALT: 4
+Aggregate state: HALT
+
+The verifier reproduced all seven record-level outcomes, confirmed 9/9 manifest entries, returned exit code 0, and reported:
+
+Byte-level mismatches: 0
+CRC errors: 0
+Replay divergence: 0
+
+The compared ZIP archives were byte-identical and shared SHA-256:
+
+a75d77d156f9dccdf4fca8a6ee3907e3809558aba1e3c8c0cd21ea56af3ee0d4
+
+LIMITATION
+
+The artifacts prove that the delivered archives match. They do not, by themselves, prove that each archive arose from a separate fresh generation rather than copying.
+
+FINAL CLASSIFICATION
+
+Computation: PASS
+State routing: PASS
+Artifact integrity: PASS
+Replay identity: PASS
+Fresh-generation provenance: UNVERIFIED
+
+Approved description:
+
+A synthetic environmental rule-execution demo with disclosed thresholds, record-level PASS/REVIEW/HALT routing, audit-linked decisions, and byte-identical deterministic replay.

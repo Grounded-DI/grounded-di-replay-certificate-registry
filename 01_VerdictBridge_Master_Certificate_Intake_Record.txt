@@ -1,0 +1,117 @@
+GROUNDed DI LLC
+MASTER CERTIFICATE INTAKE RECORD
+
+Demo Index: 01
+Demo ID: VB-DEMO-0001
+Module: VerdictBridge
+Audit Class: Two-run, five-field hash replay
+Runtime Classification: VERDICT_READY
+Aggregate Inclusion Status: ACCEPTED
+
+1. SOURCE ARTIFACTS
+
+Run 1:
+05_verdictbridge_demo-run1(2).zip
+
+Run 2:
+05_verdictbridge_demo-run2(2).zip
+
+Source Certificate:
+VerdictBridge_Five_Hash_Replay_Certificate(4).pdf
+
+Source-file numbering note:
+The leading "05" in each ZIP filename is the source file ordinal following the four internal artifact files. It is not the demo index.
+
+2. ARCHIVE REPLAY RESULT
+
+Run 1 ZIP SHA-256:
+27aa8744af4143884c3c41b6d7a3ff4a2fe90e585bb914c71bc9fc75c9e3df6a
+
+Run 2 ZIP SHA-256:
+27aa8744af4143884c3c41b6d7a3ff4a2fe90e585bb914c71bc9fc75c9e3df6a
+
+Archive size: 34,903 bytes each
+Byte-level comparison: IDENTICAL
+Byte-level mismatches: 0
+Replay divergence: 0
+State-transition mismatches: 0
+Archive-integrity errors: 0
+
+3. INTERNAL ARTIFACT HASH LEDGER
+
+01_canonical_input.json
+2e631eb0d2d81d6625ad73f286049ccc988dea8de31028880f774bf76a496042
+
+02_normalized_record.csv
+0ccc7f002330baa8b482486fed0e17a1d73b4bd3c95372cc52bf172585ee1a97
+
+03_gate_matrix.json
+3485237ad08fac0192e72873620b5207702687fd6efbb4d0949d6c0d5d2bd9a2
+
+04_verdictbridge_assessment.txt
+e977081b390b42f74a6779a4ee32252afcd7aa58fb73def9d7181dda1163facd
+
+All four internal artifacts are byte-identical between runs.
+
+4. PACKAGE CONFORMANCE
+
+Entry count: 4
+Entry order: Lexicographic
+Compression method: ZIP_STORED
+Fixed timestamp: 1980-01-01 00:00:00
+Fixed permissions: 0644
+Archive comment: None
+Entry comments: None
+Extra fields: None
+Directory paths: None
+Receipt included: No
+CRC validation: PASS
+UTF-8 validation: PASS for all internal artifacts
+BOM: Absent for all internal artifacts
+
+5. RECORD AND GATE FINDINGS
+
+Canonical record:
+- 58 facts
+- 20 controlling laws
+- 11 dispositions
+- 14 gate records
+
+Motion result: DENIED
+Strict-liability failure to warn: DENY_SUMMARY_JUDGMENT
+Negligence: DENY_SUMMARY_JUDGMENT
+Compensatory damages: DENY_SUMMARY_JUDGMENT
+Punitive damages: DENY_SUMMARY_JUDGMENT
+Sam Reed statement: EXCLUDED_AND_NOT_USED
+Jury-instruction coverage: PASS
+Replay validation: PASS
+VerdictReady: YES
+FilingReady: NOT_APPLICABLE
+Export authorized: true
+Failed gates: None
+Required fixes: None
+
+6. SOURCE CERTIFICATE VALIDATION
+
+Source certificate SHA-256:
+01c011c9dab7e0ffd50a74138cd10129d9fc1ec4cf653daaf8dfe0867b0678f1
+
+Source certificate size: 6,314 bytes
+Page count: 2
+Rendered layout review: PASS
+Source certificate claims checked against both ZIP archives: MATCH
+
+7. MASTER-CERTIFICATE TERMINOLOGY
+
+For aggregate certificates, describe this result as:
+
+FIVE HASH FIELDS MATCHED ACROSS TWO RUNS
+
+This means one archive hash and four internal artifact hashes each matched their corresponding field across the two runs. It does not mean that the five different hash values are equal to one another.
+
+8. INCLUSION VERDICT
+
+DEMO 01: FULL PASS
+Atomic source evidence preserved.
+No source artifact rewritten.
+Eligible for inclusion in a larger multi-demo replay certificate.

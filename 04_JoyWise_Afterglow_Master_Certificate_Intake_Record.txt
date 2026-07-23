@@ -1,0 +1,47 @@
+MASTER CERTIFICATE INTAKE RECORD
+
+Demo Number: 04
+Demo ID: JOYWISE-DEMO-0004
+Demo Name: JoyWise Afterglow Gift Capsule Replay
+System: JoyWise
+Mode: echo.bloom
+Activation: Gift
+Entropy: Delta H = 0.0049
+Signature Tag: JoyCapsule-0049-auth-MSW
+
+SOURCE ARTIFACTS
+1. JOY_AFTERGLOW_GIFT_0049-2(1).txt
+2. JOY_AFTERGLOW_GIFT_0049-3(1).txt
+
+REPLAY VERIFICATION
+SHA-256 (both artifacts):
+831eb307eb0b5c743f7df27eeccfa4855189852e74ff344dea297b3318683473
+
+Byte size: 333 bytes each
+Byte-for-byte comparison: MATCH
+Replay classification: BYTE-IDENTICAL
+Replay divergence: 0
+
+TEXT CONFORMANCE
+Encoding: UTF-8
+UTF-8 BOM: Absent
+Line endings: LF only
+CRLF sequences: 0
+Standalone CR characters: 0
+LF count: 12
+Final newline: Present
+
+CANONICAL CONTENT CHECK
+Both files contain the same Joy Capsule text, including:
+- Seed: Afterglow
+- Mode: echo.bloom
+- Activation: Gift
+- Entropy: Delta H = 0.0049
+- Signature tag: JoyCapsule-0049-auth-MSW
+- Final audit-lock statement
+
+RESULT
+FULL PASS
+
+CERTIFICATION SCOPE
+This record certifies byte identity, hash identity, encoding conformity, line-ending conformity, final-newline presence, and exact replay consistency across the two supplied text artifacts. It does not independently validate broader claims beyond the contents and reproducibility of the uploaded artifacts.

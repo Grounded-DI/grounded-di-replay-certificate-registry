@@ -1,0 +1,99 @@
+MASTER CERTIFICATE INTAKE RECORD
+
+Demo Number: 03
+Demo ID: VB-DEMO-0003
+Demo Name: Replayable Damages Mini Demo
+Domain: VerdictBridge / damages calculation
+Audit Class: Two-run byte-identical replay
+Status: FULL PASS
+
+SOURCE ARTIFACTS
+
+Run 1: mini_replay_demo(3).zip
+Run 2: mini_replay_demo-2(2).zip
+
+ARCHIVE VERIFICATION
+
+Run 1 ZIP SHA-256:
+28ef2c62d29ee12883fa21c3a3e1f5b64ef7a82fb50ffac6d7f29f193da4dcde
+
+Run 2 ZIP SHA-256:
+28ef2c62d29ee12883fa21c3a3e1f5b64ef7a82fb50ffac6d7f29f193da4dcde
+
+Archive size: 2,345 bytes each
+Byte-for-byte identity: CONFIRMED
+Byte-level mismatches: 0
+CRC errors: 0
+Replay divergence: 0
+
+ARCHIVE CONFORMANCE
+
+Member count: 4
+Entry order: Lexicographic
+Compression method: ZIP_STORED
+Fixed timestamp: 1980-01-01 00:00:00
+Fixed permissions: 0644
+Archive comment: None
+Entry comments: None
+Extra fields: None
+Directory paths: None
+
+INTERNAL ARTIFACT HASHES
+
+01_input.json
+SHA-256: 5c0ecc6afb153f72c0d49478feb9ed4f69dc2bb9ddcf2e99f4daaf2f2a397a1e
+Size: 357 bytes
+
+02_calculation.json
+SHA-256: de480665493f9fe182be558a0689c4d60ff3a785d9c93e5f89a75b9b677712ea
+Size: 607 bytes
+
+03_assessment.txt
+SHA-256: 6fd5f97f7d60bd22312abb6e32bc0bb70709cc4c1aeeb2ab5f9234fc874fe6c2
+Size: 427 bytes
+
+04_manifest.json
+SHA-256: 28631f93ffae061bcae7ccc0029e07853b26e3b0336703ff482c0742a1c36b93
+Size: 498 bytes
+
+All four internal artifact hashes match between runs.
+The manifest accurately records the hashes and sizes of the three non-manifest artifacts and avoids self-reference.
+
+CALCULATION VERIFICATION
+
+Economic damages before comparative fault:
+$45,000.00 + $12,000.00 + $10,000.00 + $0.00 = $67,000.00
+
+Fault multiplier:
+1.00 - 0.20 = 0.80
+
+Economic damages after comparative fault:
+$67,000.00 x 0.80 = $53,600.00
+
+Noneconomic demonstration range after comparative fault:
+Low: $60,000.00 x 0.80 = $48,000.00
+Central: $100,000.00 x 0.80 = $80,000.00
+High: $160,000.00 x 0.80 = $128,000.00
+
+Total compensatory range after comparative fault:
+Low: $53,600.00 + $48,000.00 = $101,600.00
+Central: $53,600.00 + $80,000.00 = $133,600.00
+High: $53,600.00 + $128,000.00 = $181,600.00
+
+Maximum numeric error: 0.000000
+Cross-artifact calculation consistency: PASS
+
+SCOPE
+
+The package labels the result DEMONSTRATION ONLY.
+The noneconomic range is a fixed demonstration input, not an independently validated valuation or prediction.
+This replay audit certifies artifact reproducibility, archive integrity, and arithmetic consistency. It does not certify legal entitlement, case value, or filing readiness.
+
+CERTIFIED INTAKE RESULT
+
+DEMO 03: FULL PASS
+FIVE MATCHING HASH FIELDS ACROSS TWO RUNS: CONFIRMED
+BYTE IDENTITY: CONFIRMED
+INTERNAL RECORD MISMATCHES: 0
+MAXIMUM NUMERIC ERROR: 0.000000
+MASTER-CERTIFICATE ELIGIBLE: YES

@@ -1,0 +1,177 @@
+DEMO 09 — STORMWISE REPEATABLE TORNADO-INDEX MATH
+
+Demo ID: STORMWISE-DEMO-0009
+Classification: Synthetic demonstration only
+
+STATUS
+
+PASS — exact configured arithmetic, threshold classification, formula binding, audit linkage, artifact integrity, and byte-identical replay verified.
+
+Separate fresh-generation provenance for the two delivered archives was not independently established from the files alone.
+
+SUMMARY
+
+Ten synthetic atmospheric score records were evaluated under a disclosed five-input weighted formula:
+
+TOR_NUMERATOR =
+3 × instability
++ 3 × rotation
++ 2 × shear
++ 1 × moisture
++ 1 × boundary
+
+TOR_INDEX = TOR_NUMERATOR / 10
+
+Configured classifications:
+
+TOR_INDEX <= 0.5: MINIMAL
+0.5 < TOR_INDEX <= 2.0: MONITOR
+TOR_INDEX > 2.0: CONCERN
+
+RESULTS
+
+T-001: 0.3 — MINIMAL
+T-002: 0.9 — MONITOR
+T-003: 1.5 — MONITOR
+T-004: 2.0 — MONITOR
+T-005: 2.2 — CONCERN
+T-006: 3.4 — CONCERN
+T-007: 0.1 — MINIMAL
+T-008: 1.2 — MONITOR
+T-009: 2.7 — CONCERN
+T-010: 4.1 — CONCERN
+
+Classification totals:
+
+MINIMAL: 2
+MONITOR: 4
+CONCERN: 4
+
+REPLAY VERIFICATION
+
+Both delivered ZIP archives are byte-identical.
+
+Archive SHA-256:
+
+7afc0abc47e4568739ad1d52e2a4206811edb7ddb787c43d93cb222a792c4781
+
+Archive size:
+
+90,012 bytes each
+
+Package structure:
+
+Members: 7
+Entry order: Lexicographic
+Compression: ZIP_STORED
+Timestamp: 1980-01-01 00:00:00
+Permissions: 0644
+Archive and member comments: Absent
+Extra fields: Absent
+Directory entries: Absent
+Encoding: UTF-8 without BOM
+Line endings: LF only
+Final newline: Present for every member
+CRC errors: 0
+
+Manifest entries verified: 6/6
+Byte-level mismatches: 0
+Replay divergence: 0
+
+FRESH VERIFIER EXECUTION
+
+The packaged verifier was executed separately against each extracted package and corresponding ZIP archive.
+
+Run 1 exit code: 0
+Run 2 exit code: 0
+Run 1 stderr: Empty
+Run 2 stderr: Empty
+Verifier stdout identity: Confirmed
+
+Verifier stdout SHA-256 for both runs:
+
+d03ac0e833482bbdc0483201a7dab51ca71e9b23bf354d0a2b85170e5e7f694a
+
+The fresh executions reported:
+
+STORMWISE DEMO 009 REPLAY - PASS
+Records evaluated: 10
+Classification totals: MINIMAL=2 MONITOR=4 CONCERN=4
+FORMULA_BINDING_TEST: PASS
+CLASSIFICATION_BINDING_TEST: PASS
+Exact-boundary test at 2.0: PASS
+Manifest entries verified: 6/6
+CRC errors: 0
+Replay divergence: 0
+FINAL STATUS: PASS - EXACT_MATH_REPLAY_VERIFIED
+
+INDEPENDENT CALCULATION CHECK
+
+The ten indices and classifications were independently recomputed from the canonical records and disclosed configuration using integer and exact rational arithmetic.
+
+All ten independently derived results matched the stored calculation results and expected classifications.
+
+Exact-boundary finding:
+
+T-004 equals 2/1, formatted 2.0, and correctly remains MONITOR because the CONCERN rule is strictly greater than 2.0.
+
+FORMULA AND CLASSIFICATION BINDING
+
+Formula-binding probe:
+
+T-001 under the packaged instability coefficient of 3:
+0.3
+
+T-001 after an in-memory coefficient change from 3 to 4:
+0.4
+
+Result: PASS
+
+Classification-binding probe:
+
+T-005 under the packaged CONCERN threshold greater than 2.0:
+2.2 — CONCERN
+
+T-005 after an in-memory threshold change to greater than 2.2:
+2.2 — MONITOR
+
+Result: PASS
+
+No packaged artifact changed during the binding tests.
+
+AUDIT RECORD
+
+Audit events declared: 64
+Audit events present: 64
+Sequential event IDs: PASS
+Record-level calculation and classification binding: PASS
+Declared append_only flag: true
+Package export status: AUTHORIZED_FOR_DEMONSTRATION_AND_REVIEW
+
+LIMITATIONS
+
+The delivered archives prove byte identity. They do not independently prove that each archive arose from a distinct fresh generation rather than copying.
+
+The audit event sequence is complete, ordered, and manifest-bound, but append_only is a declared structural property rather than a cryptographically chained or write-once enforcement mechanism.
+
+The TOR_INDEX is a synthetic demonstration formula. No tornado forecast, watch, warning, recognized meteorological index, real atmospheric evaluation, public-safety recommendation, predictive skill, safety certification, or external verification is claimed.
+
+FINAL CLASSIFICATION
+
+Exact arithmetic: PASS
+Record calculations: PASS
+Threshold classification: PASS
+Exact-boundary behavior: PASS
+Formula binding: PASS
+Classification binding: PASS
+Audit linkage and event sequence: PASS
+Manifest integrity: PASS
+ZIP integrity: PASS
+Two-run archive identity: PASS
+Fresh verifier execution: PASS
+Verifier stdout identity: PASS
+Independent fresh-generation provenance: UNVERIFIED
+
+Approved description:
+
+A synthetic atmospheric-math package with disclosed weighted arithmetic, exact threshold classification, audit-linked calculations, and byte-identical deterministic replay.

@@ -1,0 +1,86 @@
+DEMO 08 — FLIGHTGATE CONFIGURATION-DRIVEN REPLAY
+
+Demo ID: FLIGHTGATE-DEMO-0008
+Classification: Synthetic demonstration only
+
+STATUS
+
+PASS — rule execution, mission routing, configuration binding, artifact integrity, and byte-identical replay verified.
+
+Separate fresh-generation provenance for the delivered archives was not independently established from the files alone.
+
+SUMMARY
+
+Ten synthetic mission records were evaluated under a disclosed rule configuration.
+
+Decision totals:
+FLY: 4
+NO_FLY: 6
+
+Mission results:
+M-001: FLY
+M-002: NO_FLY — wind gust
+M-003: NO_FLY — visibility
+M-004: NO_FLY — battery
+M-005: NO_FLY — heavy precipitation
+M-006: NO_FLY — geofence
+M-007: FLY
+M-008: FLY — exact boundary values pass
+M-009: NO_FLY — missing battery field
+M-010: FLY
+
+REPLAY VERIFICATION
+
+Four delivered ZIP archives were byte-identical.
+
+Archive SHA-256:
+3fa71e81d75cceb52f2b6d12bd45983e1253113bba7ee112b75161a5397a9496
+
+Archive size:
+67,577 bytes each
+
+Verifier results:
+Prompt 1 Run 1 vs. Run 2: PASS
+Prompt 2 Run 1 vs. Run 2: PASS
+Cross-prompt comparison: PASS
+
+Manifest entries verified: 6/6
+Byte-level mismatches: 0
+CRC errors: 0
+Replay divergence: 0
+
+CONFIGURATION BINDING
+
+M-008 under configured wind limit 25:
+FLY
+
+M-008 after in-memory wind limit change to 24:
+NO_FLY
+
+Unknown operators, unknown default actions, and unknown rule types were rejected by the configuration validator.
+
+An auditor-only five-blocker mission returned NO_FLY and reported all five blocking rules.
+
+LIMITATIONS
+
+The delivered archives prove cross-run and cross-prompt byte identity. They do not independently prove that each archive arose from a distinct fresh generation rather than copying.
+
+The audit sequence is complete, ordered, and manifest-bound, but append_only is a declared structural property rather than a cryptographically chained or write-once enforcement mechanism.
+
+The packaged missions are synthetic. No aviation regulation, operational authorization, real flight evaluation, weather forecast, predictive model, or safety certification is claimed.
+
+FINAL CLASSIFICATION
+
+Rule computation: PASS
+Mission decision routing: PASS
+Configuration binding: PASS
+Fail-closed configuration handling: PASS
+Audit linkage and event sequence: PASS
+Artifact and ZIP integrity: PASS
+Within-prompt replay identity: PASS
+Cross-prompt artifact identity: PASS
+Independent fresh-generation provenance: UNVERIFIED
+
+Approved description:
+
+A synthetic mission-rule execution package with disclosed configuration, transparent FLY / NO_FLY decisions, record-level audit binding, and byte-identical deterministic replay.

@@ -1,0 +1,238 @@
+DEMO 10 — CHAINGATE SHIPMENT RELEASE / HOLD REPLAY
+
+Demo ID: CHAINGATE-DEMO-0010
+Classification: Synthetic demonstration only
+
+STATUS
+
+PASS — exact configured rule execution, RELEASE / HOLD routing, exact decimal boundary behavior, multiple-trigger reporting, rule-order independence, audit linkage, manifest integrity, ZIP integrity, and byte-identical replay verified.
+
+Separate fresh-generation provenance for the two delivered archives was not independently established from the files alone.
+
+SUMMARY
+
+Ten synthetic shipment records were evaluated under a disclosed seven-rule release configuration.
+
+Decision totals:
+
+RELEASE: 3
+HOLD: 7
+
+Shipment results:
+
+S-001: RELEASE — no configured blocker
+S-002: HOLD — temperature above maximum
+S-003: HOLD — temperature below minimum
+S-004: HOLD — seal not intact
+S-005: HOLD — count variance above maximum
+S-006: HOLD — documents incomplete
+S-007: RELEASE — exact upper boundaries pass
+S-008: RELEASE — exact lower temperature boundary passes
+S-009: HOLD — missing transit delay
+S-010: HOLD — five blocking rules
+
+DISCLOSED CONFIGURATION
+
+Missing required field: HOLD
+Temperature below 2.0 C: HOLD
+Temperature above 8.0 C: HOLD
+Seal not intact: HOLD
+Count variance above 1.0 percent: HOLD
+Documents incomplete: HOLD
+Transit delay above 6 hours: HOLD
+No blocking rule: RELEASE
+
+Temperature and count-variance values were evaluated as exact decimal values rather than binary floating-point proof arithmetic.
+
+INDEPENDENT CALCULATION CHECK
+
+All ten decisions and triggered-rule lists were independently recomputed from the canonical records and release configuration.
+
+Stored and independently derived results matched for every shipment.
+
+S-010 correctly reported all five applicable blockers:
+
+R003_TEMPERATURE_HIGH
+R004_SEAL_INTACT
+R005_COUNT_VARIANCE
+R006_DOCUMENTS_COMPLETE
+R007_TRANSIT_DELAY
+
+EXACT BOUNDARY CHECKS
+
+S-007:
+
+Temperature: 8.0
+Count variance: 1.0
+Transit delay: 6
+Decision: RELEASE
+
+The strict greater-than rules did not trigger at their exact boundaries.
+
+S-008:
+
+Temperature: 2.0
+Decision: RELEASE
+
+The strict lower-than rule did not trigger at the exact boundary.
+
+Result: PASS
+
+CONFIGURATION BINDING
+
+S-007 under the packaged maximum temperature of 8.0:
+
+RELEASE
+
+S-007 after an in-memory maximum-temperature change from 8.0 to 7.9:
+
+HOLD
+Triggered rule: R003_TEMPERATURE_HIGH
+
+No packaged artifact changed during the probe.
+
+Result: PASS
+
+RULE-ORDER INDEPENDENCE
+
+All ten shipments were independently evaluated under:
+
+1. the packaged rule order; and
+2. the reversed rule order.
+
+Every final decision remained unchanged.
+Every triggered-rule set remained unchanged.
+
+Stored explanations and audit records preserve the packaged rule order.
+
+Result: PASS
+
+REPLAY VERIFICATION
+
+Both delivered ZIP archives are byte-identical.
+
+Archive SHA-256:
+
+188a51c820129d8783b2591a0622c47708c7bc1a5e69e8106d3b1efddb4d314d
+
+Archive size:
+
+87,796 bytes each
+
+Package structure:
+
+Members: 7
+Entry order: Lexicographic
+Compression: ZIP_STORED
+Timestamp: 1980-01-01 00:00:00
+Permissions: 0644
+Archive and member comments: Absent
+Extra fields: Absent
+Directory entries: Absent
+Encoding: UTF-8 without BOM
+Line endings: LF only
+Final newline: Present for every member
+CRC errors: 0
+
+Manifest entries verified: 6/6
+Member byte mismatches across archives: 0
+Archive byte mismatches: 0
+Replay divergence: 0
+
+FRESH VERIFIER EXECUTION
+
+The packaged verifier was executed separately against each extracted package and corresponding ZIP archive.
+
+Run 1 exit code: 0
+Run 2 exit code: 0
+Run 1 stderr: Empty
+Run 2 stderr: Empty
+Verifier stdout identity: Confirmed
+
+Verifier stdout SHA-256 for both runs:
+
+8a10d0c7525336bbad04a02adb44df8ed4f8edcc991ed86038ca30bc8a435625
+
+The fresh executions reported:
+
+CHAINGATE DEMO 010 REPLAY - PASS
+Shipments evaluated: 10
+Decision totals: RELEASE=3 HOLD=7
+EXACT_BOUNDARY_TESTS: PASS
+CONFIGURATION_BINDING_TEST: PASS
+RULE_ORDER_INDEPENDENCE_TEST: PASS
+MULTIPLE_TRIGGER_TEST: PASS
+Manifest entries verified: 6/6
+CRC errors: 0
+Replay divergence: 0
+FINAL STATUS: PASS - CONFIGURATION_DRIVEN_RELEASE_REPLAY_VERIFIED
+
+AUDIT RECORD
+
+Shipment audits present: 10
+Audit events declared: 57
+Audit events present: 57
+Sequential event IDs: PASS
+Record-level decision and trigger binding: PASS
+Declared append_only flag: true
+Package export status: AUTHORIZED_FOR_DEMONSTRATION_AND_REVIEW
+
+INTERNAL ARTIFACT LEDGER
+
+01_canonical_input.json
+SHA-256: e10adec2f53a57bb0bcdd441d294958a1a04b03578dc327a68a627f285ae6130
+Bytes: 3,693
+
+02_release_configuration.json
+SHA-256: 1d49fd884ce96ebaeed031b326296d886c5770e5040368ddcced5ae1647cfe76
+Bytes: 2,906
+
+03_decision_results.json
+SHA-256: c7e03bcfd8258706b383011e9bf23ed5983d1c8657cda690deafb619314302db
+Bytes: 8,599
+
+04_audit_record.json
+SHA-256: 01bbc16410d5121e4e0668cbe8c71a1e7b2c078c233a0ed4d66d81b1b8dc1c89
+Bytes: 42,171
+
+05_manifest.json
+SHA-256: f345381651967b4bfe0d3397a3155eaeea7d69fd6c969dbed9c42299268dcbb4
+Bytes: 1,245
+
+06_verify_demo.py
+SHA-256: 0058addcffc5c095c298c171c0663ac3c56236c1b42a6249202f9b646b501678
+Bytes: 23,029
+
+README.md
+SHA-256: ebcb945ba32b2d3aa9270331b0d5744d26720b474ee8f3bb44a3f925410e5591
+Bytes: 5,323
+
+LIMITATIONS
+
+The delivered archives prove byte identity. They do not independently prove that each archive arose from a distinct fresh generation rather than copying.
+
+The packaged verifier prints "Verifier runs compared: 2" and "Verifier stdout identity: CONFIRMED" as fixed report lines; it does not itself load and compare two archives in one invocation. This audit separately executed both verifier copies and directly confirmed stdout identity, so the replay result is supported despite that verifier-reporting limitation.
+
+The audit event sequence is complete, ordered, and manifest-bound, but append_only is a declared structural property rather than a cryptographically chained or write-once enforcement mechanism.
+
+The shipment records and release thresholds are synthetic. No logistics regulation, operational shipment release, product-quality conclusion, safety conclusion, contractual acceptance decision, predictive model, or external verification is claimed.
+
+FINAL CLASSIFICATION
+
+Exact rule computation: PASS
+Shipment decision routing: PASS
+Exact decimal boundaries: PASS
+Multiple-trigger reporting: PASS
+Rule-order independence: PASS
+Configuration binding: PASS
+Audit linkage and event sequence: PASS
+Manifest integrity: PASS
+ZIP integrity: PASS
+Two-archive byte identity: PASS
+Fresh verifier execution: PASS
+Verifier stdout identity: PASS
+Independent fresh-generation provenance: UNVERIFIED
+
+Approved description:
+
+A synthetic shipment-gating package with disclosed configuration, transparent RELEASE / HOLD decisions, exact decimal boundary handling, complete blocker reporting, rule-order-independent outcomes, audit-linked decisions, and byte-identical deterministic replay.

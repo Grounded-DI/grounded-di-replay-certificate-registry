@@ -1,0 +1,161 @@
+DEMO 02 — MASTER CERTIFICATE INTAKE RECORD (EXPANDED EVIDENCE)
+
+Demo ID: MATHWISE-DEMO-0002
+Title: Global Multirow Coercivity — Post-Seal Reproducibility Repair and Archive Attestation
+System / Domain: MathWise DI2 / Mathematical certificate verification
+Final Classification: Corrected post-seal release accepted after packaging-only reproducibility repair
+Final Status: FULL PASS / ACCEPT
+
+AUDIT SEQUENCE
+
+1. ORIGINAL SEALED RELEASE — DECISION D / REJECT
+   Original release SHA-256:
+   01b4254cbd82254d6ac0e7e9d554d68d4bc20106c2e5e37ffcfe677bacff4093
+
+   The original 16-member sealed release passed ZIP/CRC integrity, internal MANIFEST,
+   SHA256SUMS, and authoritative-hash checks, but failed self-containment because
+   REPRODUCE.txt omitted the verifier's required --previous-audit option and the
+   required prior-audit packet was absent. The verifier exited with code 2 before
+   mathematical replay. This was classified as a reproducibility-packaging defect,
+   not a mathematical contradiction.
+
+2. SOURCE REPAIR AND CLEAN-ROOM REPLAY — DECISION A
+   Corrected exact source-functional packet SHA-256:
+   bdced7e61685cd78730cf94cf325f597a48fa76ad6b244c3b1efc00e6cb18fdb
+
+   Clean-room verification packet SHA-256:
+   8fb766a63858d502c19b9dc2121df76db249d05af417fc0106a70371233e3d9a
+
+   Decision:
+   A. CLEAN-ROOM GLOBAL CERTIFICATE FULLY REPRODUCED AFTER SOURCE REPAIR
+
+3. CORRECTED POST-SEAL RELEASE — ACCEPT
+   Corrected release SHA-256:
+   38a870b440bf28ae73f42eb09d5ac01a5f5a8f5d35665842b952d50109b6f0a9
+
+   Corrected release member count: 17
+   Archival recommendation: ACCEPT
+   Repair classification: packaging-only reproducibility repair
+   Mathematical changes: false
+   Certificate rewritten: false
+   Immutable members preserved: true
+
+PRIMARY UPLOADED EVIDENCE
+
+A. Global_Multirow_Coercivity_Archive_Attestation_v1_1(2).zip
+   Role: Corrected-release archive-attestation packet
+   SHA-256: 4ce10710f6257c238b5dba781b41f18e3b26f9b4cf6a460e820f2be3f8fc64f7
+   External sidecar: MATCH
+
+B. post_seal_acceptance_report_v1_1(1).json
+   Role: Machine-readable final acceptance decision
+
+C. Global_Multirow_Coercivity_Release_Acceptance(3).pdf
+   Role: Original post-seal Decision D rejection artifact
+   Important: Despite the filename, the PDF content records REJECT / Decision D.
+   SHA-256: 0a26e0d243ce2360b3d1a69aa21dfbac32f48e58ca90b930117743859762e406
+
+D. clean_room_global_certificate_verification_v2(3).zip
+   Role: Successful clean-room replay packet
+   SHA-256: 8fb766a63858d502c19b9dc2121df76db249d05af417fc0106a70371233e3d9a
+   External sidecar: MATCH
+   Members: 20
+   ZIP integrity: PASS
+   Internal SHA256SUMS: PASS for every listed member
+
+E. exact_source_functional_source_packet(2).zip
+   Role: Corrected authoritative source-functional packet
+   SHA-256: bdced7e61685cd78730cf94cf325f597a48fa76ad6b244c3b1efc00e6cb18fdb
+   External sidecar: MATCH
+   Members: 8
+   ZIP integrity: PASS
+   Internal SHA256SUMS: PASS for every listed member
+
+F. verification_log_v2(2).txt
+   Role: Standalone clean-room verification log
+   SHA-256: ab03653ddd81de3f09e998a811bdfb81a360a1770d0acb9db2306b86b81c707a
+   Comparison with embedded packet member: BYTE-IDENTICAL
+
+G. root_variable_order_audit(2).json
+   Role: Root-variable order reconciliation record
+   Classification: A. lexical alias only
+   lam/lambda alias declared: true
+   Reconciled: true
+   Comparison with embedded packet member: BYTE-IDENTICAL
+
+H. verify_global_certificate_v2(1).py
+   Role: Executable clean-room verifier
+   SHA-256: 6b5b4a83ceeba49f1843c5de5bb999835855a631d80a1c0b98e6a8f3a318586d
+   Comparison with embedded packet member: BYTE-IDENTICAL
+
+I. Global_Multirow_Coercivity_Release_MANIFEST(4).json
+   Role: Release manifest
+   SHA-256: 55d01a6541bca3a3d9b952a1593540082feb2aacdee9cee21d8b0d0f2497893a
+   Records the formal certificate, clean-room packet, source-functional packet,
+   verifier, requirements lock, proof packets, and publication artifacts.
+
+J. pdf_validation_report(4).json
+   Role: PDF render and structural validation
+   Certificate PDF SHA-256:
+   d00d8855e85e72827f9c7de133ab93a76d216f14bbc4919c32e5ffcf2cd7b7fe
+   Status: PASS
+   Pages: 10 / all rendered and visually inspected
+   Fonts embedded: true
+   Bookmarks valid: true
+   Searchable text: true
+   Clipping, overflow, missing glyphs, overlaps, and unintended blanks: none
+
+CLEAN-ROOM MATHEMATICAL FINDINGS
+
+- Previous Decision G reproduced: YES
+- Exact S, G_0, and all five E_j stored and reduced: YES
+- Canonical 37-variable order declared: YES
+- Fixed arithmetic replayed: YES
+- Automaton reconstructed: YES
+- Source functional independently verified: YES
+- Krawczyk inclusion regenerated: YES
+- Independent interval-Newton check passed: YES
+- Root uniqueness independently verified: YES
+- All sixteen state matrices regenerated: YES
+- All positivity proofs regenerated: YES
+- All 44 finite slacks regenerated: YES
+- Stationarity identities verified: YES
+- Complementary slackness verified: YES
+- Primal-dual equality verified: YES
+- Objective interval regenerated: YES
+- Target uniqueness independently verified: YES
+- Schur induction checked: YES
+- Support geometry checked: YES
+- Two-path consistency checks passed: YES
+- Formal certificate mathematically supported: YES
+
+HASH DISTINCTIONS
+
+Attestation packet:
+4ce10710f6257c238b5dba781b41f18e3b26f9b4cf6a460e820f2be3f8fc64f7
+
+Clean-room verification packet:
+8fb766a63858d502c19b9dc2121df76db249d05af417fc0106a70371233e3d9a
+
+Exact source-functional packet:
+bdced7e61685cd78730cf94cf325f597a48fa76ad6b244c3b1efc00e6cb18fdb
+
+Corrected 17-member release referenced by the attestation:
+38a870b440bf28ae73f42eb09d5ac01a5f5a8f5d35665842b952d50109b6f0a9
+
+Original 16-member sealed release:
+01b4254cbd82254d6ac0e7e9d554d68d4bc20106c2e5e37ffcfe677bacff4093
+
+AGGREGATE CLASSIFICATION
+
+FULL PASS / ACCEPT AFTER DOCUMENTED REPAIR
+
+The initial Decision D rejection remains part of the audit chain and is not erased.
+The final Demo 02 result is acceptance because the packaging defect was repaired,
+the corrected source packet and clean-room replay were independently verified, the
+mathematical certificate was fully reproduced, and the corrected release was accepted
+as self-contained and reproducible.
+
+MASTER-CERTIFICATE LABEL
+
+Demo 02 — Global Multirow Coercivity Post-Seal Repair and Clean-Room Reproduction
