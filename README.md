@@ -247,3 +247,6 @@ Unless a specific record expressly says otherwise, this repository does not clai
 ├── 09_StormWise_Chill_Demo_Record.txt
 ├── 10_ChainGate_Chill_Demo_Record.txt
 └── README.md
+
+#AuditableAI @Grounded-DI
+#DeterministicIntelligence @Grounded-DI
