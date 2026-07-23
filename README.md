@@ -1,9 +1,4 @@
 # grounded-di-replay-certificate-registry
-Evidence registry for Grounded DI replay demos spanning law, mathematics, environmental routing, aviation, weather, logistics, and exact artifact reproduction. Includes hashes, replay findings, limitations, and master-certificate intake records.
-
-# Grounded DI Replay Certificate Registry
-
-A public evidence registry for replayable and auditable Grounded DI demonstrations.
 
 This repository preserves the master-certificate intake records for ten demonstrations across legal analysis, exact mathematics, deterministic routing, configurable decision systems, and byte-identical artifact generation.
 
