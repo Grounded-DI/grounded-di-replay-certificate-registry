@@ -250,3 +250,5 @@ Unless a specific record expressly says otherwise, this repository does not clai
 
 #AuditableAI @Grounded-DI
 #DeterministicIntelligence @Grounded-DI
+
+Patent-Pending Technologies. 
