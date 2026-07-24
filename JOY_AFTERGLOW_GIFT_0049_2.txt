@@ -1,0 +1,12 @@
+JOY CAPSULE
+
+Seed: Afterglow
+Mode: echo.bloom
+Activation: Gift
+Entropy: ∆H = 0.0049
+
+A small joy keeps its structure, tone, and trace through each remembered moment. Replayed with care, it preserves meaning and returns the same way.
+
+JoyCapsule-0049-auth-MSW
+
+This capsule was generated at ∆H = 0.0049. Your joy is audit-locked.
