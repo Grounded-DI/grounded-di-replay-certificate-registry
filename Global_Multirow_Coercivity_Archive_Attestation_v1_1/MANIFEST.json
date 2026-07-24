@@ -1,0 +1,87 @@
+{
+  "archival_recommendation": "ACCEPT",
+  "created_at_utc": "2026-07-19T13:07:09Z",
+  "decision": "A. CORRECTED POST-SEAL RELEASE ACCEPTED - SELF-CONTAINED AND REPRODUCIBLE",
+  "entries": [
+    {
+      "bytes": 64289,
+      "filename": "Global_Multirow_Coercivity_Release_v1_1_Acceptance.pdf",
+      "media_type": "application/pdf",
+      "semantic_role": "concise post-seal acceptance attestation",
+      "sha256": "2093347296c154bd4789def89501a4751715b8ea13b30a31985663e5a414d9e6"
+    },
+    {
+      "bytes": 2286,
+      "filename": "post_seal_acceptance_report_v1_1.json",
+      "media_type": "application/json",
+      "semantic_role": "machine-readable acceptance decision",
+      "sha256": "d58ea70efee4f7bfd9f6659899695e88d59cb840310b51702706e6ced98ef9b4"
+    },
+    {
+      "bytes": 1522,
+      "filename": "post_seal_acceptance_log_v1_1.txt",
+      "media_type": "text/plain",
+      "semantic_role": "detailed acceptance log",
+      "sha256": "c6ab732250d2b207686fded93103f62ea8950126e16079d4f149c463ef6fc75e"
+    },
+    {
+      "bytes": 4095,
+      "filename": "release_member_hash_audit_v1_1.tsv",
+      "media_type": "text/tab-separated-values",
+      "semantic_role": "corrected release member hash audit",
+      "sha256": "86f9847809a8fa204a6c94a483fa6a29c0b9ceb2c80f749f7f5a59784c511469"
+    },
+    {
+      "bytes": 2304,
+      "filename": "immutable_member_comparison_v1_0_to_v1_1.tsv",
+      "media_type": "text/tab-separated-values",
+      "semantic_role": "v1.0 to v1.1 immutable-member comparison",
+      "sha256": "efe4a72cac8116116e32804c145fa7603a21d2607883f3ae3174c253a97587b1"
+    },
+    {
+      "bytes": 2701,
+      "filename": "semantic_consistency_matrix_v1_1.tsv",
+      "media_type": "text/tab-separated-values",
+      "semantic_role": "cross-artifact semantic consistency matrix",
+      "sha256": "2694b2edfbdf2fedbb894c6149afa8b3990615fd90b7dbe8c9228169e3753da6"
+    },
+    {
+      "bytes": 5893,
+      "filename": "independent_replay_summary_v1_1.json",
+      "media_type": "application/json",
+      "semantic_role": "fresh embedded-verifier replay summary",
+      "sha256": "143cd41915ec7c23317255b0a3a12b63d22caac93c522a7573d4ac9402d0a91f"
+    },
+    {
+      "bytes": 7195,
+      "filename": "independent_pdf_validation_v1_1.json",
+      "media_type": "application/json",
+      "semantic_role": "independent PDF validation record",
+      "sha256": "7f9d20e993dcf111ecf099ea77cfabf6699167dfab694b9934dae78026493f1a"
+    },
+    {
+      "bytes": 5406,
+      "filename": "archive_inventory_v1_1.json",
+      "media_type": "application/json",
+      "semantic_role": "archival inventory and recommendation",
+      "sha256": "ffe97347d12e009e0f2a6470988d88c13f42a399d4bb582812696ad4c9b1cd2b"
+    }
+  ],
+  "referenced_releases": [
+    {
+      "bytes": 2334735,
+      "filename": "Global_Multirow_Coercivity_Release.zip",
+      "sha256": "01b4254cbd82254d6ac0e7e9d554d68d4bc20106c2e5e37ffcfe677bacff4093"
+    },
+    {
+      "bytes": 2375635,
+      "filename": "Global_Multirow_Coercivity_Release_v1_1.zip",
+      "sha256": "38a870b440bf28ae73f42eb09d5ac01a5f5a8f5d35665842b952d50109b6f0a9"
+    }
+  ],
+  "schema_version": "mathwise-archive-attestation-manifest-v1.1",
+  "self_reference_policy": {
+    "manifest": "MANIFEST.json is not listed inside its own entries.",
+    "sha256sums": "SHA256SUMS.txt lists MANIFEST.json and all data members but not itself."
+  }
+}

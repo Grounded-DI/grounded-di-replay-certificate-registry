@@ -1,0 +1,141 @@
+{
+  "archival_recommendation": "ACCEPT",
+  "audit_environment": {
+    "filesystem_encoding": "utf-8",
+    "locale": "",
+    "mpmath_version": "1.3.0",
+    "operating_system": "Linux-4.4.0-x86_64-with-glibc2.41",
+    "pdf_tools": {
+      "ghostscript": "/usr/bin/gs",
+      "pdffonts": "/usr/bin/pdffonts",
+      "pdfinfo": "/usr/bin/pdfinfo",
+      "pdftoppm": "/usr/bin/pdftoppm",
+      "pypdf_version": "5.9.0"
+    },
+    "python_implementation": "CPython",
+    "python_version": "3.13.5",
+    "sha256_implementation": "Python hashlib.sha256 / OpenSSL backend",
+    "sympy_version": "1.14.0",
+    "zipfile_library": "Python standard library zipfile"
+  },
+  "audit_timestamp_utc": "2026-07-19T13:07:09Z",
+  "corrected_release": {
+    "bytes": 2375635,
+    "filename": "Global_Multirow_Coercivity_Release_v1_1.zip",
+    "sha256": "38a870b440bf28ae73f42eb09d5ac01a5f5a8f5d35665842b952d50109b6f0a9"
+  },
+  "embedded_certificate": {
+    "bytes": 95441,
+    "filename": "Global_Multirow_Coercivity_Certificate.pdf",
+    "sha256": "d00d8855e85e72827f9c7de133ab93a76d216f14bbc4919c32e5ffcf2cd7b7fe",
+    "version": "1.0"
+  },
+  "lexical_alias_status": "lambda -> lam at index 36; lexical only",
+  "member_count": 17,
+  "members": {
+    "Global_Multirow_Coercivity_Certificate.pdf": {
+      "bytes": 95441,
+      "sha256": "d00d8855e85e72827f9c7de133ab93a76d216f14bbc4919c32e5ffcf2cd7b7fe"
+    },
+    "MANIFEST.json": {
+      "bytes": 8687,
+      "sha256": "43f54003a432b3ad0f966d125bc4310bb449af8b8e1cd99958f5c75f62d6f45e"
+    },
+    "RELEASE_NOTES.txt": {
+      "bytes": 1414,
+      "sha256": "609334c36d22aa47f21c415be306f646e17970670c90927aad93ea268c2887eb"
+    },
+    "REPRODUCE.txt": {
+      "bytes": 3584,
+      "sha256": "98b9df6ebe418ad1a5abdeed1253aad0df2b3687fc975518de2efa2a5516892a"
+    },
+    "SCOPE_AND_LIMITATIONS.txt": {
+      "bytes": 843,
+      "sha256": "713784618bea169c24af822ecee277480db47646e437ef3ba278448ccfd2e68a"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 1610,
+      "sha256": "1b38d577ff276346ec028fc05e538e93659548e537e868f0bbd115871836060a"
+    },
+    "active_lower15_schur_completion_packet.zip": {
+      "bytes": 810953,
+      "sha256": "1f7abc5024948777850335f7cb422c58f60c9efa64e9763038d4454b5ee1c16c"
+    },
+    "clean_room_global_certificate_verification.zip": {
+      "bytes": 40589,
+      "sha256": "f076efdcc0c53a72ff4fedd2049cb40fb893faa504537d6e17f8577208384a26"
+    },
+    "clean_room_global_certificate_verification_v2.zip": {
+      "bytes": 46792,
+      "sha256": "8fb766a63858d502c19b9dc2121df76db249d05af417fc0106a70371233e3d9a"
+    },
+    "exact_source_functional_source_packet.zip": {
+      "bytes": 5092,
+      "sha256": "bdced7e61685cd78730cf94cf325f597a48fa76ad6b244c3b1efc00e6cb18fdb"
+    },
+    "final_global_multirow_coercivity_proof_packet.zip": {
+      "bytes": 235956,
+      "sha256": "cce1bde9bb54f2bcd1e7d2be61c91256ce9cbd8c529ae1000e1dd2d948df2e87"
+    },
+    "full_finite_state_primal_feasibility_packet.zip": {
+      "bytes": 1029102,
+      "sha256": "86475b452e86e93047937cd267551bffac7a08c80c87f8df64623bbc2ea14974"
+    },
+    "pdf_validation_report.json": {
+      "bytes": 2451,
+      "sha256": "b7e4637bb075baf11e045f0f3ed53c47094709561d943783460a5d6d324054f6"
+    },
+    "primal_anchored_rotation_root_isolation.zip": {
+      "bytes": 100434,
+      "sha256": "40164cc6d65601053ae30dfd63fad7bc6cd662141d4e28b2ebd47774571f0fc7"
+    },
+    "primal_schur_branch_packet.zip": {
+      "bytes": 16100,
+      "sha256": "50817a80ec3e13832e682e2215c2d511458542101d21ce8474eac0e6ba6489a1"
+    },
+    "requirements-lock-v2.txt": {
+      "bytes": 43,
+      "sha256": "3cfa900453d75bf1802ed1bb69314903c62723f0de0b63ccb4020562e4b1ed85"
+    },
+    "verify_global_certificate_v2.py": {
+      "bytes": 39224,
+      "sha256": "6b5b4a83ceeba49f1843c5de5bb999835855a631d80a1c0b98e6a8f3a318586d"
+    }
+  },
+  "original_release": {
+    "bytes": 2334735,
+    "filename": "Global_Multirow_Coercivity_Release.zip",
+    "sha256": "01b4254cbd82254d6ac0e7e9d554d68d4bc20106c2e5e37ffcfe677bacff4093"
+  },
+  "pdf_validation_decision": "PASS",
+  "previous_audit_packet": {
+    "filename": "clean_room_global_certificate_verification.zip",
+    "sha256": "f076efdcc0c53a72ff4fedd2049cb40fb893faa504537d6e17f8577208384a26",
+    "status": "ADDED_IN_V1_1"
+  },
+  "required_members": [
+    "Global_Multirow_Coercivity_Certificate.pdf",
+    "MANIFEST.json",
+    "RELEASE_NOTES.txt",
+    "REPRODUCE.txt",
+    "SCOPE_AND_LIMITATIONS.txt",
+    "SHA256SUMS.txt",
+    "active_lower15_schur_completion_packet.zip",
+    "clean_room_global_certificate_verification.zip",
+    "clean_room_global_certificate_verification_v2.zip",
+    "exact_source_functional_source_packet.zip",
+    "final_global_multirow_coercivity_proof_packet.zip",
+    "full_finite_state_primal_feasibility_packet.zip",
+    "pdf_validation_report.json",
+    "primal_anchored_rotation_root_isolation.zip",
+    "primal_schur_branch_packet.zip",
+    "requirements-lock-v2.txt",
+    "verify_global_certificate_v2.py"
+  ],
+  "schema_version": "mathwise-archive-inventory-v1.1",
+  "scope_statement": "No assertion for other intervals, shifts, coefficients, source operators, or transition architectures.",
+  "self_containment": "PASS",
+  "semantic_consistency_decision": "PASS",
+  "source_functional_repair_status": "VERIFIED",
+  "verifier_decision": "A. CLEAN-ROOM GLOBAL CERTIFICATE FULLY REPRODUCED AFTER SOURCE REPAIR"
+}

@@ -1,0 +1,59 @@
+{
+  "archival_recommendation": "ACCEPT",
+  "audit_timestamp_utc": "2026-07-19T13:07:09Z",
+  "certificate_rewritten": false,
+  "corrected_release_member_count": 17,
+  "corrected_release_sha256": "38a870b440bf28ae73f42eb09d5ac01a5f5a8f5d35665842b952d50109b6f0a9",
+  "decision": "A. CORRECTED POST-SEAL RELEASE ACCEPTED - SELF-CONTAINED AND REPRODUCIBLE",
+  "digital_signature_claimed": false,
+  "embedded_verifier": {
+    "decision": "A. CLEAN-ROOM GLOBAL CERTIFICATE FULLY REPRODUCED AFTER SOURCE REPAIR",
+    "exit_code": 0,
+    "semantic_match_with_embedded_v2_audit": true,
+    "sha256": "6b5b4a83ceeba49f1843c5de5bb999835855a631d80a1c0b98e6a8f3a318586d"
+  },
+  "environment": {
+    "filesystem_encoding": "utf-8",
+    "locale": "",
+    "mpmath_version": "1.3.0",
+    "operating_system": "Linux-4.4.0-x86_64-with-glibc2.41",
+    "pdf_tools": {
+      "ghostscript": "/usr/bin/gs",
+      "pdffonts": "/usr/bin/pdffonts",
+      "pdfinfo": "/usr/bin/pdfinfo",
+      "pdftoppm": "/usr/bin/pdftoppm",
+      "pypdf_version": "5.9.0"
+    },
+    "python_implementation": "CPython",
+    "python_version": "3.13.5",
+    "sha256_implementation": "Python hashlib.sha256 / OpenSSL backend",
+    "sympy_version": "1.14.0",
+    "zipfile_library": "Python standard library zipfile"
+  },
+  "immutable_members_preserved": true,
+  "mathematical_changes": false,
+  "original_release_sha256": "01b4254cbd82254d6ac0e7e9d554d68d4bc20106c2e5e37ffcfe677bacff4093",
+  "pdf_validation": {
+    "bookmark_count": 21,
+    "byte_identical_to_v1_0": true,
+    "fonts_embedded": true,
+    "page_count": 10,
+    "rendered_pages": 10,
+    "sha256": "d00d8855e85e72827f9c7de133ab93a76d216f14bbc4919c32e5ffcf2cd7b7fe",
+    "status": "PASS"
+  },
+  "previous_audit_packet_sha256": "f076efdcc0c53a72ff4fedd2049cb40fb893faa504537d6e17f8577208384a26",
+  "release_manifest_verified": true,
+  "release_sha256sums_verified": true,
+  "repair_classification": "packaging-only reproducibility repair",
+  "reproduction_command_corrected": true,
+  "schema_version": "mathwise-post-seal-acceptance-v1.1",
+  "self_containment_verified": true,
+  "semantic_consistency": {
+    "claims_checked": 15,
+    "status": "PASS"
+  },
+  "third_party_status_claimed": false,
+  "verifier_patched": false,
+  "zip_structural_integrity_verified": true
+}

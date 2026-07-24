@@ -1,0 +1,137 @@
+{
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "verify_global_certificate_v2.py",
+    "--source-primal",
+    "primal_schur_branch_packet.zip",
+    "--source-root",
+    "primal_anchored_rotation_root_isolation.zip",
+    "--source-active",
+    "active_lower15_schur_completion_packet.zip",
+    "--source-full-primal",
+    "full_finite_state_primal_feasibility_packet.zip",
+    "--source-functional",
+    "exact_source_functional_source_packet.zip",
+    "--candidate-final",
+    "final_global_multirow_coercivity_proof_packet.zip",
+    "--previous-audit",
+    "clean_room_global_certificate_verification.zip",
+    "--output",
+    "/mnt/data/mw_v11_audit_utyxlm9_/independent_release_replay"
+  ],
+  "elapsed_seconds": 37.728901863098145,
+  "embedded_v2_semantic_files_byte_identical": {
+    "canonical_schema_v2.json": true,
+    "lagrangian_replay.json": true,
+    "regenerated_bounds_v2.json": true,
+    "regenerated_finite_slacks_v2.tsv": true,
+    "regenerated_state_table_v2.tsv": true,
+    "root_variable_order_audit.json": true,
+    "source_functional_replay.json": true,
+    "support_geometry_audit_v2.json": true,
+    "uniqueness_rank_certificate/target_uniqueness_replay.json": true,
+    "verification_summary_v2.json": true
+  },
+  "executed_at_utc": "2026-07-19T13:07:09Z",
+  "exit_code": 0,
+  "generated_output_hashes": {
+    "MANIFEST.json": {
+      "bytes": 3491,
+      "sha256": "272ea3ed03574045225bd7779761d38b951d9a4179daa411d37f1695479dc43f"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 1892,
+      "sha256": "0f674a731c88b2e69b912560d7efd1778407bf9b4dee602be144a957c213f5fe"
+    },
+    "canonical_schema_v2.json": {
+      "bytes": 1039,
+      "sha256": "50d1481ea6312fa389dd80974434bdc978127b0ad85c1b63bbebe7046a9c72ee"
+    },
+    "lagrangian_replay.json": {
+      "bytes": 887,
+      "sha256": "6e2fbf88d5c9cea281bef935e99bc0c1d36b9b8f130fdc6e26a42537b8d30b6c"
+    },
+    "regenerated_bounds_v2.json": {
+      "bytes": 34705,
+      "sha256": "05e4ffdaecacb38f898ed019428329c3a8e89c156f54f4886d963bd8a4238634"
+    },
+    "regenerated_finite_slacks_v2.tsv": {
+      "bytes": 9651,
+      "sha256": "ca00c15ca6c29e54a544f76887465efaf54cff4aacf6b3b49d8dd3f98c1fc001"
+    },
+    "regenerated_state_table_v2.tsv": {
+      "bytes": 2278,
+      "sha256": "6791c347a47acfa054e41f3cd5c611675fcf36cfb328cfe33502def1fdab3194"
+    },
+    "requirements-lock-v2.txt": {
+      "bytes": 43,
+      "sha256": "3cfa900453d75bf1802ed1bb69314903c62723f0de0b63ccb4020562e4b1ed85"
+    },
+    "root_variable_order_audit.json": {
+      "bytes": 2530,
+      "sha256": "06213138adfd4d6057d39dde6701934d9e651984603cc5aa18e3ca985d5ce60c"
+    },
+    "source_functional_replay.json": {
+      "bytes": 400,
+      "sha256": "dcca12868ed3791743db36b8bf863e470bd468b8753f2639af25c5598cc14e65"
+    },
+    "stationarity_reductions/c1_stationarity.json": {
+      "bytes": 79,
+      "sha256": "e36664b92240f54fa9b5429168196c7cc17f1ee9bfd1a271b0663cbdeb11fa12"
+    },
+    "stationarity_reductions/c2_stationarity.json": {
+      "bytes": 445,
+      "sha256": "adbe5b9feebb950ee4a5228a0cea6fdce96255ed54680ad7bcdf30aac6c46c73"
+    },
+    "stationarity_reductions/c3_stationarity.json": {
+      "bytes": 464,
+      "sha256": "e654398b44d2a8a3f79391b2e5a2cad9d963b7e6d34c483435de1343984f9005"
+    },
+    "stationarity_reductions/c4_stationarity.json": {
+      "bytes": 464,
+      "sha256": "8f40607711a14c963467610e02b886e47f7a7473b5a881a282ebff8cfd244a19"
+    },
+    "stationarity_reductions/c5_stationarity.json": {
+      "bytes": 463,
+      "sha256": "b9e7f6ef41e6768f4ed419f3dcdb8a00ff8169957dbd160ab7b8f6d327a6de4a"
+    },
+    "support_geometry_audit_v2.json": {
+      "bytes": 653,
+      "sha256": "3d040b4f2c3f25c79a8d03a34baa22bb7f516db271f43f753b0038d224d54e55"
+    },
+    "uniqueness_rank_certificate/target_uniqueness_replay.json": {
+      "bytes": 874,
+      "sha256": "5e1e3e5ceee97a6faf49e8a16ca49f76201e0174896e44ebf3ffb4c45ef5c269"
+    },
+    "verification_log_v2.txt": {
+      "bytes": 32357,
+      "sha256": "ab03653ddd81de3f09e998a811bdfb81a360a1770d0acb9db2306b86b81c707a"
+    },
+    "verification_summary_v2.json": {
+      "bytes": 817,
+      "sha256": "5951c4e0dbc9d255b8d9266afc2f8ad9b3210509a09d2dadca81e0f4941cb7c4"
+    },
+    "verify_global_certificate_v2.py": {
+      "bytes": 39224,
+      "sha256": "6b5b4a83ceeba49f1843c5de5bb999835855a631d80a1c0b98e6a8f3a318586d"
+    }
+  },
+  "input_hashes": {
+    "active_lower15_schur_completion_packet.zip": "1f7abc5024948777850335f7cb422c58f60c9efa64e9763038d4454b5ee1c16c",
+    "clean_room_global_certificate_verification.zip": "f076efdcc0c53a72ff4fedd2049cb40fb893faa504537d6e17f8577208384a26",
+    "exact_source_functional_source_packet.zip": "bdced7e61685cd78730cf94cf325f597a48fa76ad6b244c3b1efc00e6cb18fdb",
+    "final_global_multirow_coercivity_proof_packet.zip": "cce1bde9bb54f2bcd1e7d2be61c91256ce9cbd8c529ae1000e1dd2d948df2e87",
+    "full_finite_state_primal_feasibility_packet.zip": "86475b452e86e93047937cd267551bffac7a08c80c87f8df64623bbc2ea14974",
+    "primal_anchored_rotation_root_isolation.zip": "40164cc6d65601053ae30dfd63fad7bc6cd662141d4e28b2ebd47774571f0fc7",
+    "primal_schur_branch_packet.zip": "50817a80ec3e13832e682e2215c2d511458542101d21ce8474eac0e6ba6489a1"
+  },
+  "peak_memory": null,
+  "peak_memory_note": "Not available from the subprocess interface used.",
+  "result": "PASS",
+  "schema_version": "mathwise-independent-release-replay-v1.1",
+  "stderr_nonfatal_environment_warning": "artifact_tool spreadsheet runtime warmup failed before verifier execution; verifier completed with exit code 0 and Decision A.",
+  "stdout_decision": "A. CLEAN-ROOM GLOBAL CERTIFICATE FULLY REPRODUCED AFTER SOURCE REPAIR",
+  "summary_exactly_equal_to_embedded_v2": true,
+  "verifier_sha256": "6b5b4a83ceeba49f1843c5de5bb999835855a631d80a1c0b98e6a8f3a318586d",
+  "working_directory": "fresh read-only extraction of corrected release"
+}

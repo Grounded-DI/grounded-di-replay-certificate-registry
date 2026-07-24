@@ -1,0 +1,328 @@
+{
+  "all_bookmark_destinations_valid": true,
+  "all_content_bounds_inside_page": true,
+  "all_fonts_embedded": true,
+  "all_pages_nonblank": true,
+  "all_pages_rendered": true,
+  "attachments": [],
+  "bookmark_count": 21,
+  "bookmarks": [
+    {
+      "page_zero_based": 1,
+      "title": "Table of Contents"
+    },
+    {
+      "page_zero_based": 2,
+      "title": "1. Executive Certification Statement"
+    },
+    {
+      "page_zero_based": 2,
+      "title": "2. Formal Theorem"
+    },
+    {
+      "page_zero_based": 2,
+      "title": "3. Problem Definition"
+    },
+    {
+      "page_zero_based": 3,
+      "title": "4. Exact Source Functional"
+    },
+    {
+      "page_zero_based": 3,
+      "title": "5. Isolated Target"
+    },
+    {
+      "page_zero_based": 3,
+      "title": "6. Active Lower-15 Completion"
+    },
+    {
+      "page_zero_based": 4,
+      "title": "7. Full Finite-State Primal Feasibility"
+    },
+    {
+      "page_zero_based": 4,
+      "title": "8. Finite Scalar Constraints"
+    },
+    {
+      "page_zero_based": 4,
+      "title": "9. Dual Certificate"
+    },
+    {
+      "page_zero_based": 5,
+      "title": "10. Stationarity and Complementary Slackness"
+    },
+    {
+      "page_zero_based": 5,
+      "title": "11. Primal-Dual Equality and Objective"
+    },
+    {
+      "page_zero_based": 5,
+      "title": "12. Target Uniqueness and Auxiliary Nonuniqueness"
+    },
+    {
+      "page_zero_based": 6,
+      "title": "13. Arbitrary-Height Schur Induction"
+    },
+    {
+      "page_zero_based": 6,
+      "title": "14. Support-Geometry Closure"
+    },
+    {
+      "page_zero_based": 6,
+      "title": "15. Final Theorem and Limitations"
+    },
+    {
+      "page_zero_based": 6,
+      "title": "16. Reproducibility Statement"
+    },
+    {
+      "page_zero_based": 6,
+      "title": "17. Provenance and Repair History"
+    },
+    {
+      "page_zero_based": 8,
+      "title": "Appendix A. Exact Certified State Bounds"
+    },
+    {
+      "page_zero_based": 9,
+      "title": "Appendix B. Authoritative Input Hashes"
+    },
+    {
+      "page_zero_based": 9,
+      "title": "Certificate decision"
+    }
+  ],
+  "embedded_validation_report_consistent": true,
+  "encrypted": false,
+  "font_listing": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nMDTJFV+DejaVuSans                    TrueType          WinAnsi          yes yes yes     39  0\nQRBEED+DejaVuSans-Bold               TrueType          WinAnsi          yes yes yes     41  0\nEAEXIZ+DejaVuSansMono                TrueType          WinAnsi          yes yes yes     43  0\n",
+  "ghostscript_null_render_exit_code": 0,
+  "javascript_absent": true,
+  "no_replacement_or_box_glyphs_in_extracted_text": true,
+  "overall_status": "PASS",
+  "page_count": 10,
+  "page_size": "A4",
+  "pdf_filename": "Global_Multirow_Coercivity_Certificate.pdf",
+  "pdfa_attempted": false,
+  "pdfa_claimed": false,
+  "pdfinfo": "Title:           Global Multirow Coercivity Certificate\nSubject:         Exact global multirow coercivity certificate\nKeywords:        \nAuthor:          MathWise DI2\nCreator:         MathWise deterministic certificate assembly\nProducer:        GPL Ghostscript 10.05.1\nCreationDate:    Sun Jul 19 06:48:07 2026 UTC\nModDate:         Sun Jul 19 06:48:07 2026 UTC\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           10\nEncrypted:       no\nPage size:       595.28 x 841.89 pts (A4)\nPage rot:        0\nFile size:       95441 bytes\nOptimized:       no\nPDF version:     1.7\n",
+  "render_stats": [
+    {
+      "content_bbox": [
+        95,
+        283,
+        1227,
+        1812
+      ],
+      "content_margins_px": [
+        95,
+        283,
+        95,
+        58
+      ],
+      "nonwhite_fraction": 0.12142245103992069,
+      "page": 1,
+      "pixels": [
+        1323,
+        1871
+      ]
+    },
+    {
+      "content_bbox": [
+        113,
+        59,
+        1208,
+        1812
+      ],
+      "content_margins_px": [
+        113,
+        59,
+        114,
+        58
+      ],
+      "nonwhite_fraction": 0.03212335471631494,
+      "page": 2,
+      "pixels": [
+        1323,
+        1871
+      ]
+    },
+    {
+      "content_bbox": [
+        95,
+        59,
+        1227,
+        1812
+      ],
+      "content_margins_px": [
+        95,
+        59,
+        95,
+        58
+      ],
+      "nonwhite_fraction": 0.19647376736786526,
+      "page": 3,
+      "pixels": [
+        1323,
+        1871
+      ]
+    },
+    {
+      "content_bbox": [
+        95,
+        59,
+        1227,
+        1812
+      ],
+      "content_margins_px": [
+        95,
+        59,
+        95,
+        58
+      ],
+      "nonwhite_fraction": 0.20202655561898136,
+      "page": 4,
+      "pixels": [
+        1323,
+        1871
+      ]
+    },
+    {
+      "content_bbox": [
+        95,
+        59,
+        1227,
+        1812
+      ],
+      "content_margins_px": [
+        95,
+        59,
+        95,
+        58
+      ],
+      "nonwhite_fraction": 0.266891767693478,
+      "page": 5,
+      "pixels": [
+        1323,
+        1871
+      ]
+    },
+    {
+      "content_bbox": [
+        95,
+        59,
+        1227,
+        1812
+      ],
+      "content_margins_px": [
+        95,
+        59,
+        95,
+        58
+      ],
+      "nonwhite_fraction": 0.16891787892780485,
+      "page": 6,
+      "pixels": [
+        1323,
+        1871
+      ]
+    },
+    {
+      "content_bbox": [
+        95,
+        59,
+        1227,
+        1812
+      ],
+      "content_margins_px": [
+        95,
+        59,
+        95,
+        58
+      ],
+      "nonwhite_fraction": 0.21009334905647037,
+      "page": 7,
+      "pixels": [
+        1323,
+        1871
+      ]
+    },
+    {
+      "content_bbox": [
+        113,
+        59,
+        1208,
+        1812
+      ],
+      "content_margins_px": [
+        113,
+        59,
+        114,
+        58
+      ],
+      "nonwhite_fraction": 0.014527338341952375,
+      "page": 8,
+      "pixels": [
+        1323,
+        1871
+      ]
+    },
+    {
+      "content_bbox": [
+        110,
+        59,
+        1212,
+        1812
+      ],
+      "content_margins_px": [
+        110,
+        59,
+        110,
+        58
+      ],
+      "nonwhite_fraction": 0.21453153979686773,
+      "page": 9,
+      "pixels": [
+        1323,
+        1871
+      ]
+    },
+    {
+      "content_bbox": [
+        95,
+        59,
+        1227,
+        1812
+      ],
+      "content_margins_px": [
+        95,
+        59,
+        95,
+        58
+      ],
+      "nonwhite_fraction": 0.17524632039406415,
+      "page": 10,
+      "pixels": [
+        1323,
+        1871
+      ]
+    }
+  ],
+  "rendered_pages": 10,
+  "schema_version": "mathwise-independent-pdf-validation-v1.1",
+  "searchable_text_characters_by_page": [
+    1268,
+    987,
+    2106,
+    2424,
+    2596,
+    3039,
+    2870,
+    556,
+    3909,
+    1858
+  ],
+  "searchable_text_present": true,
+  "sha256": "d00d8855e85e72827f9c7de133ab93a76d216f14bbc4919c32e5ffcf2cd7b7fe",
+  "unexpected_attachments_absent": true,
+  "validated_at_utc": "2026-07-19T13:07:09Z"
+}

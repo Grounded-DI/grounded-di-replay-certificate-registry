@@ -1,0 +1,34 @@
+GLOBAL MULTIROW COERCIVITY RELEASE V1.1 - POST-SEAL ACCEPTANCE LOG
+
+Audit timestamp UTC: 2026-07-19T13:07:09Z
+Original v1.0 hash verified: 01b4254cbd82254d6ac0e7e9d554d68d4bc20106c2e5e37ffcfe677bacff4093
+Previous-audit packet hash verified: f076efdcc0c53a72ff4fedd2049cb40fb893faa504537d6e17f8577208384a26
+Corrected v1.1 release hash: 38a870b440bf28ae73f42eb09d5ac01a5f5a8f5d35665842b952d50109b6f0a9
+Corrected release member count: 17
+Original REPRODUCE.txt defect: reproduced from v1.0 audit evidence.
+Verifier --help: --previous-audit confirmed required.
+Packaging repair: exact previous-audit packet added; reproduction command corrected.
+Immutable member comparison: PASS (12/12 byte-identical).
+Corrected MANIFEST.json: PASS.
+Corrected SHA256SUMS.txt: PASS.
+ZIP CRC and structural checks: PASS.
+Self-containment: PASS.
+
+Embedded verifier replay:
+  exit code: 0
+  elapsed seconds: 37.728901863098145
+  decision: A. CLEAN-ROOM GLOBAL CERTIFICATE FULLY REPRODUCED AFTER SOURCE REPAIR
+  semantic file comparison with embedded v2 audit: PASS
+  nonfatal stderr note: artifact_tool spreadsheet warmup warning; verifier result unaffected.
+
+Semantic consistency audit: PASS.
+Claims checked: 15.
+Independent PDF validation: PASS.
+PDF hash: d00d8855e85e72827f9c7de133ab93a76d216f14bbc4919c32e5ffcf2cd7b7fe
+Pages rendered: 10
+Fonts embedded: True
+Bookmarks valid: 21
+Certificate PDF byte-identical to v1.0: YES.
+
+Archival recommendation: ACCEPT
+Decision: A. CORRECTED POST-SEAL RELEASE ACCEPTED - SELF-CONTAINED AND REPRODUCIBLE
