@@ -256,7 +256,7 @@ ___
 
 ## Public Filing Update — Deterministic Intelligence Non-Provisional Applications
 
-**Status as of 9 July 2026**
+**Status as of 25 July 2026**
  
 This public filing index summarizes 23 U.S. utility non-provisional patent applications directed to deterministic-intelligence systems, controlled-output architectures, replay verification, runtime authorization, and domain-specific implementation.
 
