@@ -251,7 +251,6 @@ Unless a specific record expressly says otherwise, this repository does not clai
 #AuditableAI @Grounded-DI
 #DeterministicIntelligence @Grounded-DI
 
-Patent-Pending Technologies.
 
 ___
 
@@ -259,7 +258,7 @@ ___
 
 **Status as of 9 July 2026**
  
-This public filing index summarizes 21 U.S. utility non-provisional patent applications directed to deterministic-intelligence systems, controlled-output architectures, replay verification, runtime authorization, and domain-specific implementation.
+This public filing index summarizes 23 U.S. utility non-provisional patent applications directed to deterministic-intelligence systems, controlled-output architectures, replay verification, runtime authorization, and domain-specific implementation.
 
 | No. | Domain / Nickname | Application No. | Received | Title |
 |---:|---|---|---|---|
@@ -284,7 +283,8 @@ This public filing index summarizes 21 U.S. utility non-provisional patent appli
 | 19 | DI-AGI | 19/726,890 | 30 Jun 2026 | Runtime-Governed Artificial-Intelligence Execution, Replay Verification, and Release Authorization |
 | 20 | DepoBot | 19/730,739 | 2 Jul 2026 | Deterministic Intelligence Systems and Methods for Controlled Deposition Artifact Generation, Validation, Replay Verification, and Authorized Output Delivery |
 | 21 | DI Hazard Intelligence | 19/736,923 | 9 Jul 2026 | Deterministic Intelligence Systems and Methods for Threshold-Gated Multi-Hazard Evaluation and Audit-Traceable Emergency Assistance |
-| 22 | DI LLM Entropy Control | 19/748,124 | 20 Jul 2026 | Systems And Methods For Deterministic Entropy Governance And Entropy-Linked Override Enforcement In Generative Artificial Intelligence Systems |
+| 22 | DI LLM Entropy Control| 19/748,124 | 20 Jul 2026 | Systems And Methods For Deterministic Entropy Governance And Entropy-Linked Override Enforcement In Generative Artificial Intelligence Systems |
+| 23 | Shopping / Consumer | 19/765,102 | 24 Jul 2026 | Deterministic intelligence systems and methods for consumer decision-control, evidence-linked commercial assessment, transaction-state authorization, and replay |
 
 ### Portfolio Themes
 
