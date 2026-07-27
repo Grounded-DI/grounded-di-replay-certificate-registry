@@ -305,3 +305,4 @@ Across the portfolio, recurring technical themes include:
 >
 > -Mark S. Weinstein, Grounded DI LLC    
 
+#DeterministicIntelligence #AuditableAI
