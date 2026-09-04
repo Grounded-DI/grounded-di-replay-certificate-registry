@@ -1,3 +1,5 @@
+Grounded DI LLC
+
 # grounded-di-replay-certificate-registry
 
 This repository preserves the master-certificate intake records for ten demonstrations across legal analysis, exact mathematics, deterministic routing, configurable decision systems, and byte-identical artifact generation.
