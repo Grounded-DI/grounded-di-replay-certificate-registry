@@ -2,6 +2,73 @@ Grounded DI LLC
 
 # grounded-di-replay-certificate-registry
 
+## Deterministic Replay Through FastPath 6 Pro
+
+**5 September 2026**
+
+Grounded DI has completed a new deterministic replay experiment through **FastPath 6 Pro** under Protocol A / Tier 16.
+
+> **FastPath 6 Pro is the runtime through which this replay was executed. The present release is a deterministic replay result, not an engine announcement.**
+
+The result being announced is the replay itself: a sealed rule-execution workload produced the same explicit decision record across fresh executions, while a separate verifier independently re-derived the recorded calculations and detected deliberate reasoning-record corruption.
+
+### Replay Result
+
+**Experiment:** `GDI-RHR-T16-001`  
+**Runtime:** **FastPath 6 Pro**  
+**Governance:** Protocol A  
+**Tier:** 16  
+**Replay classification:** `BYTE-IDENTICAL`  
+**Scope:** Fresh local rule-engine replay
+
+Observed results:
+
+- **40 / 40 fixture tests passed in each fresh run**
+- **2 / 2 separate local-verifier baseline checks passed**
+- **9 / 9 adversarial challenge cases were detected**
+- the complete explicit reasoning record matched byte-for-byte across both fresh executions
+- the final result record matched byte-for-byte
+- the deterministic run archives matched byte-for-byte
+
+Each run contained 20 controls that passed and 20 controls that failed according to the intentionally paired positive and negative fixtures. A correctly rejected negative fixture therefore passes its test; it does not become an authorized control state.
+
+### Why the Reasoning-Record Replay Matters
+
+The experiment did not merely compare final answers.
+
+It preserved an explicit decision record linking:
+
+```text
+source inputs
+-> governing rule
+-> evaluated calculation
+-> branch
+-> state transition
+-> final result
+```
+
+The reasoning record is an explicit serialized decision record produced by the rule evaluator. Its hash is not a hash of private model chain-of-thought.
+
+### Byte Identity and Source-Based Recalculation
+
+The two fresh runs matched byte-for-byte:
+
+- **Reasoning-record SHA-256 (both runs):** `b8ce2f7b0e50686b077c1b7d09d3bc71317206c17592a4eddf97cb57c8d92bec`
+- **Complete run-ZIP SHA-256 (both runs):** `406e275f364b7e610a48c362de01e8c1131d0c8e5417ebc662559ffa06edeec2`
+
+A simple tamper demonstration changed a recorded derivative from `12/13` to `11/13` while leaving the trusted operands, governing rule, final `EXPORT_DENIED` decision, and `result.json` unchanged. Candidate-local hashes and audit packaging were rebuilt. The separate verifier rejected the altered derivation through source-based recalculation; the observed verifier error included `DERIVATION_ARITHMETIC`.
+
+This demonstrates two related properties:
+
+- byte identity of the explicit replay record and run archives under the stated execution conditions; and
+- rejection of an altered derivation when the verifier recalculates from the supplied source operands and governing rule.
+
+Byte identity does not establish factual correctness. The reasoning hash refers to the explicit serialized evaluator decision record, not private model chain-of-thought.
+
+### Public Scope and Limitations
+
+This is a fresh local replay of a sealed implementation under materially controlled execution conditions. The public claim is replay and auditability only. No external independent verification is claimed. The experiment does not claim universal determinism, a new FastPath 6 Pro product release, or factual correctness merely from matching hashes.
+
 This repository preserves the master-certificate intake records for ten demonstrations across legal analysis, exact mathematics, deterministic routing, configurable decision systems, and byte-identical artifact generation.
 
 The repository is designed to distinguish:
