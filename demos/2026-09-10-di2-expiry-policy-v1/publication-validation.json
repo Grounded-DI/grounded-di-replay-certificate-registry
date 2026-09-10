@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "zip_extraction_and_checksums": "PASS",
+  "clean_git_clone_acceptance": {
+    "status": "PASS",
+    "verification": {
+      "status": "PASS",
+      "replay_sha256": "08f6750447a0f923d1b175a436f9ef03f98d0b50b755b52e276aed05bb410fe8",
+      "canonical_bytes_identical": true,
+      "fresh_process_execution": true,
+      "reference_comparison": "PASS",
+      "saved_exports": "PASS",
+      "real_clock_historical_replay": "PASS",
+      "case_count": 25
+    },
+    "expected_case_checks": 25,
+    "extra_boundary_checks": 10,
+    "negative_controls": [
+      {
+        "test": "report",
+        "rejected": true,
+        "reason": "FRESH_RUN_FAILED:{\"status\": \"FAIL\", \"reason\": \"APPROVAL_FAILED:valid\"}"
+      },
+      {
+        "test": "expiry_evidence",
+        "rejected": true,
+        "reason": "REPLAY_IDENTITY_MISMATCH"
+      },
+      {
+        "test": "same_version_policy",
+        "rejected": true,
+        "reason": "REPLAY_IDENTITY_MISMATCH"
+      },
+      {
+        "test": "saved_export",
+        "rejected": true,
+        "reason": "SAVED_EXPORT_MISMATCH"
+      },
+      {
+        "test": "saved_decision",
+        "rejected": true,
+        "reason": "SAVED_RESULTS_MISMATCH"
+      },
+      {
+        "test": "source_binding",
+        "rejected": true,
+        "reason": "REPLAY_IDENTITY_MISMATCH"
+      }
+    ],
+    "new_real_clock_test": {
+      "clock": "OS wall clock via time.time_ns; Unix milliseconds",
+      "wait_clock": "time.monotonic_ns",
+      "wait_elapsed_ns": 259706375,
+      "approval": {
+        "decision": "ALLOW",
+        "reason": "AUTHORIZED"
+      },
+      "execution": {
+        "decision": "DENY",
+        "reason": "EXPIRED",
+        "execution_time": 1789054398175,
+        "write_open_attempts": 0,
+        "files": {}
+      }
+    },
+    "original_unchanged": true,
+    "original_reverification": "PASS"
+  },
+  "source_and_zip_replay_identity": "08f6750447a0f923d1b175a436f9ef03f98d0b50b755b52e276aed05bb410fe8",
+  "privacy_review": "Synthetic files and authored source only; no credential or private-path patterns found.",
+  "certificate_paths": "Standalone certificate paths are relative to source/ or the extracted ZIP folder."
+}

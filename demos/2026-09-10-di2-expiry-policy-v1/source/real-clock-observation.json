@@ -1,0 +1,1 @@
+{"approval":{"decision":"ALLOW","reason":"AUTHORIZED"},"clock":"OS wall clock via time.time_ns; Unix milliseconds","execution":{"decision":"DENY","execution_time":1789054235245,"files":{},"reason":"EXPIRED","write_open_attempts":0},"wait_clock":"time.monotonic_ns","wait_elapsed_ns":259918167}

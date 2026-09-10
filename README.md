@@ -2,6 +2,10 @@ Grounded DI LLC
 
 # grounded-di-replay-certificate-registry
 
+## New record — Authorization expiry and policy changes (10 September 2026)
+
+[DI² Expiry and Policy Replay v1](demos/2026-09-10-di2-expiry-policy-v1/README.md) tests approval expiry, the exact expiry boundary, changed policy content even with an unchanged version, and missing or malformed evidence. Includes browsable source, a separately implemented reference evaluator, ZIP, checksums, and unsigned local certificate. **25 recorded cases, 10 additional boundary checks, six negative controls, and bounded real-clock expiry passed locally.** Grounded DI OS supplied the proposal; the separate Python harness enforced its own export boundary. External independent verification remains unverified.
+
 ## Latest record — 10 September 2026
 
 [DI² Replayable Authorization Demo](demos/2026-09-10-di2-authorization/README.md): an authorized synthetic export succeeds, a changed destination is rejected before writing, and fresh-process replay reproduces the decision. Includes the ZIP, checksum, runnable harness, and unsigned local certificate. Grounded DI OS generated the proposal; the separate Python harness enforced execution. **Status: LOCAL_TESTS_PASSED.**

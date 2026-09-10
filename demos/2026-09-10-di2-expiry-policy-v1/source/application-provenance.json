@@ -1,0 +1,24 @@
+{
+  "application": "Grounded DI OS Prompt 48",
+  "application_run_id": null,
+  "assistant_mode": "Grounded DI Assistant",
+  "authorization_origin": "Synthetic operator record created under user-authorized demo, not authenticated organization approval.",
+  "capture": "Transcribed rendered JSON from native accessibility text and screenshots. Provider-original byte formatting is not attested.",
+  "date": "2026-09-10",
+  "execution": "Separate local Python harness. No change to installed app or ShieldBot.",
+  "external_independent_verification": "UNVERIFIED",
+  "first_attempt": {
+    "message": "Unable to complete this request. The matter request is invalid.",
+    "recovery": "Shorter JSON-only proposal request specifying no tools or matter updates succeeded. Root cause not established.",
+    "status": "FAILED"
+  },
+  "identifier_status": "Not exposed in observed UI; not invented",
+  "interaction": "Computer Use in signed-in Chrome at localhost port 3168",
+  "model_id": null,
+  "native_execution_gate": "NOT_DEMONSTRATED",
+  "persistence": "Server acknowledged response record; Reload saved conversation recovered successful response and retained earlier failure.",
+  "project": "DI2 Expiry and Policy Replay v1",
+  "provider_response_id": null,
+  "response": "assistant-response.txt",
+  "successful_prompt": "submitted-prompt.txt"
+}

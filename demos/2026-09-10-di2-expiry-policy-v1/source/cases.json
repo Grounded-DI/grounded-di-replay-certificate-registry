@@ -1,0 +1,1777 @@
+[
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "valid"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000001001
+    },
+    "id": "expired"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000001000
+    },
+    "id": "expiry_boundary"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v2"
+      },
+      "time": 2000000000500
+    },
+    "id": "policy_version_changed"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 2048,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "policy_content_changed_same_version"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "missing_authorization"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": null,
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "null_authorization"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": "invalid",
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "malformed_authorization"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "time": 2000000000500
+    },
+    "id": "missing_policy"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": null,
+      "time": 2000000000500
+    },
+    "id": "null_policy"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": "invalid",
+      "time": 2000000000500
+    },
+    "id": "malformed_policy"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      }
+    },
+    "id": "missing_time"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": null
+    },
+    "id": "null_time"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": "invalid"
+    },
+    "id": "malformed_time"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": true
+    },
+    "id": "boolean_time"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": true,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "boolean_expiry"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500.5
+    },
+    "id": "float_time"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 1999999999999,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "reversed_validity"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "policy_missing_field"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "unrecognized": "must reject",
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "policy_extra_field"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "authorization_missing_hash"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 1999999999999
+    },
+    "id": "before_issued"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "changed/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "destination_changed"
+  },
+  {
+    "approval": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000000
+    },
+    "execution": {
+      "action": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "authorization": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "expires_at": 2000000001000,
+        "issued_at": 2000000000000,
+        "policy_sha256": "bc17c2a802fd05e636992eeb5d264990c51a5ef1cab54e7555e9f612153a4fa4",
+        "report_sha256": "ad2903b43a3819fc7f75b7b93039024c605de275668e1aa4e170bdfb2ed8c504",
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        }
+      },
+      "policy": {
+        "action": "export_report",
+        "destination": "approved/report.txt",
+        "export_enabled": true,
+        "max_bytes": 4096,
+        "scope": "demo_directory",
+        "state": {
+          "classification": "synthetic",
+          "revision": 1
+        },
+        "version": "expiry-policy-v1"
+      },
+      "time": 2000000000500
+    },
+    "id": "valid_again"
+  }
+]

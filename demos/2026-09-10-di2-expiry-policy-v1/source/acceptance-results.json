@@ -1,0 +1,65 @@
+{
+  "expected_case_checks": 25,
+  "extra_boundary_checks": 10,
+  "negative_controls": [
+    {
+      "reason": "FRESH_RUN_FAILED:{\"status\": \"FAIL\", \"reason\": \"APPROVAL_FAILED:valid\"}",
+      "rejected": true,
+      "test": "report"
+    },
+    {
+      "reason": "REPLAY_IDENTITY_MISMATCH",
+      "rejected": true,
+      "test": "expiry_evidence"
+    },
+    {
+      "reason": "REPLAY_IDENTITY_MISMATCH",
+      "rejected": true,
+      "test": "same_version_policy"
+    },
+    {
+      "reason": "SAVED_EXPORT_MISMATCH",
+      "rejected": true,
+      "test": "saved_export"
+    },
+    {
+      "reason": "SAVED_RESULTS_MISMATCH",
+      "rejected": true,
+      "test": "saved_decision"
+    },
+    {
+      "reason": "REPLAY_IDENTITY_MISMATCH",
+      "rejected": true,
+      "test": "source_binding"
+    }
+  ],
+  "new_real_clock_test": {
+    "approval": {
+      "decision": "ALLOW",
+      "reason": "AUTHORIZED"
+    },
+    "clock": "OS wall clock via time.time_ns; Unix milliseconds",
+    "execution": {
+      "decision": "DENY",
+      "execution_time": 1789054236213,
+      "files": {},
+      "reason": "EXPIRED",
+      "write_open_attempts": 0
+    },
+    "wait_clock": "time.monotonic_ns",
+    "wait_elapsed_ns": 253156750
+  },
+  "original_reverification": "PASS",
+  "original_unchanged": true,
+  "status": "PASS",
+  "verification": {
+    "canonical_bytes_identical": true,
+    "case_count": 25,
+    "fresh_process_execution": true,
+    "real_clock_historical_replay": "PASS",
+    "reference_comparison": "PASS",
+    "replay_sha256": "08f6750447a0f923d1b175a436f9ef03f98d0b50b755b52e276aed05bb410fe8",
+    "saved_exports": "PASS",
+    "status": "PASS"
+  }
+}

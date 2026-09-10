@@ -1,0 +1,32 @@
+[
+  {
+    "reason": "FRESH_RUN_FAILED:{\"status\": \"FAIL\", \"reason\": \"APPROVAL_FAILED:valid\"}",
+    "rejected": true,
+    "test": "report"
+  },
+  {
+    "reason": "REPLAY_IDENTITY_MISMATCH",
+    "rejected": true,
+    "test": "expiry_evidence"
+  },
+  {
+    "reason": "REPLAY_IDENTITY_MISMATCH",
+    "rejected": true,
+    "test": "same_version_policy"
+  },
+  {
+    "reason": "SAVED_EXPORT_MISMATCH",
+    "rejected": true,
+    "test": "saved_export"
+  },
+  {
+    "reason": "SAVED_RESULTS_MISMATCH",
+    "rejected": true,
+    "test": "saved_decision"
+  },
+  {
+    "reason": "REPLAY_IDENTITY_MISMATCH",
+    "rejected": true,
+    "test": "source_binding"
+  }
+]
