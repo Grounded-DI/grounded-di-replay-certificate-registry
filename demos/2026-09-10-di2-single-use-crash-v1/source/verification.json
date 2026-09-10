@@ -1,0 +1,7 @@
+{
+  "canonical_bytes_identical": true,
+  "method": "Separate reference transition checker; no gate or worker imports. Shared codec primitives. Recorded order replay, not scheduler regeneration.",
+  "replay_sha256": "c02ff6c5802c398b4a20a75c48a05ad11a32c766fd507bc2f16e16befb3351c8",
+  "scenario_count": 14,
+  "status": "PASS"
+}

@@ -1,0 +1,17 @@
+{
+  "application": "Grounded DI OS Prompt 48",
+  "application_run_id": null,
+  "capture": "Rendered JSON transcribed from native accessibility text and screenshot. Provider-original byte formatting not attested.",
+  "date": "2026-09-10",
+  "execution_boundary": "All actual gate execution, SQLite persistence, competing processes and crash injection used the separate local Python harness. Installed applications were not modified.",
+  "external_independent_verification": "UNVERIFIED",
+  "identifier_status": "Not exposed in observed UI; not invented",
+  "interaction": "Computer Use in signed-in Chrome, localhost port 3168",
+  "model_id": null,
+  "persistence": "Server acknowledged response record. Reload saved conversation recovered the proposal.",
+  "project": "DI2 Single-Use and Crash Recovery v1",
+  "prompt": "submitted-prompt.txt",
+  "provider_response_id": null,
+  "response": "assistant-response.txt",
+  "response_execution_status": "not_executed"
+}

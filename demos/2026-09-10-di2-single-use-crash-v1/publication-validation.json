@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "zip_extraction_and_checksums": "PASS",
+  "clean_local_git_clone_acceptance": {
+    "status": "PASS",
+    "saved_history_verification": {
+      "status": "PASS",
+      "replay_sha256": "c02ff6c5802c398b4a20a75c48a05ad11a32c766fd507bc2f16e16befb3351c8",
+      "canonical_bytes_identical": true,
+      "scenario_count": 14,
+      "method": "Separate reference transition checker; no gate or worker imports. Shared codec primitives. Recorded order replay, not scheduler regeneration."
+    },
+    "negative_controls": [
+      {
+        "test": "artifact",
+        "rejected": true,
+        "exact_reason": "EXPORT_BYTES_MISMATCH"
+      },
+      {
+        "test": "invented_completion",
+        "rejected": true,
+        "exact_reason": "INVALID_COMPLETION"
+      },
+      {
+        "test": "duplicate_reservation",
+        "rejected": true,
+        "exact_reason": "INVALID_RESERVATION"
+      },
+      {
+        "test": "missing_worker",
+        "rejected": true,
+        "exact_reason": "UNACCOUNTED_EVENT_WORKER"
+      },
+      {
+        "test": "missing_case",
+        "rejected": true,
+        "exact_reason": "MISSING_SCENARIO"
+      },
+      {
+        "test": "altered_clock",
+        "rejected": true,
+        "exact_reason": "REQUEST_EVENT_BINDING"
+      }
+    ],
+    "fresh_experiment": {
+      "status": "PASS",
+      "scenario_count": 14,
+      "competing_processes": 20,
+      "sigkill_cases": 3,
+      "baseline_unchanged": true,
+      "execution_boundary": "isolated local harness, cooperative processes",
+      "outcomes": {
+        "baseline_and_reuse": [
+          "COMPLETED",
+          "ALREADY_COMPLETED"
+        ],
+        "twenty_processes": [
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED"
+        ],
+        "two_authorizations": [
+          "COMPLETED",
+          "COMPLETED"
+        ],
+        "changed_content": [
+          "REFUSED"
+        ],
+        "changed_destination": [
+          "REFUSED"
+        ],
+        "expired": [
+          "REFUSED"
+        ],
+        "changed_policy": [
+          "REFUSED"
+        ],
+        "missing_store": [
+          "REFUSED"
+        ],
+        "malformed_schema": [
+          "REFUSED"
+        ],
+        "corrupted_store": [
+          "REFUSED"
+        ],
+        "missing_authorization_row": [
+          "REFUSED"
+        ],
+        "crash_after_reservation": [
+          "SIGKILL_NO_ACK",
+          "UNCERTAIN",
+          "REFUSED"
+        ],
+        "crash_after_file": [
+          "SIGKILL_NO_ACK",
+          "UNCERTAIN",
+          "REFUSED"
+        ],
+        "crash_after_completion": [
+          "SIGKILL_NO_ACK",
+          "ALREADY_COMPLETED",
+          "ALREADY_COMPLETED"
+        ]
+      }
+    },
+    "fresh_experiment_reference_check": "PASS",
+    "scheduling_byte_identity": "NOT_REQUIRED: a new run may have different process IDs, winner and event order",
+    "original_unchanged": true,
+    "original_reverification": "PASS"
+  },
+  "privacy_scan": "Synthetic report, authored source and demo-only process/state evidence; no credential or private-path patterns found.",
+  "certificate_path_base": "source/ or extracted ZIP directory"
+}

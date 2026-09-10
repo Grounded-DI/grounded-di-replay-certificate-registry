@@ -2,6 +2,10 @@ Grounded DI LLC
 
 # grounded-di-replay-certificate-registry
 
+## New record — Single-use authorization and crash recovery (10 September 2026)
+
+[DI² Single-Use and Crash Recovery v1](demos/2026-09-10-di2-single-use-crash-v1/README.md): 20 competing processes produced one completed export and 19 duplicate acknowledgments. Three actual process-kill tests preserved uncertainty before completion or acknowledged an already completed export without writing again. **14 scenarios and six altered-copy controls passed locally**, with browsable source, a separate history checker, ZIP, checksum, and unsigned certificate. This demonstrates a cooperative local harness, not exactly-once completion or installed-app enforcement.
+
 ## New record — Authorization expiry and policy changes (10 September 2026)
 
 [DI² Expiry and Policy Replay v1](demos/2026-09-10-di2-expiry-policy-v1/README.md) tests approval expiry, the exact expiry boundary, changed policy content even with an unchanged version, and missing or malformed evidence. Includes browsable source, a separately implemented reference evaluator, ZIP, checksums, and unsigned local certificate. **25 recorded cases, 10 additional boundary checks, six negative controls, and bounded real-clock expiry passed locally.** Grounded DI OS supplied the proposal; the separate Python harness enforced its own export boundary. External independent verification remains unverified.

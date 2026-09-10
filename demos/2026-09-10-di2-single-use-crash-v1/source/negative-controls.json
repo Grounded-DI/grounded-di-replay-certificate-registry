@@ -1,0 +1,32 @@
+[
+  {
+    "exact_reason": "EXPORT_BYTES_MISMATCH",
+    "rejected": true,
+    "test": "artifact"
+  },
+  {
+    "exact_reason": "INVALID_COMPLETION",
+    "rejected": true,
+    "test": "invented_completion"
+  },
+  {
+    "exact_reason": "INVALID_RESERVATION",
+    "rejected": true,
+    "test": "duplicate_reservation"
+  },
+  {
+    "exact_reason": "UNACCOUNTED_EVENT_WORKER",
+    "rejected": true,
+    "test": "missing_worker"
+  },
+  {
+    "exact_reason": "MISSING_SCENARIO",
+    "rejected": true,
+    "test": "missing_case"
+  },
+  {
+    "exact_reason": "REQUEST_EVENT_BINDING",
+    "rejected": true,
+    "test": "altered_clock"
+  }
+]

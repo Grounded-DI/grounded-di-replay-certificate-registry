@@ -1,0 +1,125 @@
+{
+  "fresh_experiment": {
+    "baseline_unchanged": true,
+    "competing_processes": 20,
+    "execution_boundary": "isolated local harness, cooperative processes",
+    "outcomes": {
+      "baseline_and_reuse": [
+        "COMPLETED",
+        "ALREADY_COMPLETED"
+      ],
+      "changed_content": [
+        "REFUSED"
+      ],
+      "changed_destination": [
+        "REFUSED"
+      ],
+      "changed_policy": [
+        "REFUSED"
+      ],
+      "corrupted_store": [
+        "REFUSED"
+      ],
+      "crash_after_completion": [
+        "SIGKILL_NO_ACK",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED"
+      ],
+      "crash_after_file": [
+        "SIGKILL_NO_ACK",
+        "UNCERTAIN",
+        "REFUSED"
+      ],
+      "crash_after_reservation": [
+        "SIGKILL_NO_ACK",
+        "UNCERTAIN",
+        "REFUSED"
+      ],
+      "expired": [
+        "REFUSED"
+      ],
+      "malformed_schema": [
+        "REFUSED"
+      ],
+      "missing_authorization_row": [
+        "REFUSED"
+      ],
+      "missing_store": [
+        "REFUSED"
+      ],
+      "twenty_processes": [
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED",
+        "ALREADY_COMPLETED"
+      ],
+      "two_authorizations": [
+        "COMPLETED",
+        "COMPLETED"
+      ]
+    },
+    "scenario_count": 14,
+    "sigkill_cases": 3,
+    "status": "PASS"
+  },
+  "fresh_experiment_reference_check": "PASS",
+  "negative_controls": [
+    {
+      "exact_reason": "EXPORT_BYTES_MISMATCH",
+      "rejected": true,
+      "test": "artifact"
+    },
+    {
+      "exact_reason": "INVALID_COMPLETION",
+      "rejected": true,
+      "test": "invented_completion"
+    },
+    {
+      "exact_reason": "INVALID_RESERVATION",
+      "rejected": true,
+      "test": "duplicate_reservation"
+    },
+    {
+      "exact_reason": "UNACCOUNTED_EVENT_WORKER",
+      "rejected": true,
+      "test": "missing_worker"
+    },
+    {
+      "exact_reason": "MISSING_SCENARIO",
+      "rejected": true,
+      "test": "missing_case"
+    },
+    {
+      "exact_reason": "REQUEST_EVENT_BINDING",
+      "rejected": true,
+      "test": "altered_clock"
+    }
+  ],
+  "original_reverification": "PASS",
+  "original_unchanged": true,
+  "saved_history_verification": {
+    "canonical_bytes_identical": true,
+    "method": "Separate reference transition checker; no gate or worker imports. Shared codec primitives. Recorded order replay, not scheduler regeneration.",
+    "replay_sha256": "c02ff6c5802c398b4a20a75c48a05ad11a32c766fd507bc2f16e16befb3351c8",
+    "scenario_count": 14,
+    "status": "PASS"
+  },
+  "scheduling_byte_identity": "NOT_REQUIRED: a new run may have different process IDs, winner and event order",
+  "status": "PASS"
+}
