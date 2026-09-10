@@ -2,6 +2,10 @@ Grounded DI LLC
 
 # grounded-di-replay-certificate-registry
 
+## Latest record — 10 September 2026
+
+[DI² Replayable Authorization Demo](demos/2026-09-10-di2-authorization/README.md): an authorized synthetic export succeeds, a changed destination is rejected before writing, and fresh-process replay reproduces the decision. Includes the ZIP, checksum, runnable harness, and unsigned local certificate. Grounded DI OS generated the proposal; the separate Python harness enforced execution. **Status: LOCAL_TESTS_PASSED.**
+
 ## Deterministic Replay Through FastPath 6 Pro
 
 **5 September 2026**
