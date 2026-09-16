@@ -1,345 +1,229 @@
-Grounded DI LLC
+# Grounded DI Replay Certificate Registry
 
-# grounded-di-replay-certificate-registry
+A public technical-evidence registry for replayable decisions, rule-gated authorization, artifact identity, and audit-ready execution records.
 
-## New record — Single-use authorization and crash recovery (10 September 2026)
+**Published by Grounded DI LLC · Creator / Operator: Mark S. Weinstein · Public repository established July 23, 2026**
 
-[DI² Single-Use and Crash Recovery v1](demos/2026-09-10-di2-single-use-crash-v1/README.md): 20 competing processes produced one completed export and 19 duplicate acknowledgments. Three actual process-kill tests preserved uncertainty before completion or acknowledged an already completed export without writing again. **14 scenarios and six altered-copy controls passed locally**, with browsable source, a separate history checker, ZIP, checksum, and unsigned certificate. This demonstrates a cooperative local harness, not exactly-once completion or installed-app enforcement.
+## Overview
 
-## New record — Authorization expiry and policy changes (10 September 2026)
+This repository preserves runnable demonstrations, certificate intake records, verification artifacts, and cryptographic manifests from Grounded DI work across legal analysis, exact mathematics, environmental routing, aviation, weather, logistics, and controlled file export.
 
-[DI² Expiry and Policy Replay v1](demos/2026-09-10-di2-expiry-policy-v1/README.md) tests approval expiry, the exact expiry boundary, changed policy content even with an unchanged version, and missing or malformed evidence. Includes browsable source, a separately implemented reference evaluator, ZIP, checksums, and unsigned local certificate. **25 recorded cases, 10 additional boundary checks, six negative controls, and bounded real-clock expiry passed locally.** Grounded DI OS supplied the proposal; the separate Python harness enforced its own export boundary. External independent verification remains unverified.
+The central design goal is to make an execution inspectable: bind the inputs and governing policy, evaluate explicit rules, record the resulting state, preserve the output and audit history, and verify the record through replay or source-based recalculation. In this repository, *deterministic* refers to rule-governed or reproducible behavior under the stated inputs, code, environment, and serialization conditions. It is not a claim that every underlying proposition is universally correct.
 
-## Latest record — 10 September 2026
+The registry includes three runnable Python demonstrations and ten numbered evidence records. It also preserves later replay records for BriefWise DI² and a sealed FastPath rule-execution workload.
 
-[DI² Replayable Authorization Demo](demos/2026-09-10-di2-authorization/README.md): an authorized synthetic export succeeds, a changed destination is rejected before writing, and fresh-process replay reproduces the decision. Includes the ZIP, checksum, runnable harness, and unsigned local certificate. Grounded DI OS generated the proposal; the separate Python harness enforced execution. **Status: LOCAL_TESTS_PASSED.**
+> **Repository scope:** The public evidence supports the result stated by each record—such as byte identity, fresh local replay, boundary enforcement, or exact arithmetic. Broader conclusions are not inferred from hashes alone. Certificates in the runnable demonstrations are local, unsigned project records.
 
-## Deterministic Replay Through FastPath 6 Pro
+## Why It Matters
 
-**5 September 2026**
+Outputs alone do not show which inputs were authorized, which policy controlled execution, why a state changed, whether a release boundary was enforced, or whether the evidence can be replayed. This registry makes those questions reviewable through structured records, explicit state transitions, negative controls, manifests, checksums, and executable verification where supplied.
 
-Grounded DI has completed a new deterministic replay experiment through **FastPath 6 Pro** under Protocol A / Tier 16.
+## Evaluation Value
 
-> **FastPath 6 Pro is the runtime through which this replay was executed. The present release is a deterministic replay result, not an engine announcement.**
+Technical and commercial reviewers can use this repository to evaluate Grounded DI's approach to:
 
-The result being announced is the replay itself: a sealed rule-execution workload produced the same explicit decision record across fresh executions, while a separate verifier independently re-derived the recorded calculations and detected deliberate reasoning-record corruption.
+- binding an action to exact content, destination, policy, scope, and validity conditions;
+- blocking execution when a required condition changes or evidence is malformed;
+- replaying a recorded decision in a fresh process;
+- separating artifact identity from fresh-generation provenance;
+- preserving uncertainty after an interrupted write rather than silently resetting state; and
+- packaging inputs, decisions, outputs, history, and integrity data for audit.
 
-### Replay Result
+These public demonstrations provide a concrete starting point for a scoped proof of concept without requiring disclosure of private runtime materials.
 
-**Experiment:** `GDI-RHR-T16-001`  
-**Runtime:** **FastPath 6 Pro**  
-**Governance:** Protocol A  
-**Tier:** 16  
-**Replay classification:** `BYTE-IDENTICAL`  
-**Scope:** Fresh local rule-engine replay
+## Key Results
 
-Observed results:
+| Record | Implemented result | Evidence available |
+| --- | --- | --- |
+| [Replayable Authorization](demos/2026-09-10-di2-authorization/README.md) | Exact authorization permits a synthetic export; a changed destination is denied before a file-open attempt. Fresh-process replay reproduces the canonical decision record. | Runnable Python package, three negative controls, ZIP checksum, replay identity, unsigned local certificate |
+| [Expiry and Policy Replay](demos/2026-09-10-di2-expiry-policy-v1/README.md) | Enforces `issued_at <= execution_time < expires_at`, binds the complete policy object, and rejects same-version policy changes, malformed evidence, and altered artifacts. | Browsable source, 25 recorded cases, 10 boundary checks, six negative controls, reference evaluator, ZIP and manifests |
+| [Single-Use and Crash Recovery](demos/2026-09-10-di2-single-use-crash-v1/README.md) | Implements `UNUSED -> RESERVED -> COMPLETED` or `RESERVED -> UNCERTAIN`; 20 competing processes produce one completed export and 19 completed-state acknowledgments. | Browsable source, 14 scenarios, three process-kill cases, six negative controls, separate history checker, ZIP and manifests |
+| [BriefWise Fresh Local Replay](BriefWise_DI2_GitHub_Post.md) | Preserves a public replay package and checksum for a legal-workflow record. | Post, public ZIP, SHA-256 checksum, and visual replay evidence |
+| FastPath rule-execution replay | Two fresh executions produced byte-identical explicit decision records and run archives; a source-based verifier rejected a deliberately altered derivation. | Public result description and [`FastPath_5_6_Instant_Day_One_Canonical_Replay_Certificate.pdf`](FastPath_5_6_Instant_Day_One_Canonical_Replay_Certificate.pdf) |
 
-- **40 / 40 fixture tests passed in each fresh run**
-- **2 / 2 separate local-verifier baseline checks passed**
-- **9 / 9 adversarial challenge cases were detected**
-- the complete explicit reasoning record matched byte-for-byte across both fresh executions
-- the final result record matched byte-for-byte
-- the deterministic run archives matched byte-for-byte
+## Technical Highlights
 
-Each run contained 20 controls that passed and 20 controls that failed according to the intentionally paired positive and negative fixtures. A correctly rejected negative fixture therefore passes its test; it does not become an authorized control state.
+### Authorization-bound execution
 
-### Why the Reasoning-Record Replay Matters
+The runnable harnesses bind the proposed action to declared evidence before export. Depending on the demonstration, the bound record includes the report hash, action, destination, full policy hash, scope, state, authorization identifier, and validity interval. A mismatch routes to denial or refusal rather than an attempted write.
 
-The experiment did not merely compare final answers.
+### Canonical records and replay identity
 
-It preserved an explicit decision record linking:
+The authorization series uses `DI2-ASCII-JSON-LF-1`, a documented restricted JSON serialization format with sorted object keys, compact separators, ASCII escaping, and one final line feed. It is expressly not presented as full JSON Canonicalization Scheme compliance. SHA-256 binds the canonical replay record and identified evidence.
+
+### Independent logic paths within the project
+
+The expiry demo includes a separately implemented reference evaluator. The crash-recovery demo includes a separate transition-history checker. They do not import the primary decision logic, although they share specified serialization utilities or were authored against the same project specification. Their agreement is a useful internal cross-check, not external independent verification.
+
+### Conservative crash state
+
+The single-use demo durably reserves an authorization before export. If interruption occurs after reservation but before verified completion, the state becomes `UNCERTAIN` and does not return to `UNUSED`. The documented property is at most one export-creation attempt per authorization within the cooperative local store, with possible noncompletion or uncertainty—not exactly-once delivery or system-wide enforcement.
+
+### Evidence-aware claims
+
+The numbered intake records distinguish computation from packaging, identical bytes from independent generation, local replay from external review, and corrected releases from erased history. This separation is a core feature of the registry rather than a limitation added after the fact.
+
+## Architecture
 
 ```text
-source inputs
--> governing rule
--> evaluated calculation
--> branch
--> state transition
--> final result
+Authorized input and policy
+  -> canonical evidence record
+  -> rule and validation gates
+  -> decision or execution state
+  -> controlled output boundary
+  -> audit history and receipt
+  -> replay, recalculation, and hash verification
 ```
 
-The reasoning record is an explicit serialized decision record produced by the rule evaluator. Its hash is not a hash of private model chain-of-thought.
-
-### Byte Identity and Source-Based Recalculation
-
-The two fresh runs matched byte-for-byte:
-
-- **Reasoning-record SHA-256 (both runs):** `b8ce2f7b0e50686b077c1b7d09d3bc71317206c17592a4eddf97cb57c8d92bec`
-- **Complete run-ZIP SHA-256 (both runs):** `406e275f364b7e610a48c362de01e8c1131d0c8e5417ebc662559ffa06edeec2`
-
-A simple tamper demonstration changed a recorded derivative from `12/13` to `11/13` while leaving the trusted operands, governing rule, final `EXPORT_DENIED` decision, and `result.json` unchanged. Candidate-local hashes and audit packaging were rebuilt. The separate verifier rejected the altered derivation through source-based recalculation; the observed verifier error included `DERIVATION_ARITHMETIC`.
-
-This demonstrates two related properties:
-
-- byte identity of the explicit replay record and run archives under the stated execution conditions; and
-- rejection of an altered derivation when the verifier recalculates from the supplied source operands and governing rule.
-
-Byte identity does not establish factual correctness. The reasoning hash refers to the explicit serialized evaluator decision record, not private model chain-of-thought.
-
-### Public Scope and Limitations
-
-This is a fresh local replay of a sealed implementation under materially controlled execution conditions. The public claim is replay and auditability only. No external independent verification is claimed. The experiment does not claim universal determinism, a new FastPath 6 Pro product release, or factual correctness merely from matching hashes.
-
-This repository preserves the master-certificate intake records for ten demonstrations across legal analysis, exact mathematics, deterministic routing, configurable decision systems, and byte-identical artifact generation.
-
-The repository is designed to distinguish:
-
-- computation from packaging;
-- artifact identity from execution provenance;
-- local replay from external verification;
-- synthetic demonstrations from real-world operational authorization;
-- corrected releases from erased history;
-- exact evidence from narrative claims.
-
-## Core Evidence Model
-
-Each demonstration is evaluated according to the evidence actually preserved.
-
-Depending on the demo, the record may include:
-
-- SHA-256 artifact hashes;
-- byte-for-byte archive comparisons;
-- canonical inputs;
-- normalized records;
-- configuration files;
-- decision or calculation outputs;
-- audit records;
-- manifests;
-- executable verifiers;
-- fresh local verifier runs;
-- exact arithmetic checks;
-- configuration-binding probes;
-- boundary-condition tests;
-- rule-order-independence tests;
-- stated limitations and non-claims.
-
-A matching ZIP hash establishes identical archive bytes. It does not, by itself, establish that two archives were independently generated. Fresh-generation provenance is therefore classified separately whenever the delivered files do not independently prove it.
-
-## Demo Registry
-
-### Demo 01 — VerdictBridge Five-Hash Replay
-
-A closed-world legal-analysis package containing:
-
-- canonical legal input;
-- normalized fact-and-law record;
-- gate matrix;
-- VerdictBridge assessment;
-- deterministic ZIP archive.
-
-Five corresponding hash fields matched across two runs. The archives were byte-identical, with zero replay divergence, zero record mismatches, and no failed gates.
-
-**Status:** FULL PASS  
-**Runtime:** VERDICT_READY
-
-### Demo 02 — Global Multirow Coercivity
-
-A mathematical certificate package that preserved an initial reproducibility rejection, repaired a packaging-only defect, and completed a clean-room mathematical replay.
-
-The corrected release preserved the immutable mathematical artifacts while adding the materials required for self-contained reproduction.
-
-**Status:** FULL PASS / ACCEPT AFTER DOCUMENTED REPAIR
-
-### Demo 03 — Replayable Damages Mini Demo
-
-A deterministic damages-calculation package with:
-
-- fixed economic-damages inputs;
-- comparative-fault arithmetic;
-- fixed noneconomic demonstration ranges;
-- calculation output;
-- assessment;
-- manifest;
-- deterministic ZIP archive.
-
-Two archives and all internal artifact hashes matched exactly.
-
-**Status:** FULL PASS  
-**Scope:** Demonstration only; not a case-value prediction.
-
-### Demo 04 — JoyWise Afterglow Gift Capsule
-
-A minimal text-replay demonstration establishing exact identity across two JoyWise output artifacts.
-
-The replay preserved UTF-8 encoding, LF line endings, final-newline presence, canonical content, and the complete output hash.
-
-**Status:** FULL PASS
-
-### Demo 05 — Erdős 124 Fixed Certificate
-
-A fixed-case mathematical proof package for:
-
-`D = {3,4,7}, k = 1`
-
-Supporting:
-
-`[582, infinity) ⊆ A₁({3,4,7})`
-
-The package includes a replayable Weighted Gap Certificate and a fresh successful local verifier execution covering 3,119,493 residue-admissible systems.
-
-**Status:** FULL PASS — FRESH LOCAL REPLAY  
-**External status:** Review-ready; not claimed as externally verified.
-
-### Demo 06 — Erdős 390 Thirteen-Layer Lower-Bound Certificate
-
-An exact rational certificate supporting the partial theorem:
-
-`liminf (((f(n) - 2n) log n) / n) ≥ 4029639598 / 25970038185`
-
-The verifier checked thirteen obstruction-prime layers, exact primal and dual data, 104 dual inequalities, nine tight capacity constraints, and exact primal-dual equality without floating-point proof arithmetic.
-
-**Status:** FULL PASS — FRESH LOCAL REPLAY  
-**External status:** Expert-review candidate.
-
-### Demo 07 — CleanWaterWise Deterministic Routing
-
-Seven synthetic water-quality records were evaluated under disclosed rules and routed to:
-
-- PASS;
-- REVIEW;
-- HALT.
-
-The delivered archives were byte-identical, and the verifier reproduced all record-level decisions.
-
-**Status:** PASS  
-**Fresh-generation provenance:** UNVERIFIED
-
-### Demo 08 — FlightGate Configuration-Driven Replay
-
-Ten synthetic mission records were evaluated under a disclosed FLY / NO_FLY configuration.
-
-The demonstration includes:
-
-- exact boundary handling;
-- missing-field fail-closed behavior;
-- configuration validation;
-- five-blocker reporting;
-- within-prompt replay;
-- cross-prompt artifact identity.
-
-Four delivered ZIP archives were byte-identical.
-
-**Status:** PASS  
-**Fresh-generation provenance:** UNVERIFIED
-
-### Demo 09 — StormWise Repeatable Tornado-Index Math
-
-Ten synthetic atmospheric records were evaluated under a disclosed weighted formula and exact classification thresholds.
-
-The package demonstrates:
-
-- exact rational recomputation;
-- formula binding;
-- classification binding;
-- exact-boundary behavior;
-- audit-linked calculations;
-- fresh verifier execution;
-- byte-identical replay.
-
-The synthetic TOR_INDEX is not a recognized meteorological forecast or public-safety product.
-
-**Status:** PASS  
-**Fresh-generation provenance:** UNVERIFIED
-
-### Demo 10 — ChainGate Shipment Release / Hold Replay
-
-Ten synthetic shipment records were evaluated under seven disclosed release rules.
-
-The package demonstrates:
-
-- exact decimal boundary behavior;
-- RELEASE / HOLD routing;
-- multiple-trigger reporting;
-- configuration binding;
-- rule-order-independent outcomes;
-- audit-linked decisions;
-- fresh verifier execution;
-- byte-identical deterministic replay.
-
-The package is a synthetic operational-rule demonstration and is not a logistics, regulatory, contractual, product-quality, or safety certification.
-
-**Status:** PASS  
-**Fresh-generation provenance:** UNVERIFIED
-
-## Status Vocabulary
-
-### FULL PASS
-
-The required artifacts, calculations, replay checks, and package-integrity conditions passed within the stated scope.
-
-### FRESH LOCAL REPLAY
-
-A supplied verifier or reconstruction process was executed again in a fresh local invocation and reproduced the required invariant result.
-
-### BYTE-IDENTICAL
-
-The compared files or archives contain exactly the same bytes.
-
-### EXTERNALLY VERIFIED
-
-This term is not used unless an independent reviewer separately executes and accepts the relevant verification process.
-
-### FRESH-GENERATION PROVENANCE: UNVERIFIED
-
-The delivered artifacts prove identity, but the files alone do not prove that each artifact arose from an independent fresh generation rather than copying or reuse.
-
-## What This Repository Demonstrates
-
-The repository demonstrates that AI-mediated and machine-executed workflows can be structured so that an auditor can inspect:
-
-1. the authorized input;
-2. the governing configuration or legal record;
-3. the transformation or calculation;
-4. the decision or assessment;
-5. the audit state;
-6. the package structure;
-7. the resulting artifact hashes;
-8. the limitations of the evidence.
-
-The objective is not merely to produce the same conclusion twice. The objective is to preserve a controlled chain from input through output and to state accurately what the available evidence proves.
-
-## What This Repository Does Not Claim
-
-Unless a specific record expressly says otherwise, this repository does not claim:
-
-- independent third-party verification;
-- real-world regulatory approval;
-- legal filing readiness;
-- operational flight authorization;
-- public-safety forecasting;
-- medical or environmental certification;
-- logistics release authority;
-- proof that matching archives were independently generated;
-- resolution of broader mathematical problems beyond the fixed stated scope.
+## How It Works
+
+1. **Bind the evidence.** Exact inputs, policy, scope, destination, and relevant code or configuration are recorded.
+2. **Evaluate declared rules.** The harness computes a result from explicit conditions and rejects missing, altered, expired, or malformed evidence.
+3. **Route the state.** The record captures an allowed, denied, held, reserved, completed, or uncertain outcome as applicable.
+4. **Control the boundary.** File output occurs only after the required authorization checks succeed.
+5. **Preserve the history.** Results, state transitions, hashes, receipts, and manifests create an inspectable record.
+6. **Verify again.** Fresh-process replay, a separate project checker, exact arithmetic, checksum validation, or byte comparison tests the stated invariant.
+
+## Numbered Demo Registry
+
+| No. | Demonstration | Repository-supported result | Recorded status |
+| ---: | --- | --- | --- |
+| 01 | VerdictBridge Five-Hash Replay | Five corresponding artifact-hash fields match across two legal-analysis runs; the packaged artifacts are byte-identical. | Full pass / `VERDICT_READY` |
+| 02 | Global Multirow Coercivity | Preserves the initial reproducibility rejection and a documented packaging-only repair while retaining the immutable mathematical artifacts. | Full pass after documented repair |
+| 03 | Replayable Damages Mini Demo | Reproduces fixed damages arithmetic and byte-identical archives under the stated synthetic inputs. | Full pass; demonstration, not case-value prediction |
+| 04 | JoyWise Afterglow | Establishes exact UTF-8 text identity, including line endings and final-newline state. | Full pass |
+| 05 | Erdős 124 Fixed Certificate | Fresh local verification for the fixed scope `D = {3,4,7}, k = 1`, covering 3,119,493 residue-admissible systems. | Full pass / fresh local replay; external review not recorded |
+| 06 | Erdős 390 Thirteen-Layer Lower Bound | Checks an exact rational partial lower-bound certificate with 13 layers, 104 dual inequalities, nine tight constraints, and exact primal-dual equality. | Full pass / fresh local replay; expert-review candidate |
+| 07 | CleanWaterWise | Routes seven synthetic water-quality records to `PASS`, `REVIEW`, or `HALT` under disclosed rules. | Pass; fresh-generation provenance unverified |
+| 08 | FlightGate | Applies disclosed `FLY` / `NO_FLY` rules to ten synthetic records, including exact boundaries and fail-closed missing fields. | Pass; fresh-generation provenance unverified |
+| 09 | StormWise | Recomputes a synthetic weighted tornado-index formula and threshold classifications using exact rational arithmetic. | Pass; fresh-generation provenance unverified |
+| 10 | ChainGate | Applies seven disclosed rules to ten synthetic shipment records with exact decimal boundaries and multi-trigger reporting. | Pass; fresh-generation provenance unverified |
+
+The detailed scope, identifiers, artifact hashes, and non-claims for each demonstration remain in the corresponding numbered intake record at the repository root.
 
 ## Repository Structure
 
 ```text
-/
-├── 01_VerdictBridge_Master_Certificate_Intake_Record.txt
-├── 02_Global_Multirow_Coercivity_Master_Certificate_Intake_Record.txt
-├── 03_Replayable_Damages_Mini_Demo_Master_Certificate_Intake_Record.txt
-├── 04_JoyWise_Afterglow_Master_Certificate_Intake_Record.txt
-├── 05_Erdos_124_Fixed_Certificate_Master_Certificate_Intake_Record.txt
-├── 06_Erdos_390_Thirteen_Layer_Lower_Bound_Master_Certificate_Intake_Record.txt
-├── 07_CleanWaterWise_Chill_Demo_Record.txt
-├── 08_FlightGate_Chill_Demo_Record.txt
-├── 09_StormWise_Chill_Demo_Record.txt
-├── 10_ChainGate_Chill_Demo_Record.txt
+.
+├── 01_... through 10_...                 # master-certificate intake records
+├── demos/
+│   ├── 2026-09-10-di2-authorization/     # packaged runnable harness
+│   ├── 2026-09-10-di2-expiry-policy-v1/  # browsable source and evidence
+│   └── 2026-09-10-di2-single-use-crash-v1/
+├── Verdictbridge_demo*/                  # corresponding run artifacts
+├── Global_Multirow_Coercivity_.../       # acceptance and integrity records
+├── BriefWise_DI2_...                     # replay post, ZIP, checksum, and PDF
+├── *Gate_Demo*.zip                       # packaged synthetic routing records
+├── FastPath_5_6_...pdf                   # replay certificate
+├── FixedCase_D347_...pdf                 # fixed-case mathematics record
 └── README.md
+```
 
-#AuditableAI @Grounded-DI
-#DeterministicIntelligence @Grounded-DI
+## Quick Start
 
+Clone the repository:
 
-___
+```bash
+git clone https://github.com/Grounded-DI/grounded-di-replay-certificate-registry.git
+cd grounded-di-replay-certificate-registry
+```
 
-## Public Filing Update — Deterministic Intelligence Non-Provisional Applications
+The browsable demonstrations require Python 3.9+ on macOS or a POSIX platform. They use only the Python standard library and make no network or model calls during verification.
 
-**Status as of 25 July 2026**
- 
-This public filing index summarizes 23 U.S. utility non-provisional patent applications directed to deterministic-intelligence systems, controlled-output architectures, replay verification, runtime authorization, and domain-specific implementation.
+Run the expiry and policy demonstration:
+
+```bash
+cd demos/2026-09-10-di2-expiry-policy-v1/source
+python3 -B verify.py
+python3 -B acceptance.py
+sha256sum -c SHA256SUMS.txt
+```
+
+Run the single-use and crash-recovery demonstration:
+
+```bash
+cd demos/2026-09-10-di2-single-use-crash-v1/source
+python3 -B verify.py
+python3 -B acceptance.py
+sha256sum -c SHA256SUMS.txt
+```
+
+The first authorization demo is distributed inside its ZIP:
+
+```bash
+cd demos/2026-09-10-di2-authorization
+sha256sum -c DI2_Replayable_Authorization_Demo_20260910_1110.zip.sha256.txt
+unzip DI2_Replayable_Authorization_Demo_20260910_1110.zip
+cd DI2_Replayable_Authorization_Demo_20260910_1110
+python3 -B verify.py
+python3 -B acceptance.py
+sha256sum -c SHA256SUMS.txt
+```
+
+On macOS, replace `sha256sum -c` with `shasum -a 256 -c`.
+
+## Validation and Testing
+
+| Evidence | Repository record | Executed during September 16, 2026 review |
+| --- | --- | --- |
+| Replayable Authorization | Fresh-process and fresh-file execution; destination mismatch denied before write; three altered-copy controls | `verify.py` and `acceptance.py` passed; replay SHA-256 `9192da71d870ddcdcb9dfddfc2b695a00365acf87910cee9b4047590d5ac4632` |
+| Expiry and Policy Replay | 25 recorded cases, 10 boundary checks, six altered-copy controls, reference comparison, bounded real-clock test | `verify.py` and `acceptance.py` passed; replay SHA-256 `08f6750447a0f923d1b175a436f9ef03f98d0b50b755b52e276aed05bb410fe8` |
+| Single-Use and Crash Recovery | 14 scenarios, 20-process contention, three process-kill cases, six altered-copy controls | `verify.py` and `acceptance.py` passed; replay SHA-256 `c02ff6c5802c398b4a20a75c48a05ad11a32c766fd507bc2f16e16befb3351c8` |
+| Python source | Three runnable packages | All Python files compiled successfully with `compileall` |
+| Published packages | 16 ZIP files across the registry | Every ZIP passed archive-integrity testing |
+| Published checksum manifests | Four package checksum files, two source manifests, and two mathematical attestation manifests | Every listed file passed SHA-256 verification |
+
+The concurrency acceptance run reproduced the required safety outcome, but its process identifiers, winning process, event order, and resulting identity may differ between runs. Replay identity applies to the same recorded history; it does not imply deterministic operating-system scheduling.
+
+## Example Use Cases
+
+### Demonstrated here
+
+- Exact action authorization tied to content, destination, policy, and scope.
+- Expiry and policy-change handling at a file-export boundary.
+- Single-use authorization with durable reservation and conservative crash recovery.
+- Replayable legal-workflow and exact-mathematics evidence packages.
+- Synthetic threshold routing for water, aviation, weather, and logistics records.
+- Artifact-integrity checking through canonical records, manifests, and SHA-256.
+
+### Potential integration scenarios
+
+Subject to the applicable implementation and commercial terms, the demonstrated patterns could support controlled write-back, approval-bound export, audit-receipt generation, policy-gated workflow actions, one-time execution tokens, or replayable decision support. These are integration scenarios, not claims of current customer deployment.
+
+## Commercial and Integration Context
+
+A focused evaluation can begin with one high-value action boundary:
+
+1. identify the proposed action and downstream system;
+2. define the evidence, policy, authorization, and expiration conditions;
+3. specify fail-closed states and human escalation points;
+4. agree on receipts, replay data, and acceptance tests; and
+5. run a synthetic or appropriately governed proof of concept before production integration.
+
+Commercial licensing and integration inquiries: [mark@groundeddi.ai](mailto:mark@groundeddi.ai).
+
+## Authorship and Provenance
+
+This repository contains versioned development records and provenance artifacts designed to preserve technical history and authorship traceability.
+
+- Git history identifies **Grounded DI LLC** as the repository publisher beginning July 23, 2026.
+- Repository records identify **Mark S. Weinstein** as creator and operator.
+- Numbered intake records preserve scope, status, identifiers, hashes, and the chronology of corrections.
+- Runnable demonstrations bind code, evidence, decision records, and outputs through manifests and replay identities.
+- The mathematical acceptance record preserves the prior rejection rather than rewriting the historical state.
+
+Commits, timestamps, manifests, and hashes are useful provenance and integrity evidence. They do not independently establish legal ownership, inventorship, patent priority, or substantive correctness.
+
+## Intellectual Property
+
+Copyright © 2026 Grounded DI LLC. Project and product names are used for identification and attribution.
+
+No open-source license is granted by this repository. Publicly accessible materials remain subject to applicable copyright, trademark, contractual, and other rights except where expressly stated otherwise. Nonpublic implementation materials are outside the scope of this repository.
+
+Certain subject matter is associated in repository records with pending U.S. utility non-provisional patent applications. The filing index below is a public project record supplied by Grounded DI LLC and is preserved for chronology; it is not an assertion of issuance, allowance, priority entitlement, or claim scope.
+
+<details>
+<summary><strong>Public filing index — status recorded July 25, 2026</strong></summary>
 
 | No. | Domain / Nickname | Application No. | Received | Title |
 |---:|---|---|---|---|
@@ -364,26 +248,27 @@ This public filing index summarizes 23 U.S. utility non-provisional patent appli
 | 19 | DI-AGI | 19/726,890 | 30 Jun 2026 | Runtime-Governed Artificial-Intelligence Execution, Replay Verification, and Release Authorization |
 | 20 | DepoBot | 19/730,739 | 2 Jul 2026 | Deterministic Intelligence Systems and Methods for Controlled Deposition Artifact Generation, Validation, Replay Verification, and Authorized Output Delivery |
 | 21 | DI Hazard Intelligence | 19/736,923 | 9 Jul 2026 | Deterministic Intelligence Systems and Methods for Threshold-Gated Multi-Hazard Evaluation and Audit-Traceable Emergency Assistance |
-| 22 | DI LLM Entropy Control| 19/748,124 | 20 Jul 2026 | Systems And Methods For Deterministic Entropy Governance And Entropy-Linked Override Enforcement In Generative Artificial Intelligence Systems |
-| 23 | Shopping / Consumer | 19/765,102 | 24 Jul 2026 | Deterministic intelligence systems and methods for consumer decision-control, evidence-linked commercial assessment, transaction-state authorization, and replay |
+| 22 | DI LLM Entropy Control | 19/748,124 | 20 Jul 2026 | Systems and Methods for Deterministic Entropy Governance and Entropy-Linked Override Enforcement in Generative Artificial Intelligence Systems |
+| 23 | Shopping / Consumer | 19/765,102 | 24 Jul 2026 | Deterministic Intelligence Systems and Methods for Consumer Decision-Control, Evidence-Linked Commercial Assessment, Transaction-State Authorization, and Replay |
 
-### Portfolio Themes
+</details>
 
-The filings span legal technology, structured output, medical imaging, engineering, environmental risk, finance, weather systems, litigation support, execution control, runtime governance, and multi-hazard emergency assistance.
+## Citation and Attribution
 
-Across the portfolio, recurring technical themes include:
+Recommended citation:
 
-- pre-output or pre-commitment validation;
-- deterministic rule execution;
-- state-based continuation or release control;
-- audit-trace generation;
-- replay verification;
-- threshold-gated escalation;
-- controlled downstream delivery; and
-- runtime or interface authorization.
+> Grounded DI LLC. (2026). *Grounded DI Replay Certificate Registry* [Software and public technical-evidence registry]. GitHub. https://github.com/Grounded-DI/grounded-di-replay-certificate-registry
 
-> This index is a public-facing summary of filing activity and does not state examination status, priority entitlement, claim scope, allowance, or patent issuance.
->
-> -Mark S. Weinstein, Grounded DI LLC    
+When referencing a specific demonstration, cite its numbered intake record or dated demo directory and preserve the stated scope and status.
 
-#DeterministicIntelligence #AuditableAI
+## Status
+
+**Active public replay, verification, and provenance registry.** The repository supports runnable technical evaluation, artifact-integrity review, chronology preservation, and preliminary commercial diligence. The authorization series is a local demonstration harness; production integrations and private runtime materials are maintained separately where applicable.
+
+## Contact and Collaboration
+
+For technical evaluation, controlled demonstrations, integration discussions, or commercial licensing, contact [Grounded DI LLC](mailto:mark@groundeddi.ai). Identify the action boundary or evidence workflow you want to evaluate and the acceptance criteria that matter to your organization.
+
+---
+
+#DeterministicAI #AIValidation #Auditability #Replayability #AIInfrastructure #AIGovernance #Provenance #GroundedDI
