@@ -20,6 +20,10 @@ The registry includes four runnable Python demonstrations and ten numbered evide
 
 A newly implemented local evaluator produced the declared selective result across three fresh executions with five matching artifact hashes and direct byte comparisons, and refused the inadmissible-hearsay control before export. Preserved original reference evidence, a separate internal verifier, and measured execution records are included. This is a finite closed-world demonstration; original-engine execution, native VerdictBridge reproduction, universal model determinism, and external certification are not claimed.
 
+## NYC Exact-Output Determinism Evidence
+
+The [NYC Exact-Output Determinism Evidence](demos/nyc-exact-output-determinism/README.md) directory is a curated index of existing registry evidence relevant to exact-input → exact-output replay. It explains the common controlled-execution method and links to selected legal, authorization, logistics, aviation, and mathematical records without duplicating their binaries.
+
 ## Why It Matters
 
 Outputs alone do not show which inputs were authorized, which policy controlled execution, why a state changed, whether a release boundary was enforced, or whether the evidence can be replayed. This registry makes those questions reviewable through structured records, explicit state transitions, negative controls, manifests, checksums, and executable verification where supplied.
