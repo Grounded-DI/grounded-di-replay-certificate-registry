@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "pages": 8,
+  "every_page_visually_inspected": true,
+  "checks": [
+    "No clipping or overflow",
+    "Tables and page breaks readable",
+    "All five full hashes displayed for each of three runs",
+    "A/B/C/D provenance distinguished"
+  ],
+  "pdf_sha256": "958564eca7f61913b820e0ed1e1b1a6979a41596a16abe0dfefe08b170e35bf4"
+}

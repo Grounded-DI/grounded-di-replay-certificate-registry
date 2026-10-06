@@ -10,9 +10,15 @@ This repository preserves runnable demonstrations, certificate intake records, v
 
 The central design goal is to make an execution inspectable: bind the inputs and governing policy, evaluate explicit rules, record the resulting state, preserve the output and audit history, and verify the record through replay or source-based recalculation. In this repository, *deterministic* refers to rule-governed or reproducible behavior under the stated inputs, code, environment, and serialization conditions. It is not a claim that every underlying proposition is universally correct.
 
-The registry includes three runnable Python demonstrations and ten numbered evidence records. It also preserves later replay records for BriefWise DI² and a sealed FastPath rule-execution workload.
+The registry includes four runnable Python demonstrations and ten numbered evidence records. It also preserves later replay records for BriefWise DI² and a sealed FastPath rule-execution workload.
 
 > **Repository scope:** The public evidence supports the result stated by each record—such as byte identity, fresh local replay, boundary enforcement, or exact arithmetic. Broader conclusions are not inferred from hashes alone. Certificates in the runnable demonstrations are local, unsigned project records.
+
+## VerdictBridge Demo 3 — Selective Outcome Replay
+
+[Demonstration and runnable evidence](demos/2026-10-05-verdictbridge-punitive-control-v1/README.md) · [PDF](demos/2026-10-05-verdictbridge-punitive-control-v1/package/VerdictBridge_Demo3_Report.pdf) · [Complete ZIP](demos/2026-10-05-verdictbridge-punitive-control-v1/VerdictBridge_Demo3_Public_v1.zip)
+
+A newly implemented local evaluator produced the declared selective result across three fresh executions with five matching artifact hashes and direct byte comparisons, and refused the inadmissible-hearsay control before export. Preserved original reference evidence, a separate internal verifier, and measured execution records are included. This is a finite closed-world demonstration; original-engine execution, native VerdictBridge reproduction, universal model determinism, and external certification are not claimed.
 
 ## Why It Matters
 
