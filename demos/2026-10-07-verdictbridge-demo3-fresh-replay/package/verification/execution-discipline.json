@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "top_level_commands_sequential": true,
+  "three_evaluator_processes_nonoverlapping": true,
+  "timeout_seconds_per_top_level_command": 120,
+  "unexpected_benchmark_failures": 0,
+  "unexpected_benchmark_timeouts": 0,
+  "preflight_diagnostic_note": "Separate read-only preservation inventory exceeded its 20-second diagnostic limit; primary preservation checks completed before execution. No benchmark retry occurred."
+}

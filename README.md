@@ -20,6 +20,12 @@ The registry includes four runnable Python demonstrations and ten numbered evide
 
 A newly implemented local evaluator produced the declared selective result across three fresh executions with five matching artifact hashes and direct byte comparisons, and refused the inadmissible-hearsay control before export. Preserved original reference evidence, a separate internal verifier, and measured execution records are included. This is a finite closed-world demonstration; original-engine execution, native VerdictBridge reproduction, universal model determinism, and external certification are not claimed.
 
+## VerdictBridge Demo 3 - Fresh Replay (October 7, 2026)
+
+[Demonstration](demos/2026-10-07-verdictbridge-demo3-fresh-replay/README.md) · [PDF](demos/2026-10-07-verdictbridge-demo3-fresh-replay/package/Fresh_Replay_Report.pdf) · [Complete ZIP](demos/2026-10-07-verdictbridge-demo3-fresh-replay/VerdictBridge_Demo3_Fresh_Replay_Public_v1.zip)
+
+Three fresh executions reproduced the five canonical artifacts byte for byte against the earlier Demo 3 evidence and refused the inadmissible-hearsay export. Internal verification; unaffiliated review pending. This is a replay of the existing finite benchmark, not a new demonstration of universal model determinism. Fresh receipts record real process IDs/timestamps outside the canonical byte boundary.
+
 ## NYC Exact-Output Determinism Evidence
 
 The [NYC Exact-Output Determinism Evidence](demos/nyc-exact-output-determinism/README.md) directory is a curated index of existing registry evidence relevant to exact-input → exact-output replay. It explains the common controlled-execution method and links to selected legal, authorization, logistics, aviation, and mathematical records without duplicating their binaries.

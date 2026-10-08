@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "scope": "Recursive UTF-8/PDF/archive scan for absolute local machine paths and common token/private-key patterns; manual review of changed records",
+  "findings": []
+}

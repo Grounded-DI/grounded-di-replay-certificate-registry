@@ -1,0 +1,94 @@
+[
+  {
+    "label": "environment",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/NYC_AI_Evidence_Handoff_20261007/validator/record_environment.py"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 64122,
+    "started_utc": "2026-10-08T02:52:02.941076+00:00",
+    "finished_utc": "2026-10-08T02:52:02.981121+00:00",
+    "timeout_seconds": 120,
+    "exit_code": 0,
+    "execution_status": "COMPLETED"
+  },
+  {
+    "label": "preserved-release",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Fresh_Replay_20261007/pinned/VerdictBridge_Demo3_Public_v1/source/verify_release.py"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 64123,
+    "started_utc": "2026-10-08T02:52:02.981978+00:00",
+    "finished_utc": "2026-10-08T02:52:03.059073+00:00",
+    "timeout_seconds": 120,
+    "exit_code": 0,
+    "execution_status": "COMPLETED"
+  },
+  {
+    "label": "acceptance-controls",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Fresh_Replay_20261007/pinned/VerdictBridge_Demo3_Public_v1/source/acceptance.py"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 64125,
+    "started_utc": "2026-10-08T02:52:03.059514+00:00",
+    "finished_utc": "2026-10-08T02:52:03.455436+00:00",
+    "timeout_seconds": 120,
+    "exit_code": 0,
+    "execution_status": "COMPLETED"
+  },
+  {
+    "label": "fresh-reproduction",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Fresh_Replay_20261007/pinned/VerdictBridge_Demo3_Public_v1/source/reproduce.py",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Fresh_Replay_20261007/replay"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 64148,
+    "started_utc": "2026-10-08T02:52:03.455988+00:00",
+    "finished_utc": "2026-10-08T02:52:03.747897+00:00",
+    "timeout_seconds": 120,
+    "exit_code": 0,
+    "execution_status": "COMPLETED"
+  },
+  {
+    "label": "fresh-verifier",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Fresh_Replay_20261007/replay/source/verify.py"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 64157,
+    "started_utc": "2026-10-08T02:52:03.748347+00:00",
+    "finished_utc": "2026-10-08T02:52:03.819889+00:00",
+    "timeout_seconds": 120,
+    "exit_code": 0,
+    "execution_status": "COMPLETED"
+  },
+  {
+    "label": "fresh-byte-comparison",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/NYC_AI_Evidence_Handoff_20261007/validator/compare_fresh.py",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Fresh_Replay_20261007/replay"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 64158,
+    "started_utc": "2026-10-08T02:52:03.820422+00:00",
+    "finished_utc": "2026-10-08T02:52:03.860345+00:00",
+    "timeout_seconds": 120,
+    "exit_code": 0,
+    "execution_status": "COMPLETED"
+  }
+]

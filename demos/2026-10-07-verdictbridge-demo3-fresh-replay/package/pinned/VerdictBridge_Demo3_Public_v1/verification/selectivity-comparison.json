@@ -1,0 +1,68 @@
+[
+  {
+    "field": "strict_liability_failure_to_warn",
+    "original": "DENY_SUMMARY_JUDGMENT",
+    "new": "DENY_SUMMARY_JUDGMENT",
+    "changed": false
+  },
+  {
+    "field": "negligence",
+    "original": "DENY_SUMMARY_JUDGMENT",
+    "new": "DENY_SUMMARY_JUDGMENT",
+    "changed": false
+  },
+  {
+    "field": "compensatory_damages",
+    "original": "DENY_SUMMARY_JUDGMENT",
+    "new": "DENY_SUMMARY_JUDGMENT",
+    "changed": false
+  },
+  {
+    "field": "punitive_damages",
+    "original": "DENY_SUMMARY_JUDGMENT",
+    "new": "GRANT_SUMMARY_JUDGMENT",
+    "changed": true
+  },
+  {
+    "field": "overall_motion_result",
+    "original": "DENIED",
+    "new": "GRANTED_IN_PART_DENIED_IN_PART",
+    "changed": true
+  },
+  {
+    "field": "sam_reed_statement",
+    "original": "EXCLUDED_AND_NOT_USED",
+    "new": "EXCLUDED_AND_NOT_USED",
+    "changed": false
+  },
+  {
+    "field": "jury_instruction_coverage",
+    "original": "PASS",
+    "new": "PASS",
+    "changed": false
+  },
+  {
+    "field": "appellate_record_review",
+    "original": "NOT_APPLICABLE",
+    "new": "NOT_APPLICABLE",
+    "changed": false
+  },
+  {
+    "field": "filingready",
+    "original": "NOT_APPLICABLE",
+    "new": "NOT_APPLICABLE",
+    "changed": false
+  },
+  {
+    "field": "verdictready",
+    "original": "YES",
+    "new": "YES",
+    "changed": false
+  },
+  {
+    "field": "export_authorized",
+    "original": true,
+    "new": true,
+    "changed": false
+  }
+]

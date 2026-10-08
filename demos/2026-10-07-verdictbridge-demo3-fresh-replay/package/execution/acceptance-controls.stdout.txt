@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "tamper_controls": [
+    {
+      "test": "reference_law",
+      "rejected": true,
+      "verifier_exit_code": 1,
+      "result": {
+        "status": "FAIL",
+        "reason": "REFERENCE_CHANGED:Run-2-01_canonical_input.json"
+      }
+    },
+    {
+      "test": "restored_cost_fact",
+      "rejected": true,
+      "verifier_exit_code": 1,
+      "result": {
+        "status": "FAIL",
+        "reason": "CANONICAL_VARIANT_NOT_EXACT"
+      }
+    },
+    {
+      "test": "wrong_disposition",
+      "rejected": true,
+      "verifier_exit_code": 1,
+      "result": {
+        "status": "FAIL",
+        "reason": "OBSERVED_DISPOSITION_MISMATCH:Run-A"
+      }
+    },
+    {
+      "test": "reed_in_trace",
+      "rejected": true,
+      "verifier_exit_code": 1,
+      "result": {
+        "status": "FAIL",
+        "reason": "REED_USED_IN_TRACE"
+      }
+    },
+    {
+      "test": "missing_export",
+      "rejected": true,
+      "verifier_exit_code": 1,
+      "result": {
+        "status": "FAIL",
+        "reason": "[Errno 2] No such file or directory: '<TEMP_DIR>/vb-demo3-tamper-p37k9j_j/package/Run-A/04_verdictbridge_assessment.txt'"
+      }
+    },
+    {
+      "test": "forged_receipt",
+      "rejected": true,
+      "verifier_exit_code": 1,
+      "result": {
+        "status": "FAIL",
+        "reason": "RECEIPT_HASH_MISMATCH"
+      }
+    },
+    {
+      "test": "zip_byte_change",
+      "rejected": true,
+      "verifier_exit_code": 1,
+      "result": {
+        "status": "FAIL",
+        "reason": "RECEIPT_HASH_MISMATCH"
+      }
+    }
+  ],
+  "oracle_independence": "PASS",
+  "baseline_local_recalculation": {
+    "strict_liability_failure_to_warn": "DENY_SUMMARY_JUDGMENT",
+    "negligence": "DENY_SUMMARY_JUDGMENT",
+    "compensatory_damages": "DENY_SUMMARY_JUDGMENT",
+    "punitive_damages": "DENY_SUMMARY_JUDGMENT",
+    "overall_motion_result": "DENIED",
+    "sam_reed_statement": "EXCLUDED_AND_NOT_USED",
+    "jury_instruction_coverage": "PASS",
+    "appellate_record_review": "NOT_APPLICABLE",
+    "filingready": "NOT_APPLICABLE",
+    "verdictready": "YES",
+    "export_authorized": true
+  },
+  "baseline_scope": "New evaluator recalculation against preserved reference outcomes; not original engine execution.",
+  "wrong_disposition_export_refusal": {
+    "accepted": false,
+    "verdictready": "NO",
+    "export_authorized": false,
+    "failed_rules_and_gates": [
+      {
+        "rule": "L001 / L010 / L020",
+        "gate": "VB-B-MOCC",
+        "code": "LEGAL_DISPOSITION_MISMATCH"
+      }
+    ],
+    "runtime_state": "EXPORT_REFUSED",
+    "export_files_opened": 0,
+    "bytes_written": 0,
+    "final_output_inventory": []
+  }
+}

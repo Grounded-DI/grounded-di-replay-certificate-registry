@@ -1,0 +1,35 @@
+VerdictBridge Assessment
+Jurisdiction
+State of Meridian
+Court / Venue
+Meridian Superior Court, Civil Division / North County
+Procedural Posture
+Defendant’s motion for summary judgment.
+Runtime Mode
+Motion, damages, and jury-instruction review.
+Case / Motion / Trial Issue
+Strict-liability failure to warn, negligence, compensatory damages, punitive damages, evidence admissibility, causation, and jury-instruction coverage.
+Preliminary Result
+The motion is granted in part and denied in part. The admissible evidence permits a reasonable jury to find product identification, inadequate warning, warning causation, negligence, specific causation, and compensatory damages. Summary judgment is granted to Apex on punitive damages because the altered closed-world record does not contain clear and convincing admissible evidence permitting a finding that Apex consciously disregarded a known substantial safety risk. The conflicting admissible expert opinions create a jury issue and are not a contradiction event.
+VerdictReady
+Yes.
+FilingReady
+Not applicable because BriefWise filing mode is inactive.
+Gatekeeper Findings
+SYSTEM-GATE: PASS; INPUT-NORM: PASS; VB-C-VNCI: PASS; LEGAL-KERNEL: NOT_ACTIVE; VB-D-EAUR: PASS; VB-B-MOCC: PASS; VB-A-CESMS: PASS; VB-E-SRAG: PASS; VB-F-DESR: PASS; VB-G-JICI: PASS; VB-H-ARCR: NOT_APPLICABLE; REPLAY-GATE: PASS; VERDICTREADY-GATE: PASS; EXPORT-GATE: PASS. All surviving issues are mapped to the stipulated Meridian jury instructions.
+Failed Gates / Runtime State
+No gate failed. Runtime state is VERDICT_READY.
+Required Fixes Before VerdictReady
+No corrective action is required.
+Required Fixes Before FilingReady
+No corrective action is required because FilingReady is not applicable.
+Adversarial Risk
+Specific causation remains a jury issue. An inadmissible hearsay-dependent candidate must be refused.
+Evidentiary Issues
+The Sam Reed statement is inadmissible and was not used. All relied-upon facts are outside F051-F054.
+Record / Appellate Issues
+Appellate review is not applicable.
+Confidence / Hallucination Risk
+Scoped verification against the stipulated synthetic record; no external facts or authorities. No universal correctness or model-determinism claim.
+Implementation Provenance
+New local evaluator for this benchmark. Original Verdictbridge_demo-2 files are preserved reference evidence only.

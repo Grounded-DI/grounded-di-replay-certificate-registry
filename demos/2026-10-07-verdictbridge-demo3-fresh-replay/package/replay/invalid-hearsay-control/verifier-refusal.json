@@ -1,0 +1,16 @@
+{
+  "status": "REFUSED",
+  "accepted": false,
+  "verdictready": "NO",
+  "export_authorized": false,
+  "failure_code": "INADMISSIBLE_EVIDENCE_RELIANCE",
+  "failed_rule": "L015 / F051-F054 / L020",
+  "failed_gates": [
+    "VB-D-EAUR",
+    "VERDICTREADY-GATE",
+    "EXPORT-GATE"
+  ],
+  "excluded_fact_ids": [
+    "F051"
+  ]
+}

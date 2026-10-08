@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "core_verification": "PASS",
+  "manifest_entries": 54,
+  "certificate_bound_deliverables": 53,
+  "all_packaged_file_hashes": "PASS",
+  "certificate_type": "LOCAL_UNSIGNED_DEMO_EXECUTION_RECORD"
+}
