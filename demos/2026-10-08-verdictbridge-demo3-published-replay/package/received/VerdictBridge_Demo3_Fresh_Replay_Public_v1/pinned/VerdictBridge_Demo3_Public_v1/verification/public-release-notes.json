@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "release_id": "VerdictBridge_Demo3_Public_v1",
+  "original_local_zip_sha256": "5092d99f21f4c254d51514a59637760143c4e59062dc186bdb89cb4ad44a6a7f",
+  "omitted": [
+    "original-reference/mission.txt",
+    "full conversational prompt"
+  ],
+  "changes": [
+    "Added concise standalone SPECIFICATION.md and public-release documentation",
+    "Removed temporary local prefix from one missing-export negative-control diagnostic",
+    "Reissued PDF with public-release status and operator-provided production context",
+    "Rebound PDF visual QA, certificate, and checksum manifest"
+  ],
+  "unchanged": [
+    "All five preserved reference files",
+    "Frozen canonical input",
+    "All three canonical run artifacts and execution receipts",
+    "Evaluator and separate core verifier source",
+    "Invalid-control refusal and export evidence"
+  ],
+  "production_context": "Grounded DI OS via FastPath 6.1 Sol - Medium (operator provided; evaluator computation was local Python; no provider attestation)"
+}

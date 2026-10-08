@@ -26,6 +26,12 @@ A newly implemented local evaluator produced the declared selective result acros
 
 Three fresh executions reproduced the five canonical artifacts byte for byte against the earlier Demo 3 evidence and refused the inadmissible-hearsay export. Internal verification; unaffiliated review pending. This is a replay of the existing finite benchmark, not a new demonstration of universal model determinism. Fresh receipts record real process IDs/timestamps outside the canonical byte boundary.
 
+## Demo 3 - October 8 Published-Release Replay
+
+[Demonstration](demos/2026-10-08-verdictbridge-demo3-published-replay/README.md) · [PDF](demos/2026-10-08-verdictbridge-demo3-published-replay/package/Published_Replay_Report.pdf) · [Complete ZIP](demos/2026-10-08-verdictbridge-demo3-published-replay/VerdictBridge_Demo3_Published_Replay_Public_v1.zip)
+
+Three fresh evaluator processes reproduced all five canonical artifacts against the pinned public release. The hearsay control refused export with zero opens/writes and an empty inventory; all seven tamper controls were rejected. All nine recorded environment fields matched, with redacted/unrecorded environment limits retained. Internal verification; unaffiliated review pending. This is a fresh replay of the existing Demo 3 benchmark, not a new benchmark.
+
 ## NYC Exact-Output Determinism Evidence
 
 The [NYC Exact-Output Determinism Evidence](demos/nyc-exact-output-determinism/README.md) directory is a curated index of existing registry evidence relevant to exact-input → exact-output replay. It explains the common controlled-execution method and links to selected legal, authorization, logistics, aviation, and mathematical records without duplicating their binaries.

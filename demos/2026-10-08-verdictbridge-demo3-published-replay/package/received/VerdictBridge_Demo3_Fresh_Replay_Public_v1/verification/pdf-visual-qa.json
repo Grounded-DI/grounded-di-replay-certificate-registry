@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "pages": 2,
+  "method": "Both final pages rendered at 1300px and visually inspected",
+  "observations": "Readable text and hashes; no overlap, clipping or missing content",
+  "pdf_sha256": "8454e9a250ade997a3a2a76aa63416cb6f34833cb9502544580eadc3017bf329"
+}

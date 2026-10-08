@@ -1,0 +1,109 @@
+[
+  {
+    "label": "received-package-integrity",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Published_Replay_20261008/received/VerdictBridge_Demo3_Fresh_Replay_Public_v1/verify_package.py"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 74148,
+    "started_utc": "2026-10-08T14:45:34.498352+00:00",
+    "finished_utc": "2026-10-08T14:45:34.575946+00:00",
+    "exit_code": 0,
+    "state": "COMPLETED",
+    "timeout_seconds": 120
+  },
+  {
+    "label": "environment",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Published_Replay_20261008/received/VerdictBridge_Demo3_Fresh_Replay_Public_v1/tools/record_environment.py"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 74149,
+    "started_utc": "2026-10-08T14:45:34.580003+00:00",
+    "finished_utc": "2026-10-08T14:45:34.620562+00:00",
+    "exit_code": 0,
+    "state": "COMPLETED",
+    "timeout_seconds": 120
+  },
+  {
+    "label": "received-semantic-verifier",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Published_Replay_20261008/received/VerdictBridge_Demo3_Fresh_Replay_Public_v1/replay/source/verify.py"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 74150,
+    "started_utc": "2026-10-08T14:45:34.621347+00:00",
+    "finished_utc": "2026-10-08T14:45:34.697172+00:00",
+    "exit_code": 0,
+    "state": "COMPLETED",
+    "timeout_seconds": 120
+  },
+  {
+    "label": "acceptance-controls",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Published_Replay_20261008/received/VerdictBridge_Demo3_Fresh_Replay_Public_v1/pinned/VerdictBridge_Demo3_Public_v1/source/acceptance.py"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 74159,
+    "started_utc": "2026-10-08T14:45:34.697724+00:00",
+    "finished_utc": "2026-10-08T14:45:35.135821+00:00",
+    "exit_code": 0,
+    "state": "COMPLETED",
+    "timeout_seconds": 120
+  },
+  {
+    "label": "fresh-reproduction",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Published_Replay_20261008/received/VerdictBridge_Demo3_Fresh_Replay_Public_v1/replay/source/reproduce.py",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Published_Replay_20261008/replay"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 74179,
+    "started_utc": "2026-10-08T14:45:35.136537+00:00",
+    "finished_utc": "2026-10-08T14:45:35.429458+00:00",
+    "exit_code": 0,
+    "state": "COMPLETED",
+    "timeout_seconds": 120
+  },
+  {
+    "label": "fresh-semantic-verifier",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Published_Replay_20261008/replay/source/verify.py"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 74187,
+    "started_utc": "2026-10-08T14:45:35.430012+00:00",
+    "finished_utc": "2026-10-08T14:45:35.470598+00:00",
+    "exit_code": 0,
+    "state": "COMPLETED",
+    "timeout_seconds": 120
+  },
+  {
+    "label": "five-hash-comparison",
+    "command": [
+      "<PYTHON_EXECUTABLE>",
+      "-B",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Published_Replay_20261008/received/VerdictBridge_Demo3_Fresh_Replay_Public_v1/tools/compare_fresh.py",
+      "<LOCAL_WORKSPACE>/outputs/VerdictBridge_Demo3_Published_Replay_20261008/replay"
+    ],
+    "cwd": "<LOCAL_WORKSPACE>",
+    "pid": 74188,
+    "started_utc": "2026-10-08T14:45:35.471069+00:00",
+    "finished_utc": "2026-10-08T14:45:35.507636+00:00",
+    "exit_code": 0,
+    "state": "COMPLETED",
+    "timeout_seconds": 120
+  }
+]

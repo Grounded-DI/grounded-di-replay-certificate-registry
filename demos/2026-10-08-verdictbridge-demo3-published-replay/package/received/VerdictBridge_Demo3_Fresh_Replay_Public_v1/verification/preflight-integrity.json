@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "archive_sha256": "b504de22e948fd382fadb640781955668a1ff0f32b71aa93e4cea317e9fc12b9",
+  "handoff_manifest": "PASS",
+  "pinned_manifest": "PASS",
+  "evaluator_and_verifier_hashes": "PASS",
+  "automation": "PAUSED"
+}

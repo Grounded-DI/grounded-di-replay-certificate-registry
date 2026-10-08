@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "scope": "Integrity/bindings and direct canonical bytes; no semantic execution",
+  "manifest_entries": 127,
+  "certificate_bindings": 126
+}

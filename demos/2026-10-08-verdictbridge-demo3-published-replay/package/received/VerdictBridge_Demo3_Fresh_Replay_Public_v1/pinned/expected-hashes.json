@@ -1,0 +1,70 @@
+{
+  "complete_zip_sha256": "b504de22e948fd382fadb640781955668a1ff0f32b71aa93e4cea317e9fc12b9",
+  "canonical_artifacts": {
+    "01_canonical_input.json": "c53a77a0df2032fc2931bfb1793991d274c98ce1a6d2f7aef5534bc3ae0df561",
+    "02_normalized_record.csv": "99aa74d84fe9e33cedaf9a4820eb846ce5618f0aa74e8951241ba1347ada93cc",
+    "03_gate_matrix.json": "242401fedf2c6a01b0cc376e8734cfeafff180f5d669ae9775e43a95c2014775",
+    "04_verdictbridge_assessment.txt": "90faa90efa8f79aab956427479788e616f87b0178606d4f2563535cccd5a0378",
+    "canonical_run.zip": "947314014bd8251f8cfb67d080bd7244d648752e9532aee109b85cf5f836324c"
+  },
+  "evaluator_sha256": "77b6478482316496f72f54e028ca2bc9ba257ffc4f6adaba3a2b2a100bab837c",
+  "separate_verifier_sha256": "269a841dd093b2161e3d063404a1a4f5cd6f5e7ada16cbde5a39f79ce760b023",
+  "recorded_runs": [
+    {
+      "folder": "Run-A",
+      "hashes": {
+        "canonical_input_sha256": "c53a77a0df2032fc2931bfb1793991d274c98ce1a6d2f7aef5534bc3ae0df561",
+        "normalized_record_sha256": "99aa74d84fe9e33cedaf9a4820eb846ce5618f0aa74e8951241ba1347ada93cc",
+        "gate_matrix_sha256": "242401fedf2c6a01b0cc376e8734cfeafff180f5d669ae9775e43a95c2014775",
+        "assessment_sha256": "90faa90efa8f79aab956427479788e616f87b0178606d4f2563535cccd5a0378",
+        "zip_sha256": "947314014bd8251f8cfb67d080bd7244d648752e9532aee109b85cf5f836324c"
+      },
+      "pid": 67016,
+      "status": "PASS"
+    },
+    {
+      "folder": "Run-B",
+      "hashes": {
+        "canonical_input_sha256": "c53a77a0df2032fc2931bfb1793991d274c98ce1a6d2f7aef5534bc3ae0df561",
+        "normalized_record_sha256": "99aa74d84fe9e33cedaf9a4820eb846ce5618f0aa74e8951241ba1347ada93cc",
+        "gate_matrix_sha256": "242401fedf2c6a01b0cc376e8734cfeafff180f5d669ae9775e43a95c2014775",
+        "assessment_sha256": "90faa90efa8f79aab956427479788e616f87b0178606d4f2563535cccd5a0378",
+        "zip_sha256": "947314014bd8251f8cfb67d080bd7244d648752e9532aee109b85cf5f836324c"
+      },
+      "pid": 67017,
+      "status": "PASS"
+    },
+    {
+      "folder": "Run-C",
+      "hashes": {
+        "canonical_input_sha256": "c53a77a0df2032fc2931bfb1793991d274c98ce1a6d2f7aef5534bc3ae0df561",
+        "normalized_record_sha256": "99aa74d84fe9e33cedaf9a4820eb846ce5618f0aa74e8951241ba1347ada93cc",
+        "gate_matrix_sha256": "242401fedf2c6a01b0cc376e8734cfeafff180f5d669ae9775e43a95c2014775",
+        "assessment_sha256": "90faa90efa8f79aab956427479788e616f87b0178606d4f2563535cccd5a0378",
+        "zip_sha256": "947314014bd8251f8cfb67d080bd7244d648752e9532aee109b85cf5f836324c"
+      },
+      "pid": 67018,
+      "status": "PASS"
+    }
+  ],
+  "recorded_invalid_control": {
+    "status": "REFUSED",
+    "accepted": false,
+    "verdictready": "NO",
+    "export_authorized": false,
+    "failure_code": "INADMISSIBLE_EVIDENCE_RELIANCE",
+    "failed_rule": "L015 / F051-F054 / L020",
+    "failed_gates": [
+      "VB-D-EAUR",
+      "VERDICTREADY-GATE",
+      "EXPORT-GATE"
+    ],
+    "excluded_fact_ids": [
+      "F051"
+    ],
+    "export_files_opened": 0,
+    "bytes_written": 0,
+    "final_output_inventory": []
+  },
+  "scope": "Expected values from preserved historical evidence. No benchmark or verifier executed during handoff preparation."
+}

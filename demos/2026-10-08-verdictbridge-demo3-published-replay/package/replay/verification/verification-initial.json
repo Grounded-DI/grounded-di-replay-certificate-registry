@@ -1,0 +1,226 @@
+{
+  "status": "PASS",
+  "case_id": "VB-DEMO-0001-PUNITIVE-CONTROL",
+  "reference_files_checked": 5,
+  "independent_predicate_checks": {
+    "product_identification": true,
+    "foreseeable_hazard": true,
+    "warning_inadequacy": true,
+    "warning_causation": true,
+    "negligent_breach": true,
+    "admissible_specific_causation": true,
+    "compensation_supported": true,
+    "punitive_predicate_absent": true,
+    "reed_excluded": true,
+    "expert_conflict_not_contradiction": true
+  },
+  "observed_disposition": {
+    "strict_liability_failure_to_warn": "DENY_SUMMARY_JUDGMENT",
+    "negligence": "DENY_SUMMARY_JUDGMENT",
+    "compensatory_damages": "DENY_SUMMARY_JUDGMENT",
+    "punitive_damages": "GRANT_SUMMARY_JUDGMENT",
+    "overall_motion_result": "GRANTED_IN_PART_DENIED_IN_PART",
+    "sam_reed_statement": "EXCLUDED_AND_NOT_USED",
+    "jury_instruction_coverage": "PASS",
+    "appellate_record_review": "NOT_APPLICABLE",
+    "filingready": "NOT_APPLICABLE",
+    "verdictready": "YES",
+    "export_authorized": true
+  },
+  "runs": [
+    {
+      "folder": "Run-A",
+      "hashes": {
+        "canonical_input_sha256": "c53a77a0df2032fc2931bfb1793991d274c98ce1a6d2f7aef5534bc3ae0df561",
+        "normalized_record_sha256": "99aa74d84fe9e33cedaf9a4820eb846ce5618f0aa74e8951241ba1347ada93cc",
+        "gate_matrix_sha256": "242401fedf2c6a01b0cc376e8734cfeafff180f5d669ae9775e43a95c2014775",
+        "assessment_sha256": "90faa90efa8f79aab956427479788e616f87b0178606d4f2563535cccd5a0378",
+        "zip_sha256": "947314014bd8251f8cfb67d080bd7244d648752e9532aee109b85cf5f836324c"
+      },
+      "pid": 74180,
+      "status": "PASS"
+    },
+    {
+      "folder": "Run-B",
+      "hashes": {
+        "canonical_input_sha256": "c53a77a0df2032fc2931bfb1793991d274c98ce1a6d2f7aef5534bc3ae0df561",
+        "normalized_record_sha256": "99aa74d84fe9e33cedaf9a4820eb846ce5618f0aa74e8951241ba1347ada93cc",
+        "gate_matrix_sha256": "242401fedf2c6a01b0cc376e8734cfeafff180f5d669ae9775e43a95c2014775",
+        "assessment_sha256": "90faa90efa8f79aab956427479788e616f87b0178606d4f2563535cccd5a0378",
+        "zip_sha256": "947314014bd8251f8cfb67d080bd7244d648752e9532aee109b85cf5f836324c"
+      },
+      "pid": 74181,
+      "status": "PASS"
+    },
+    {
+      "folder": "Run-C",
+      "hashes": {
+        "canonical_input_sha256": "c53a77a0df2032fc2931bfb1793991d274c98ce1a6d2f7aef5534bc3ae0df561",
+        "normalized_record_sha256": "99aa74d84fe9e33cedaf9a4820eb846ce5618f0aa74e8951241ba1347ada93cc",
+        "gate_matrix_sha256": "242401fedf2c6a01b0cc376e8734cfeafff180f5d669ae9775e43a95c2014775",
+        "assessment_sha256": "90faa90efa8f79aab956427479788e616f87b0178606d4f2563535cccd5a0378",
+        "zip_sha256": "947314014bd8251f8cfb67d080bd7244d648752e9532aee109b85cf5f836324c"
+      },
+      "pid": 74182,
+      "status": "PASS"
+    }
+  ],
+  "three_run_five_hash_match": "PASS",
+  "direct_byte_comparison": [
+    {
+      "artifact": "01_canonical_input.json",
+      "bytes": 14996,
+      "sha256": [
+        "c53a77a0df2032fc2931bfb1793991d274c98ce1a6d2f7aef5534bc3ae0df561",
+        "c53a77a0df2032fc2931bfb1793991d274c98ce1a6d2f7aef5534bc3ae0df561",
+        "c53a77a0df2032fc2931bfb1793991d274c98ce1a6d2f7aef5534bc3ae0df561"
+      ],
+      "direct_byte_comparison": "PASS",
+      "hash_comparison": "PASS",
+      "byte_mismatches": 0
+    },
+    {
+      "artifact": "02_normalized_record.csv",
+      "bytes": 14563,
+      "sha256": [
+        "99aa74d84fe9e33cedaf9a4820eb846ce5618f0aa74e8951241ba1347ada93cc",
+        "99aa74d84fe9e33cedaf9a4820eb846ce5618f0aa74e8951241ba1347ada93cc",
+        "99aa74d84fe9e33cedaf9a4820eb846ce5618f0aa74e8951241ba1347ada93cc"
+      ],
+      "direct_byte_comparison": "PASS",
+      "hash_comparison": "PASS",
+      "byte_mismatches": 0
+    },
+    {
+      "artifact": "03_gate_matrix.json",
+      "bytes": 4181,
+      "sha256": [
+        "242401fedf2c6a01b0cc376e8734cfeafff180f5d669ae9775e43a95c2014775",
+        "242401fedf2c6a01b0cc376e8734cfeafff180f5d669ae9775e43a95c2014775",
+        "242401fedf2c6a01b0cc376e8734cfeafff180f5d669ae9775e43a95c2014775"
+      ],
+      "direct_byte_comparison": "PASS",
+      "hash_comparison": "PASS",
+      "byte_mismatches": 0
+    },
+    {
+      "artifact": "04_verdictbridge_assessment.txt",
+      "bytes": 2348,
+      "sha256": [
+        "90faa90efa8f79aab956427479788e616f87b0178606d4f2563535cccd5a0378",
+        "90faa90efa8f79aab956427479788e616f87b0178606d4f2563535cccd5a0378",
+        "90faa90efa8f79aab956427479788e616f87b0178606d4f2563535cccd5a0378"
+      ],
+      "direct_byte_comparison": "PASS",
+      "hash_comparison": "PASS",
+      "byte_mismatches": 0
+    },
+    {
+      "artifact": "canonical_run.zip",
+      "bytes": 36608,
+      "sha256": [
+        "947314014bd8251f8cfb67d080bd7244d648752e9532aee109b85cf5f836324c",
+        "947314014bd8251f8cfb67d080bd7244d648752e9532aee109b85cf5f836324c",
+        "947314014bd8251f8cfb67d080bd7244d648752e9532aee109b85cf5f836324c"
+      ],
+      "direct_byte_comparison": "PASS",
+      "hash_comparison": "PASS",
+      "byte_mismatches": 0
+    }
+  ],
+  "selectivity": [
+    {
+      "field": "strict_liability_failure_to_warn",
+      "original": "DENY_SUMMARY_JUDGMENT",
+      "new": "DENY_SUMMARY_JUDGMENT",
+      "changed": false
+    },
+    {
+      "field": "negligence",
+      "original": "DENY_SUMMARY_JUDGMENT",
+      "new": "DENY_SUMMARY_JUDGMENT",
+      "changed": false
+    },
+    {
+      "field": "compensatory_damages",
+      "original": "DENY_SUMMARY_JUDGMENT",
+      "new": "DENY_SUMMARY_JUDGMENT",
+      "changed": false
+    },
+    {
+      "field": "punitive_damages",
+      "original": "DENY_SUMMARY_JUDGMENT",
+      "new": "GRANT_SUMMARY_JUDGMENT",
+      "changed": true
+    },
+    {
+      "field": "overall_motion_result",
+      "original": "DENIED",
+      "new": "GRANTED_IN_PART_DENIED_IN_PART",
+      "changed": true
+    },
+    {
+      "field": "sam_reed_statement",
+      "original": "EXCLUDED_AND_NOT_USED",
+      "new": "EXCLUDED_AND_NOT_USED",
+      "changed": false
+    },
+    {
+      "field": "jury_instruction_coverage",
+      "original": "PASS",
+      "new": "PASS",
+      "changed": false
+    },
+    {
+      "field": "appellate_record_review",
+      "original": "NOT_APPLICABLE",
+      "new": "NOT_APPLICABLE",
+      "changed": false
+    },
+    {
+      "field": "filingready",
+      "original": "NOT_APPLICABLE",
+      "new": "NOT_APPLICABLE",
+      "changed": false
+    },
+    {
+      "field": "verdictready",
+      "original": "YES",
+      "new": "YES",
+      "changed": false
+    },
+    {
+      "field": "export_authorized",
+      "original": true,
+      "new": true,
+      "changed": false
+    }
+  ],
+  "invalid_control": {
+    "status": "REFUSED",
+    "accepted": false,
+    "verdictready": "NO",
+    "export_authorized": false,
+    "failure_code": "INADMISSIBLE_EVIDENCE_RELIANCE",
+    "failed_rule": "L015 / F051-F054 / L020",
+    "failed_gates": [
+      "VB-D-EAUR",
+      "VERDICTREADY-GATE",
+      "EXPORT-GATE"
+    ],
+    "excluded_fact_ids": [
+      "F051"
+    ],
+    "export_files_opened": 0,
+    "bytes_written": 0,
+    "final_output_inventory": []
+  },
+  "maximum_numeric_error": "0.000000",
+  "numeric_error_scope": "No numeric damages values were changed; exact input/normalized-record preservation. Not a predictive error metric.",
+  "limitations": [
+    "New exact-case local implementation; original engine not executed.",
+    "Separate verifier authored in the same task; no external certification.",
+    "No model calls or real-world legal authority validation.",
+    "Finite exact-case result; no universal model determinism."
+  ]
+}

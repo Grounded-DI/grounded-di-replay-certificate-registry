@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-10-08T02:52:02.974918+00:00",
+  "python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "implementation": "CPython",
+  "python_binary_sha256": "271143990bc83af0fb2404a255038f5faafb96df1584ed7f085e5018c0f33ffb",
+  "os": "Darwin",
+  "release": "25.6.0",
+  "machine": "arm64",
+  "locale": [
+    "en_US",
+    "UTF-8"
+  ],
+  "timezone_names": [
+    "EST",
+    "EDT"
+  ],
+  "environment": {
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "TZ": null
+  },
+  "dependency_note": "Core reproduction uses Python standard library; no model endpoint. Record any local changes separately."
+}

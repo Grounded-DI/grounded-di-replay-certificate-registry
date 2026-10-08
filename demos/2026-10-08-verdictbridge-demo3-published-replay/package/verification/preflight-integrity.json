@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "archive_sha256": "8f401a26711b423055079423e766558e1b2ec82309bbc470d469969d5bd448cc",
+  "manifest_entries": 127,
+  "certificate_bindings": 126,
+  "pre_execution": true
+}

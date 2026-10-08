@@ -1,0 +1,24 @@
+{
+  "release_type": "Public derivative of completed fresh replay",
+  "original_local_zip_sha256": "70b7307aaa448b68646e0b661db9b62b66e0ca8ccee8d0cac80eca70c899d533",
+  "source_commit": "ac3a8cd522718235d2a7154c728566614086a809",
+  "claim": "Three fresh local executions produced the declared selective result with identical canonical artifacts and refused the inadmissible-hearsay control.",
+  "review_status": "Internal verification; unaffiliated review pending",
+  "redacted_files": [
+    "environment.json",
+    "verification/measured-results.json",
+    "execution/fresh-reproduction.stdout.txt",
+    "execution/commands.json",
+    "execution/acceptance-controls.stdout.txt"
+  ],
+  "redaction_policy": "Replace local workspace, Python executable and temporary directory prefixes only. No execution measurements changed.",
+  "omitted_files": [
+    "execution/controller-executed.py",
+    "verification/preservation-before.json"
+  ],
+  "canonical_artifacts_receipts_source_spec_reference_pinned_archive_pdf": "Preserved unchanged",
+  "pdf_scope": "Historical execution report; local/unsent statements refer to preparation time",
+  "benchmark_runs_during_publication_preparation": 0,
+  "certificate_and_manifest": "Regenerated for public derivative",
+  "original_local_evidence": "Preserved unchanged"
+}

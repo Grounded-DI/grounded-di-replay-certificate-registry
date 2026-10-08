@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/Grounded-DI/grounded-di-replay-certificate-registry",
+  "commit": "8472b48470b6c35a3ad2778f0819f36d4ddaef1b",
+  "folder": "Verdictbridge_demo-2",
+  "inspected_complete_folder": true,
+  "files": {
+    "Run-2-run_receipt.json": "0882d41eef9dda1f9f097f609fce77edaf7629d508da34e6d0c532b312924044",
+    "Run-2-04_verdictbridge_assessment.txt": "e977081b390b42f74a6779a4ee32252afcd7aa58fb73def9d7181dda1163facd",
+    "Run-2-02_normalized_record.csv": "0ccc7f002330baa8b482486fed0e17a1d73b4bd3c95372cc52bf172585ee1a97",
+    "Run-2-03_gate_matrix.json": "3485237ad08fac0192e72873620b5207702687fd6efbb4d0949d6c0d5d2bd9a2",
+    "Run-2-01_canonical_input.json": "2e631eb0d2d81d6625ad73f286049ccc988dea8de31028880f774bf76a496042"
+  },
+  "executable_original_source": "NOT_SUPPLIED_IN_REFERENCE_FOLDER",
+  "implementation": "New exact-case local evaluator, authored for this mission. Not native application or model execution."
+}

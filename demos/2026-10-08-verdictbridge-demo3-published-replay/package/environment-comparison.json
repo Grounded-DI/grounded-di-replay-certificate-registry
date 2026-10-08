@@ -1,0 +1,78 @@
+{
+  "recorded_core_fields_match": true,
+  "fields": {
+    "python_version": {
+      "published": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "current": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "equal": true
+    },
+    "implementation": {
+      "published": "CPython",
+      "current": "CPython",
+      "equal": true
+    },
+    "python_binary_sha256": {
+      "published": "271143990bc83af0fb2404a255038f5faafb96df1584ed7f085e5018c0f33ffb",
+      "current": "271143990bc83af0fb2404a255038f5faafb96df1584ed7f085e5018c0f33ffb",
+      "equal": true
+    },
+    "os": {
+      "published": "Darwin",
+      "current": "Darwin",
+      "equal": true
+    },
+    "release": {
+      "published": "25.6.0",
+      "current": "25.6.0",
+      "equal": true
+    },
+    "machine": {
+      "published": "arm64",
+      "current": "arm64",
+      "equal": true
+    },
+    "locale": {
+      "published": [
+        "en_US",
+        "UTF-8"
+      ],
+      "current": [
+        "en_US",
+        "UTF-8"
+      ],
+      "equal": true
+    },
+    "timezone_names": {
+      "published": [
+        "EST",
+        "EDT"
+      ],
+      "current": [
+        "EST",
+        "EDT"
+      ],
+      "equal": true
+    },
+    "environment": {
+      "published": {
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "TZ": null
+      },
+      "current": {
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "TZ": null
+      },
+      "equal": true
+    }
+  },
+  "timestamp_difference": {
+    "published": "2026-10-08T02:52:02.974918+00:00",
+    "current": "2026-10-08T14:45:34.607776+00:00",
+    "interpretation": "Expected real time difference; outside canonical boundary"
+  },
+  "executable_path_comparison": "UNKNOWN - published path was explicitly redacted; binary hashes compared instead",
+  "unrecorded_environment": "Not assessed; agreement of recorded fields is not proof of complete machine-state identity",
+  "older_historical_os_interpreter": "UNKNOWN in older historical receipts; no inference made"
+}
