@@ -294,3 +294,8 @@ For technical evaluation, controlled demonstrations, integration discussions, or
 ---
 
 #DeterministicAI #AIValidation #Auditability #Replayability #AIInfrastructure #AIGovernance #Provenance #GroundedDI
+
+
+## Curated mathematical collection
+
+The mathematical records in this registry, including the Erdős #390 intake record, are indexed in [MathWise Deterministic Replay Certificates](https://github.com/Grounded-DI/MathWise-Deterministic-Replay-Certificates). This registry remains canonical for its intake records and replay artifacts.
