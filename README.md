@@ -14,6 +14,10 @@ The registry includes four runnable Python demonstrations and ten numbered evide
 
 > **Repository scope:** The public evidence supports the result stated by each record—such as byte identity, fresh local replay, boundary enforcement, or exact arithmetic. Broader conclusions are not inferred from hashes alone. Certificates in the runnable demonstrations are local, unsigned project records.
 
+## Seven-Hash Replay Benchmark — Final Local Closure (October 19, 2026)
+
+[Closure record](benchmarks/2026-10-19-seven-hash-replay-closure/README.md) — Seven boundaries verified under their respective contracts: two fresh computational builds matched six artifact hashes; two clean canonical repackages of the unchanged historical 116-member payload matched the seventh. Independent mathematical checks and negative controls passed. An initial packaging failure caused by seven unwanted Python cache files is documented, not hidden. The evidence ZIPs are identified by SHA-256 in the closure record but are not hosted in this repository. **Frozen regression reference; no further benchmark development planned.**
+
 ## ShelterWise Priority-Drift and Scarce-Resource Replay (October 19, 2026)
 
 [Synthetic replay package](benchmarks/2026-10-19-shelterwise-priority-drift-replay/README.md) · [Report](benchmarks/2026-10-19-shelterwise-priority-drift-replay/REPORT.md) · [Reproducibility archive](benchmarks/2026-10-19-shelterwise-priority-drift-replay/reproducibility_package.zip)
