@@ -4,61 +4,91 @@
       "authority_ids": [
         "SYNTH-LAW-001"
       ],
+      "bound_authorities": [
+        {
+          "citation": "Synthetic Supreme Court, 200 S.C. 1 (2022)",
+          "id": "SYNTH-LAW-001",
+          "kind": "holding",
+          "level": "controlling",
+          "source_excerpt": "TEST FIXTURE — A court does not resolve a genuine credibility dispute on summary judgment."
+        }
+      ],
       "classification": "SUPPORTED_HOLDING",
+      "kind": "holding",
+      "missing_authority_ids": [],
       "proposition_id": "P-001",
       "reason": "The supplied synthetic holding supports the proposition within the stated posture.",
-      "status": "SUPPORTED"
+      "support_state": "SUPPORTED",
+      "text": "A genuine credibility dispute about who performed the repair is not resolved on summary judgment."
     },
     {
       "authority_ids": [
         "SYNTH-LAW-002"
+      ],
+      "bound_authorities": [
+        {
+          "citation": "Synthetic Supreme Court, 201 S.C. 9 (2023)",
+          "id": "SYNTH-LAW-002",
+          "kind": "holding",
+          "level": "controlling",
+          "source_excerpt": "TEST FIXTURE — A product claim requires evidence connecting the alleged product to the defendant and the exposure event."
+        }
       ],
       "classification": "SUPPORTED_HOLDING",
+      "kind": "holding",
+      "missing_authority_ids": [],
       "proposition_id": "P-002",
       "reason": "The supplied synthetic holding supports the proposition within the stated posture.",
-      "status": "SUPPORTED"
+      "support_state": "SUPPORTED",
+      "text": "The product record must connect the alleged gasket to the defendant and the exposure event."
     },
     {
       "authority_ids": [
         "SYNTH-LAW-001",
         "SYNTH-LAW-002"
+      ],
+      "bound_authorities": [
+        {
+          "citation": "Synthetic Supreme Court, 200 S.C. 1 (2022)",
+          "id": "SYNTH-LAW-001",
+          "kind": "holding",
+          "level": "controlling",
+          "source_excerpt": "TEST FIXTURE — A court does not resolve a genuine credibility dispute on summary judgment."
+        },
+        {
+          "citation": "Synthetic Supreme Court, 201 S.C. 9 (2023)",
+          "id": "SYNTH-LAW-002",
+          "kind": "holding",
+          "level": "controlling",
+          "source_excerpt": "TEST FIXTURE — A product claim requires evidence connecting the alleged product to the defendant and the exposure event."
+        }
       ],
       "classification": "INFERENCE_REQUIRES_RECORD",
+      "kind": "inference",
+      "missing_authority_ids": [],
       "proposition_id": "P-003",
       "reason": "The proposition requires application to the factual record and is not established by authority alone.",
-      "status": "INFERENCE"
-    },
-    {
-      "authority_ids": [
-        "SYNTH-LAW-003"
-      ],
-      "classification": "DICTA_ONLY",
-      "proposition_id": "P-004",
-      "reason": "The proposition is not a necessary holding in the supplied record.",
-      "status": "LIMITED"
-    },
-    {
-      "authority_ids": [
-        "SYNTH-LAW-001",
-        "SYNTH-LAW-002"
-      ],
-      "classification": "UNSUPPORTED",
-      "proposition_id": "P-005",
-      "reason": "The proposition is not supported by the supplied closed-world authorities.",
-      "status": "UNSUPPORTED"
+      "support_state": "UNRESOLVED",
+      "text": "The present record is legally sufficient to deny summary judgment on every element."
     },
     {
       "authority_ids": [
         "SYNTH-LAW-999"
       ],
+      "bound_authorities": [],
       "classification": "UNRESOLVED_MISSING_AUTHORITY",
-      "proposition_id": "P-006",
-      "reason": "A referenced authority is absent from the closed-world record.",
-      "status": "UNRESOLVED"
+      "kind": "unsupported",
+      "missing_authority_ids": [
+        "SYNTH-LAW-999"
+      ],
+      "proposition_id": "P-004",
+      "reason": "A referenced synthetic authority is absent from the closed-world record.",
+      "support_state": "UNRESOLVED",
+      "text": "The supplied authorities establish that any exposure allegation proves causation."
     }
   ],
   "burden_and_standard": "The moving party must show no genuine dispute of material fact under the supplied synthetic summary-judgment standard.",
-  "canonical_record_sha256": "860e5be6e001fcdf6218d54ff8c2c21b4dce4d50b30e2266ffcf12912828858f",
+  "canonical_record_sha256": "9334b37f68ba58b87443ab67defc2e668e2de1582cf7b3d61063bac25e03c89c",
   "inferences": [
     "P-003"
   ],
@@ -69,13 +99,13 @@
     "Authority binding does not establish product identity, exposure, dose, causation, or liability."
   ],
   "procedural_posture": "summary judgment on product-identification, exposure, and causation issues",
-  "schema": "briefwise-integrated-stage-v1",
+  "schema": "briefwise-integrated-stage-v2",
   "stage": "BriefWise",
   "stage_disposition": "REVIEW_REQUIRED",
+  "synthetic_fixture": true,
   "unresolved": [
-    "P-006"
+    "P-003",
+    "P-004"
   ],
-  "unsupported": [
-    "P-005"
-  ]
+  "unsupported": []
 }

@@ -1,12 +1,255 @@
 {
   "chain_controls": "PASS",
   "checks": {
-    "alter_deposition_answer": true,
-    "causation_override_rejected": true,
-    "change_transcript_page_line": true,
-    "post_generation_intermediate_tamper_rejected": true,
-    "remove_authority": true,
-    "replace_product_identifier": true,
-    "unsupported_material_assertion_rejected": true
-  }
+    "add_unsupported_material_assertion": {
+      "disposition": "INSUFFICIENT",
+      "exit_code": 0,
+      "final_chain_sha256": "444d113ffda20ae5a1e4898a55976cf2b96c9362ced1ba78a394e40152d7e402",
+      "observed": {
+        "briefwise_unresolved": [
+          "P-003",
+          "P-004"
+        ],
+        "depo_first_finding": {
+          "entries": [
+            "T-001",
+            "T-002"
+          ],
+          "explanation": "The same witness gives opposite answers about the same repair at the same site and time.",
+          "id": "C-001",
+          "speaker": "Witness A",
+          "type": "DIRECT_CONTRADICTION"
+        },
+        "downstream_injection_result": "REJECTED",
+        "pid_product_row": {
+          "basis": [
+            "MODEL-Z-14"
+          ],
+          "dimension": "product_identification",
+          "evidence_ids": [
+            "R-001",
+            "R-002"
+          ],
+          "status": "MATCH",
+          "support_state": "SUPPORTED"
+        },
+        "pid_unsupported_manual": [],
+        "pid_unsupported_material": [
+          "R-004",
+          "R-009"
+        ]
+      },
+      "pass": true
+    },
+    "alter_deposition_answer": {
+      "disposition": "INSUFFICIENT",
+      "exit_code": 0,
+      "final_chain_sha256": "5352baeed5038ef8ae2f2bcfe7866c4e7da41963a8cac248f20a0c966ed40d51",
+      "observed": {
+        "briefwise_unresolved": [
+          "P-003",
+          "P-004"
+        ],
+        "depo_first_finding": {
+          "entries": [
+            "T-001",
+            "T-002"
+          ],
+          "explanation": "The canonical source binding or same-event predicate is not established.",
+          "id": "C-001",
+          "speaker": "Witness A",
+          "type": "NOT_ESTABLISHED"
+        },
+        "downstream_injection_result": "REJECTED",
+        "pid_product_row": {
+          "basis": [
+            "MODEL-Z-14"
+          ],
+          "dimension": "product_identification",
+          "evidence_ids": [
+            "R-001",
+            "R-002"
+          ],
+          "status": "MATCH",
+          "support_state": "SUPPORTED"
+        },
+        "pid_unsupported_manual": [],
+        "pid_unsupported_material": [
+          "R-004"
+        ]
+      },
+      "pass": true
+    },
+    "alter_transcript_page_line": {
+      "disposition": "INSUFFICIENT",
+      "exit_code": 0,
+      "final_chain_sha256": "b3224d4c086a8d4ed201ae16247d9e4978f420e91248c9a32791b2cbaf0cee0c",
+      "observed": {
+        "briefwise_unresolved": [
+          "P-003",
+          "P-004"
+        ],
+        "depo_first_finding": {
+          "entries": [
+            "T-001",
+            "T-002"
+          ],
+          "explanation": "The canonical source binding or same-event predicate is not established.",
+          "id": "C-001",
+          "speaker": "Witness A",
+          "type": "UNRESOLVED_SOURCE_BINDING"
+        },
+        "downstream_injection_result": "REJECTED",
+        "pid_product_row": {
+          "basis": [
+            "MODEL-Z-14"
+          ],
+          "dimension": "product_identification",
+          "evidence_ids": [
+            "R-001",
+            "R-002"
+          ],
+          "status": "MATCH",
+          "support_state": "SUPPORTED"
+        },
+        "pid_unsupported_manual": [],
+        "pid_unsupported_material": [
+          "R-004"
+        ]
+      },
+      "pass": true
+    },
+    "inject_causation_override": {
+      "disposition": "INSUFFICIENT",
+      "exit_code": 0,
+      "final_chain_sha256": "fcb732254d0e152c9a07996d7aa9fcdb0fb2cec3cf9222a5afb879605bbf9091",
+      "observed": {
+        "briefwise_unresolved": [
+          "P-003",
+          "P-004"
+        ],
+        "depo_first_finding": {
+          "entries": [
+            "T-001",
+            "T-002"
+          ],
+          "explanation": "The same witness gives opposite answers about the same repair at the same site and time.",
+          "id": "C-001",
+          "speaker": "Witness A",
+          "type": "DIRECT_CONTRADICTION"
+        },
+        "downstream_injection_result": "REJECTED",
+        "pid_product_row": {
+          "basis": [
+            "MODEL-Z-14"
+          ],
+          "dimension": "product_identification",
+          "evidence_ids": [
+            "R-001",
+            "R-002"
+          ],
+          "status": "MATCH",
+          "support_state": "SUPPORTED"
+        },
+        "pid_unsupported_manual": [
+          "R-010"
+        ],
+        "pid_unsupported_material": [
+          "R-004"
+        ]
+      },
+      "pass": true
+    },
+    "post_generation_final_injection": {
+      "exit_code": 1,
+      "pass": true,
+      "stderr": "",
+      "stdout": "{\n  \"checks\": {\n    \"final_boundary_states_present\": true,\n    \"final_contradiction_preserved\": true,\n    \"final_dose_not_inferred\": true,\n    \"final_exposure_not_causation\": true,\n    \"final_final_hash_valid\": false,\n    \"final_final_stage_hashes_match\": true,\n    \"final_independent_disposition_rule\": false,\n    \"final_injection_not_upgraded\": false,\n    \"final_upstream_integrity_failures_empty\": true,\n    \"independent_briefwise_matches_expected\": true,\n    \"independent_depobot_matches_expected\": true,\n    \"independent_pidbot_matches_expected\": true,\n    \"negative_control_is_preserved\": true,\n    \"run_briefwise_hash_valid\": true,\n    \"run_briefwise_matches_independent\": true,\n    \"run_depobot_hash_valid\": true,\n    \"run_depobot_matches_independent\": true,\n    \"run_final_matches_expected\": false,\n    \"run_pidbot_hash_valid\": true,\n    \"run_pidbot_matches_independent\": true,\n    \"stage_execution_receipts_present\": true,\n    \"two_fresh_runs_have_identical_canonical_outputs\": false\n  },\n  \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\",\n  \"python\": \"3.12.14\",\n  \"run_dir\": \"/tmp/integrated-chain-final-tamper-_w3xjvh3/run\",\n  \"scope\": \"closed-world synthetic integrated chain\",\n  \"verifier\": \"FAIL\"\n}\n"
+    },
+    "post_generation_intermediate_tamper": {
+      "exit_code": 1,
+      "pass": true,
+      "stderr": "",
+      "stdout": "{\n  \"checks\": {\n    \"final_boundary_states_present\": true,\n    \"final_contradiction_preserved\": true,\n    \"final_dose_not_inferred\": true,\n    \"final_exposure_not_causation\": true,\n    \"final_final_hash_valid\": true,\n    \"final_final_stage_hashes_match\": true,\n    \"final_independent_disposition_rule\": true,\n    \"final_injection_not_upgraded\": true,\n    \"final_upstream_integrity_failures_empty\": true,\n    \"independent_briefwise_matches_expected\": true,\n    \"independent_depobot_matches_expected\": true,\n    \"independent_pidbot_matches_expected\": true,\n    \"negative_control_is_preserved\": true,\n    \"run_briefwise_hash_valid\": true,\n    \"run_briefwise_matches_independent\": true,\n    \"run_depobot_hash_valid\": true,\n    \"run_depobot_matches_independent\": true,\n    \"run_final_matches_expected\": false,\n    \"run_pidbot_hash_valid\": true,\n    \"run_pidbot_matches_independent\": false,\n    \"stage_execution_receipts_present\": true,\n    \"two_fresh_runs_have_identical_canonical_outputs\": false\n  },\n  \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\",\n  \"python\": \"3.12.14\",\n  \"run_dir\": \"/tmp/integrated-chain-tamper-i2eelk3g/run\",\n  \"scope\": \"closed-world synthetic integrated chain\",\n  \"verifier\": \"FAIL\"\n}\n"
+    },
+    "remove_authority": {
+      "disposition": "INSUFFICIENT",
+      "exit_code": 0,
+      "final_chain_sha256": "de6e73b73920b525095502fc090ccc470d001a1239e8169fe73b920f001158b0",
+      "observed": {
+        "briefwise_unresolved": [
+          "P-002",
+          "P-003",
+          "P-004"
+        ],
+        "depo_first_finding": {
+          "entries": [
+            "T-001",
+            "T-002"
+          ],
+          "explanation": "The same witness gives opposite answers about the same repair at the same site and time.",
+          "id": "C-001",
+          "speaker": "Witness A",
+          "type": "DIRECT_CONTRADICTION"
+        },
+        "downstream_injection_result": "REJECTED",
+        "pid_product_row": {
+          "basis": [
+            "MODEL-Z-14"
+          ],
+          "dimension": "product_identification",
+          "evidence_ids": [
+            "R-001",
+            "R-002"
+          ],
+          "status": "MATCH",
+          "support_state": "SUPPORTED"
+        },
+        "pid_unsupported_manual": [],
+        "pid_unsupported_material": [
+          "R-004"
+        ]
+      },
+      "pass": true
+    },
+    "replace_product_identifier": {
+      "disposition": "INSUFFICIENT",
+      "exit_code": 0,
+      "final_chain_sha256": "29d63af243f8c73393aac733f6961cf395498d8642fb61a06d6e49af6439fcf7",
+      "observed": {
+        "briefwise_unresolved": [
+          "P-003",
+          "P-004"
+        ],
+        "depo_first_finding": {
+          "entries": [
+            "T-001",
+            "T-002"
+          ],
+          "explanation": "The same witness gives opposite answers about the same repair at the same site and time.",
+          "id": "C-001",
+          "speaker": "Witness A",
+          "type": "DIRECT_CONTRADICTION"
+        },
+        "downstream_injection_result": "REJECTED",
+        "pid_product_row": {
+          "basis": [
+            "No disclosed product/worksite/manufacturer record satisfies the matching rule."
+          ],
+          "dimension": "product_identification",
+          "evidence_ids": [
+            "R-001"
+          ],
+          "status": "REVIEW",
+          "support_state": "UNRESOLVED"
+        },
+        "pid_unsupported_manual": [],
+        "pid_unsupported_material": [
+          "R-004"
+        ]
+      },
+      "pass": true
+    }
+  },
+  "schema": "integrated-chain-controls-v2"
 }

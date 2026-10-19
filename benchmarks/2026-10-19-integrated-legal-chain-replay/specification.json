@@ -1,9 +1,9 @@
 {
   "rules": {
-    "briefwise": "Missing authority is unresolved; holdings may support a proposition; dicta are limited persuasive material; inferences require record application; unsupported or overbroad propositions are rejected; authority cannot itself prove facts.",
-    "depobot": "Same-speaker negation of the same act, place, and year is a contradiction; uncertainty is not contradiction; a question without an answer is not an admission.",
-    "pidbot": "Product identity requires shared product identity and manufacturer record; component, material, exposure, dose, causation, and liability remain separate dimensions.",
-    "verdictbridge": "No downstream stage may upgrade an unresolved upstream dimension. Any source-binding failure, missing authority, product mismatch, unsupported injection, or unresolved dose/causation prevents VERDICT_READY."
+    "briefwise": "A proposition is supported only when every referenced synthetic authority is present and the proposition kind is a supplied holding. Missing authority is unresolved; dicta is limited; inferences require record application; authority cannot itself prove facts.",
+    "depobot": "A same-speaker negation of the same act, place, and year is a contradiction only when every canonical page/line binding is intact. Uncertainty is not contradiction; a question without an answer is not an admission.",
+    "pidbot": "Product identity requires a shared product identifier, defendant candidate, and manufacturer record. Component, material, exposure, dose, causation, and liability remain separate dimensions. Witness belief and manual overrides cannot establish material content or causation.",
+    "verdictbridge": "The final stage verifies upstream canonical hashes and may not upgrade an unresolved upstream dimension. Any source-binding failure, missing authority, product mismatch, unsupported injection, altered intermediate record, or unresolved dose/causation prevents VERDICT_READY."
   },
   "schema": "integrated-legal-evidence-chain-spec-v1",
   "stage_boundaries": [
@@ -12,5 +12,9 @@
     "product_exposure_separation",
     "litigation_sufficiency"
   ],
-  "synthetic_fixture_notice": "Every authority, transcript entry, exhibit, product, entity, and conclusion is a synthetic test fixture."
+  "synthetic_fixture_notice": "Every authority, transcript entry, exhibit, product, entity, and conclusion is a synthetic test fixture.",
+  "canonicalization": "UTF-8 JSON with sorted keys, compact separators, ensure_ascii=false; stage hash excludes canonical_record_sha256 and final hash excludes final_chain_sha256.",
+  "non_claims": [
+    "No real legal correctness, filing readiness, product identification, exposure, dose, causation, liability, independent fresh-generation provenance, external verification, or production deployment is established."
+  ]
 }

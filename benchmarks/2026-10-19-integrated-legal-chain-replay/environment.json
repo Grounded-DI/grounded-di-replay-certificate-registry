@@ -1,0 +1,11 @@
+{
+  "external_writes_performed": false,
+  "implementation": "CPython",
+  "network_calls_required": false,
+  "package_root": "/workspace/scratch/cfd2224648bf/four_lane_replay/registry_snapshot_1792208497/benchmarks/2026-10-19-integrated-legal-chain-replay",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "recorded_utc": "2026-10-19T03:31:27+00:00",
+  "schema": "integrated-chain-environment-v1"
+}

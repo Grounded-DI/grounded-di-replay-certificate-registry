@@ -1,15 +1,31 @@
 {
   "checks": {
-    "contradiction_is_preserved": true,
+    "final_boundary_states_present": true,
+    "final_contradiction_preserved": true,
+    "final_dose_not_inferred": true,
+    "final_exposure_not_causation": true,
+    "final_final_hash_valid": true,
+    "final_final_stage_hashes_match": true,
+    "final_independent_disposition_rule": true,
+    "final_injection_not_upgraded": true,
+    "final_upstream_integrity_failures_empty": true,
     "independent_briefwise_matches_expected": true,
     "independent_depobot_matches_expected": true,
-    "independent_final_expected_hash": true,
     "independent_pidbot_matches_expected": true,
-    "material_dose_causation_not_upgraded": true,
     "negative_control_is_preserved": true,
-    "run_matches_expected": true,
-    "two_runs_identical": true
+    "run_briefwise_hash_valid": true,
+    "run_briefwise_matches_independent": true,
+    "run_depobot_hash_valid": true,
+    "run_depobot_matches_independent": true,
+    "run_final_matches_expected": true,
+    "run_pidbot_hash_valid": true,
+    "run_pidbot_matches_independent": true,
+    "stage_execution_receipts_present": true,
+    "two_fresh_runs_have_identical_canonical_outputs": true
   },
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "run_dir": "/workspace/scratch/cfd2224648bf/four_lane_replay/registry_snapshot_1792208497/benchmarks/2026-10-19-integrated-legal-chain-replay/run_1",
   "scope": "closed-world synthetic integrated chain",
   "verifier": "PASS"
 }

@@ -1,0 +1,32 @@
+{
+  "control_suite_result": "PASS",
+  "final_chain_replay_identity": "PASS",
+  "final_disposition": "INSUFFICIENT",
+  "fresh_replay_executions": 2,
+  "negative_control_result": "PASS",
+  "observed_replay_divergence": [],
+  "record_mismatches": [],
+  "recorded_utc": "2026-10-19T03:31:27+00:00",
+  "run_1_final_chain_sha256": "9c68fd56872beac428bb8feeb240b93f340aa4a8d4f407b5802d665fd645d325",
+  "run_2_final_chain_sha256": "9c68fd56872beac428bb8feeb240b93f340aa4a8d4f407b5802d665fd645d325",
+  "schema": "integrated-chain-replay-summary-v1",
+  "stage_execution_counts": {
+    "per_stage": {
+      "BriefWise": 2,
+      "DepoBot": 2,
+      "PIDBot": 2,
+      "VerdictBridge": 2
+    },
+    "run_1": 4,
+    "run_2": 4,
+    "total": 8
+  },
+  "stage_level_replay_identity": "PASS",
+  "unresolved_evidence": [
+    "Material content is not established by a manufacturer specification.",
+    "Dose is not quantified.",
+    "No causation opinion is supplied.",
+    "The testimony contains a direct contradiction requiring credibility/foundation review."
+  ],
+  "verifier_result": "PASS"
+}

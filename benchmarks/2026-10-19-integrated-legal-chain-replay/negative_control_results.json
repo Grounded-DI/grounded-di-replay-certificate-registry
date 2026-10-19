@@ -1,0 +1,93 @@
+{
+  "negative_controls": [
+    {
+      "disposition": "INSUFFICIENT",
+      "exit_code": 0,
+      "final_chain_sha256": "5352baeed5038ef8ae2f2bcfe7866c4e7da41963a8cac248f20a0c966ed40d51",
+      "observed": {
+        "briefwise_unresolved": [
+          "P-003",
+          "P-004"
+        ],
+        "depo_first_finding": {
+          "entries": [
+            "T-001",
+            "T-002"
+          ],
+          "explanation": "The canonical source binding or same-event predicate is not established.",
+          "id": "C-001",
+          "speaker": "Witness A",
+          "type": "NOT_ESTABLISHED"
+        },
+        "downstream_injection_result": "REJECTED",
+        "pid_product_row": {
+          "basis": [
+            "MODEL-Z-14"
+          ],
+          "dimension": "product_identification",
+          "evidence_ids": [
+            "R-001",
+            "R-002"
+          ],
+          "status": "MATCH",
+          "support_state": "SUPPORTED"
+        },
+        "pid_unsupported_manual": [],
+        "pid_unsupported_material": [
+          "R-004"
+        ]
+      },
+      "pass": true
+    },
+    {
+      "disposition": "INSUFFICIENT",
+      "exit_code": 0,
+      "final_chain_sha256": "b3224d4c086a8d4ed201ae16247d9e4978f420e91248c9a32791b2cbaf0cee0c",
+      "observed": {
+        "briefwise_unresolved": [
+          "P-003",
+          "P-004"
+        ],
+        "depo_first_finding": {
+          "entries": [
+            "T-001",
+            "T-002"
+          ],
+          "explanation": "The canonical source binding or same-event predicate is not established.",
+          "id": "C-001",
+          "speaker": "Witness A",
+          "type": "UNRESOLVED_SOURCE_BINDING"
+        },
+        "downstream_injection_result": "REJECTED",
+        "pid_product_row": {
+          "basis": [
+            "MODEL-Z-14"
+          ],
+          "dimension": "product_identification",
+          "evidence_ids": [
+            "R-001",
+            "R-002"
+          ],
+          "status": "MATCH",
+          "support_state": "SUPPORTED"
+        },
+        "pid_unsupported_manual": [],
+        "pid_unsupported_material": [
+          "R-004"
+        ]
+      },
+      "pass": true
+    }
+  ],
+  "non_contradiction_control": {
+    "entries": [
+      "T-004",
+      "T-005"
+    ],
+    "explanation": "Lack of observation and inability to identify the repairer do not negate another witness's account.",
+    "id": "C-003",
+    "speaker": "Witness B",
+    "type": "NEGATIVE_CONTROL_NOT_CONTRADICTION"
+  },
+  "schema": "negative-control-results-v1"
+}

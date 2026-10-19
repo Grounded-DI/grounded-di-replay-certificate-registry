@@ -1,69 +1,107 @@
 {
-  "canonical_record_sha256": "21709fc5f41f3ff5637272b33b521f224de37c7a6d69cc756f90522295795de1",
+  "boundary_statement": "Product identification does not establish component identity, material content, exposure, dose, causation, or legal liability.",
+  "canonical_record_sha256": "74dff06e53ef73d0e2de7b6df840690a6127a0aa6180213262ed418eabb5536b",
   "evidence_matrix": [
     {
       "basis": [
         "MODEL-Z-14"
       ],
       "dimension": "product_identification",
-      "status": "MATCH"
+      "evidence_ids": [
+        "R-001",
+        "R-002"
+      ],
+      "status": "MATCH",
+      "support_state": "SUPPORTED"
     },
     {
       "basis": [
-        "The gasket is referenced but not tied to a component specification or supplier record."
+        "The gasket is referenced but is not tied to a component specification or supplier record."
       ],
       "dimension": "component_identification",
-      "status": "REVIEW"
+      "evidence_ids": [
+        "R-003"
+      ],
+      "status": "REVIEW",
+      "support_state": "UNRESOLVED"
     },
     {
       "basis": [
-        "No manufacturer specification establishes the asserted material content."
+        "No manufacturer specification establishes the asserted material content; witness belief is not enough."
       ],
       "dimension": "material_content",
-      "status": "UNCERTAIN"
+      "evidence_ids": [
+        "R-004"
+      ],
+      "status": "UNCERTAIN",
+      "support_state": "UNRESOLVED"
     },
     {
       "basis": [
         "The work order and testimony contain a genuine repair-history conflict."
       ],
       "dimension": "worksite_chronology",
-      "status": "DISPUTED"
+      "evidence_ids": [
+        "R-003",
+        "R-005",
+        "T-001",
+        "T-002"
+      ],
+      "status": "DISPUTED",
+      "support_state": "DISPUTED"
     },
     {
       "basis": [
         "Handling is alleged, but the handled component is not sufficiently identified as the asserted material."
       ],
       "dimension": "exposure",
-      "status": "REVIEW"
+      "evidence_ids": [
+        "R-005"
+      ],
+      "status": "REVIEW",
+      "support_state": "UNRESOLVED"
     },
     {
       "basis": [
         "No quantified dose, duration, or measurement is supplied."
       ],
       "dimension": "dose",
-      "status": "UNCERTAIN"
+      "evidence_ids": [
+        "R-006"
+      ],
+      "status": "UNCERTAIN",
+      "support_state": "UNRESOLVED"
     },
     {
       "basis": [
         "The synthetic expert record supplies no causation opinion."
       ],
       "dimension": "causation",
-      "status": "UNCERTAIN"
+      "evidence_ids": [
+        "R-007"
+      ],
+      "status": "UNCERTAIN",
+      "support_state": "UNRESOLVED"
     },
     {
       "basis": [
         "The record does not establish every required liability link."
       ],
       "dimension": "legal_liability",
-      "status": "INSUFFICIENT"
+      "evidence_ids": [
+        "R-008"
+      ],
+      "status": "INSUFFICIENT",
+      "support_state": "UNSUPPORTED"
     }
   ],
+  "matching_rule": "product_id + defendant_candidate + manufacturer_record + complaint_worksite",
   "matter_id": "ILCR-2026-10-19-001",
   "non_claims": [
     "Product identification does not establish material content, exposure, dose, causation, or liability.",
     "All records and outcomes are synthetic."
   ],
-  "schema": "pidbot-integrated-stage-v1",
+  "schema": "pidbot-integrated-stage-v2",
   "separation_preserved": [
     "product_identification",
     "component_identification",
@@ -76,6 +114,7 @@
   ],
   "stage": "PIDBot",
   "stage_disposition": "REVIEW_REQUIRED",
+  "synthetic_fixture": true,
   "unsupported_manual_injections": [],
   "unsupported_material_assertions": [
     "R-004"

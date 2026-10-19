@@ -1,0 +1,7 @@
+{
+  "stage": "BriefWise",
+  "purpose": "Bind synthetic legal propositions to supplied synthetic authorities without treating authority as factual proof.",
+  "required_fields": ["jurisdiction", "procedural_posture", "burden_and_standard", "authorities", "legal_propositions"],
+  "classifications": ["SUPPORTED_HOLDING", "DICTA_ONLY", "INFERENCE_REQUIRES_RECORD", "UNSUPPORTED", "UNRESOLVED_MISSING_AUTHORITY"],
+  "invariant": "Every referenced authority must be present before a proposition can be supported."
+}

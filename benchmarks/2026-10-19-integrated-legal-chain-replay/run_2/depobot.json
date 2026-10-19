@@ -1,6 +1,6 @@
 {
   "binding_issues": [],
-  "canonical_record_sha256": "2ad954f46c0fa1ed1357506c31987c39af120d3f0b35994d1e3179c716d546e6",
+  "canonical_record_sha256": "c22a001b36e01faec8a982c38b75769b042beb5eb003a7c61b00da89e7ded71b",
   "findings": [
     {
       "entries": [
@@ -55,10 +55,83 @@
     "No credibility determination is made.",
     "No synthetic testimony is treated as a real admission."
   ],
-  "schema": "depobot-integrated-stage-v1",
+  "schema": "depobot-integrated-stage-v2",
   "source_binding_valid": true,
   "stage": "DepoBot",
   "stage_disposition": "REVIEW_REQUIRED",
+  "synthetic_fixture": true,
+  "testimony_matrix": [
+    {
+      "answer": "Yes. I personally replaced that gasket at North Plant in 2014.",
+      "exhibit": "EX-1",
+      "id": "T-001",
+      "kind": "answer",
+      "page_line": "10:4-10:10",
+      "question": "Did you personally replace the gasket on the Model Z-14 pump at North Plant in 2014?",
+      "source_fragment": "I personally replaced that gasket ... at North Plant in 2014.",
+      "speaker": "Witness A"
+    },
+    {
+      "answer": "No. I did not perform any repair work at North Plant in 2014.",
+      "exhibit": "EX-1",
+      "id": "T-002",
+      "kind": "answer",
+      "page_line": "27:2-27:8",
+      "question": "Did you perform any repair work at North Plant in 2014?",
+      "source_fragment": "I did not perform any repair work ... at North Plant in 2014.",
+      "speaker": "Witness A"
+    },
+    {
+      "answer": "It was probably gray, but I do not remember the color clearly.",
+      "exhibit": "EX-2",
+      "id": "T-003",
+      "kind": "answer",
+      "page_line": "34:1-34:6",
+      "question": "Was the gasket gray?",
+      "source_fragment": "probably gray ... do not remember ... clearly.",
+      "speaker": "Witness A"
+    },
+    {
+      "answer": "No. I arrived after the repair and did not see it happen.",
+      "exhibit": "EX-1",
+      "id": "T-004",
+      "kind": "answer",
+      "page_line": "12:3-12:8",
+      "question": "Did you see the gasket replacement?",
+      "source_fragment": "arrived after the repair and did not see it happen.",
+      "speaker": "Witness B"
+    },
+    {
+      "answer": "I cannot identify who performed it.",
+      "exhibit": "EX-1",
+      "id": "T-005",
+      "kind": "answer",
+      "page_line": "15:1-15:6",
+      "question": "Who performed the repair?",
+      "source_fragment": "cannot identify who performed it.",
+      "speaker": "Witness B"
+    },
+    {
+      "answer": "",
+      "exhibit": "EX-2",
+      "id": "T-006",
+      "kind": "question",
+      "page_line": "41:1-41:5",
+      "question": "So you admit the gray gasket contained asbestos, correct?",
+      "source_fragment": "So you admit ... correct?",
+      "speaker": "Counsel"
+    },
+    {
+      "answer": "I do not recall seeing a manufacturer name.",
+      "exhibit": "EX-3",
+      "id": "T-007",
+      "kind": "answer",
+      "page_line": "45:3-45:7",
+      "question": "What manufacturer was on the gasket packaging?",
+      "source_fragment": "do not recall seeing a manufacturer name.",
+      "speaker": "Witness A"
+    }
+  ],
   "unresolved": [
     "The contradiction may require credibility and foundation review."
   ]

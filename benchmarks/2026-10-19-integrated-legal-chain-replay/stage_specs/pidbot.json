@@ -1,0 +1,6 @@
+{
+  "stage": "PIDBot",
+  "purpose": "Preserve product, component, material, exposure, dose, causation, and liability as separate evidence dimensions.",
+  "dimensions": ["product_identification", "component_identification", "material_content", "worksite_chronology", "exposure", "dose", "causation", "legal_liability"],
+  "invariant": "Product identification never upgrades component identity, material content, exposure, dose, causation, or legal liability."
+}

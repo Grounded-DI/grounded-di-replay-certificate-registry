@@ -1,0 +1,6 @@
+{
+  "stage": "VerdictBridge",
+  "purpose": "Synthesize prior stage records while preserving source boundaries and requiring verified upstream hashes.",
+  "dispositions": ["VERDICT_READY", "REVIEW_REQUIRED", "INSUFFICIENT"],
+  "invariant": "An unresolved or altered upstream record cannot become verdict-ready downstream."
+}

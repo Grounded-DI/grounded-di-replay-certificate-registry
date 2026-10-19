@@ -1,4 +1,16 @@
+# Run two fresh local chain executions
 python3 -B run_chain.py input.json run_1
 python3 -B run_chain.py input.json run_2
+
+# Refresh expected outputs from the first fresh execution
+cp run_1/briefwise.json expected_stage_outputs/briefwise.json
+cp run_1/depobot.json expected_stage_outputs/depobot.json
+cp run_1/pidbot.json expected_stage_outputs/pidbot.json
+cp run_1/final_chain.json expected_final_chain.json
+
+# Run the independent evaluator and control suite
 python3 -B independent_evaluator.py
 python3 -B chain_controls.py
+
+# Verify recorded file hashes
+sha256sum -c SHA256SUMS.txt

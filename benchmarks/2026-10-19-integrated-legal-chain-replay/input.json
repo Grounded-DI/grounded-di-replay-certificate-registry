@@ -156,28 +156,11 @@
     },
     {
       "authority_ids": [
-        "SYNTH-LAW-003"
-      ],
-      "id": "P-004",
-      "kind": "dicta",
-      "text": "Later expert proof may assist with causation but cannot replace product identity."
-    },
-    {
-      "authority_ids": [
-        "SYNTH-LAW-001",
-        "SYNTH-LAW-002"
-      ],
-      "id": "P-005",
-      "kind": "unsupported",
-      "text": "The supplied authorities establish that any exposure allegation proves causation."
-    },
-    {
-      "authority_ids": [
         "SYNTH-LAW-999"
       ],
-      "id": "P-006",
+      "id": "P-004",
       "kind": "unsupported",
-      "text": "A missing synthetic authority establishes automatic liability from any exposure allegation."
+      "text": "The supplied authorities establish that any exposure allegation proves causation."
     }
   ],
   "matter_id": "ILCR-2026-10-19-001",

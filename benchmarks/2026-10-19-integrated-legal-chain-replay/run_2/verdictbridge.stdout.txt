@@ -1,6 +1,9 @@
 {
+  "cleanest_basis": [
+    "The synthetic record is insufficient because authority binding, source binding, or a required liability link failed."
+  ],
   "disposition": "INSUFFICIENT",
-  "downstream_injection_rejected": true,
+  "downstream_injection_result": "REJECTED",
   "element_assessments": [
     {
       "basis": [
@@ -12,8 +15,8 @@
     },
     {
       "basis": [
-        "P-006",
-        "P-005"
+        "P-003",
+        "P-004"
       ],
       "element": "authority_binding",
       "status": "UNRESOLVED"
@@ -30,68 +33,93 @@
         "MODEL-Z-14"
       ],
       "element": "product_identification",
-      "status": "MATCH"
+      "stage_result": "MATCH",
+      "status": "SUPPORTED"
     },
     {
       "basis": [
-        "The gasket is referenced but not tied to a component specification or supplier record."
+        "The gasket is referenced but is not tied to a component specification or supplier record."
       ],
       "element": "component_identification",
-      "status": "REVIEW"
+      "stage_result": "REVIEW",
+      "status": "UNRESOLVED"
     },
     {
       "basis": [
-        "No manufacturer specification establishes the asserted material content."
+        "No manufacturer specification establishes the asserted material content; witness belief is not enough."
       ],
       "element": "material_content",
-      "status": "UNCERTAIN"
+      "stage_result": "UNCERTAIN",
+      "status": "UNRESOLVED"
+    },
+    {
+      "basis": [
+        "The work order and testimony contain a genuine repair-history conflict."
+      ],
+      "element": "worksite_chronology",
+      "stage_result": "DISPUTED",
+      "status": "DISPUTED"
     },
     {
       "basis": [
         "Handling is alleged, but the handled component is not sufficiently identified as the asserted material."
       ],
       "element": "exposure",
-      "status": "REVIEW"
+      "stage_result": "REVIEW",
+      "status": "UNRESOLVED"
     },
     {
       "basis": [
         "No quantified dose, duration, or measurement is supplied."
       ],
       "element": "dose",
-      "status": "UNCERTAIN"
+      "stage_result": "UNCERTAIN",
+      "status": "UNRESOLVED"
     },
     {
       "basis": [
         "The synthetic expert record supplies no causation opinion."
       ],
       "element": "causation",
-      "status": "UNCERTAIN"
+      "stage_result": "UNCERTAIN",
+      "status": "UNRESOLVED"
     },
     {
       "basis": [
         "The record does not establish every required liability link."
       ],
       "element": "legal_liability",
-      "status": "INSUFFICIENT"
+      "stage_result": "INSUFFICIENT",
+      "status": "UNSUPPORTED"
     }
   ],
-  "final_chain_sha256": "4b30e1074180b6319114e6279dfccf9160f53eb33d0c79a912e35ec052c13a14",
+  "final_chain_sha256": "9c68fd56872beac428bb8feeb240b93f340aa4a8d4f407b5802d665fd645d325",
   "inference_boundary": "Measured stage results are separated from legal or strategic inference.",
   "matter_id": "ILCR-2026-10-19-001",
-  "motion_recommendation": "RESERVE — the record is not sufficient for a supported final disposition.",
+  "measured_results_only": {
+    "briefwise_stage_disposition": "REVIEW_REQUIRED",
+    "contradiction_count": 1,
+    "depobot_stage_disposition": "REVIEW_REQUIRED",
+    "pidbot_stage_disposition": "REVIEW_REQUIRED",
+    "unresolved_dimension_count": 5,
+    "upstream_hashes_verified": true
+  },
+  "motion_recommendation": "RESERVE — the synthetic record is insufficient for a supported final disposition; preserve the authority, testimony, product, material, dose, and causation gaps for review.",
   "non_claims": [
-    "No real legal correctness, filing readiness, product identification, exposure, dose, causation, liability, external verification, or production deployment is established."
+    "No real legal correctness, filing readiness, product identification, exposure, dose, causation, liability, independent fresh-generation provenance, external verification, or production deployment is established."
   ],
   "preserved_contradictions": [
     "C-001"
   ],
-  "schema": "verdictbridge-integrated-stage-v1",
+  "schema": "verdictbridge-integrated-stage-v2",
   "stage": "VerdictBridge",
   "stage_hashes": {
-    "briefwise": "860e5be6e001fcdf6218d54ff8c2c21b4dce4d50b30e2266ffcf12912828858f",
-    "depobot": "2ad954f46c0fa1ed1357506c31987c39af120d3f0b35994d1e3179c716d546e6",
-    "pidbot": "21709fc5f41f3ff5637272b33b521f224de37c7a6d69cc756f90522295795de1"
+    "briefwise": "9334b37f68ba58b87443ab67defc2e668e2de1582cf7b3d61063bac25e03c89c",
+    "depobot": "c22a001b36e01faec8a982c38b75769b042beb5eb003a7c61b00da89e7ded71b",
+    "pidbot": "74dff06e53ef73d0e2de7b6df840690a6127a0aa6180213262ed418eabb5536b"
   },
+  "stage_integrity_failures": [],
+  "synthetic_fixture": true,
   "unresolved_evidence": [
     "Material content is not established by a manufacturer specification.",
     "Dose is not quantified.",

@@ -1,0 +1,8 @@
+{
+  "stage": "DepoBot",
+  "purpose": "Preserve source-linked testimony and classify contradiction, ambiguity, omission, characterization, and missing foundation separately.",
+  "required_fields": ["speaker", "question", "answer", "page_line", "exhibit", "source_fragment"],
+  "canonical_contradiction": {"entries": ["T-001", "T-002"], "same_speaker": "Witness A", "same_site": "North Plant", "same_year": 2014},
+  "negative_control": {"entries": ["T-004", "T-005"], "expected_type": "NEGATIVE_CONTROL_NOT_CONTRADICTION"},
+  "invariant": "A changed or missing canonical page/line binding invalidates the source binding and cannot be silently repaired."
+}
