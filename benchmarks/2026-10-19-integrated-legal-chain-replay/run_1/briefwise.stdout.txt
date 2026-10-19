@@ -1,0 +1,60 @@
+{
+  "authority_map": [
+    {
+      "authority_ids": [
+        "SYNTH-LAW-001"
+      ],
+      "classification": "SUPPORTED_HOLDING",
+      "proposition_id": "P-001",
+      "reason": "The supplied synthetic holding supports the proposition within the stated posture.",
+      "status": "SUPPORTED"
+    },
+    {
+      "authority_ids": [
+        "SYNTH-LAW-002"
+      ],
+      "classification": "SUPPORTED_HOLDING",
+      "proposition_id": "P-002",
+      "reason": "The supplied synthetic holding supports the proposition within the stated posture.",
+      "status": "SUPPORTED"
+    },
+    {
+      "authority_ids": [
+        "SYNTH-LAW-001",
+        "SYNTH-LAW-002"
+      ],
+      "classification": "INFERENCE_REQUIRES_RECORD",
+      "proposition_id": "P-003",
+      "reason": "The proposition requires application to the factual record and is not established by authority alone.",
+      "status": "INFERENCE"
+    },
+    {
+      "authority_ids": [
+        "SYNTH-LAW-999"
+      ],
+      "classification": "UNRESOLVED_MISSING_AUTHORITY",
+      "proposition_id": "P-004",
+      "reason": "A referenced authority is absent from the closed-world record.",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "burden_and_standard": "The moving party must show no genuine dispute of material fact under the supplied synthetic summary-judgment standard.",
+  "canonical_record_sha256": "63edb3a9d508252a8f925f18693db045feb2bcffcdb3361c819eb11137b9f25c",
+  "inferences": [
+    "P-003"
+  ],
+  "jurisdiction": "Synthetic Commonwealth",
+  "matter_id": "ILCR-2026-10-19-001",
+  "non_claims": [
+    "Synthetic authorities only.",
+    "Authority binding does not establish product identity, exposure, dose, causation, or liability."
+  ],
+  "procedural_posture": "summary judgment on product-identification, exposure, and causation issues",
+  "schema": "briefwise-integrated-stage-v1",
+  "stage": "BriefWise",
+  "stage_disposition": "REVIEW_REQUIRED",
+  "unresolved": [
+    "P-004"
+  ],
+  "unsupported": []
+}

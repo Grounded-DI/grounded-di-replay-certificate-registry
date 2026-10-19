@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "contradiction_is_preserved": true,
+    "independent_briefwise_matches_expected": true,
+    "independent_depobot_matches_expected": true,
+    "independent_final_expected_hash": true,
+    "independent_pidbot_matches_expected": true,
+    "material_dose_causation_not_upgraded": true,
+    "negative_control_is_preserved": true,
+    "run_matches_expected": true,
+    "two_runs_identical": true
+  },
+  "scope": "closed-world synthetic integrated chain",
+  "verifier": "PASS"
+}

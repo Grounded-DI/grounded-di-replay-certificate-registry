@@ -312,3 +312,17 @@ This dated batch adds three distinct closed-world legal evidence workflows: Brie
 | BriefWise authority-proposition | 2 identical executions; verifier PASS; tamper controls PASS | 3cef3984a39cf26c1323e0a4682ebb61f5feab0de85d1de435294291588d051c |
 | DepoBot testimony-contradiction | 2 identical executions; verifier PASS; tamper controls PASS | 2020e012f9010b6bef2ffd73d722d8528b54d1ff6545654ded406c04e7188f4a |
 | PIDBot product/exposure | 2 identical executions; verifier PASS; tamper controls PASS | b4c8c887b17c38c6a77c044fbef8d0ac24fe906e9ec371e1ff1a906824654427 |
+
+
+## Integrated Legal Evidence Chain Replay — 2026-10-19
+
+[Batch index](benchmarks/2026-10-19-integrated-legal-chain-replay/README.md) · [Report](benchmarks/2026-10-19-integrated-legal-chain-replay/REPORT.md)
+
+This dated package connects BriefWise authority binding, DepoBot testimony tracing, PIDBot product/exposure separation, and VerdictBridge litigation sufficiency in one closed-world synthetic matter. Two chain executions matched; the independent evaluator and upstream/downstream controls passed. The package preserves unresolved evidence and makes no external-verification, legal-correctness, filing-readiness, real-world causation/liability, or deployment claim.
+
+| Stage | Result |
+|---|---|
+| BriefWise authority binding | PASS; stage hash 63edb3a9d508252a8f925f18693db045feb2bcffcdb3361c819eb11137b9f25c |
+| DepoBot testimony trace | PASS; stage hash 2ad954f46c0fa1ed1357506c31987c39af120d3f0b35994d1e3179c716d546e6 |
+| PIDBot product/exposure separation | PASS; stage hash 21709fc5f41f3ff5637272b33b521f224de37c7a6d69cc756f90522295795de1 |
+| VerdictBridge final chain | REVIEW_REQUIRED; final chain hash ed3b0dbe9ad83136855189f06deb99a1835b4ba3ad6619671937310f937ef7de |

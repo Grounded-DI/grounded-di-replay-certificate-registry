@@ -1,0 +1,65 @@
+{
+  "binding_issues": [],
+  "canonical_record_sha256": "2ad954f46c0fa1ed1357506c31987c39af120d3f0b35994d1e3179c716d546e6",
+  "findings": [
+    {
+      "entries": [
+        "T-001",
+        "T-002"
+      ],
+      "explanation": "The same witness gives opposite answers about the same repair at the same site and time.",
+      "id": "C-001",
+      "speaker": "Witness A",
+      "type": "DIRECT_CONTRADICTION"
+    },
+    {
+      "entries": [
+        "T-003"
+      ],
+      "explanation": "Probably gray plus lack of clear recollection is uncertainty, not contradiction.",
+      "id": "C-002",
+      "speaker": "Witness A",
+      "type": "AMBIGUITY"
+    },
+    {
+      "entries": [
+        "T-004",
+        "T-005"
+      ],
+      "explanation": "Lack of observation and inability to identify the repairer do not negate another witness's account.",
+      "id": "C-003",
+      "speaker": "Witness B",
+      "type": "NEGATIVE_CONTROL_NOT_CONTRADICTION"
+    },
+    {
+      "entries": [
+        "T-006"
+      ],
+      "explanation": "A characterized question without an answer is not an admission.",
+      "id": "C-004",
+      "speaker": "Counsel",
+      "type": "CHARACTERIZATION_NOT_ADMISSION"
+    },
+    {
+      "entries": [
+        "T-007"
+      ],
+      "explanation": "Failure to recall a manufacturer name does not establish an opposing fact.",
+      "id": "C-005",
+      "speaker": "Witness A",
+      "type": "OMISSION_MISSING_FOUNDATION"
+    }
+  ],
+  "matter_id": "ILCR-2026-10-19-001",
+  "non_claims": [
+    "No credibility determination is made.",
+    "No synthetic testimony is treated as a real admission."
+  ],
+  "schema": "depobot-integrated-stage-v1",
+  "source_binding_valid": true,
+  "stage": "DepoBot",
+  "stage_disposition": "REVIEW_REQUIRED",
+  "unresolved": [
+    "The contradiction may require credibility and foundation review."
+  ]
+}

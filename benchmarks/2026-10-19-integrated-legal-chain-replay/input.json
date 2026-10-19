@@ -1,0 +1,242 @@
+{
+  "authorities": [
+    {
+      "citation": "Synthetic Supreme Court, 200 S.C. 1 (2022)",
+      "id": "SYNTH-LAW-001",
+      "kind": "holding",
+      "level": "controlling",
+      "proposition": "At summary judgment, the record is viewed in the nonmoving party's favor and genuine factual disputes are not resolved by weighing credibility.",
+      "source_excerpt": "TEST FIXTURE — A court does not resolve a genuine credibility dispute on summary judgment."
+    },
+    {
+      "citation": "Synthetic Supreme Court, 201 S.C. 9 (2023)",
+      "id": "SYNTH-LAW-002",
+      "kind": "holding",
+      "level": "controlling",
+      "proposition": "Product-identification evidence must connect the alleged product to the defendant and the relevant worksite or exposure event.",
+      "source_excerpt": "TEST FIXTURE — A product claim requires evidence connecting the alleged product to the defendant and the exposure event."
+    },
+    {
+      "citation": "Synthetic Appellate Court, 77 S.A. 4 (2024)",
+      "id": "SYNTH-LAW-003",
+      "kind": "dicta",
+      "level": "persuasive",
+      "proposition": "Later expert proof may assist with causation, but it does not substitute for product-identification evidence.",
+      "source_excerpt": "TEST FIXTURE — Expert analysis may assist later in the proof sequence; it does not replace product identity."
+    }
+  ],
+  "burden_and_standard": "The moving party must show no genuine dispute of material fact under the supplied synthetic summary-judgment standard.",
+  "candidate_entities": [
+    {
+      "id": "ACME-INDUSTRIAL",
+      "name": "Acme Industrial, Inc.",
+      "supported_product_ids": [
+        "MODEL-Z-14"
+      ]
+    },
+    {
+      "id": "BETA-SEAL",
+      "name": "Beta Seal Supply",
+      "supported_product_ids": []
+    }
+  ],
+  "complaint": {
+    "alleged_exposure": "cutting a replacement gasket during maintenance in 2014",
+    "alleged_material": "ASBESTOS",
+    "component": "GASKET-UNSPECIFIED",
+    "defendant_candidate": "ACME-INDUSTRIAL",
+    "plaintiff": "Synthetic Claimant",
+    "product_id": "MODEL-Z-14",
+    "worksite": "NORTH-PLANT"
+  },
+  "evidence_records": [
+    {
+      "id": "R-001",
+      "kind": "product_reference",
+      "product_id": "MODEL-Z-14",
+      "source": "purchase_log",
+      "text": "Model Z-14 pump delivered to North Plant.",
+      "worksite": "NORTH-PLANT"
+    },
+    {
+      "id": "R-002",
+      "kind": "manufacturer_reference",
+      "manufacturer": "ACME-INDUSTRIAL",
+      "product_id": "MODEL-Z-14",
+      "source": "catalog_excerpt",
+      "text": "Model Z-14 is listed under Acme Industrial, Inc."
+    },
+    {
+      "component": "GASKET-UNSPECIFIED",
+      "id": "R-003",
+      "kind": "component_reference",
+      "product_id": "MODEL-Z-14",
+      "source": "work_order",
+      "text": "A replacement gasket was installed during maintenance.",
+      "worksite": "NORTH-PLANT",
+      "year": 2014
+    },
+    {
+      "component": "GASKET-UNSPECIFIED",
+      "id": "R-004",
+      "kind": "material_assertion",
+      "material": "ASBESTOS",
+      "source": "witness_belief",
+      "text": "The witness believed the gasket contained asbestos."
+    },
+    {
+      "component": "GASKET-UNSPECIFIED",
+      "id": "R-005",
+      "kind": "exposure_assertion",
+      "source": "complaint",
+      "text": "The claimant says he cut a replacement gasket at North Plant.",
+      "worksite": "NORTH-PLANT",
+      "year": 2014
+    },
+    {
+      "id": "R-006",
+      "kind": "dose_record",
+      "source": "record_search",
+      "text": "No quantified dose, duration, or fiber measurement was supplied."
+    },
+    {
+      "id": "R-007",
+      "kind": "causation_record",
+      "source": "expert_scope",
+      "text": "The synthetic expert record states that no causation opinion can be offered on this record."
+    },
+    {
+      "id": "R-008",
+      "kind": "liability_record",
+      "source": "pleading",
+      "text": "Liability is alleged but the record does not establish duty, breach, and causation."
+    }
+  ],
+  "exhibits": [
+    {
+      "description": "Synthetic North Plant work order",
+      "id": "EX-1"
+    },
+    {
+      "description": "Synthetic pump photograph",
+      "id": "EX-2"
+    },
+    {
+      "description": "Synthetic product catalog excerpt",
+      "id": "EX-3"
+    }
+  ],
+  "jurisdiction": "Synthetic Commonwealth",
+  "legal_issue": "Whether the supplied record supports a final litigation-sufficiency disposition on the alleged exposure from a pump gasket.",
+  "legal_propositions": [
+    {
+      "authority_ids": [
+        "SYNTH-LAW-001"
+      ],
+      "id": "P-001",
+      "kind": "holding",
+      "text": "A genuine credibility dispute about who performed the repair is not resolved on summary judgment."
+    },
+    {
+      "authority_ids": [
+        "SYNTH-LAW-002"
+      ],
+      "id": "P-002",
+      "kind": "holding",
+      "text": "The product record must connect the alleged gasket to the defendant and the exposure event."
+    },
+    {
+      "authority_ids": [
+        "SYNTH-LAW-001",
+        "SYNTH-LAW-002"
+      ],
+      "id": "P-003",
+      "kind": "inference",
+      "text": "The present record is legally sufficient to deny summary judgment on every element."
+    },
+    {
+      "authority_ids": [
+        "SYNTH-LAW-999"
+      ],
+      "id": "P-004",
+      "kind": "unsupported",
+      "text": "The supplied authorities establish that any exposure allegation proves causation."
+    }
+  ],
+  "matter_id": "ILCR-2026-10-19-001",
+  "procedural_posture": "summary judgment on product-identification, exposure, and causation issues",
+  "schema": "integrated-legal-evidence-chain-fixture-v1",
+  "scope": "Closed-world synthetic product-liability matter. All authorities, testimony, products, entities, worksites, and outcomes are test fixtures.",
+  "transcript": [
+    {
+      "answer": "Yes. I personally replaced that gasket at North Plant in 2014.",
+      "exhibit": "EX-1",
+      "id": "T-001",
+      "kind": "answer",
+      "page_line": "10:4-10:10",
+      "question": "Did you personally replace the gasket on the Model Z-14 pump at North Plant in 2014?",
+      "source_fragment": "I personally replaced that gasket ... at North Plant in 2014.",
+      "speaker": "Witness A"
+    },
+    {
+      "answer": "No. I did not perform any repair work at North Plant in 2014.",
+      "exhibit": "EX-1",
+      "id": "T-002",
+      "kind": "answer",
+      "page_line": "27:2-27:8",
+      "question": "Did you perform any repair work at North Plant in 2014?",
+      "source_fragment": "I did not perform any repair work ... at North Plant in 2014.",
+      "speaker": "Witness A"
+    },
+    {
+      "answer": "It was probably gray, but I do not remember the color clearly.",
+      "exhibit": "EX-2",
+      "id": "T-003",
+      "kind": "answer",
+      "page_line": "34:1-34:6",
+      "question": "Was the gasket gray?",
+      "source_fragment": "probably gray ... do not remember ... clearly.",
+      "speaker": "Witness A"
+    },
+    {
+      "answer": "No. I arrived after the repair and did not see it happen.",
+      "exhibit": "EX-1",
+      "id": "T-004",
+      "kind": "answer",
+      "page_line": "12:3-12:8",
+      "question": "Did you see the gasket replacement?",
+      "source_fragment": "arrived after the repair and did not see it happen.",
+      "speaker": "Witness B"
+    },
+    {
+      "answer": "I cannot identify who performed it.",
+      "exhibit": "EX-1",
+      "id": "T-005",
+      "kind": "answer",
+      "page_line": "15:1-15:6",
+      "question": "Who performed the repair?",
+      "source_fragment": "cannot identify who performed it.",
+      "speaker": "Witness B"
+    },
+    {
+      "answer": "",
+      "exhibit": "EX-2",
+      "id": "T-006",
+      "kind": "question",
+      "page_line": "41:1-41:5",
+      "question": "So you admit the gray gasket contained asbestos, correct?",
+      "source_fragment": "So you admit ... correct?",
+      "speaker": "Counsel"
+    },
+    {
+      "answer": "I do not recall seeing a manufacturer name.",
+      "exhibit": "EX-3",
+      "id": "T-007",
+      "kind": "answer",
+      "page_line": "45:3-45:7",
+      "question": "What manufacturer was on the gasket packaging?",
+      "source_fragment": "do not recall seeing a manufacturer name.",
+      "speaker": "Witness A"
+    }
+  ]
+}

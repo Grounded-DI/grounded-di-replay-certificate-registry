@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "briefwise": "Missing authority is unresolved; holdings may support a proposition; inferences require record application; authority cannot itself prove facts.",
+    "depobot": "Same-speaker negation of the same act, place, and year is a contradiction; uncertainty is not contradiction; a question without an answer is not an admission.",
+    "pidbot": "Product identity requires shared product identity and manufacturer record; component, material, exposure, dose, causation, and liability remain separate dimensions.",
+    "verdictbridge": "No downstream stage may upgrade an unresolved upstream dimension. Any source-binding failure, missing authority, product mismatch, unsupported injection, or unresolved dose/causation prevents VERDICT_READY."
+  },
+  "schema": "integrated-legal-evidence-chain-spec-v1",
+  "stage_boundaries": [
+    "authority_binding",
+    "testimony_trace",
+    "product_exposure_separation",
+    "litigation_sufficiency"
+  ],
+  "synthetic_fixture_notice": "Every authority, transcript entry, exhibit, product, entity, and conclusion is a synthetic test fixture."
+}
