@@ -333,3 +333,17 @@ This dated package connects BriefWise authority binding, DepoBot testimony traci
 [Package README](benchmarks/2026-10-19-expertscope-opinion-basis-replay/README.md) · [Measured report](benchmarks/2026-10-19-expertscope-opinion-basis-replay/REPORT.md) · [Reproducibility archive](benchmarks/2026-10-19-expertscope-opinion-basis-replay/reproducibility_package.tar.gz)
 
 This closed-world synthetic replay binds expert statements to report/deposition sources, tracks stated bases, assumptions, scope, and limitations, and keeps product identity, component, material, exposure, dose, diagnosis, expert causation, legal causation, and liability separate. Two executions matched; the independent evaluator, integrity checks, negative controls, altered-record controls, and downstream-tamper control passed. The baseline disposition is INSUFFICIENT; synthetic supporting evidence changes it to REVIEW_REQUIRED, while a conclusory assertion is rejected. No real legal or clinical conclusion is claimed.
+
+
+## FinanceWise Transaction-to-Covenant Replay — 2026-10-19
+
+[Package README](benchmarks/2026-10-19-financewise-transaction-covenant-replay/README.md) · [Report](benchmarks/2026-10-19-financewise-transaction-covenant-replay/REPORT.md) · [Reproducibility archive](benchmarks/2026-10-19-financewise-transaction-covenant-replay/reproducibility_package.zip)
+
+This closed-world synthetic replay binds financial records, preserves duplicate/conflicting/missing evidence, separates transaction and accounting propositions, and calculates a covenant ratio without converting favorable arithmetic into unconditional compliance. Two fresh canonical executions matched; the independent evaluator passed; 15 tamper/negative controls passed. The measured ratio was 4.00x against a 1.50x threshold, but the disposition remained REVIEW_REQUIRED because account ownership was missing and a receipt/AR conflict remained unresolved. No real financial compliance, audit assurance, GAAP/IFRS correctness, legal advice, fraud detection, or production deployment is claimed.
+
+| Result | Value |
+|---|---|
+| Final disposition | REVIEW_REQUIRED |
+| Canonical input SHA-256 | f34224590551d1c3a0644c5f84ab704ffcc3562517778782d5362d846dd85420 |
+| Final chain SHA-256 | 165a9d854e19b6462460b984a1f3209813a485aa1e87fe449bd3b2ec8cfb5999 |
+| Reproducibility archive SHA-256 | f77d9ed22e0ce220850a7d5926871921382a4c51cf3687d8132c41a3b5345cda |

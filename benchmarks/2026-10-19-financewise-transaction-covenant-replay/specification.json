@@ -1,0 +1,13 @@
+{
+  "base_currency": "USD",
+  "closed_world": true,
+  "minimum_ratio": 1.5,
+  "rules": [
+    "missing evidence is unresolved, not zero",
+    "invoice is not cash",
+    "account ownership is required for unrestricted cash",
+    "no unsupported covenant exclusions",
+    "no merges on description alone"
+  ],
+  "schema": "financewise-transaction-covenant-spec-v1"
+}

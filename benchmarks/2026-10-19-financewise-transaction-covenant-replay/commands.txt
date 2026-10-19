@@ -1,0 +1,7 @@
+python scripts/recordbinder.py input.json executions/run_1/recordbinder.json
+python scripts/transactionresolver.py input.json executions/run_1/recordbinder.json executions/run_1/transactionresolver.json
+python scripts/accountingboundary.py input.json executions/run_1/transactionresolver.json executions/run_1/accountingboundary.json
+python scripts/covenantbridge.py input.json executions/run_1/accountingboundary.json executions/run_1/covenantbridge.json
+python scripts/independent_evaluator.py input.json executions/run_1
+python scripts/controls.py input.json expected_outputs/final_chain.json CONTROL_RESULTS.json
+python scripts/integrity_check.py

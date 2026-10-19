@@ -1,0 +1,24 @@
+{
+  "arithmetic_result": "ABOVE_THRESHOLD",
+  "disposition": "REVIEW_REQUIRED",
+  "measured_cash_usd": 128000,
+  "measured_current_liabilities_usd": 32000,
+  "measured_ratio": 4.0,
+  "non_inferences": [
+    "not an audit opinion",
+    "not GAAP/IFRS or legal compliance",
+    "not real-world financial compliance"
+  ],
+  "reason": "Measured ratio exceeds 1.50x, but account ownership is missing and the receipt/AR conflict remains unresolved.",
+  "schema": "financewise-final-chain-v1",
+  "stage_files": [
+    "recordbinder.json",
+    "transactionresolver.json",
+    "accountingboundary.json",
+    "covenantbridge.json"
+  ],
+  "unresolved_items": [
+    "MISSING-001",
+    "B-001/INV-1001/AR-1001 conflict"
+  ]
+}
