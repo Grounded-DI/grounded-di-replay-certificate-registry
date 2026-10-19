@@ -325,4 +325,4 @@ This dated package connects BriefWise authority binding, DepoBot testimony traci
 | BriefWise authority binding | PASS; stage hash 63edb3a9d508252a8f925f18693db045feb2bcffcdb3361c819eb11137b9f25c |
 | DepoBot testimony trace | PASS; stage hash 2ad954f46c0fa1ed1357506c31987c39af120d3f0b35994d1e3179c716d546e6 |
 | PIDBot product/exposure separation | PASS; stage hash 21709fc5f41f3ff5637272b33b521f224de37c7a6d69cc756f90522295795de1 |
-| VerdictBridge final chain | REVIEW_REQUIRED; final chain hash ed3b0dbe9ad83136855189f06deb99a1835b4ba3ad6619671937310f937ef7de |
+| VerdictBridge final chain | INSUFFICIENT; final chain hash ed3b0dbe9ad83136855189f06deb99a1835b4ba3ad6619671937310f937ef7de |

@@ -31,7 +31,7 @@ This package is one connected, closed-world synthetic product-liability matter. 
 
 ## Chain result
 
-The product identity is bounded by a shared synthetic product/manufacturer reference. The testimony contains a recorded direct contradiction. Component identity remains under review. Material content is uncertain, exposure remains under review, dose is unquantified, and causation is unresolved. VerdictBridge therefore preserves the uncertainty and returns `REVIEW_REQUIRED`; it does not manufacture a final liability or causation result.
+The product identity is bounded by a shared synthetic product/manufacturer reference. The testimony contains a recorded direct contradiction. Component identity remains under review. Material content is uncertain, exposure remains under review, dose is unquantified, and causation is unresolved. VerdictBridge therefore preserves the uncertainty and returns `INSUFFICIENT`; the motion recommendation is to reserve rather than manufacture a final liability or causation result.
 
 ## Controls
 
