@@ -12,6 +12,7 @@ def independent_stage_expectations(data):
     for p in data["legal_propositions"]:
         if any(x not in authorities for x in p["authority_ids"]): c,s,r = "UNRESOLVED_MISSING_AUTHORITY","UNRESOLVED","A referenced authority is absent from the closed-world record."
         elif p["kind"] == "holding": c,s,r = "SUPPORTED_HOLDING","SUPPORTED","The supplied synthetic holding supports the proposition within the stated posture."
+        elif p["kind"] == "dicta": c,s,r = "DICTA_ONLY","LIMITED","The proposition is not a necessary holding in the supplied record."
         elif p["kind"] == "inference": c,s,r = "INFERENCE_REQUIRES_RECORD","INFERENCE","The proposition requires application to the factual record and is not established by authority alone."
         else: c,s,r = "UNSUPPORTED","UNSUPPORTED","The proposition is not supported by the supplied closed-world authorities."
         b_rows.append({"proposition_id":p["id"],"authority_ids":p["authority_ids"],"classification":c,"status":s,"reason":r})

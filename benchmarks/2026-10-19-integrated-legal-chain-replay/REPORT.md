@@ -18,16 +18,16 @@ This package is one connected, closed-world synthetic product-liability matter. 
 - Altered-stage/downstream-injection controls: PASS
 - Final disposition: `INSUFFICIENT`
 - VerdictReady: `false`
-- Final chain SHA-256: `ed3b0dbe9ad83136855189f06deb99a1835b4ba3ad6619671937310f937ef7de`
+- Final chain SHA-256: `4b30e1074180b6319114e6279dfccf9160f53eb33d0c79a912e35ec052c13a14`
 
 ## Stage hashes
 
 | Stage | Canonical SHA-256 |
 |---|---|
-| BriefWise | `63edb3a9d508252a8f925f18693db045feb2bcffcdb3361c819eb11137b9f25c` |
+| BriefWise | `860e5be6e001fcdf6218d54ff8c2c21b4dce4d50b30e2266ffcf12912828858f` |
 | DepoBot | `2ad954f46c0fa1ed1357506c31987c39af120d3f0b35994d1e3179c716d546e6` |
 | PIDBot | `21709fc5f41f3ff5637272b33b521f224de37c7a6d69cc756f90522295795de1` |
-| VerdictBridge final chain | `ed3b0dbe9ad83136855189f06deb99a1835b4ba3ad6619671937310f937ef7de` |
+| VerdictBridge final chain | `4b30e1074180b6319114e6279dfccf9160f53eb33d0c79a912e35ec052c13a14` |
 
 ## Chain result
 

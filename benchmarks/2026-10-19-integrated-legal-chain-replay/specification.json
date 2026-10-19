@@ -1,6 +1,6 @@
 {
   "rules": {
-    "briefwise": "Missing authority is unresolved; holdings may support a proposition; inferences require record application; authority cannot itself prove facts.",
+    "briefwise": "Missing authority is unresolved; holdings may support a proposition; dicta are limited persuasive material; inferences require record application; unsupported or overbroad propositions are rejected; authority cannot itself prove facts.",
     "depobot": "Same-speaker negation of the same act, place, and year is a contradiction; uncertainty is not contradiction; a question without an answer is not an admission.",
     "pidbot": "Product identity requires shared product identity and manufacturer record; component, material, exposure, dose, causation, and liability remain separate dimensions.",
     "verdictbridge": "No downstream stage may upgrade an unresolved upstream dimension. Any source-binding failure, missing authority, product mismatch, unsupported injection, or unresolved dose/causation prevents VERDICT_READY."

@@ -30,16 +30,35 @@
     },
     {
       "authority_ids": [
+        "SYNTH-LAW-003"
+      ],
+      "classification": "DICTA_ONLY",
+      "proposition_id": "P-004",
+      "reason": "The proposition is not a necessary holding in the supplied record.",
+      "status": "LIMITED"
+    },
+    {
+      "authority_ids": [
+        "SYNTH-LAW-001",
+        "SYNTH-LAW-002"
+      ],
+      "classification": "UNSUPPORTED",
+      "proposition_id": "P-005",
+      "reason": "The proposition is not supported by the supplied closed-world authorities.",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "authority_ids": [
         "SYNTH-LAW-999"
       ],
       "classification": "UNRESOLVED_MISSING_AUTHORITY",
-      "proposition_id": "P-004",
+      "proposition_id": "P-006",
       "reason": "A referenced authority is absent from the closed-world record.",
       "status": "UNRESOLVED"
     }
   ],
   "burden_and_standard": "The moving party must show no genuine dispute of material fact under the supplied synthetic summary-judgment standard.",
-  "canonical_record_sha256": "63edb3a9d508252a8f925f18693db045feb2bcffcdb3361c819eb11137b9f25c",
+  "canonical_record_sha256": "860e5be6e001fcdf6218d54ff8c2c21b4dce4d50b30e2266ffcf12912828858f",
   "inferences": [
     "P-003"
   ],
@@ -54,7 +73,9 @@
   "stage": "BriefWise",
   "stage_disposition": "REVIEW_REQUIRED",
   "unresolved": [
-    "P-004"
+    "P-006"
   ],
-  "unsupported": []
+  "unsupported": [
+    "P-005"
+  ]
 }
