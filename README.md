@@ -355,3 +355,14 @@ This v2 revision replaces hash-change-only controls with fourteen actual mutated
 | Reproducibility archive SHA-256 | d8d490975824b7a7b2e7526aabc9b2c7e70f6183da2881c053b1f863d07f240f |
 | SHA256SUMS.txt SHA-256 | e7edb110a5cbddee8f5df9a2438b873f0e32e13a0ae6dea1609b28b4ccf899ae |
 
+
+## Machine-readable PDF companions
+
+The first benchmark/replay conversion wave adds adjacent raw-text companions. Source PDFs remain unchanged.
+
+- [FastPath 5.6 Instant Day-One Canonical Replay Certificate — text](FastPath_5_6_Instant_Day_One_Canonical_Replay_Certificate.md) · [source PDF](FastPath_5_6_Instant_Day_One_Canonical_Replay_Certificate.pdf)
+- [FixedCase D347 k1 Proof — text](FixedCase_D347_k1_Proof_EXTERNAL_REVIEW_REPLAYABLE.md) · [source PDF](FixedCase_D347_k1_Proof_EXTERNAL_REVIEW_REPLAYABLE.pdf)
+- [Global Multirow Coercivity Release v1.1 Acceptance — text](Global_Multirow_Coercivity_Archive_Attestation_v1_1/Global_Multirow_Coercivity_Release_v1_1_Acceptance.md) · [source PDF](Global_Multirow_Coercivity_Archive_Attestation_v1_1/Global_Multirow_Coercivity_Release_v1_1_Acceptance.pdf)
+- [VerdictBridge Demo 3 Report — text](demos/2026-10-05-verdictbridge-punitive-control-v1/package/VerdictBridge_Demo3_Report.md) · [source PDF](demos/2026-10-05-verdictbridge-punitive-control-v1/package/VerdictBridge_Demo3_Report.pdf)
+- [Fresh Replay Report — text](demos/2026-10-07-verdictbridge-demo3-fresh-replay/package/Fresh_Replay_Report.md) · [source PDF](demos/2026-10-07-verdictbridge-demo3-fresh-replay/package/Fresh_Replay_Report.pdf)
+- [Published Replay Report — text](demos/2026-10-08-verdictbridge-demo3-published-replay/package/Published_Replay_Report.md) · [source PDF](demos/2026-10-08-verdictbridge-demo3-published-replay/package/Published_Replay_Report.pdf)
