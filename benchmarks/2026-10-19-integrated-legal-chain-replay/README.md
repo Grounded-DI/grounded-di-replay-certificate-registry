@@ -13,12 +13,12 @@ and outcome is a synthetic fixture. The package makes no real legal, medical,
 product, exposure, dose, causation, liability, filing-readiness, external-
 verification, or production-deployment claim.
 
-## Local-only status
+## Publication status
 
-The repository URL in the surrounding task is context only. This package was
-created in an existing local checkout. No repository, branch, commit, push,
-pull request, publication, or other remote write was performed. The repository
-root `README.md` was inspected and left unchanged.
+This package was prepared in an existing local checkout and then published to
+the existing repository under the requested commit message. The package remains
+a bounded, synthetic replay; publication does not add legal correctness,
+external verification, or production-deployment claims.
 
 ## Quick replay
 
@@ -103,5 +103,5 @@ contradiction.
 - `SHA256SUMS.txt` — file hashes;
 - `reproducibility_package.tar.gz` — local reproducibility archive, with its hash in the adjacent `.sha256` file.
 
-The proposed commit message and description are retained only in the task
-prompt; no commit was created.
+The package was published with the requested commit message. The repository-level
+README contains the supported package summary and canonical hashes.
