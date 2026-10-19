@@ -1,0 +1,123 @@
+{
+  "chain_valid": true,
+  "disposition": "INSUFFICIENT",
+  "element_statuses": [
+    {
+      "basis": [
+        "PROD-1"
+      ],
+      "dimension": "product_identity",
+      "status": "SUPPORTED"
+    },
+    {
+      "basis": [
+        "COMP-1"
+      ],
+      "dimension": "component_identity",
+      "status": "UNRESOLVED"
+    },
+    {
+      "basis": [
+        "MAT-1"
+      ],
+      "dimension": "material_content",
+      "status": "MISSING"
+    },
+    {
+      "basis": [
+        "EXP-1"
+      ],
+      "dimension": "exposure",
+      "status": "DISPUTED"
+    },
+    {
+      "basis": [
+        "DOSE-1"
+      ],
+      "dimension": "dose",
+      "status": "MISSING"
+    },
+    {
+      "basis": [
+        "MED-1"
+      ],
+      "dimension": "medical_diagnosis",
+      "status": "SUPPORTED"
+    },
+    {
+      "basis": [
+        "OP-2"
+      ],
+      "dimension": "expert_causation_opinion",
+      "status": "QUALIFIED"
+    },
+    {
+      "basis": [
+        "No legal-causation determination is supplied by this synthetic fixture."
+      ],
+      "dimension": "legal_causation",
+      "status": "UNRESOLVED"
+    },
+    {
+      "basis": [
+        "No liability determination is supplied by this synthetic fixture."
+      ],
+      "dimension": "legal_liability",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "final_chain_sha256": "770d6e776d5bd3b282f94f65a38844bf01e4d0b20ded50064085f23fbb28d426",
+  "matter_id": "ES-2026-10-19-001",
+  "measured_results_vs_inference": "Stage statuses and hashes are measured from this fixture; the motion assessment is a synthetic rule-based inference.",
+  "motion_assessment": "RESERVE for record development: component/material linkage, exposure foundation, dose, and legal causation remain unresolved in this fixture.",
+  "non_claims": [
+    "No real legal, admissibility, clinical, medical-causation, legal-causation, liability, filing-readiness, external-verification, or deployment conclusion is made."
+  ],
+  "preserved_negative_control": {
+    "affirmative_causation_proof": false,
+    "classification": "TEMPORAL_SEQUENCE_ONLY_NOT_CAUSATION",
+    "source_id": "CONTROL-1"
+  },
+  "preserved_opinions": [
+    {
+      "assessment": "SUPPORTED",
+      "exact_opinion": "The claimant has the synthetic pulmonary diagnosis D-7 described in those records.",
+      "id": "OP-1",
+      "limitations": [
+        "Does not identify a cause."
+      ]
+    },
+    {
+      "assessment": "QUALIFIED",
+      "exact_opinion": "If the reported gasket handling involved asbestos-containing material, cumulative inhalation could have contributed to diagnosis D-7.",
+      "id": "OP-2",
+      "limitations": [
+        "Conditional on material and exposure assumptions.",
+        "No product identification, dose estimate, or legal causation determination."
+      ]
+    },
+    {
+      "assessment": "UNSUPPORTED",
+      "exact_opinion": "The exposure was substantial and the dose was high enough to cause the condition.",
+      "id": "OP-3",
+      "limitations": [
+        "The deposition states no dose was calculated and none can be estimated from the supplied material."
+      ]
+    }
+  ],
+  "schema": "expertscope-verdictbridge-v1",
+  "unresolved": [
+    "component_identity",
+    "material_content",
+    "exposure",
+    "dose",
+    "expert_causation_opinion",
+    "legal_causation",
+    "legal_liability"
+  ],
+  "upstream_hashes": {
+    "causationboundary": "48284ea056ce5c79004d68d036884b18e1686aef24dce3921be94535c304718e",
+    "opinionmapper": "dc8c88a0bcaf93d556d2b1401e34c1e14973b5f31d15c013b501acb80357e58d",
+    "sourcebinder": "9ea3301f045b3496b440e517ea6888ca2adfc0e0530d37d353a6e2db36de9468"
+  }
+}

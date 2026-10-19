@@ -1,0 +1,87 @@
+{
+  "canonical_record_sha256": "48284ea056ce5c79004d68d036884b18e1686aef24dce3921be94535c304718e",
+  "dimension_order": [
+    "product_identity",
+    "component_identity",
+    "material_content",
+    "exposure",
+    "dose",
+    "medical_diagnosis",
+    "expert_causation_opinion",
+    "legal_causation",
+    "legal_liability"
+  ],
+  "disposition_gate": "INSUFFICIENT",
+  "evidence_matrix": [
+    {
+      "basis": [
+        "PROD-1"
+      ],
+      "dimension": "product_identity",
+      "status": "SUPPORTED"
+    },
+    {
+      "basis": [
+        "COMP-1"
+      ],
+      "dimension": "component_identity",
+      "status": "UNRESOLVED"
+    },
+    {
+      "basis": [
+        "MAT-1"
+      ],
+      "dimension": "material_content",
+      "status": "MISSING"
+    },
+    {
+      "basis": [
+        "EXP-1"
+      ],
+      "dimension": "exposure",
+      "status": "DISPUTED"
+    },
+    {
+      "basis": [
+        "DOSE-1"
+      ],
+      "dimension": "dose",
+      "status": "MISSING"
+    },
+    {
+      "basis": [
+        "MED-1"
+      ],
+      "dimension": "medical_diagnosis",
+      "status": "SUPPORTED"
+    },
+    {
+      "basis": [
+        "OP-2"
+      ],
+      "dimension": "expert_causation_opinion",
+      "status": "QUALIFIED"
+    },
+    {
+      "basis": [
+        "No legal-causation determination is supplied by this synthetic fixture."
+      ],
+      "dimension": "legal_causation",
+      "status": "UNRESOLVED"
+    },
+    {
+      "basis": [
+        "No liability determination is supplied by this synthetic fixture."
+      ],
+      "dimension": "legal_liability",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "matter_id": "ES-2026-10-19-001",
+  "negative_control": {
+    "affirmative_causation_proof": false,
+    "classification": "TEMPORAL_SEQUENCE_ONLY_NOT_CAUSATION",
+    "source_id": "CONTROL-1"
+  },
+  "schema": "expertscope-causationboundary-v1"
+}

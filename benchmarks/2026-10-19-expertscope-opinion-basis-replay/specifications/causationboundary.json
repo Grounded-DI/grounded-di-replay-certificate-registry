@@ -1,0 +1,19 @@
+{
+  "dimensions": [
+    "product_identity",
+    "component_identity",
+    "material_content",
+    "exposure",
+    "dose",
+    "medical_diagnosis",
+    "expert_causation_opinion",
+    "legal_causation",
+    "legal_liability"
+  ],
+  "rules": [
+    "Each dimension is independently evaluated from its own supplied evidence.",
+    "Missing is not negative; unresolved links remain unresolved.",
+    "Temporal order alone does not prove causation."
+  ],
+  "schema": "expertscope-causationboundary-spec-v1"
+}

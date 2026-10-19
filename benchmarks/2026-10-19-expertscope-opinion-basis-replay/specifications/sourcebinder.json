@@ -1,0 +1,8 @@
+{
+  "rules": [
+    "Every opinion and record source ID must resolve to a supplied source.",
+    "Each binding must match its exact location, author or speaker, and source fragment.",
+    "Changed, absent, or unbound source text fails closed."
+  ],
+  "schema": "expertscope-sourcebinder-spec-v1"
+}

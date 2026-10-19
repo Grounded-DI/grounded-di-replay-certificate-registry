@@ -1,0 +1,119 @@
+{
+  "canonical_record_sha256": "dc8c88a0bcaf93d556d2b1401e34c1e14973b5f31d15c013b501acb80357e58d",
+  "counts": {
+    "QUALIFIED": 1,
+    "SUPPORTED": 1,
+    "UNRESOLVED": 0,
+    "UNSUPPORTED": 1
+  },
+  "matter_id": "ES-2026-10-19-001",
+  "opinions": [
+    {
+      "assessment": "SUPPORTED",
+      "assumptions": [
+        {
+          "assumption_id": "A-1",
+          "evidence_refs": [
+            "MED-1"
+          ],
+          "status": "SUPPORTED",
+          "text": "The supplied summaries accurately represent the synthetic records."
+        }
+      ],
+      "exact_opinion": "The claimant has the synthetic pulmonary diagnosis D-7 described in those records.",
+      "limitations": [
+        "Does not identify a cause."
+      ],
+      "method": "descriptive review of the supplied summaries",
+      "opinion_id": "OP-1",
+      "scope": "diagnosis description",
+      "source": {
+        "exact_match": true,
+        "id": "REPORT-1",
+        "location": "paragraph 4",
+        "source_fragment": "The claimant has the synthetic pulmonary diagnosis D-7 described in those records."
+      },
+      "stated_basis": [
+        "review of supplied synthetic imaging and pathology summaries"
+      ]
+    },
+    {
+      "assessment": "QUALIFIED",
+      "assumptions": [
+        {
+          "assumption_id": "A-2",
+          "evidence_refs": [
+            "MAT-1"
+          ],
+          "status": "MISSING",
+          "text": "The handled component contained asbestos."
+        },
+        {
+          "assumption_id": "A-3",
+          "evidence_refs": [
+            "EXP-1"
+          ],
+          "status": "DISPUTED",
+          "text": "The claimant experienced the described inhalation exposure."
+        },
+        {
+          "assumption_id": "A-4",
+          "evidence_refs": [
+            "DOSE-1",
+            "HIST-1"
+          ],
+          "status": "MISSING",
+          "text": "Dose and alternative causes permit attribution."
+        }
+      ],
+      "exact_opinion": "If the reported gasket handling involved asbestos-containing material, cumulative inhalation could have contributed to diagnosis D-7.",
+      "limitations": [
+        "Conditional on material and exposure assumptions.",
+        "No product identification, dose estimate, or legal causation determination."
+      ],
+      "method": "conditional medical causation assessment as stated in the fixture",
+      "opinion_id": "OP-2",
+      "scope": "conditional medical causation opinion",
+      "source": {
+        "exact_match": true,
+        "id": "REPORT-1",
+        "location": "paragraph 7",
+        "source_fragment": "If the reported gasket handling involved asbestos-containing material, cumulative inhalation could have contributed to diagnosis D-7."
+      },
+      "stated_basis": [
+        "reported handling history",
+        "diagnosis D-7 in supplied summaries"
+      ]
+    },
+    {
+      "assessment": "UNSUPPORTED",
+      "assumptions": [
+        {
+          "assumption_id": "A-5",
+          "evidence_refs": [
+            "DOSE-1"
+          ],
+          "status": "MISSING",
+          "text": "A high dose was measured or reliably estimated."
+        }
+      ],
+      "exact_opinion": "The exposure was substantial and the dose was high enough to cause the condition.",
+      "limitations": [
+        "The deposition states no dose was calculated and none can be estimated from the supplied material."
+      ],
+      "method": "No quantitative method or measurement is identified in the report.",
+      "opinion_id": "OP-3",
+      "scope": "quantitative dose characterization",
+      "source": {
+        "exact_match": true,
+        "id": "REPORT-1",
+        "location": "paragraph 8",
+        "source_fragment": "The exposure was substantial and the dose was high enough to cause the condition."
+      },
+      "stated_basis": [
+        "reported handling history"
+      ]
+    }
+  ],
+  "schema": "expertscope-opinionmapper-v1"
+}

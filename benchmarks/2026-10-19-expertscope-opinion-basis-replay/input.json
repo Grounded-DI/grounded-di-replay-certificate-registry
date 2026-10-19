@@ -1,0 +1,230 @@
+{
+  "evidence_records": [
+    {
+      "id": "MED-1",
+      "kind": "diagnosis_record",
+      "source_id": "MED-1",
+      "status": "present"
+    },
+    {
+      "id": "HIST-1",
+      "kind": "alternative_cause_record",
+      "source_id": "HIST-1",
+      "status": "present"
+    },
+    {
+      "id": "PROD-1",
+      "kind": "product_manufacturer_link",
+      "manufacturer": "ACME-TESTWORKS",
+      "product": "MODEL-Q4",
+      "source_id": "PROD-1",
+      "status": "present"
+    },
+    {
+      "component": "gasket",
+      "id": "COMP-1",
+      "kind": "component_record",
+      "product": "unspecified",
+      "source_id": "WORK-1",
+      "status": "present_but_unlinked"
+    },
+    {
+      "component": "gasket",
+      "id": "EXP-1",
+      "kind": "exposure_record",
+      "material": "unknown",
+      "product": "MODEL-Q4",
+      "source_id": "WIT-1",
+      "status": "lay_report_unverified"
+    },
+    {
+      "id": "DOSE-1",
+      "kind": "dose_record",
+      "source_id": "DEPO-1",
+      "status": "explicitly_unquantified"
+    },
+    {
+      "id": "CONTROL-1",
+      "kind": "temporal_control",
+      "source_id": "CONTROL-1",
+      "status": "temporal_sequence_only"
+    }
+  ],
+  "fixture_notice": "All entities, experts, products, testimony, records, medical facts, methods, and outcomes are synthetic fixtures.",
+  "jurisdiction": "Synthetic Commonwealth",
+  "matter_id": "ES-2026-10-19-001",
+  "opinions": [
+    {
+      "assumptions": [
+        {
+          "evidence_refs": [
+            "MED-1"
+          ],
+          "id": "A-1",
+          "text": "The supplied summaries accurately represent the synthetic records."
+        }
+      ],
+      "basis": [
+        "review of supplied synthetic imaging and pathology summaries"
+      ],
+      "exact_opinion": "The claimant has the synthetic pulmonary diagnosis D-7 described in those records.",
+      "id": "OP-1",
+      "limitations": [
+        "Does not identify a cause."
+      ],
+      "method": "descriptive review of the supplied summaries",
+      "scope": "diagnosis description",
+      "source_id": "REPORT-1",
+      "source_location": "paragraph 4"
+    },
+    {
+      "assumptions": [
+        {
+          "evidence_refs": [
+            "MAT-1"
+          ],
+          "id": "A-2",
+          "text": "The handled component contained asbestos."
+        },
+        {
+          "evidence_refs": [
+            "EXP-1"
+          ],
+          "id": "A-3",
+          "text": "The claimant experienced the described inhalation exposure."
+        },
+        {
+          "evidence_refs": [
+            "DOSE-1",
+            "HIST-1"
+          ],
+          "id": "A-4",
+          "text": "Dose and alternative causes permit attribution."
+        }
+      ],
+      "basis": [
+        "reported handling history",
+        "diagnosis D-7 in supplied summaries"
+      ],
+      "exact_opinion": "If the reported gasket handling involved asbestos-containing material, cumulative inhalation could have contributed to diagnosis D-7.",
+      "id": "OP-2",
+      "limitations": [
+        "Conditional on material and exposure assumptions.",
+        "No product identification, dose estimate, or legal causation determination."
+      ],
+      "method": "conditional medical causation assessment as stated in the fixture",
+      "scope": "conditional medical causation opinion",
+      "source_id": "REPORT-1",
+      "source_location": "paragraph 7"
+    },
+    {
+      "assumptions": [
+        {
+          "evidence_refs": [
+            "DOSE-1"
+          ],
+          "id": "A-5",
+          "text": "A high dose was measured or reliably estimated."
+        }
+      ],
+      "basis": [
+        "reported handling history"
+      ],
+      "exact_opinion": "The exposure was substantial and the dose was high enough to cause the condition.",
+      "id": "OP-3",
+      "limitations": [
+        "The deposition states no dose was calculated and none can be estimated from the supplied material."
+      ],
+      "method": "No quantitative method or measurement is identified in the report.",
+      "scope": "quantitative dose characterization",
+      "source_id": "REPORT-1",
+      "source_location": "paragraph 8"
+    }
+  ],
+  "procedural_posture": "Cross-motions for summary judgment on synthetic product identification and causation claims.",
+  "question": "Does this closed record support a final synthetic litigation-sufficiency disposition on the alleged product-related cause of the claimant's pulmonary condition?",
+  "schema": "expertscope-closed-world-matter-v1",
+  "sources": [
+    {
+      "author": "Dr. Mira Vale (synthetic expert)",
+      "id": "REPORT-1",
+      "location": "paragraph 4",
+      "text": "I reviewed the supplied synthetic imaging and pathology summaries. The claimant has the synthetic pulmonary diagnosis D-7 described in those records.",
+      "type": "expert_report"
+    },
+    {
+      "author": "Dr. Mira Vale (synthetic expert)",
+      "id": "REPORT-1",
+      "location": "paragraph 7",
+      "text": "If the reported gasket handling involved asbestos-containing material, cumulative inhalation could have contributed to diagnosis D-7. I cannot identify a product, component, dose, or defendant from medical records alone.",
+      "type": "expert_report"
+    },
+    {
+      "author": "Dr. Mira Vale (synthetic expert)",
+      "id": "REPORT-1",
+      "location": "paragraph 8",
+      "text": "The exposure was substantial and the dose was high enough to cause the condition.",
+      "type": "expert_report"
+    },
+    {
+      "author": "Dr. Mira Vale (synthetic expert)",
+      "id": "DEPO-1",
+      "location": "page 88, lines 3-9",
+      "speaker": "Dr. Mira Vale",
+      "text": "Q. Did you calculate a cumulative dose? A. No. The supplied record contains no quantitative dose measurement, and I cannot estimate one from this material.",
+      "type": "expert_deposition"
+    },
+    {
+      "author": "Dr. Mira Vale (synthetic expert)",
+      "id": "DEPO-1",
+      "location": "page 91, lines 12-18",
+      "speaker": "Dr. Mira Vale",
+      "text": "Q. So the exposure caused D-7? A. I said it could have contributed if the stated material and exposure assumptions are true. I cannot determine product identity or legal causation.",
+      "type": "expert_deposition"
+    },
+    {
+      "author": "Witness R (synthetic witness)",
+      "id": "WIT-1",
+      "location": "page 24, lines 5-11",
+      "speaker": "Witness R",
+      "text": "I helped remove a gasket from a pump marked Model Q-4. I did not see a manufacturer label and cannot say what the gasket was made of.",
+      "type": "lay_testimony"
+    },
+    {
+      "author": "Synthetic record custodian",
+      "id": "MED-1",
+      "location": "record page 2",
+      "text": "Synthetic imaging and pathology summaries describe pulmonary diagnosis D-7. This summary does not identify a cause.",
+      "type": "medical_record_summary"
+    },
+    {
+      "author": "Synthetic record custodian",
+      "id": "HIST-1",
+      "location": "record page 1",
+      "text": "Synthetic history records prior smoking and a separate chronic pulmonary condition. The supplied record does not quantify their contribution to diagnosis D-7.",
+      "type": "medical_history_summary"
+    },
+    {
+      "author": "Synthetic records custodian",
+      "id": "PROD-1",
+      "location": "exhibit PX-1",
+      "text": "Model Q-4 pump delivered to North Plant; seller and manufacturer fields identify Acme Testworks.",
+      "type": "purchase_record"
+    },
+    {
+      "author": "Synthetic records custodian",
+      "id": "WORK-1",
+      "location": "exhibit PX-2",
+      "text": "A gasket was removed from a pump at North Plant. The entry does not identify the pump model, gasket supplier, or gasket material.",
+      "type": "maintenance_record"
+    },
+    {
+      "author": "Synthetic records custodian",
+      "id": "CONTROL-1",
+      "location": "exhibit PX-3",
+      "text": "Diagnosis D-7 was documented after the reported work period. Temporal order alone does not state or establish causation.",
+      "type": "timeline_note"
+    }
+  ],
+  "synthetic_gate": "A final sufficient result requires supported product, component, material, exposure, dose, diagnosis, and opinion-basis links; legal causation and liability remain for the stated synthetic decision-maker. Missing or disputed links route to review or insufficiency."
+}

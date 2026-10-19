@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "boundaries_preserved": true,
+    "controls_all_pass": true,
+    "final_disposition": true,
+    "independent_computation_matches_both_runs": true,
+    "independent_computation_matches_expected": true,
+    "opinion_categories": true,
+    "run_1_chain_hash_valid": true,
+    "run_1_four_stages_exit_zero": true,
+    "run_1_source_bindings_pass": true,
+    "run_2_chain_hash_valid": true,
+    "run_2_four_stages_exit_zero": true,
+    "run_2_source_bindings_pass": true,
+    "two_runs_identical": true
+  },
+  "method": "Independent rule implementation in this file; imports no stage scripts.",
+  "scope": "synthetic closed-world fixture",
+  "verifier": "PASS"
+}

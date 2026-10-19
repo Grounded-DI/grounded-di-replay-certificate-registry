@@ -326,3 +326,10 @@ This dated package connects BriefWise authority binding, DepoBot testimony traci
 | DepoBot testimony trace | PASS; stage hash `c22a001b36e01faec8a982c38b75769b042beb5eb003a7c61b00da89e7ded71b` |
 | PIDBot product/exposure separation | PASS; stage hash `74dff06e53ef73d0e2de7b6df840690a6127a0aa6180213262ed418eabb5536b` |
 | VerdictBridge final chain | INSUFFICIENT; final chain hash `9c68fd56872beac428bb8feeb240b93f340aa4a8d4f407b5802d665fd645d325` |
+
+
+## ExpertScope Opinion-Basis Replay — 2026-10-19
+
+[Package README](benchmarks/2026-10-19-expertscope-opinion-basis-replay/README.md) · [Measured report](benchmarks/2026-10-19-expertscope-opinion-basis-replay/REPORT.md) · [Reproducibility archive](benchmarks/2026-10-19-expertscope-opinion-basis-replay/reproducibility_package.tar.gz)
+
+This closed-world synthetic replay binds expert statements to report/deposition sources, tracks stated bases, assumptions, scope, and limitations, and keeps product identity, component, material, exposure, dose, diagnosis, expert causation, legal causation, and liability separate. Two executions matched; the independent evaluator, integrity checks, negative controls, altered-record controls, and downstream-tamper control passed. The baseline disposition is INSUFFICIENT; synthetic supporting evidence changes it to REVIEW_REQUIRED, while a conclusory assertion is rejected. No real legal or clinical conclusion is claimed.

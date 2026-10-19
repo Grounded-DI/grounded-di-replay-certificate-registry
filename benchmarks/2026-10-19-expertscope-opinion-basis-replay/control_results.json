@@ -1,0 +1,44 @@
+{
+  "altered_cases": [
+    {
+      "exit_code": 1,
+      "label": "remove_source_excerpt"
+    },
+    {
+      "exit_code": 1,
+      "label": "alter_page_binding"
+    },
+    {
+      "exit_code": 1,
+      "label": "broaden_opinion"
+    },
+    {
+      "exit_code": 0,
+      "label": "assert_missing_assumption_supported"
+    },
+    {
+      "exit_code": 0,
+      "label": "add_unsupported_dose_causation"
+    },
+    {
+      "exit_code": 0,
+      "label": "negative_control_injection"
+    },
+    {
+      "exit_code": 0,
+      "label": "add_genuine_supporting_records"
+    }
+  ],
+  "checks": {
+    "conclusory_dose_causation_rejected": true,
+    "genuine_support_changes_reasoned_result": true,
+    "negative_control_not_causation": true,
+    "opinion_broadening_rejected": true,
+    "page_binding_change_rejected": true,
+    "post_generation_intermediate_tamper_detected": true,
+    "remove_or_alter_excerpt_rejected": true,
+    "unsupported_assumption_override_no_upgrade": true
+  },
+  "genuine_support_result": "REVIEW_REQUIRED",
+  "status": "PASS"
+}

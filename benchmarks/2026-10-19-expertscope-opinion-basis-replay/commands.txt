@@ -1,0 +1,6 @@
+python3 -B run_chain.py input.json run_1
+python3 -B run_chain.py input.json run_2
+python3 -B controls.py
+python3 -B independent_evaluator.py
+python3 -B integrity_check.py
+python3 -B archive_check.py reproducibility_package.tar.gz

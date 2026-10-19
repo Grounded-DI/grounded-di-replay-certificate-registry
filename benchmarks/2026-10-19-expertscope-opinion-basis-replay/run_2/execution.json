@@ -1,0 +1,66 @@
+{
+  "finished_utc": "2026-10-19T04:10:57.977304+00:00",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "schema": "expertscope-execution-v1",
+  "stage_runs": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "sourcebinder.py",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/input.json",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/run_2/sourcebinder.json"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-19T04:10:57.880433+00:00",
+      "script": "sourcebinder.py",
+      "started_utc": "2026-10-19T04:10:57.847134+00:00"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "opinionmapper.py",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/input.json",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/run_2/sourcebinder.json",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/run_2/opinionmapper.json"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-19T04:10:57.913535+00:00",
+      "script": "opinionmapper.py",
+      "started_utc": "2026-10-19T04:10:57.880450+00:00"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "causationboundary.py",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/input.json",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/run_2/opinionmapper.json",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/run_2/causationboundary.json"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-19T04:10:57.950354+00:00",
+      "script": "causationboundary.py",
+      "started_utc": "2026-10-19T04:10:57.913550+00:00"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "verdictbridge.py",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/input.json",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/run_2/sourcebinder.json",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/run_2/opinionmapper.json",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/run_2/causationboundary.json",
+        "/workspace/scratch/df960f3d4324/generated_expertscope/benchmarks/2026-10-19-expertscope-opinion-basis-replay/run_2/final_chain.json"
+      ],
+      "exit_code": 0,
+      "finished_utc": "2026-10-19T04:10:57.977289+00:00",
+      "script": "verdictbridge.py",
+      "started_utc": "2026-10-19T04:10:57.950368+00:00"
+    }
+  ],
+  "started_utc": "2026-10-19T04:10:57.847134+00:00"
+}

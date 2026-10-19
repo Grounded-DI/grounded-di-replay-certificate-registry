@@ -1,0 +1,10 @@
+{
+  "rules": [
+    "An opinion must match its exact source text.",
+    "Scope is read from the supplied expert statement; opinions beyond stated support are UNSUPPORTED.",
+    "Assumptions are derived from evidence-record references, not operator labels.",
+    "Supported diagnosis does not establish medical or legal causation.",
+    "Credentials, temporal sequence, exposure allegation, and differential-diagnosis labels alone do not establish causation."
+  ],
+  "schema": "expertscope-opinionmapper-spec-v1"
+}

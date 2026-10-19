@@ -1,0 +1,9 @@
+{
+  "rules": [
+    "Recompute and bind the three prior stage hashes.",
+    "Reject downstream records whose hashes or matter IDs do not match.",
+    "Return INSUFFICIENT when key source or causal links are missing; REVIEW_REQUIRED when new supporting evidence cures a material gap but attribution remains unresolved; VERDICT_READY only when every disclosed gate is met.",
+    "Do not convert stage results into a real legal conclusion."
+  ],
+  "schema": "expertscope-verdictbridge-spec-v1"
+}

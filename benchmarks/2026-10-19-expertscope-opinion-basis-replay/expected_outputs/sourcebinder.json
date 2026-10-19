@@ -1,0 +1,177 @@
+{
+  "binding_issues": [],
+  "bindings": [
+    {
+      "author_or_speaker": "Dr. Mira Vale (synthetic expert)",
+      "exact_match": true,
+      "location": "paragraph 4",
+      "record_id": "SOURCE:REPORT-1@paragraph 4",
+      "source_fragment": "I reviewed the supplied synthetic imaging and pathology summaries. The claimant has the synthetic pulmonary diagnosis D-7 described in those records.",
+      "source_id": "REPORT-1"
+    },
+    {
+      "author_or_speaker": "Dr. Mira Vale (synthetic expert)",
+      "exact_match": true,
+      "location": "paragraph 7",
+      "record_id": "SOURCE:REPORT-1@paragraph 7",
+      "source_fragment": "If the reported gasket handling involved asbestos-containing material, cumulative inhalation could have contributed to diagnosis D-7. I cannot identify a product, component, dose, or defendant from medical records alone.",
+      "source_id": "REPORT-1"
+    },
+    {
+      "author_or_speaker": "Dr. Mira Vale (synthetic expert)",
+      "exact_match": true,
+      "location": "paragraph 8",
+      "record_id": "SOURCE:REPORT-1@paragraph 8",
+      "source_fragment": "The exposure was substantial and the dose was high enough to cause the condition.",
+      "source_id": "REPORT-1"
+    },
+    {
+      "author_or_speaker": "Dr. Mira Vale",
+      "exact_match": true,
+      "location": "page 88, lines 3-9",
+      "record_id": "SOURCE:DEPO-1@page 88, lines 3-9",
+      "source_fragment": "Q. Did you calculate a cumulative dose? A. No. The supplied record contains no quantitative dose measurement, and I cannot estimate one from this material.",
+      "source_id": "DEPO-1"
+    },
+    {
+      "author_or_speaker": "Dr. Mira Vale",
+      "exact_match": true,
+      "location": "page 91, lines 12-18",
+      "record_id": "SOURCE:DEPO-1@page 91, lines 12-18",
+      "source_fragment": "Q. So the exposure caused D-7? A. I said it could have contributed if the stated material and exposure assumptions are true. I cannot determine product identity or legal causation.",
+      "source_id": "DEPO-1"
+    },
+    {
+      "author_or_speaker": "Witness R",
+      "exact_match": true,
+      "location": "page 24, lines 5-11",
+      "record_id": "SOURCE:WIT-1@page 24, lines 5-11",
+      "source_fragment": "I helped remove a gasket from a pump marked Model Q-4. I did not see a manufacturer label and cannot say what the gasket was made of.",
+      "source_id": "WIT-1"
+    },
+    {
+      "author_or_speaker": "Synthetic record custodian",
+      "exact_match": true,
+      "location": "record page 2",
+      "record_id": "SOURCE:MED-1@record page 2",
+      "source_fragment": "Synthetic imaging and pathology summaries describe pulmonary diagnosis D-7. This summary does not identify a cause.",
+      "source_id": "MED-1"
+    },
+    {
+      "author_or_speaker": "Synthetic record custodian",
+      "exact_match": true,
+      "location": "record page 1",
+      "record_id": "SOURCE:HIST-1@record page 1",
+      "source_fragment": "Synthetic history records prior smoking and a separate chronic pulmonary condition. The supplied record does not quantify their contribution to diagnosis D-7.",
+      "source_id": "HIST-1"
+    },
+    {
+      "author_or_speaker": "Synthetic records custodian",
+      "exact_match": true,
+      "location": "exhibit PX-1",
+      "record_id": "SOURCE:PROD-1@exhibit PX-1",
+      "source_fragment": "Model Q-4 pump delivered to North Plant; seller and manufacturer fields identify Acme Testworks.",
+      "source_id": "PROD-1"
+    },
+    {
+      "author_or_speaker": "Synthetic records custodian",
+      "exact_match": true,
+      "location": "exhibit PX-2",
+      "record_id": "SOURCE:WORK-1@exhibit PX-2",
+      "source_fragment": "A gasket was removed from a pump at North Plant. The entry does not identify the pump model, gasket supplier, or gasket material.",
+      "source_id": "WORK-1"
+    },
+    {
+      "author_or_speaker": "Synthetic records custodian",
+      "exact_match": true,
+      "location": "exhibit PX-3",
+      "record_id": "SOURCE:CONTROL-1@exhibit PX-3",
+      "source_fragment": "Diagnosis D-7 was documented after the reported work period. Temporal order alone does not state or establish causation.",
+      "source_id": "CONTROL-1"
+    },
+    {
+      "author_or_speaker": "Dr. Mira Vale (synthetic expert)",
+      "exact_match": true,
+      "location": "paragraph 4",
+      "record_id": "OP-1",
+      "source_fragment": "The claimant has the synthetic pulmonary diagnosis D-7 described in those records.",
+      "source_id": "REPORT-1"
+    },
+    {
+      "author_or_speaker": "Dr. Mira Vale (synthetic expert)",
+      "exact_match": true,
+      "location": "paragraph 7",
+      "record_id": "OP-2",
+      "source_fragment": "If the reported gasket handling involved asbestos-containing material, cumulative inhalation could have contributed to diagnosis D-7.",
+      "source_id": "REPORT-1"
+    },
+    {
+      "author_or_speaker": "Dr. Mira Vale (synthetic expert)",
+      "exact_match": true,
+      "location": "paragraph 8",
+      "record_id": "OP-3",
+      "source_fragment": "The exposure was substantial and the dose was high enough to cause the condition.",
+      "source_id": "REPORT-1"
+    },
+    {
+      "author_or_speaker": "Synthetic record custodian",
+      "exact_match": true,
+      "location": "record page 2",
+      "record_id": "MED-1",
+      "source_fragment": "Synthetic imaging and pathology summaries describe pulmonary diagnosis D-7. This summary does not identify a cause.",
+      "source_id": "MED-1"
+    },
+    {
+      "author_or_speaker": "Synthetic record custodian",
+      "exact_match": true,
+      "location": "record page 1",
+      "record_id": "HIST-1",
+      "source_fragment": "Synthetic history records prior smoking and a separate chronic pulmonary condition. The supplied record does not quantify their contribution to diagnosis D-7.",
+      "source_id": "HIST-1"
+    },
+    {
+      "author_or_speaker": "Synthetic records custodian",
+      "exact_match": true,
+      "location": "exhibit PX-1",
+      "record_id": "PROD-1",
+      "source_fragment": "Model Q-4 pump delivered to North Plant; seller and manufacturer fields identify Acme Testworks.",
+      "source_id": "PROD-1"
+    },
+    {
+      "author_or_speaker": "Synthetic records custodian",
+      "exact_match": true,
+      "location": "exhibit PX-2",
+      "record_id": "COMP-1",
+      "source_fragment": "A gasket was removed from a pump at North Plant. The entry does not identify the pump model, gasket supplier, or gasket material.",
+      "source_id": "WORK-1"
+    },
+    {
+      "author_or_speaker": "Witness R (synthetic witness)",
+      "exact_match": true,
+      "location": "page 24, lines 5-11",
+      "record_id": "EXP-1",
+      "source_fragment": "I helped remove a gasket from a pump marked Model Q-4. I did not see a manufacturer label and cannot say what the gasket was made of.",
+      "source_id": "WIT-1"
+    },
+    {
+      "author_or_speaker": "Dr. Mira Vale (synthetic expert)",
+      "exact_match": true,
+      "location": "page 88, lines 3-9",
+      "record_id": "DOSE-1",
+      "source_fragment": "Q. Did you calculate a cumulative dose? A. No. The supplied record contains no quantitative dose measurement, and I cannot estimate one from this material.",
+      "source_id": "DEPO-1"
+    },
+    {
+      "author_or_speaker": "Synthetic records custodian",
+      "exact_match": true,
+      "location": "exhibit PX-3",
+      "record_id": "CONTROL-1",
+      "source_fragment": "Diagnosis D-7 was documented after the reported work period. Temporal order alone does not state or establish causation.",
+      "source_id": "CONTROL-1"
+    }
+  ],
+  "canonical_record_sha256": "9ea3301f045b3496b440e517ea6888ca2adfc0e0530d37d353a6e2db36de9468",
+  "matter_id": "ES-2026-10-19-001",
+  "schema": "expertscope-sourcebinder-v1",
+  "status": "PASS"
+}
