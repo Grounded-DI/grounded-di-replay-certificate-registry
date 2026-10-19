@@ -13,30 +13,30 @@
     {
       "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/briefwise.py /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/input.json /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/run_1/briefwise.json",
       "exit_code": 0,
-      "finished_utc": "2026-10-19T03:30:58.535945+00:00",
+      "finished_utc": "2026-10-19T03:32:00.362156+00:00",
       "label": "briefwise",
-      "started_utc": "2026-10-19T03:30:58.513038+00:00"
+      "started_utc": "2026-10-19T03:32:00.339886+00:00"
     },
     {
       "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/depobot.py /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/input.json /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/run_1/depobot.json",
       "exit_code": 0,
-      "finished_utc": "2026-10-19T03:30:58.559242+00:00",
+      "finished_utc": "2026-10-19T03:32:00.383561+00:00",
       "label": "depobot",
-      "started_utc": "2026-10-19T03:30:58.535995+00:00"
+      "started_utc": "2026-10-19T03:32:00.362187+00:00"
     },
     {
       "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/pidbot.py /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/input.json /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/run_1/pidbot.json",
       "exit_code": 0,
-      "finished_utc": "2026-10-19T03:30:58.585331+00:00",
+      "finished_utc": "2026-10-19T03:32:00.408072+00:00",
       "label": "pidbot",
-      "started_utc": "2026-10-19T03:30:58.559274+00:00"
+      "started_utc": "2026-10-19T03:32:00.383593+00:00"
     },
     {
       "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/verdictbridge.py /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/input.json /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/run_1/briefwise.json /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/run_1/depobot.json /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/run_1/pidbot.json /workspace/scratch/df960f3d4324/generated_integrated_chain/benchmarks/2026-10-19-integrated-legal-chain-replay/run_1/final_chain.json",
       "exit_code": 0,
-      "finished_utc": "2026-10-19T03:30:58.608217+00:00",
+      "finished_utc": "2026-10-19T03:32:00.429727+00:00",
       "label": "verdictbridge",
-      "started_utc": "2026-10-19T03:30:58.585467+00:00"
+      "started_utc": "2026-10-19T03:32:00.408118+00:00"
     }
   ]
 }

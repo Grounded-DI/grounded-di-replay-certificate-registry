@@ -3,6 +3,7 @@
   "checks": {
     "alter_deposition_answer": true,
     "causation_override_rejected": true,
+    "change_transcript_page_line": true,
     "post_generation_intermediate_tamper_rejected": true,
     "remove_authority": true,
     "replace_product_identifier": true,
