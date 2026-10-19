@@ -1,35 +1,26 @@
 {
   "arithmetic_result": "ABOVE_THRESHOLD",
+  "covenant_id": "COV-01",
+  "covenant_reporting_date": "2026-09-30",
   "denominator": {
     "measured_usd": 32000,
-    "name": "current_liabilities",
-    "support": [
-      "AP-2002",
-      "N-01"
-    ]
+    "name": "current_liabilities"
   },
   "disposition": "REVIEW_REQUIRED",
   "input_sha256": "f34224590551d1c3a0644c5f84ab704ffcc3562517778782d5362d846dd85420",
   "minimum_ratio": 1.5,
-  "non_inferences": [
-    "invoice != cash",
-    "cash activity != unrestricted cash",
-    "favorable subtotal != final compliance"
-  ],
   "numerator": {
     "measured_usd": 128000,
     "name": "unrestricted_cash",
-    "ownership_status": "UNRESOLVED",
-    "support": [
-      "BANK-SEP-2026"
-    ]
+    "ownership_status": "MISSING"
   },
   "permitted_exclusions": [],
   "ratio": 4.0,
-  "reason": "Measured ratio is 4.00x, but unrestricted-cash ownership is not established and the receipt/AR conflict remains unresolved.",
+  "reporting_date": "2026-09-30",
   "stage": "CovenantBridge",
+  "unauthorized_exclusions": [],
   "unresolved_items": [
     "MISSING-001",
-    "B-001/INV-1001/AR-1001 conflict"
+    "B-001/INV-1001/AR-1001"
   ]
 }

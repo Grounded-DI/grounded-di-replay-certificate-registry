@@ -1,0 +1,47 @@
+{
+  "boundaries": [
+    "transaction identity != account ownership",
+    "invoice validity != revenue recognition",
+    "cash availability != covenant compliance",
+    "liability existence != financial-statement classification"
+  ],
+  "input_sha256": "89dc9544eb4bfb3d8d871923b12fdeb6e0a1c4c3178dc33b660ff382cf369de0",
+  "items": [
+    {
+      "proposition": "transaction identity",
+      "status": "SUPPORTED_WITH_CONFLICT"
+    },
+    {
+      "proposition": "account ownership",
+      "status": "SUPPORTED"
+    },
+    {
+      "proposition": "invoice validity",
+      "status": "SUPPORTED_AS_RECORD_ONLY"
+    },
+    {
+      "proposition": "revenue recognition",
+      "status": "UNRESOLVED"
+    },
+    {
+      "amount": 128000,
+      "proposition": "cash availability",
+      "status": "MEASURED"
+    },
+    {
+      "amount": 20000,
+      "proposition": "liability existence",
+      "status": "SUPPORTED_FOR_LISTED_ITEMS"
+    },
+    {
+      "proposition": "financial-statement classification",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "measured_cash": 128000,
+  "measured_current_liabilities": 20000,
+  "ownership_missing": false,
+  "stage": "AccountingBoundary",
+  "status": "REVIEW_REQUIRED",
+  "unsupported_currency_records": []
+}

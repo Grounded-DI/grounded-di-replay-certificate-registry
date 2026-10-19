@@ -1,0 +1,26 @@
+{
+  "arithmetic_result": "ABOVE_THRESHOLD",
+  "derived_from": "input records and specification; no injected disposition accepted",
+  "disposition": "REVIEW_REQUIRED",
+  "measured_cash": 78000,
+  "measured_current_liabilities": 32000,
+  "measured_ratio": 2.4375,
+  "schema": "financewise-final-chain-v2",
+  "stage_files": [
+    "recordbinder.json",
+    "transactionresolver.json",
+    "accountingboundary.json",
+    "covenantbridge.json"
+  ],
+  "stage_statuses": {
+    "AccountingBoundary": "REVIEW_REQUIRED",
+    "CovenantBridge": "REVIEW_REQUIRED",
+    "RecordBinder": "PASS",
+    "TransactionResolver": "REVIEW_REQUIRED"
+  },
+  "unresolved_items": [
+    "MISSING-001",
+    "B-001/INV-1001/AR-1001",
+    "UNSUPPORTED_CURRENCY:B-003"
+  ]
+}

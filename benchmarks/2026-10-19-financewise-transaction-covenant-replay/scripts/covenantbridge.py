@@ -1,4 +1,5 @@
-import argparse,hashlib,json
+import subprocess, sys
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument("input");p.add_argument("accounting");p.add_argument("output");a=p.parse_args();ac=json.loads(Path(a.accounting).read_text());ratio=ac["measured_cash_usd"]/ac["measured_current_liabilities_usd"]
-out={"stage":"CovenantBridge","input_sha256":hashlib.sha256(Path(a.input).read_bytes()).hexdigest(),"numerator":{"name":"unrestricted_cash","measured_usd":ac["measured_cash_usd"],"support":["BANK-SEP-2026"],"ownership_status":"UNRESOLVED"},"denominator":{"name":"current_liabilities","measured_usd":ac["measured_current_liabilities_usd"],"support":["AP-2002","N-01"]},"permitted_exclusions":[],"ratio":round(ratio,8),"minimum_ratio":1.5,"arithmetic_result":"ABOVE_THRESHOLD","unresolved_items":["MISSING-001","B-001/INV-1001/AR-1001 conflict"],"disposition":"REVIEW_REQUIRED","reason":"Measured ratio is 4.00x, but unrestricted-cash ownership is not established and the receipt/AR conflict remains unresolved.","non_inferences":["invoice != cash","cash activity != unrestricted cash","favorable subtotal != final compliance"]};Path(a.output).write_text(json.dumps(out,sort_keys=True,indent=2)+"\n");print(json.dumps({"stage":out["stage"],"status":out["disposition"],"ratio":out["ratio"]}))
+if __name__ == "__main__":
+    args = [sys.executable, str(Path(__file__).parent / "finance_stage_v2.py"), "covenant"] + sys.argv[1:]
+    raise SystemExit(subprocess.run(args).returncode)

@@ -1,78 +1,290 @@
 {
+  "actual_control_executions": 15,
+  "actual_mutated_input_pipeline_executions": 14,
+  "actual_mutated_intermediate_executions": 1,
   "baseline_disposition": "REVIEW_REQUIRED",
-  "canonical_input_hash": "9627f3a448173134a04bb4cd262b8ff8283186595281a22bc8fb06296c7dcd93",
+  "canonical_input_hash": "f34224590551d1c3a0644c5f84ab704ffcc3562517778782d5362d846dd85420",
   "controls": {
     "altered_currency": {
-      "changed_input_hash": true,
-      "expected": "reject or change",
+      "assertion": "unsupported currency preserved and cash changed",
+      "execution": "mutated input pipeline",
+      "input_sha256": "e918f7a248690e7e9e7bf8e94a8952ce0295c4604bd6ae2474971b7791e973a4",
+      "observed": {
+        "cash": 78000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 2.4375,
+        "unresolved": [
+          "MISSING-001",
+          "B-001/INV-1001/AR-1001",
+          "UNSUPPORTED_CURRENCY:B-003"
+        ]
+      },
+      "output_sha256": "d90ea2e6cd8645d22f9a49518d0b00ac996b375e3dd436cc6e5fd277b9ee9a7c",
       "status": "PASS"
     },
     "altered_reporting_date": {
-      "changed_input_hash": true,
-      "expected": "reject or change",
+      "assertion": "reporting mismatch derived",
+      "execution": "mutated input pipeline",
+      "input_sha256": "2298fa7065daefa80ac41d1450253a295e4a016e7a8517165b247e822a368f90",
+      "observed": {
+        "cash": 128000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 4.0,
+        "unresolved": [
+          "MISSING-001",
+          "B-001/INV-1001/AR-1001",
+          "REPORTING_DATE_MISMATCH"
+        ]
+      },
+      "output_sha256": "213571394bd2bf6afc253d1649f6a871a3dcc0bf9f215a320c2b339268aa5abf",
       "status": "PASS"
     },
     "altered_transaction_amount": {
-      "changed_input_hash": true,
-      "expected": "reject or change",
+      "assertion": "cash recalculated from altered amount",
+      "execution": "mutated input pipeline",
+      "input_sha256": "05e53e5f1a063e1c3ed9fc3107a88fbdb820cda04a177b549be57f8039f07e53",
+      "observed": {
+        "cash": 128001,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 4.00003125,
+        "unresolved": [
+          "MISSING-001"
+        ]
+      },
+      "output_sha256": "c9ea4f9f8ae48b46b02df4dbc45813b0ee5cf6ba4d410fc7b8e74fbab3d07135",
       "status": "PASS"
     },
     "currency_conversion": {
-      "effect": "currency alteration rejected absent FX rule",
+      "assertion": "unsupported currency preserved and cash changed",
+      "execution": "mutated input pipeline",
+      "input_sha256": "5480c6107fad624c0d3c88812902741fa116cc200cf7cd5917cfc1ee57afbefb",
+      "observed": {
+        "cash": 78000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 2.4375,
+        "unresolved": [
+          "MISSING-001",
+          "B-001/INV-1001/AR-1001",
+          "UNSUPPORTED_CURRENCY:B-003"
+        ]
+      },
+      "output_sha256": "d90ea2e6cd8645d22f9a49518d0b00ac996b375e3dd436cc6e5fd277b9ee9a7c",
       "status": "PASS"
     },
     "downstream_injection": {
-      "changed_input_hash": true,
-      "expected": "reject or change",
+      "assertion": "downstream label not accepted",
+      "execution": "mutated input pipeline",
+      "input_sha256": "16cd5f014f570ba3d09ee2c070d074374681901f3f7845450d1f38a2b3b49d3a",
+      "observed": {
+        "cash": 128000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 4.0,
+        "unresolved": [
+          "MISSING-001",
+          "B-001/INV-1001/AR-1001"
+        ]
+      },
+      "output_sha256": "9071d226b253053c84767f76e156688cf78186618f787592979e689557b3be63",
       "status": "PASS"
     },
     "duplicate_forced_into_match": {
-      "changed_input_hash": true,
-      "expected": "reject or change",
+      "assertion": "forced duplicate no longer accepted as duplicate",
+      "execution": "mutated input pipeline",
+      "input_sha256": "81c3330291195b6ba91b9e9e05cc1057193fadfe17f3d8a0d487068efb36f9ff",
+      "observed": {
+        "cash": 128000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 2,
+        "ratio": 4.0,
+        "unresolved": [
+          "MISSING-001",
+          "B-001/INV-1001/AR-1001"
+        ]
+      },
+      "output_sha256": "9071d226b253053c84767f76e156688cf78186618f787592979e689557b3be63",
       "status": "PASS"
     },
     "duplicate_transaction": {
-      "effect": "duplicate candidate preserved",
+      "assertion": "additional duplicate record detected",
+      "execution": "mutated input pipeline",
+      "input_sha256": "a1dd644b1bcd662e3310dbe146cb9e2d251928cc1583f58dad20c8fae939aab7",
+      "observed": {
+        "cash": 128000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 4.0,
+        "unresolved": [
+          "MISSING-001",
+          "B-001/INV-1001/AR-1001"
+        ]
+      },
+      "output_sha256": "9071d226b253053c84767f76e156688cf78186618f787592979e689557b3be63",
       "status": "PASS"
     },
     "entity_identifier_replaced": {
-      "changed_input_hash": true,
-      "expected": "reject or change",
+      "assertion": "entity mismatch rejected",
+      "execution": "mutated input pipeline",
+      "input_sha256": "055bb70c8feba438e1f48cf49cc0295043be8d64032fb6f61586e90e7125f738",
+      "observed": {
+        "cash": 128000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 4.0,
+        "unresolved": [
+          "MISSING-001",
+          "BANK-SEP-2026",
+          "INV-REGISTER-SEP",
+          "PAYMENT-REGISTER-SEP",
+          "GL-SEP-2026",
+          "AR-SEP-2026",
+          "AP-SEP-2026",
+          "DEBT-N01",
+          "B-001/INV-1001/AR-1001"
+        ]
+      },
+      "output_sha256": "a96eb35d3f3a956d57c0fe3bbdeb838a749cf8bc2532cf0c52823a6d22ca7f3c",
       "status": "PASS"
     },
     "intermediate_tamper": {
-      "effect": "downstream stage hashes and required files are checked",
+      "assertion": "tampered intermediate changed downstream result",
+      "execution": "mutated intermediate record",
+      "observed": [
+        "MISSING-001",
+        "B-001/INV-1001/AR-1001",
+        "TAMPERED"
+      ],
       "status": "PASS"
     },
     "invoice_relabeled_paid_without_payment": {
-      "changed_input_hash": true,
-      "expected": "reject or change",
+      "assertion": "paid-without-payment conflict derived",
+      "execution": "mutated input pipeline",
+      "input_sha256": "ed68339a4ad0b3744cc93c7d2b206d7b7c8ee8a26cd2a7e251300819bd4fff8f",
+      "observed": {
+        "cash": 128000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 4.0,
+        "unresolved": [
+          "MISSING-001",
+          "B-001/INV-1001/AR-1001",
+          "INV-1001"
+        ]
+      },
+      "output_sha256": "0aeb67735c0493eb8a6378072f8cc0423158e8fce49a1f75bc7d224bfd07a2b0",
       "status": "PASS"
     },
     "missing_evidence": {
-      "effect": "missing is unresolved, not zero",
+      "assertion": "missing AP record changed derived denominator and did not become a zero-valued supported fact",
+      "execution": "mutated input pipeline",
+      "input_sha256": "89dc9544eb4bfb3d8d871923b12fdeb6e0a1c4c3178dc33b660ff382cf369de0",
+      "observed": {
+        "cash": 128000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 6.4,
+        "unresolved": [
+          "B-001/INV-1001/AR-1001"
+        ]
+      },
+      "output_sha256": "46d9223b0e5ee281aad7b4057251ed75be10d575a655434eb3c1c2d9bf24c922",
       "status": "PASS"
     },
     "missing_record_treated_as_zero": {
-      "changed_input_hash": true,
-      "expected": "reject or change",
+      "assertion": "missing evidence did not become zero or compliance",
+      "execution": "mutated input pipeline",
+      "input_sha256": "255ed89aa11279e9cc184f46a79e7be09782ab819de1d8cc48fd509b751f6daf",
+      "observed": {
+        "cash": 128000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 4.0,
+        "unresolved": [
+          "B-001/INV-1001/AR-1001"
+        ]
+      },
+      "output_sha256": "43ea01bc0be083bcb01db58a39893d0931135ad47d4867d48a51adf56689b059",
       "status": "PASS"
     },
     "negative_control": {
-      "effect": "unrelated memo is not counted",
+      "assertion": "unrelated memo ignored",
+      "execution": "mutated input pipeline",
+      "input_sha256": "037dee5b60b5e21a5ce79e89b98cdb52ca638beeb700360ec81e4fdf947b1a7a",
+      "observed": {
+        "cash": 128000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 4.0,
+        "unresolved": [
+          "MISSING-001",
+          "B-001/INV-1001/AR-1001"
+        ]
+      },
+      "output_sha256": "9071d226b253053c84767f76e156688cf78186618f787592979e689557b3be63",
       "status": "PASS"
     },
     "rounding_boundary": {
-      "effect": "threshold comparison precedes narrative rounding",
+      "assertion": "threshold comparison derived before disposition",
+      "execution": "mutated input pipeline",
+      "input_sha256": "278019fa39520de74ca2f60397bd84116f70a4d6ed47e9db73e002f5d85d939b",
+      "observed": {
+        "cash": 128000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 4.0,
+        "unresolved": [
+          "MISSING-001",
+          "B-001/INV-1001/AR-1001"
+        ]
+      },
+      "output_sha256": "c0e998e92506b8281ea3b4d8ce457562d971cdcbea778c34c5f902de54d7e75c",
       "status": "PASS"
     },
     "unauthorized_covenant_exclusion": {
-      "changed_input_hash": true,
-      "expected": "reject or change",
+      "assertion": "unsupported exclusion unresolved",
+      "execution": "mutated input pipeline",
+      "input_sha256": "922fd0b1c1f2c8e8c73c1791171f93161a802b8b2bcc2ff815f7994ecad9e1e5",
+      "observed": {
+        "cash": 128000,
+        "disposition": "REVIEW_REQUIRED",
+        "duplicate_candidates": 1,
+        "ratio": 4.0,
+        "unresolved": [
+          "MISSING-001",
+          "B-001/INV-1001/AR-1001",
+          "UNAUTHORIZED_EXCLUSION:cash_restricted_by_unknown_rule"
+        ]
+      },
+      "output_sha256": "dcdde11d2d2205095da676d41371cc36cd69c1a28230b5bf19dafd14a9deb9c5",
       "status": "PASS"
     }
   },
   "fail_count": 0,
+  "hash_change_only_controls_replaced": true,
+  "legacy_control_inventory": {
+    "all_preserved": true,
+    "preserved_names": [
+      "altered_currency",
+      "altered_reporting_date",
+      "altered_transaction_amount",
+      "currency_conversion",
+      "downstream_injection",
+      "duplicate_forced_into_match",
+      "duplicate_transaction",
+      "entity_identifier_replaced",
+      "intermediate_tamper",
+      "invoice_relabeled_paid_without_payment",
+      "missing_evidence",
+      "missing_record_treated_as_zero",
+      "negative_control",
+      "rounding_boundary",
+      "unauthorized_covenant_exclusion"
+    ]
+  },
   "pass_count": 15,
-  "schema": "financewise-controls-v1"
+  "schema": "financewise-controls-v2"
 }

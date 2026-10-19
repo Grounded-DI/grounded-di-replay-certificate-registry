@@ -1,13 +1,15 @@
 {
-  "base_currency": "USD",
+  "base_currency_source": "reporting.base_currency",
   "closed_world": true,
-  "minimum_ratio": 1.5,
+  "date_source": "reporting.period_end and covenants[0].reporting_date",
   "rules": [
     "missing evidence is unresolved, not zero",
     "invoice is not cash",
     "account ownership is required for unrestricted cash",
     "no unsupported covenant exclusions",
-    "no merges on description alone"
+    "no merges on description alone",
+    "all downstream values derive from supplied records"
   ],
-  "schema": "financewise-transaction-covenant-spec-v1"
+  "schema": "financewise-transaction-covenant-spec-v2",
+  "threshold_source": "covenants[0].minimum_ratio"
 }

@@ -335,15 +335,17 @@ This dated package connects BriefWise authority binding, DepoBot testimony traci
 This closed-world synthetic replay binds expert statements to report/deposition sources, tracks stated bases, assumptions, scope, and limitations, and keeps product identity, component, material, exposure, dose, diagnosis, expert causation, legal causation, and liability separate. Two executions matched; the independent evaluator, integrity checks, negative controls, altered-record controls, and downstream-tamper control passed. The baseline disposition is INSUFFICIENT; synthetic supporting evidence changes it to REVIEW_REQUIRED, while a conclusory assertion is rejected. No real legal or clinical conclusion is claimed.
 
 
-## FinanceWise Transaction-to-Covenant Replay — 2026-10-19
+## FinanceWise Transaction-to-Covenant Replay — 2026-10-19 (v2)
 
 [Package README](benchmarks/2026-10-19-financewise-transaction-covenant-replay/README.md) · [Report](benchmarks/2026-10-19-financewise-transaction-covenant-replay/REPORT.md) · [Reproducibility archive](benchmarks/2026-10-19-financewise-transaction-covenant-replay/reproducibility_package.zip)
 
-This closed-world synthetic replay binds financial records, preserves duplicate/conflicting/missing evidence, separates transaction and accounting propositions, and calculates a covenant ratio without converting favorable arithmetic into unconditional compliance. Two fresh canonical executions matched; the independent evaluator passed; 15 tamper/negative controls passed. The measured ratio was 4.00x against a 1.50x threshold, but the disposition remained REVIEW_REQUIRED because account ownership was missing and a receipt/AR conflict remained unresolved. No real financial compliance, audit assurance, GAAP/IFRS correctness, legal advice, fraud detection, or production deployment is claimed.
+This v2 revision replaces hash-change-only controls with fourteen actual mutated-input pipeline executions plus one mutated-intermediate execution, each with an outcome assertion. An independent evaluator recalculated the financial results from the synthetic source records without importing the stage logic. Two fresh canonical executions matched; all 15 controls passed; and the package remained REVIEW_REQUIRED because account ownership was missing and a receipt/AR conflict remained unresolved. A small context note: the revision was used to test replay edge cases across different reasoning strengths on legacy models; model choice is contextual and is not part of the canonical replay-identity claim. No real financial compliance, audit assurance, GAAP/IFRS correctness, legal advice, fraud detection, or production deployment is claimed.
 
 | Result | Value |
 |---|---|
 | Final disposition | REVIEW_REQUIRED |
 | Canonical input SHA-256 | f34224590551d1c3a0644c5f84ab704ffcc3562517778782d5362d846dd85420 |
-| Final chain SHA-256 | 165a9d854e19b6462460b984a1f3209813a485aa1e87fe449bd3b2ec8cfb5999 |
-| Reproducibility archive SHA-256 | f77d9ed22e0ce220850a7d5926871921382a4c51cf3687d8132c41a3b5345cda |
+| Final chain SHA-256 | 9071d226b253053c84767f76e156688cf78186618f787592979e689557b3be63 |
+| Reproducibility archive SHA-256 | d8d490975824b7a7b2e7526aabc9b2c7e70f6183da2881c053b1f863d07f240f |
+| SHA256SUMS.txt SHA-256 | e7edb110a5cbddee8f5df9a2438b873f0e32e13a0ae6dea1609b28b4ccf899ae |
+

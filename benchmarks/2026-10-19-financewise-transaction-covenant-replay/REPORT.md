@@ -2,26 +2,36 @@
 
 ## Final disposition
 
-**`REVIEW_REQUIRED`**. The synthetic record measures cash activity of $128,000
-and current liabilities of $32,000, producing a measured 4.00x ratio against
-the supplied 1.50x threshold. Arithmetic alone does not resolve the covenant:
-the required account-ownership certificate is missing, and the $120,000 receipt
-conflicts with the invoice/AR status showing INV-1001 open.
+**`REVIEW_REQUIRED`**. The result is derived from the canonical synthetic
+records. The measured cash is `128000`; current liabilities
+are `32000`; the measured ratio is
+`4.0`. The stage derives its threshold from the covenant
+record and its unresolved items from record-level validation results.
 
-RecordBinder preserved source IDs and locations. TransactionResolver preserved
-the duplicate-looking payments, conflict, and missing foundation. AccountingBoundary
-kept transaction identity, account ownership, invoice validity, revenue
-recognition, cash availability, liability existence, and classification separate.
-CovenantBridge preserved the numerator, denominator, date, exclusions, threshold,
-source support, rounding, unresolved items, and non-inferences.
+## Revision controls
 
-Two fresh canonical executions were identical. The independent evaluator passed
-without importing stage logic. Integrity and archive checks passed. Altered
-transaction, currency, date, status, duplicate, entity, covenant-exclusion,
-missing-record, and downstream-injection controls were exercised.
+The former hash-change-only controls were replaced with fourteen actual mutated-input
+pipeline executions plus one mutated-intermediate downstream execution. Each input
+case writes a mutated record, reruns RecordBinder, TransactionResolver,
+AccountingBoundary, and CovenantBridge, and asserts an outcome or preserved boundary.
+Existing control names were preserved in `CONTROL_RESULTS.json`. The cases cover
+amount, currency, reporting date, unsupported paid label, duplicate handling,
+entity binding, unauthorized exclusion, missing evidence, and downstream injection.
 
-This proves deterministic replay of the disclosed synthetic workflow and
-preservation of missingness and conflict. It does not prove real financial
-compliance, audit assurance, GAAP/IFRS or tax correctness, legal advice,
-lending or investment suitability, fraud detection, real entity identity,
-independent provenance, external verification, or production readiness.
+## Independent verification
+
+The independent evaluator does not import stage logic. It independently recalculates
+base-currency cash, open AP, current debt, conflicts, missing records, reporting-date
+mismatch, ratio, threshold comparison, and disposition from the synthetic source record,
+then compares those values with generated stage outputs and the final chain.
+
+Two fresh canonical executions were identical. The independent evaluator passed.
+The manifest and archive checks passed. No remote write occurred during this rebuild.
+
+## Evidence and non-claims
+
+This proves only deterministic replay of the disclosed synthetic workflow and the
+observed response of the disclosed mutated fixtures. It does not establish real
+financial compliance, audit assurance, GAAP/IFRS or tax correctness, legal advice,
+lending or investment suitability, fraud detection, real company/account identity,
+independent fresh-generation provenance, external verification, or production readiness.

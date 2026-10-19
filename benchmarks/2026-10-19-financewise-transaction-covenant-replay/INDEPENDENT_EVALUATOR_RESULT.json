@@ -1,7 +1,56 @@
 {
-  "errors": [],
-  "evaluator": "independent",
-  "final_chain_sha256": "165a9d854e19b6462460b984a1f3209813a485aa1e87fe449bd3b2ec8cfb5999",
+  "calculated": {
+    "arithmetic_result": "ABOVE_THRESHOLD",
+    "conflict_count": 1,
+    "disposition": "REVIEW_REQUIRED",
+    "duplicate_candidate_count": 1,
+    "measured_cash": 128000,
+    "measured_current_liabilities": 32000,
+    "minimum_ratio": 1.5,
+    "missing_foundation_count": 1,
+    "ownership_missing": true,
+    "ratio": 4.0,
+    "unresolved_items": [
+      "MISSING-001",
+      "B-001/INV-1001/AR-1001"
+    ],
+    "unsupported_currency_records": []
+  },
+  "comparisons": {
+    "arithmetic_result": true,
+    "binder_count": true,
+    "conflict_count": true,
+    "disposition": true,
+    "duplicate_candidate_count": true,
+    "measured_cash": true,
+    "measured_current_liabilities": true,
+    "minimum_ratio": true,
+    "missing_foundation_count": true,
+    "ownership_missing": true,
+    "ratio": true,
+    "unresolved_items": true,
+    "unsupported_currency_records": true
+  },
   "imports_primary_stage_logic": false,
+  "input_sha256": "f34224590551d1c3a0644c5f84ab704ffcc3562517778782d5362d846dd85420",
+  "observed": {
+    "arithmetic_result": "ABOVE_THRESHOLD",
+    "conflict_count": 1,
+    "disposition": "REVIEW_REQUIRED",
+    "duplicate_candidate_count": 1,
+    "measured_cash": 128000,
+    "measured_current_liabilities": 32000,
+    "minimum_ratio": 1.5,
+    "missing_foundation_count": 1,
+    "ownership_missing": true,
+    "ratio": 4.0,
+    "unresolved_items": [
+      "MISSING-001",
+      "B-001/INV-1001/AR-1001"
+    ],
+    "unsupported_currency_records": []
+  },
+  "recalculation_source": "canonical synthetic source records",
+  "schema": "financewise-independent-evaluator-v2",
   "status": "PASS"
 }

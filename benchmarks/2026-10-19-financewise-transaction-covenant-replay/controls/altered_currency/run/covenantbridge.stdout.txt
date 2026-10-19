@@ -1,0 +1,1 @@
+{"stage": "CovenantBridge", "status": "REVIEW_REQUIRED", "ratio": 2.4375}

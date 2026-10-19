@@ -1,1 +1,1 @@
-{"stage": "RecordBinder", "status": "PASS", "bound": 18}
+{"stage": "RecordBinder", "status": "PASS", "ratio": null}

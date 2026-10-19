@@ -1,1 +1,1 @@
-{"stage": "TransactionResolver", "status": "REVIEW_REQUIRED", "conflicts": 1, "missing_foundation": 1}
+{"stage": "TransactionResolver", "status": "REVIEW_REQUIRED", "ratio": null}

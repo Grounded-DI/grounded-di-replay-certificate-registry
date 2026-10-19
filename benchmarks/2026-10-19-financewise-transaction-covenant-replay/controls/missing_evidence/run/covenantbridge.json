@@ -1,0 +1,25 @@
+{
+  "arithmetic_result": "ABOVE_THRESHOLD",
+  "covenant_id": "COV-01",
+  "covenant_reporting_date": "2026-09-30",
+  "denominator": {
+    "measured_usd": 20000,
+    "name": "current_liabilities"
+  },
+  "disposition": "REVIEW_REQUIRED",
+  "input_sha256": "89dc9544eb4bfb3d8d871923b12fdeb6e0a1c4c3178dc33b660ff382cf369de0",
+  "minimum_ratio": 1.5,
+  "numerator": {
+    "measured_usd": 128000,
+    "name": "unrestricted_cash",
+    "ownership_status": "SUPPORTED"
+  },
+  "permitted_exclusions": [],
+  "ratio": 6.4,
+  "reporting_date": "2026-09-30",
+  "stage": "CovenantBridge",
+  "unauthorized_exclusions": [],
+  "unresolved_items": [
+    "B-001/INV-1001/AR-1001"
+  ]
+}

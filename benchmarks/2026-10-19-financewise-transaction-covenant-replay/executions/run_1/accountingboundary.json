@@ -13,8 +13,7 @@
     },
     {
       "proposition": "account ownership",
-      "status": "MISSING",
-      "support": []
+      "status": "MISSING"
     },
     {
       "proposition": "invoice validity",
@@ -39,8 +38,10 @@
       "status": "UNRESOLVED"
     }
   ],
-  "measured_cash_usd": 128000,
-  "measured_current_liabilities_usd": 32000,
+  "measured_cash": 128000,
+  "measured_current_liabilities": 32000,
+  "ownership_missing": true,
   "stage": "AccountingBoundary",
-  "status": "REVIEW_REQUIRED"
+  "status": "REVIEW_REQUIRED",
+  "unsupported_currency_records": []
 }

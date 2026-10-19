@@ -1,0 +1,302 @@
+{
+  "ap": [
+    {
+      "amount": 12000,
+      "currency": "USD",
+      "id": "AP-2002",
+      "invoice_id": "INV-2002",
+      "source_id": "AP-SEP-2026",
+      "source_location": "page 1 row 5",
+      "status": "OPEN"
+    }
+  ],
+  "ar": [
+    {
+      "amount": 120000,
+      "currency": "USD",
+      "id": "AR-1001",
+      "invoice_id": "INV-1001",
+      "source_id": "AR-SEP-2026",
+      "source_location": "page 1 row 3",
+      "status": "OPEN"
+    }
+  ],
+  "bank_entries": [
+    {
+      "account_id": "BANK-OPER-001",
+      "amount": 120000,
+      "counterparty": "SYNTH-CUSTOMER-001",
+      "currency": "USD",
+      "date": "2026-09-02",
+      "description": "Receipt referencing INV-1001",
+      "id": "B-001",
+      "posting_date": "2026-09-02",
+      "source_id": "BANK-SEP-2026",
+      "source_location": "page 1 row 2"
+    },
+    {
+      "account_id": "BANK-OPER-001",
+      "amount": -30000,
+      "counterparty": "SYNTH-VENDOR-ALPHA",
+      "currency": "USD",
+      "date": "2026-09-05",
+      "description": "Payment referencing INV-2001",
+      "id": "B-002",
+      "posting_date": "2026-09-05",
+      "source_id": "BANK-SEP-2026",
+      "source_location": "page 1 row 3"
+    },
+    {
+      "account_id": "BANK-OPER-001",
+      "amount": 50000,
+      "counterparty": "SYNTH-LENDER-001",
+      "currency": "USD",
+      "date": "2026-09-20",
+      "description": "Proceeds referencing N-01",
+      "id": "B-003",
+      "posting_date": "2026-09-20",
+      "source_id": "BANK-SEP-2026",
+      "source_location": "page 1 row 4"
+    },
+    {
+      "account_id": "BANK-OPER-001",
+      "amount": -12000,
+      "counterparty": "SYNTH-VENDOR-BETA",
+      "currency": "USD",
+      "date": "2026-09-25",
+      "description": "Payment referencing INV-2002",
+      "id": "B-004",
+      "posting_date": "2026-09-25",
+      "source_id": "BANK-SEP-2026",
+      "source_location": "page 1 row 5"
+    }
+  ],
+  "company": {
+    "currency": "USD",
+    "entity_id": "SYNTH-CO-001",
+    "name": "Synthetic Harbor Systems, Inc."
+  },
+  "covenants": [
+    {
+      "currency": "USD",
+      "denominator": "current_liabilities",
+      "id": "COV-01",
+      "minimum_ratio": 1.5,
+      "numerator": "unrestricted_cash",
+      "permitted_exclusions": [],
+      "reporting_date": "2026-09-30",
+      "rule": "Cash must be held in an account owned by borrower; invoices are not cash; no unsupported exclusions.",
+      "source_id": "COVENANT-N01",
+      "source_location": "page 4 section 3.1"
+    }
+  ],
+  "debt": [
+    {
+      "currency": "USD",
+      "current_portion": 20000,
+      "id": "N-01",
+      "principal": 50000,
+      "source_id": "DEBT-N01",
+      "source_location": "page 3 paragraph 2"
+    }
+  ],
+  "fixture_status": "SYNTHETIC_CLOSED_WORLD_ONLY",
+  "invoices": [
+    {
+      "amount": 120000,
+      "counterparty": "SYNTH-CUSTOMER-001",
+      "currency": "USD",
+      "due_date": "2026-09-30",
+      "id": "INV-1001",
+      "issue_date": "2026-09-01",
+      "source_id": "INV-REGISTER-SEP",
+      "source_location": "page 1 row 10",
+      "status": "OPEN_IN_AR"
+    },
+    {
+      "amount": 30000,
+      "counterparty": "SYNTH-VENDOR-ALPHA",
+      "currency": "USD",
+      "due_date": "2026-09-05",
+      "id": "INV-2001",
+      "issue_date": "2026-08-20",
+      "source_id": "INV-REGISTER-SEP",
+      "source_location": "page 1 row 11",
+      "status": "PAID_IN_PAYMENT_REGISTER"
+    },
+    {
+      "amount": 12000,
+      "counterparty": "SYNTH-VENDOR-BETA",
+      "currency": "USD",
+      "due_date": "2026-10-25",
+      "id": "INV-2002",
+      "issue_date": "2026-09-25",
+      "source_id": "INV-REGISTER-SEP",
+      "source_location": "page 1 row 12",
+      "status": "OPEN_IN_AP"
+    }
+  ],
+  "ledger_entries": [
+    {
+      "account": "4000-REVENUE",
+      "credit": 120000,
+      "date": "2026-09-01",
+      "debit": 0,
+      "id": "GL-REV-1001",
+      "reference": "INV-1001",
+      "source_id": "GL-SEP-2026",
+      "source_location": "page 2 row 4"
+    },
+    {
+      "account": "1100-CASH",
+      "credit": 0,
+      "date": "2026-09-02",
+      "debit": 120000,
+      "id": "GL-CASH-1001",
+      "reference": "B-001",
+      "source_id": "GL-SEP-2026",
+      "source_location": "page 2 row 5"
+    },
+    {
+      "account": "2000-AP",
+      "credit": 0,
+      "date": "2026-09-05",
+      "debit": 30000,
+      "id": "GL-AP-2001",
+      "reference": "PAY-2001",
+      "source_id": "GL-SEP-2026",
+      "source_location": "page 2 row 6"
+    },
+    {
+      "account": "1100-CASH",
+      "credit": 30000,
+      "date": "2026-09-05",
+      "debit": 0,
+      "id": "GL-CASH-2001",
+      "reference": "B-002",
+      "source_id": "GL-SEP-2026",
+      "source_location": "page 2 row 7"
+    },
+    {
+      "account": "2100-DEBT",
+      "credit": 50000,
+      "date": "2026-09-20",
+      "debit": 0,
+      "id": "GL-DEBT-01",
+      "reference": "N-01",
+      "source_id": "GL-SEP-2026",
+      "source_location": "page 2 row 8"
+    }
+  ],
+  "missing_records": [
+    {
+      "id": "MISSING-001",
+      "reason": "Not supplied; required by COV-01 to establish unrestricted cash.",
+      "type": "account_ownership_certificate"
+    }
+  ],
+  "negative_controls": [
+    {
+      "id": "NC-001",
+      "source_id": "NEGATIVE-CONTROL",
+      "source_location": "memo paragraph 1",
+      "text": "Synthetic management memo says the company feels liquid; it is not a bank or ledger record.",
+      "type": "unrelated_memo"
+    }
+  ],
+  "payments": [
+    {
+      "amount": 30000,
+      "counterparty": "SYNTH-VENDOR-ALPHA",
+      "currency": "USD",
+      "date": "2026-09-05",
+      "id": "PAY-2001",
+      "reference": "INV-2001",
+      "source_id": "PAYMENT-REGISTER-SEP",
+      "source_location": "page 1 row 20"
+    },
+    {
+      "amount": 30000,
+      "counterparty": "SYNTH-VENDOR-ALPHA",
+      "currency": "USD",
+      "date": "2026-09-05",
+      "id": "PAY-2001-DUP",
+      "reference": "INV-2001",
+      "source_id": "PAYMENT-REGISTER-SEP",
+      "source_location": "page 1 row 21"
+    },
+    {
+      "amount": 30000,
+      "counterparty": "SYNTH-VENDOR-ALPHA",
+      "currency": "USD",
+      "date": "2026-09-05",
+      "id": "PAY-2001-TRIPLE",
+      "reference": "INV-2001",
+      "source_id": "PAYMENT-REGISTER-SEP",
+      "source_location": "page 1 row 22"
+    }
+  ],
+  "reporting": {
+    "base_currency": "USD",
+    "cutoff": "2026-09-30T23:59:59Z",
+    "period_end": "2026-09-30"
+  },
+  "sources": [
+    {
+      "currency": "USD",
+      "entity_id": "SYNTH-CO-001",
+      "location": "page 1 rows 2-5",
+      "source_id": "BANK-SEP-2026",
+      "type": "bank_statement"
+    },
+    {
+      "currency": "USD",
+      "entity_id": "SYNTH-CO-001",
+      "location": "page 1 rows 10-12",
+      "source_id": "INV-REGISTER-SEP",
+      "type": "invoice_register"
+    },
+    {
+      "currency": "USD",
+      "entity_id": "SYNTH-CO-001",
+      "location": "page 1 rows 20-21",
+      "source_id": "PAYMENT-REGISTER-SEP",
+      "type": "payment_register"
+    },
+    {
+      "currency": "USD",
+      "entity_id": "SYNTH-CO-001",
+      "location": "page 2 rows 4-9",
+      "source_id": "GL-SEP-2026",
+      "type": "general_ledger"
+    },
+    {
+      "currency": "USD",
+      "entity_id": "SYNTH-CO-001",
+      "location": "page 1 rows 3-4",
+      "source_id": "AR-SEP-2026",
+      "type": "accounts_receivable"
+    },
+    {
+      "currency": "USD",
+      "entity_id": "SYNTH-CO-001",
+      "location": "page 1 rows 5-6",
+      "source_id": "AP-SEP-2026",
+      "type": "accounts_payable"
+    },
+    {
+      "currency": "USD",
+      "entity_id": "SYNTH-CO-001",
+      "location": "page 3 paragraph 2",
+      "source_id": "DEBT-N01",
+      "type": "debt_instrument"
+    },
+    {
+      "currency": "USD",
+      "entity_id": "SYNTH-LENDER-001",
+      "location": "page 4 section 3.1",
+      "source_id": "COVENANT-N01",
+      "type": "covenant"
+    }
+  ]
+}
