@@ -1,0 +1,87 @@
+{
+  "exhibits": [
+    {
+      "description": "Synthetic worksite installation log",
+      "id": "EX-1"
+    },
+    {
+      "description": "Synthetic product photograph",
+      "id": "EX-2"
+    }
+  ],
+  "matter_id": "DB-TC-2026-10-19-001",
+  "schema": "depobot-testimony-contradiction-fixture-v1",
+  "scope": "Closed-world synthetic deposition record. Transcript text and exhibits are test fixtures.",
+  "transcript": [
+    {
+      "answer": "Yes. I personally installed that pump at the North Plant on May 3.",
+      "exhibit": "EX-1",
+      "id": "T-001",
+      "kind": "answer",
+      "page_line": "10:4-10:9",
+      "question": "Did you personally install the pump at the North Plant on May 3?",
+      "source_fragment": "I personally installed that pump ... on May 3.",
+      "speaker": "Witness A"
+    },
+    {
+      "answer": "No. I did not perform any installation work at the North Plant.",
+      "exhibit": "EX-1",
+      "id": "T-002",
+      "kind": "answer",
+      "page_line": "25:2-25:7",
+      "question": "Did you perform any installation work at the North Plant?",
+      "source_fragment": "I did not perform any installation work ... at the North Plant.",
+      "speaker": "Witness A"
+    },
+    {
+      "answer": "It was probably blue, but I do not remember the color clearly.",
+      "exhibit": "EX-2",
+      "id": "T-003",
+      "kind": "answer",
+      "page_line": "31:1-31:5",
+      "question": "Was the pump blue?",
+      "source_fragment": "probably blue ... do not remember ... clearly.",
+      "speaker": "Witness A"
+    },
+    {
+      "answer": "I do not recall seeing a manufacturer nameplate.",
+      "exhibit": "EX-1",
+      "id": "T-004",
+      "kind": "answer",
+      "page_line": "42:4-42:8",
+      "question": "What manufacturer was on the nameplate?",
+      "source_fragment": "do not recall seeing a manufacturer nameplate.",
+      "speaker": "Witness A"
+    },
+    {
+      "answer": "No. I arrived after the installation and did not see it happen.",
+      "exhibit": "EX-1",
+      "id": "T-005",
+      "kind": "answer",
+      "page_line": "12:3-12:8",
+      "question": "Did you see the installation?",
+      "source_fragment": "arrived after the installation and did not see it happen.",
+      "speaker": "Witness B"
+    },
+    {
+      "answer": "A pump was already in place, but I cannot identify who installed it.",
+      "exhibit": "EX-1",
+      "id": "T-006",
+      "kind": "answer",
+      "page_line": "14:1-14:6",
+      "question": "What did you observe when you arrived?",
+      "source_fragment": "already in place ... cannot identify who installed it.",
+      "speaker": "Witness B"
+    },
+    {
+      "answer": "",
+      "exhibit": "EX-2",
+      "id": "T-007",
+      "kind": "question",
+      "page_line": "44:1-44:4",
+      "question": "So you admit the blue pump was the same pump, correct?",
+      "source_fragment": "So you admit ... correct?",
+      "speaker": "Counsel"
+    }
+  ]
+}

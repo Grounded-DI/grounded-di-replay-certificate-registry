@@ -1,0 +1,78 @@
+{
+  "candidates": [
+    {
+      "id": "ACME-INDUSTRIAL",
+      "name": "Acme Industrial, Inc.",
+      "supported_product_ids": [
+        "MODEL-Z-14"
+      ]
+    },
+    {
+      "id": "BETA-SEAL",
+      "name": "Beta Seal Supply",
+      "supported_product_ids": []
+    }
+  ],
+  "matter_id": "PID-PE-2026-10-19-001",
+  "records": [
+    {
+      "id": "R-001",
+      "kind": "product_reference",
+      "product_id": "MODEL-Z-14",
+      "source": "purchase_log",
+      "text": "Model Z-14 pump delivered to North Plant."
+    },
+    {
+      "id": "R-002",
+      "kind": "manufacturer_reference",
+      "manufacturer": "ACME-INDUSTRIAL",
+      "product_id": "MODEL-Z-14",
+      "source": "catalog_excerpt",
+      "text": "Model Z-14 is listed under Acme Industrial, Inc."
+    },
+    {
+      "component": "GASKET-UNSPECIFIED",
+      "id": "R-003",
+      "kind": "component_reference",
+      "product_id": "MODEL-Z-14",
+      "source": "work_order",
+      "text": "A replacement gasket was installed during maintenance."
+    },
+    {
+      "component": "GASKET-UNSPECIFIED",
+      "id": "R-004",
+      "kind": "material_assertion",
+      "material": "ASBESTOS",
+      "source": "witness_belief",
+      "text": "The witness believed the gasket contained asbestos."
+    },
+    {
+      "component": "GASKET-UNSPECIFIED",
+      "id": "R-005",
+      "kind": "exposure_assertion",
+      "source": "witness_statement",
+      "text": "The claimant says he cut a gasket at the North Plant.",
+      "worksite": "NORTH-PLANT"
+    },
+    {
+      "id": "R-006",
+      "kind": "dose_record",
+      "source": "record_search",
+      "text": "No quantified dose, duration, or fiber measurement was supplied."
+    },
+    {
+      "id": "R-007",
+      "kind": "causation_record",
+      "source": "expert_scope",
+      "text": "The synthetic expert record states that no causation opinion can be offered on this record."
+    },
+    {
+      "id": "R-008",
+      "kind": "liability_record",
+      "source": "pleading",
+      "text": "Liability is alleged but the record does not establish duty, breach, or causation."
+    }
+  ],
+  "schema": "pidbot-product-exposure-fixture-v1",
+  "scope": "Closed-world synthetic product-liability record. No real product, person, worksite, or medical conclusion is represented."
+}

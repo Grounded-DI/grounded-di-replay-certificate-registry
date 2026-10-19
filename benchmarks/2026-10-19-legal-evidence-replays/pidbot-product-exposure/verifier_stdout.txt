@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "causation_not_inferred": true,
+    "component_separate": true,
+    "dose_not_inferred": true,
+    "exposure_not_inferred": true,
+    "hash_matches": true,
+    "liability_not_inferred": true,
+    "material_not_inferred": true,
+    "product_match_is_bounded": true,
+    "separation_count": true
+  },
+  "scope": "closed-world synthetic fixture",
+  "verifier": "PASS"
+}

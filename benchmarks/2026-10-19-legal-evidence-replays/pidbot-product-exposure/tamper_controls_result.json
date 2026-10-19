@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "changed_record_hash_differs": true,
+    "dimensions_remain_separate": true,
+    "manufacturer_conflict_changes_product_result": true,
+    "material_does_not_upgrade_from_belief": true
+  },
+  "tamper_controls": "PASS"
+}

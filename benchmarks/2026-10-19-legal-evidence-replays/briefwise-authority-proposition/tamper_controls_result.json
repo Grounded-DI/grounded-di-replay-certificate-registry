@@ -1,0 +1,9 @@
+{
+  "checks": {
+    "changed_fixture_changes_canonical_hash": true,
+    "disposition_remains_review": true,
+    "missing_authority_routes_to_unresolved": true,
+    "overbroad_fixture_is_not_accepted_as_supported": true
+  },
+  "tamper_controls": "PASS"
+}

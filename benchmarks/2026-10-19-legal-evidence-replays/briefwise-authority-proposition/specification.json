@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "disposition": "Any unsupported or unresolved proposition requires REVIEW rather than a final disposition.",
+    "holding_support": "A proposition referencing a listed holding authority may be supported when its claim is within the supplied authority proposition.",
+    "missing_authority": "A proposition referencing an authority absent from the closed-world record is unresolved, not disproved.",
+    "overbreadth": "A proposition expressly stating that a factual dispute automatically defeats pleading sufficiency is overbroad under the supplied holdings."
+  },
+  "schema": "briefwise-authority-proposition-spec-v1",
+  "synthetic_fixture_notice": "All authority identifiers, citations, and excerpts in this package are synthetic test fixtures."
+}

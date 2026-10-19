@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "causation": "An expressly unavailable causation opinion is UNCERTAIN.",
+    "component": "A component reference without a manufacturer or content specification is REVIEW.",
+    "dose": "No quantified dose is UNCERTAIN.",
+    "exposure": "An exposure allegation tied only to an unspecified component is REVIEW.",
+    "liability": "A liability allegation without duty, breach, and causation proof is REVIEW.",
+    "material": "A witness belief alone cannot establish product material content; route to UNCERTAIN.",
+    "product": "A product is MATCH only when a product reference and a manufacturer reference share the same product ID."
+  },
+  "schema": "pidbot-product-exposure-spec-v1",
+  "separation": [
+    "product_identification",
+    "component_identification",
+    "material_content",
+    "exposure",
+    "dose",
+    "causation",
+    "legal_liability"
+  ],
+  "synthetic_fixture_notice": "All products, entities, records, and outcomes are synthetic test fixtures."
+}

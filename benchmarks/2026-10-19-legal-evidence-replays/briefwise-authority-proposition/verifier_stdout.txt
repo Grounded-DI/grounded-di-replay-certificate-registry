@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "hash_matches": true,
+    "independent_recalculation_matches": true,
+    "negative_missing_authority_control": true,
+    "required_review_disposition": true
+  },
+  "scope": "closed-world synthetic fixture",
+  "verifier": "PASS"
+}

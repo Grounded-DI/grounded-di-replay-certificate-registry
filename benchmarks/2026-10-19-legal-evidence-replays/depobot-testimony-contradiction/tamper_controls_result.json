@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "altered_transcript_changes_canonical_hash": true,
+    "changed_record_is_not_silently_identical": true,
+    "original_direct_contradiction_remains_recorded": true
+  },
+  "tamper_controls": "PASS"
+}

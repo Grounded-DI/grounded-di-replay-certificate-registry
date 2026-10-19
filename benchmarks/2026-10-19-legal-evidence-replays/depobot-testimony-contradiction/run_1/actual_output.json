@@ -1,0 +1,64 @@
+{
+  "canonical_record_sha256": "2020e012f9010b6bef2ffd73d722d8528b54d1ff6545654ded406c04e7188f4a",
+  "closed_world": true,
+  "disposition": "REVIEW_REQUIRED",
+  "findings": [
+    {
+      "entries": [
+        "T-001",
+        "T-002"
+      ],
+      "explanation": "The same witness affirmatively states both that he personally installed the pump and that he performed no installation work at the same site.",
+      "id": "C-001",
+      "speaker": "Witness A",
+      "type": "DIRECT_CONTRADICTION"
+    },
+    {
+      "entries": [
+        "T-003"
+      ],
+      "explanation": "Probably blue plus an express lack of clear recollection is uncertainty, not a contradiction.",
+      "id": "C-002",
+      "speaker": "Witness A",
+      "type": "AMBIGUITY"
+    },
+    {
+      "entries": [
+        "T-004"
+      ],
+      "explanation": "Failure to recall a manufacturer nameplate does not establish an opposing fact.",
+      "id": "C-003",
+      "speaker": "Witness A",
+      "type": "OMISSION_MISSING_FOUNDATION"
+    },
+    {
+      "entries": [
+        "T-001",
+        "T-005",
+        "T-006"
+      ],
+      "explanation": "Witness B's lack of observation and inability to identify the installer do not negate Witness A's account.",
+      "id": "C-004",
+      "speaker": "Witness A / Witness B",
+      "type": "NEGATIVE_CONTROL_NOT_CONTRADICTION"
+    },
+    {
+      "entries": [
+        "T-007"
+      ],
+      "explanation": "The question contains a characterization, but there is no answer establishing an admission.",
+      "id": "C-005",
+      "speaker": "Counsel",
+      "type": "CHARACTERIZATION_NOT_ADMISSION"
+    }
+  ],
+  "matter_id": "DB-TC-2026-10-19-001",
+  "non_claims": [
+    "No credibility determination is made.",
+    "No real testimony or legal admission is represented."
+  ],
+  "schema": "depobot-testimony-contradiction-replay-v1",
+  "unresolved_items": [
+    "Whether either account can be reconciled through additional foundation or site records."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "authority_map": [
+    {
+      "authority_ids": [
+        "SYNTH-AUTH-001"
+      ],
+      "classification": "SUPPORTED_HOLDING",
+      "proposition_id": "P-001",
+      "reason": "The proposition is supported within the supplied synthetic authority record.",
+      "status": "SUPPORTED"
+    },
+    {
+      "authority_ids": [
+        "SYNTH-AUTH-002"
+      ],
+      "classification": "SUPPORTED_HOLDING",
+      "proposition_id": "P-002",
+      "reason": "The proposition is supported within the supplied synthetic authority record.",
+      "status": "SUPPORTED"
+    },
+    {
+      "authority_ids": [
+        "SYNTH-AUTH-001",
+        "SYNTH-AUTH-002"
+      ],
+      "classification": "OVERBROAD_UNSUPPORTED",
+      "proposition_id": "P-003",
+      "reason": "The supplied holdings do not support an automatic dismissal rule based only on a delivery dispute.",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "authority_ids": [
+        "SYNTH-AUTH-999"
+      ],
+      "classification": "UNRESOLVED_MISSING_AUTHORITY",
+      "proposition_id": "P-004",
+      "reason": "Referenced authority is absent from the closed-world record.",
+      "status": "UNRESOLVED"
+    }
+  ],
+  "canonical_record_sha256": "3cef3984a39cf26c1323e0a4682ebb61f5feab0de85d1de435294291588d051c",
+  "closed_world": true,
+  "disposition": "REVIEW_REQUIRED",
+  "matter_id": "BW-AP-2026-10-19-001",
+  "non_claims": [
+    "No real legal authority is represented.",
+    "No filing-readiness or legal-correctness conclusion is made."
+  ],
+  "schema": "briefwise-authority-proposition-replay-v1",
+  "unresolved_propositions": [
+    "P-004"
+  ],
+  "unsupported_propositions": [
+    "P-003"
+  ]
+}

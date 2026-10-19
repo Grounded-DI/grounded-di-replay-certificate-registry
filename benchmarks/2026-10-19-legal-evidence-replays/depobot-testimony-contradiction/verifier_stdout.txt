@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "ambiguity_not_contradiction": true,
+    "characterization_not_admission": true,
+    "hash_matches": true,
+    "negative_control_preserved": true,
+    "omission_preserved": true,
+    "one_direct_contradiction": true,
+    "review_required": true
+  },
+  "scope": "closed-world synthetic fixture",
+  "verifier": "PASS"
+}

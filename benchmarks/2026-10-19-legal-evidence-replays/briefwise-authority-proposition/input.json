@@ -1,0 +1,75 @@
+{
+  "authorities": [
+    {
+      "citation": "Synthetic Supreme Court, 100 S.C. 1 (2020)",
+      "id": "SYNTH-AUTH-001",
+      "level": "controlling",
+      "proposition": "At the pleading stage, well-pleaded factual allegations are accepted as true and legal sufficiency is tested from the complaint.",
+      "source_excerpt": "TEST FIXTURE — A pleading-stage motion tests the legal sufficiency of the complaint on its well-pleaded factual allegations.",
+      "type": "holding"
+    },
+    {
+      "citation": "Synthetic Supreme Court, 101 S.C. 9 (2021)",
+      "id": "SYNTH-AUTH-002",
+      "level": "controlling",
+      "proposition": "A notice claim requires an allegation identifying the required notice and a factual allegation of nonreceipt or defective delivery.",
+      "source_excerpt": "TEST FIXTURE — A notice claim proceeds when the complaint identifies the required notice and alleges nonreceipt or defective delivery.",
+      "type": "holding"
+    },
+    {
+      "citation": "Synthetic Appellate Court, 55 S.A. 3 (2022)",
+      "id": "SYNTH-AUTH-003",
+      "level": "persuasive",
+      "proposition": "A later evidentiary dispute may affect proof, but does not ordinarily resolve pleading sufficiency.",
+      "source_excerpt": "TEST FIXTURE — Courts sometimes observe that later proof may be difficult; that observation is not necessary to the pleading holding.",
+      "type": "dicta"
+    }
+  ],
+  "burden_and_standard": "The moving party must show that the complaint is legally insufficient assuming well-pleaded factual allegations are true.",
+  "complaint_facts": [
+    "The complaint identifies the statutory notice.",
+    "The complaint alleges that the notice was not received or was defectively delivered.",
+    "The defendant disputes delivery."
+  ],
+  "issue": "Whether the complaint states a claim for notice-related statutory relief on the supplied allegations.",
+  "jurisdiction": "Synthetic Commonwealth",
+  "matter_id": "BW-AP-2026-10-19-001",
+  "procedural_posture": "pleading-stage motion to dismiss",
+  "propositions": [
+    {
+      "authority_ids": [
+        "SYNTH-AUTH-001"
+      ],
+      "claim": "The complaint must be tested on its well-pleaded factual allegations at this stage.",
+      "expected_classification": "SUPPORTED_HOLDING",
+      "id": "P-001"
+    },
+    {
+      "authority_ids": [
+        "SYNTH-AUTH-002"
+      ],
+      "claim": "The supplied complaint alleges the notice and defective-delivery facts required for the notice claim.",
+      "expected_classification": "SUPPORTED_HOLDING",
+      "id": "P-002"
+    },
+    {
+      "authority_ids": [
+        "SYNTH-AUTH-001",
+        "SYNTH-AUTH-002"
+      ],
+      "claim": "Any notice claim must be dismissed whenever the defendant disputes delivery, regardless of the pleaded facts.",
+      "expected_classification": "OVERBROAD_UNSUPPORTED",
+      "id": "P-003"
+    },
+    {
+      "authority_ids": [
+        "SYNTH-AUTH-999"
+      ],
+      "claim": "The synthetic authorities establish that a later evidentiary dispute always defeats pleading sufficiency.",
+      "expected_classification": "UNRESOLVED_MISSING_AUTHORITY",
+      "id": "P-004"
+    }
+  ],
+  "schema": "briefwise-authority-proposition-fixture-v1",
+  "scope": "Closed-world synthetic legal record. Authority identifiers and excerpts are test fixtures, not real legal authorities."
+}

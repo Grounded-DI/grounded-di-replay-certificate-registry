@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "ambiguity": "Qualifiers such as probably and lack of clear recollection are ambiguity, not contradiction.",
+    "characterization": "A question's characterization without an answer is not testimony establishing an admission.",
+    "direct_contradiction": "Two answers by the same speaker directly negate the same event or act with the same location and subject.",
+    "negative_control": "A witness who did not observe an event does not contradict another witness merely by lacking observation.",
+    "omission": "Failure to recall or failure to supply a detail is an omission or missing foundation, not a contradiction."
+  },
+  "schema": "depobot-testimony-contradiction-spec-v1",
+  "synthetic_fixture_notice": "All transcript entries and exhibits are synthetic test fixtures."
+}

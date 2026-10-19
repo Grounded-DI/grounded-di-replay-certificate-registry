@@ -299,3 +299,16 @@ For technical evaluation, controlled demonstrations, integration discussions, or
 ## Curated mathematical collection
 
 The mathematical records in this registry, including the Erdős #390 intake record, are indexed in [MathWise Deterministic Replay Certificates](https://github.com/Grounded-DI/MathWise-Deterministic-Replay-Certificates). This registry remains canonical for its intake records and replay artifacts.
+
+
+## Additional Legal Evidence Replays — 2026-10-19
+
+[Batch index](benchmarks/2026-10-19-legal-evidence-replays/README.md) · [Batch summary](benchmarks/2026-10-19-legal-evidence-replays/BATCH_SUMMARY.md)
+
+This dated batch adds three distinct closed-world legal evidence workflows: BriefWise authority-proposition binding, DepoBot testimony-contradiction tracing, and PIDBot product/exposure evidence separation. Each lane was executed twice, independently verified, and subjected to altered-record controls. The fixtures are synthetic; the package makes no external-verification, legal-correctness, filing-readiness, real-world causation, or deployment claim.
+
+| Lane | Replay result | Canonical record SHA-256 |
+|---|---|---|
+| BriefWise authority-proposition | 2 identical executions; verifier PASS; tamper controls PASS | 3cef3984a39cf26c1323e0a4682ebb61f5feab0de85d1de435294291588d051c |
+| DepoBot testimony-contradiction | 2 identical executions; verifier PASS; tamper controls PASS | 2020e012f9010b6bef2ffd73d722d8528b54d1ff6545654ded406c04e7188f4a |
+| PIDBot product/exposure | 2 identical executions; verifier PASS; tamper controls PASS | b4c8c887b17c38c6a77c044fbef8d0ac24fe906e9ec371e1ff1a906824654427 |

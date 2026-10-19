@@ -1,0 +1,71 @@
+{
+  "canonical_record_sha256": "b4c8c887b17c38c6a77c044fbef8d0ac24fe906e9ec371e1ff1a906824654427",
+  "closed_world": true,
+  "disposition": "REVIEW_REQUIRED",
+  "evidence_matrix": [
+    {
+      "basis": [
+        "MODEL-Z-14"
+      ],
+      "dimension": "product_identification",
+      "status": "MATCH"
+    },
+    {
+      "basis": [
+        "GASKET-UNSPECIFIED is referenced but not tied to a component manufacturer or specification."
+      ],
+      "dimension": "component_identification",
+      "status": "REVIEW"
+    },
+    {
+      "basis": [
+        "The only material statement is a witness belief; no product specification establishes content."
+      ],
+      "dimension": "material_content",
+      "status": "UNCERTAIN"
+    },
+    {
+      "basis": [
+        "Handling is alleged, but the handled component is not sufficiently identified as the asserted material."
+      ],
+      "dimension": "exposure",
+      "status": "REVIEW"
+    },
+    {
+      "basis": [
+        "No quantified dose, duration, or measurement is supplied."
+      ],
+      "dimension": "dose",
+      "status": "UNCERTAIN"
+    },
+    {
+      "basis": [
+        "The synthetic expert record supplies no causation opinion."
+      ],
+      "dimension": "causation",
+      "status": "UNCERTAIN"
+    },
+    {
+      "basis": [
+        "The record alleges liability but does not establish duty, breach, and causation."
+      ],
+      "dimension": "legal_liability",
+      "status": "REVIEW"
+    }
+  ],
+  "matter_id": "PID-PE-2026-10-19-001",
+  "non_claims": [
+    "No product content, dose, causation, or legal liability is established.",
+    "No real product, person, worksite, or medical conclusion is represented."
+  ],
+  "schema": "pidbot-product-exposure-replay-v1",
+  "separation_preserved": [
+    "product_identification",
+    "component_identification",
+    "material_content",
+    "exposure",
+    "dose",
+    "causation",
+    "legal_liability"
+  ]
+}
