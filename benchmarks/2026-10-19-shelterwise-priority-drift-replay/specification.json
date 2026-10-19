@@ -1,0 +1,41 @@
+{
+  "schema": "shelterwise-specification-v1",
+  "synthetic_only": true,
+  "serialization": "sorted JSON objects with two-space indentation and one final LF for stored outputs",
+  "known_rule_ids": ["R-SAFETY", "R-ACCESS", "R-FAMILY", "R-UNIQUE", "R-UNCERTAIN", "R-SUPERSESSION", "R-NEUTRAL"],
+  "priority_by_need_type": {
+    "immediate_safety": 1,
+    "accessibility": 2,
+    "family_unity": 3,
+    "childcare": 4,
+    "disputed": 5,
+    "unverified_or_missing": 6,
+    "other_confirmed": 7
+  },
+  "priority_order": [
+    {"rule_subject": "immediate safety priority", "priority_level": 1},
+    {"rule_subject": "accessibility accommodation", "priority_level": 2},
+    {"rule_subject": "family unity", "priority_level": 3},
+    {"rule_subject": "child-care support", "priority_level": 4},
+    {"rule_subject": "disputed need", "priority_level": 5},
+    {"rule_subject": "unverified or missing need", "priority_level": 6},
+    {"rule_subject": "convenience or other", "priority_level": 7}
+  ],
+  "source_binding": {
+    "required_fields": ["source_id", "source_location", "exact_source_fragment"],
+    "rule_source_types": ["rulebook"],
+    "intake_source_types": ["intake", "supporting_intake"],
+    "inventory_source_types": ["inventory"],
+    "reservation_source_types": ["reservation"]
+  },
+  "assignment_statuses": ["ASSIGNABLE", "REVIEW_REQUIRED", "HOLD_FOR_HUMAN_DECISION", "NO_FEASIBLE_ASSIGNMENT", "INSUFFICIENT_RECORD"],
+  "drift_events": ["PRIORITY_INVERSION", "STALE_RECORD_USE", "UNAUTHORIZED_RULE_CHANGE", "CAPACITY_OVER_ALLOCATION", "DUPLICATE_ASSIGNMENT", "UNSUPPORTED_CONFIRMATION", "MISSING_EVIDENCE_COLLAPSE", "DOWNSTREAM_ASSIGNMENT_INJECTION"],
+  "non_claims": [
+    "no real emergency, medical, public-safety, or shelter-allocation advice",
+    "no real-person or real-place identification",
+    "no humanitarian or operational validation",
+    "no independent fresh-generation provenance",
+    "no external verification",
+    "no production deployment"
+  ]
+}

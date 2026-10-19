@@ -1,0 +1,4693 @@
+{
+  "actual_intermediate_tamper_executions": 1,
+  "actual_mutated_input_pipeline_executions": 15,
+  "canonical_input_sha256": "882f25b14be9edfbd55d1fbd7bb7fe6960c068aa43723023238fea58e6848569",
+  "commands": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/confirmed_safety_to_unverified/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/confirmed_safety_to_unverified/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/accessibility_need_removed/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/accessibility_need_removed/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/capacity_reduced_below_demand/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/capacity_reduced_below_demand/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/duplicate_resource_reservation/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/duplicate_resource_reservation/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/duplicate_household/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/duplicate_household/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/stale_record_newer_without_matching_authority/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/stale_record_newer_without_matching_authority/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/unauthorized_priority_rule_added/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/unauthorized_priority_rule_added/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/negative_control_memo_altered/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/negative_control_memo_altered/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/labels_permuted/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/labels_permuted/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/downstream_assignment_injection/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/downstream_assignment_injection/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/supporting_new_confirmation/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/supporting_new_confirmation/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/conclusory_assertion_only/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/conclusory_assertion_only/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/unsupported_confirmation/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/unsupported_confirmation/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/priority_inversion/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/priority_inversion/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/missing_evidence_collapse/input.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/missing_evidence_collapse/run --baseline-input /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json --baseline-run /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/downstream_guard.py /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/controls/intermediate_allocation_tamper/tampered_allocationbridge.json /workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/executions/run_1/final_chain.json"
+  ],
+  "control_count": 16,
+  "controls": {
+    "accessibility_need_removed": {
+      "assertion": "removed accessibility evidence became missing",
+      "execution": "mutated input pipeline",
+      "input_sha256": "553c6189b7ebc0df33e51be9d2a62ce6c90449b2d305c9f9ea991a4a2d4449f0",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:accessibility"
+                ],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "cot",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-006",
+            "priority_level": 6
+          }
+        ],
+        "disposition": "REVIEW_REQUIRED",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-006",
+            "priority_level": 6
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": []
+      },
+      "output_sha256": "cda403b6a39b1ff313d067ce51715c2e9f6d8d3ffd6912eaccecb6c250918451",
+      "status": "PASS"
+    },
+    "capacity_reduced_below_demand": {
+      "assertion": "cot demand exceeded altered capacity",
+      "execution": "mutated input pipeline",
+      "input_sha256": "d51a83cd18a4d6336018e72684f13066fc56754e21210767f4fab0ca0eca2eb2",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002"
+                ],
+                "quantity": 2,
+                "reason": "The confirmed need exceeds the feasible resource capacity in the ledger.",
+                "required_resource": "cot",
+                "status": "NO_FEASIBLE_ASSIGNMENT",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 1
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "REVIEW_REQUIRED",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": []
+      },
+      "output_sha256": "272e9157116c4edf374011d5754217cdb234cae22d61e07a382788f397536078",
+      "status": "PASS"
+    },
+    "conclusory_assertion_only": {
+      "assertion": "conclusory memo did not establish a need",
+      "execution": "mutated input pipeline",
+      "input_sha256": "b6c7a27cce412cc45a380ea78bf5518d655f084d8029232423b552a1b4252de6",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-CONCLUSION",
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-CONCLUSION",
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "INSUFFICIENT_RECORD",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [
+          "UNAUTHORIZED_SOURCE_TYPE"
+        ],
+        "rule_errors": []
+      },
+      "output_sha256": "607deb578a87f77e28677992187fc8631fb122269f7574c25b077affe74890a5",
+      "status": "PASS"
+    },
+    "confirmed_safety_to_unverified": {
+      "assertion": "confirmed safety downgrade changed priority and assignment",
+      "execution": "mutated input pipeline",
+      "input_sha256": "9d73d7733a0989a533cbcf4bdf8a8a5571efe479578213a1b0dfaedc07ef9292",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:immediate_safety"
+                ],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-001",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "REVIEW_REQUIRED",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-001",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": []
+      },
+      "output_sha256": "3e772ab402c452ca554a4092a365d99f262763a9aa562cc84523c8a0ce03525e",
+      "status": "PASS"
+    },
+    "downstream_assignment_injection": {
+      "assertion": "injected downstream assignment was ignored and flagged",
+      "execution": "mutated input pipeline",
+      "input_sha256": "04ef8be9d7e951ce4fabd795d720edd8586d8bef1d41e9b244045b1ab9224a4f",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "REVIEW_REQUIRED",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DOWNSTREAM_ASSIGNMENT_INJECTION",
+          "DUPLICATE_ASSIGNMENT"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": []
+      },
+      "output_sha256": "fbb573dca8483f919ce7afaaca6a0f30bc18eac9b64ac22da45e1cdf740b5785",
+      "status": "PASS"
+    },
+    "duplicate_household": {
+      "assertion": "duplicate household candidate preserved",
+      "execution": "mutated input pipeline",
+      "input_sha256": "25ef3b410ab7feccf292bd1ab3ec9f01b7ad14ff034445c84fc07c4ce1dff631",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:family_unity"
+                ],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "cot",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:childcare"
+                ],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "child_care_slot",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 1
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003-DUP",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "REVIEW_REQUIRED",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003-DUP",
+            "priority_level": 6
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": []
+      },
+      "output_sha256": "2dc55dc6a81e60dd3548ddb2840438c19ff4b917c08f9652363833e8f41bd00e",
+      "status": "PASS"
+    },
+    "duplicate_resource_reservation": {
+      "assertion": "duplicate reservation produced a capacity conflict",
+      "execution": "mutated input pipeline",
+      "input_sha256": "7a97f288309df7f1d86ec6c2307e871971352e51ebd1f3c2da6f8dcaf2eb8047",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-STD-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-003"
+                ],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "REVIEW_REQUIRED",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001",
+          "COT-STD-001"
+        ],
+        "households": [
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": []
+      },
+      "output_sha256": "0b4101751ac7d2be8217c3d9c36d68e033bdf89595e16159563fbc178a9a431a",
+      "status": "PASS"
+    },
+    "intermediate_allocation_tamper": {
+      "assertion": "downstream hash guard rejects altered allocation output",
+      "execution": "tampered intermediate output",
+      "exit_code": 1,
+      "observed": "{\"expected_hash\": \"c707d005230f207525891d8721891d1bbfde6df4c273764d05f1895e89521f33\", \"observed_hash\": \"03d029c86866fb398ddb2b9bfad41ef651b3c1241b4bca82206de6ce300666de\", \"status\": \"REJECTED\"}",
+      "status": "PASS"
+    },
+    "labels_permuted": {
+      "assertion": "display labels did not affect decisions",
+      "execution": "mutated input pipeline",
+      "input_sha256": "a936dedc4a31e2d937ae44652b1123cf8388b987ccb88bbbe8a5f7eb38b13477",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "REVIEW_REQUIRED",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": []
+      },
+      "output_sha256": "4cc05846142f1c9089633d4773c7bd5de22b4d02395878712d9e882fb02ef062",
+      "status": "PASS"
+    },
+    "missing_evidence_collapse": {
+      "assertion": "existing unverified record could not silently become confirmed",
+      "execution": "mutated input pipeline",
+      "input_sha256": "3afb5b89c36745f445f8dfa864ec0ab61de659bfce7c4355123fa8748c3eb128",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 7
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [
+                  "TRANS-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "transport_seat",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-004",
+            "priority_level": 7
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "REVIEW_REQUIRED",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT",
+          "MISSING_EVIDENCE_COLLAPSE"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-004",
+            "priority_level": 7
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": []
+      },
+      "output_sha256": "dd3e26c7d1cc568e2fe095c5dd9fa90cf4c1ef84d2add5ce09d1599bcc91c69e",
+      "status": "PASS"
+    },
+    "negative_control_memo_altered": {
+      "assertion": "altered negative-control memo did not affect allocation",
+      "execution": "mutated input pipeline",
+      "input_sha256": "0a7cb09573737501ce6e016e588c843ca67ef73c43bbae5bd375f37392a72ea4",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "REVIEW_REQUIRED",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": []
+      },
+      "output_sha256": "0b573e2dd3f1ab6b6ae596a46263e8820e38724c1e11a76103e12a113e828674",
+      "status": "PASS"
+    },
+    "priority_inversion": {
+      "assertion": "priority inversion was detected from source mismatch",
+      "execution": "mutated input pipeline",
+      "input_sha256": "adf31d7d73d2ca9fef532a80ddff3465f0ac284ab5b3e3f56aac6a77adfaaa91",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 7
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 7
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "INSUFFICIENT_RECORD",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT",
+          "PRIORITY_INVERSION"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 7
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": [
+          "RULE_PRIORITY_SOURCE_MISMATCH"
+        ]
+      },
+      "output_sha256": "563a3f8671d8dbe93454d89aae4d928f29108777b4495405046d241d3da6a0ea",
+      "status": "PASS"
+    },
+    "stale_record_newer_without_matching_authority": {
+      "assertion": "unauthorized rule did not enter active rule set",
+      "execution": "mutated input pipeline",
+      "input_sha256": "b51bf2091165114ea850b91c507444c2e28c1629e438ffc6d241df57e41add45",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "INSUFFICIENT_RECORD",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT",
+          "UNAUTHORIZED_RULE_CHANGE"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": [
+          "UNAUTHORIZED_RULE_CHANGE"
+        ]
+      },
+      "output_sha256": "0715935d188acc1e16e036c5a40375b7438f0b30d3719ab14a6694bbc5530448",
+      "status": "PASS"
+    },
+    "supporting_new_confirmation": {
+      "assertion": "new source-supported confirmation changed H-004 to assignable",
+      "execution": "mutated input pipeline",
+      "input_sha256": "250504ed551c6519787bcfd700e30afd3b3d41e559887277d39faaa37c0c77cf",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 7
+                },
+                "evidence_record_ids": [
+                  "INT-H004-SUPPORT",
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [
+                  "TRANS-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "transport_seat",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H004-SUPPORT",
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-004",
+            "priority_level": 7
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "REVIEW_REQUIRED",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT",
+          "MISSING_EVIDENCE_COLLAPSE"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-004",
+            "priority_level": 7
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": []
+      },
+      "output_sha256": "a6fffee544e0bbffec1537de276c81f141193dd0c002db6f261ba55e55cd8bfb",
+      "status": "PASS"
+    },
+    "unauthorized_priority_rule_added": {
+      "assertion": "unauthorized rule did not enter active rule set",
+      "execution": "mutated input pipeline",
+      "input_sha256": "ab0c98b9c26d959b0a39a8953756eb7459bbcfb2d322f890e1f7e90d3a7a36d6",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "INSUFFICIENT_RECORD",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT",
+          "UNAUTHORIZED_RULE_CHANGE"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [],
+        "rule_errors": [
+          "UNAUTHORIZED_RULE_CHANGE"
+        ]
+      },
+      "output_sha256": "43fb6eb261a6bcf605c91aa051755961876de3e8b351deb28fe5b878060154ee",
+      "status": "PASS"
+    },
+    "unsupported_confirmation": {
+      "assertion": "status-only confirmation was rejected",
+      "execution": "mutated input pipeline",
+      "input_sha256": "c0b626dd843c726de18422480dbdfdee1a16844244ea89ec9449cb06895532fa",
+      "observed": {
+        "allocation": [
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "immediate_safety",
+                  "priority_level": 1
+                },
+                "evidence_record_ids": [
+                  "INT-H001-SAFETY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H001-COT",
+                "need_type": "immediate_safety",
+                "proposed_resources": [
+                  "COT-STD-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H001-SAFETY"
+                ],
+                "unmet_need": 0
+              }
+            ],
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "CONTRADICTORY:accessibility"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H002-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "cot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H002-A",
+                  "INT-H002-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "family_unity",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-FAMILY"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-COTS",
+                "need_type": "family_unity",
+                "proposed_resources": [
+                  "COT-STD-002",
+                  "COT-STD-003"
+                ],
+                "quantity": 2,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "cot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-FAMILY"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [
+                  "INT-H003-CARE"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H003-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [
+                  "CHILDCARE-001"
+                ],
+                "quantity": 1,
+                "reason": "Confirmed need and feasible, uniquely reserved or available resources are present.",
+                "required_resource": "child_care_slot",
+                "status": "ASSIGNABLE",
+                "supporting_evidence": [
+                  "INT-H003-CARE"
+                ],
+                "unmet_need": 0
+              },
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "meal_support",
+                  "priority_level": 3
+                },
+                "evidence_record_ids": [],
+                "evidence_status": "MISSING",
+                "missing_foundation": [
+                  "NO_EVIDENCE:meal_support"
+                ],
+                "need_id": "NEED-H003-MEALS",
+                "need_type": "meal_support",
+                "proposed_resources": [],
+                "quantity": 2,
+                "reason": "No intake record establishes the need.",
+                "required_resource": "meal_pack",
+                "status": "INSUFFICIENT_RECORD",
+                "supporting_evidence": [],
+                "unmet_need": 2
+              }
+            ],
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [],
+                "controlling_rule": {
+                  "need_type": "transport",
+                  "priority_level": 6
+                },
+                "evidence_record_ids": [
+                  "INT-H004-TRANS"
+                ],
+                "evidence_status": "UNVERIFIED",
+                "missing_foundation": [
+                  "UNVERIFIED:transport"
+                ],
+                "need_id": "NEED-H004-TRANS",
+                "need_type": "transport",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied record preserves an unverified need.",
+                "required_resource": "transport_seat",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H004-TRANS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "assignments": [
+              {
+                "accessible": false,
+                "conflicts": [
+                  "CONTRADICTORY:childcare"
+                ],
+                "controlling_rule": {
+                  "need_type": "childcare",
+                  "priority_level": 5
+                },
+                "evidence_record_ids": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "evidence_status": "DISPUTED",
+                "missing_foundation": [],
+                "need_id": "NEED-H005-CARE",
+                "need_type": "childcare",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "The supplied records conflict; ambiguity is not treated as confirmation.",
+                "required_resource": "child_care_slot",
+                "status": "HOLD_FOR_HUMAN_DECISION",
+                "supporting_evidence": [
+                  "INT-H005-A",
+                  "INT-H005-B"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "assignments": [
+              {
+                "accessible": true,
+                "conflicts": [
+                  "DUPLICATE_OR_OVERALLOCATED:COT-ACCESS-001"
+                ],
+                "controlling_rule": {
+                  "need_type": "accessibility",
+                  "priority_level": 2
+                },
+                "evidence_record_ids": [
+                  "INT-H006-ACCESS"
+                ],
+                "evidence_status": "CONFIRMED",
+                "missing_foundation": [],
+                "need_id": "NEED-H006-COT",
+                "need_type": "accessibility",
+                "proposed_resources": [],
+                "quantity": 1,
+                "reason": "A required resource is reserved for more than one household or is over capacity.",
+                "required_resource": "cot",
+                "status": "REVIEW_REQUIRED",
+                "supporting_evidence": [
+                  "INT-H006-ACCESS"
+                ],
+                "unmet_need": 1
+              }
+            ],
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "disposition": "INSUFFICIENT_RECORD",
+        "drift_events": [
+          "CAPACITY_OVER_ALLOCATION",
+          "DUPLICATE_ASSIGNMENT",
+          "UNSUPPORTED_CONFIRMATION"
+        ],
+        "duplicate_reservations": [
+          "COT-ACCESS-001"
+        ],
+        "households": [
+          {
+            "disposition": "ASSIGNABLE",
+            "household_id": "H-001",
+            "priority_level": 1
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-002",
+            "priority_level": 5
+          },
+          {
+            "disposition": "INSUFFICIENT_RECORD",
+            "household_id": "H-003",
+            "priority_level": 3
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-004",
+            "priority_level": 6
+          },
+          {
+            "disposition": "HOLD_FOR_HUMAN_DECISION",
+            "household_id": "H-005",
+            "priority_level": 5
+          },
+          {
+            "disposition": "REVIEW_REQUIRED",
+            "household_id": "H-006",
+            "priority_level": 2
+          }
+        ],
+        "intake_errors": [
+          "UNSUPPORTED_CONFIRMATION"
+        ],
+        "rule_errors": []
+      },
+      "output_sha256": "80cf92cff77011d968906e860fd6ff504d0de10b2e51bad2e3ba5851c6c49cc3",
+      "status": "PASS"
+    }
+  },
+  "fail_count": 0,
+  "pass_count": 16,
+  "schema": "shelterwise-control-results-v1"
+}

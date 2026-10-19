@@ -1,0 +1,253 @@
+{
+  "calculated": {
+    "active_rule_ids": [
+      "R-SAFETY",
+      "R-ACCESS",
+      "R-FAMILY",
+      "R-UNIQUE",
+      "R-UNCERTAIN",
+      "R-SUPERSESSION",
+      "R-NEUTRAL"
+    ],
+    "allocations": [
+      {
+        "disposition": "ASSIGNABLE",
+        "household_id": "H-001",
+        "priority_level": 1
+      },
+      {
+        "disposition": "HOLD_FOR_HUMAN_DECISION",
+        "household_id": "H-002",
+        "priority_level": 5
+      },
+      {
+        "disposition": "INSUFFICIENT_RECORD",
+        "household_id": "H-003",
+        "priority_level": 3
+      },
+      {
+        "disposition": "REVIEW_REQUIRED",
+        "household_id": "H-004",
+        "priority_level": 6
+      },
+      {
+        "disposition": "HOLD_FOR_HUMAN_DECISION",
+        "household_id": "H-005",
+        "priority_level": 5
+      },
+      {
+        "disposition": "REVIEW_REQUIRED",
+        "household_id": "H-006",
+        "priority_level": 2
+      }
+    ],
+    "capacity_errors": [],
+    "capacity_ledger": [
+      {
+        "accessible": false,
+        "available_capacity": 0,
+        "capacity": 1,
+        "exclusive": true,
+        "reserved_by": [
+          "H-003"
+        ],
+        "reserved_quantity": 1,
+        "resource_id": "CHILDCARE-001",
+        "resource_type": "child_care_slot"
+      },
+      {
+        "accessible": true,
+        "available_capacity": -1,
+        "capacity": 1,
+        "exclusive": true,
+        "reserved_by": [
+          "H-002",
+          "H-006"
+        ],
+        "reserved_quantity": 2,
+        "resource_id": "COT-ACCESS-001",
+        "resource_type": "cot"
+      },
+      {
+        "accessible": false,
+        "available_capacity": 0,
+        "capacity": 1,
+        "exclusive": true,
+        "reserved_by": [
+          "H-001"
+        ],
+        "reserved_quantity": 1,
+        "resource_id": "COT-STD-001",
+        "resource_type": "cot"
+      },
+      {
+        "accessible": false,
+        "available_capacity": 0,
+        "capacity": 1,
+        "exclusive": true,
+        "reserved_by": [
+          "H-003"
+        ],
+        "reserved_quantity": 1,
+        "resource_id": "COT-STD-002",
+        "resource_type": "cot"
+      },
+      {
+        "accessible": false,
+        "available_capacity": 1,
+        "capacity": 1,
+        "exclusive": true,
+        "reserved_by": [],
+        "reserved_quantity": 0,
+        "resource_id": "COT-STD-003",
+        "resource_type": "cot"
+      },
+      {
+        "accessible": false,
+        "available_capacity": 2,
+        "capacity": 5,
+        "exclusive": false,
+        "reserved_by": [
+          "H-001",
+          "H-003"
+        ],
+        "reserved_quantity": 3,
+        "resource_id": "MEAL-001",
+        "resource_type": "meal_pack"
+      },
+      {
+        "accessible": false,
+        "available_capacity": 2,
+        "capacity": 2,
+        "exclusive": false,
+        "reserved_by": [],
+        "reserved_quantity": 0,
+        "resource_id": "TRANS-001",
+        "resource_type": "transport_seat"
+      }
+    ],
+    "duplicate_resources": [
+      "COT-ACCESS-001"
+    ],
+    "expected_final_disposition": "REVIEW_REQUIRED",
+    "intake_households": [
+      {
+        "household_id": "H-001",
+        "needs": [
+          {
+            "need_type": "immediate_safety",
+            "record_ids": [
+              "INT-H001-SAFETY"
+            ],
+            "status": "CONFIRMED"
+          }
+        ],
+        "priority_level": 1
+      },
+      {
+        "household_id": "H-002",
+        "needs": [
+          {
+            "need_type": "accessibility",
+            "record_ids": [
+              "INT-H002-A",
+              "INT-H002-B"
+            ],
+            "status": "DISPUTED"
+          }
+        ],
+        "priority_level": 5
+      },
+      {
+        "household_id": "H-003",
+        "needs": [
+          {
+            "need_type": "childcare",
+            "record_ids": [
+              "INT-H003-CARE"
+            ],
+            "status": "CONFIRMED"
+          },
+          {
+            "need_type": "family_unity",
+            "record_ids": [
+              "INT-H003-FAMILY"
+            ],
+            "status": "CONFIRMED"
+          },
+          {
+            "need_type": "meal_support",
+            "record_ids": [],
+            "status": "MISSING"
+          }
+        ],
+        "priority_level": 3
+      },
+      {
+        "household_id": "H-004",
+        "needs": [
+          {
+            "need_type": "transport",
+            "record_ids": [
+              "INT-H004-TRANS"
+            ],
+            "status": "UNVERIFIED"
+          }
+        ],
+        "priority_level": 6
+      },
+      {
+        "household_id": "H-005",
+        "needs": [
+          {
+            "need_type": "childcare",
+            "record_ids": [
+              "INT-H005-A",
+              "INT-H005-B"
+            ],
+            "status": "DISPUTED"
+          }
+        ],
+        "priority_level": 5
+      },
+      {
+        "household_id": "H-006",
+        "needs": [
+          {
+            "need_type": "accessibility",
+            "record_ids": [
+              "INT-H006-ACCESS"
+            ],
+            "status": "CONFIRMED"
+          }
+        ],
+        "priority_level": 2
+      }
+    ],
+    "rule_errors": [],
+    "supported_confirmations": [
+      "INT-H001-SAFETY",
+      "INT-H002-A",
+      "INT-H003-CARE",
+      "INT-H003-FAMILY",
+      "INT-H005-A",
+      "INT-H006-ACCESS"
+    ]
+  },
+  "comparisons": {
+    "allocations": true,
+    "capacity_duplicates": true,
+    "capacity_error_count": true,
+    "capacity_ledger": true,
+    "final_disposition": true,
+    "intake_households": true,
+    "intake_supported_confirmations": true,
+    "rule_active_ids": true,
+    "rule_error_count": true
+  },
+  "imports_primary_stage_logic": false,
+  "input_sha256": "882f25b14be9edfbd55d1fbd7bb7fe6960c068aa43723023238fea58e6848569",
+  "recalculation_source": "canonical synthetic source records",
+  "schema": "shelterwise-independent-evaluator-v1",
+  "status": "PASS"
+}

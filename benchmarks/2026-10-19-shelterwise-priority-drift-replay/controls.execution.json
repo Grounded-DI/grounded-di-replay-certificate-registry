@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/controls.py",
+    "/workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/canonical_input.json",
+    "/workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/scripts/run_pipeline.py",
+    "/workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay/CONTROL_RESULTS.json"
+  ],
+  "cwd": "/workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay",
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-19T15:37:02.660797Z",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python_version": "3.12.14",
+  "started_at_utc": "2026-10-19T15:37:01.420623Z",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "bdea8f6d24c47532b2abd4be7d2f8aabed699a6d5c154683286029cbb7fe28ae"
+}

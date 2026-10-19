@@ -1,0 +1,81 @@
+{
+  "baseline_disposition": "REVIEW_REQUIRED",
+  "baseline_household_dispositions": [
+    {
+      "disposition": "ASSIGNABLE",
+      "household_id": "H-001",
+      "priority_level": 1
+    },
+    {
+      "disposition": "HOLD_FOR_HUMAN_DECISION",
+      "household_id": "H-002",
+      "priority_level": 5
+    },
+    {
+      "disposition": "INSUFFICIENT_RECORD",
+      "household_id": "H-003",
+      "priority_level": 3
+    },
+    {
+      "disposition": "REVIEW_REQUIRED",
+      "household_id": "H-004",
+      "priority_level": 6
+    },
+    {
+      "disposition": "HOLD_FOR_HUMAN_DECISION",
+      "household_id": "H-005",
+      "priority_level": 5
+    },
+    {
+      "disposition": "REVIEW_REQUIRED",
+      "household_id": "H-006",
+      "priority_level": 2
+    }
+  ],
+  "changed_outcomes": true,
+  "changed_records": [
+    {
+      "change": "ALTERED",
+      "record": "intake_records:INT-H004-TRANS"
+    }
+  ],
+  "current_household_dispositions": [
+    {
+      "disposition": "ASSIGNABLE",
+      "household_id": "H-001",
+      "priority_level": 1
+    },
+    {
+      "disposition": "HOLD_FOR_HUMAN_DECISION",
+      "household_id": "H-002",
+      "priority_level": 5
+    },
+    {
+      "disposition": "INSUFFICIENT_RECORD",
+      "household_id": "H-003",
+      "priority_level": 3
+    },
+    {
+      "disposition": "ASSIGNABLE",
+      "household_id": "H-004",
+      "priority_level": 7
+    },
+    {
+      "disposition": "HOLD_FOR_HUMAN_DECISION",
+      "household_id": "H-005",
+      "priority_level": 5
+    },
+    {
+      "disposition": "REVIEW_REQUIRED",
+      "household_id": "H-006",
+      "priority_level": 2
+    }
+  ],
+  "events": [
+    "CAPACITY_OVER_ALLOCATION",
+    "DUPLICATE_ASSIGNMENT",
+    "MISSING_EVIDENCE_COLLAPSE"
+  ],
+  "schema": "shelterwise-driftshield-output-v1",
+  "status": "DRIFT_DETECTED"
+}

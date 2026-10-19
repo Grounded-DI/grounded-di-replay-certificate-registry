@@ -14,6 +14,12 @@ The registry includes four runnable Python demonstrations and ten numbered evide
 
 > **Repository scope:** The public evidence supports the result stated by each record—such as byte identity, fresh local replay, boundary enforcement, or exact arithmetic. Broader conclusions are not inferred from hashes alone. Certificates in the runnable demonstrations are local, unsigned project records.
 
+## ShelterWise Priority-Drift and Scarce-Resource Replay (October 19, 2026)
+
+[Synthetic replay package](benchmarks/2026-10-19-shelterwise-priority-drift-replay/README.md) · [Report](benchmarks/2026-10-19-shelterwise-priority-drift-replay/REPORT.md) · [Reproducibility archive](benchmarks/2026-10-19-shelterwise-priority-drift-replay/reproducibility_package.zip)
+
+Two fresh canonical executions of the fictional Northbank shelter snapshot produced byte-identical stage and final outputs. An evaluator that does not import the primary stage logic independently recalculated the source-bound rules, intake states, capacity ledger, duplicate exclusive reservation, allocation dispositions, and final disposition. All 16 recorded altered-input and downstream-tamper controls passed, including negative-control memo alteration, label permutation, source-supported confirmation, unauthorized rule changes, capacity reduction, missing-evidence collapse, and intermediate-output rejection. The measured synthetic final disposition is `REVIEW_REQUIRED`; this package is not real emergency, medical, humanitarian, public-safety, or shelter-allocation advice.
+
 ## VerdictBridge Demo 3 — Selective Outcome Replay
 
 [Demonstration and runnable evidence](demos/2026-10-05-verdictbridge-punitive-control-v1/README.md) · [PDF](demos/2026-10-05-verdictbridge-punitive-control-v1/package/VerdictBridge_Demo3_Report.pdf) · [Complete ZIP](demos/2026-10-05-verdictbridge-punitive-control-v1/VerdictBridge_Demo3_Public_v1.zip)

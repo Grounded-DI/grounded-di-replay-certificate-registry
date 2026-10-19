@@ -1,0 +1,288 @@
+{
+  "active_rule_ids": [
+    "R-SAFETY",
+    "R-ACCESS",
+    "R-FAMILY",
+    "R-UNIQUE",
+    "R-UNCERTAIN",
+    "R-SUPERSESSION",
+    "R-NEUTRAL"
+  ],
+  "active_rules": [
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 1: A confirmed immediate safety need outranks convenience.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 1,
+      "rule_id": "R-SAFETY",
+      "source_id": "SRC-RULE-001",
+      "source_location": "rulebook p.1 section 1",
+      "status": "ACTIVE",
+      "subject": "immediate safety priority",
+      "text": "A confirmed immediate safety need outranks convenience."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 2: A confirmed accessibility need must be accommodated when a feasible resource exists.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 2,
+      "rule_id": "R-ACCESS",
+      "source_id": "SRC-RULE-002",
+      "source_location": "rulebook p.1 section 2",
+      "status": "ACTIVE",
+      "subject": "accessibility accommodation",
+      "text": "A confirmed accessibility need must be accommodated when a feasible resource exists."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 3: Family unity should be preserved when feasible and consistent with safety.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 3,
+      "rule_id": "R-FAMILY",
+      "source_id": "SRC-RULE-003",
+      "source_location": "rulebook p.1 section 3",
+      "status": "ACTIVE",
+      "subject": "family unity",
+      "text": "Family unity should be preserved when feasible and consistent with safety."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 4: A resource may not be assigned to more than one household.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 4,
+      "rule_id": "R-UNIQUE",
+      "source_id": "SRC-RULE-004",
+      "source_location": "rulebook p.1 section 4",
+      "status": "ACTIVE",
+      "subject": "resource uniqueness",
+      "text": "A resource may not be assigned to more than one household."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 5: Unverified information is neither confirmed nor disproved.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 5,
+      "rule_id": "R-UNCERTAIN",
+      "source_id": "SRC-RULE-005",
+      "source_location": "rulebook p.1 section 5",
+      "status": "ACTIVE",
+      "subject": "uncertainty preservation",
+      "text": "Unverified information is neither confirmed nor disproved."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 6: A newer record supersedes an older record only when it has the same authority, subject, and applicable period.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 6,
+      "rule_id": "R-SUPERSESSION",
+      "source_id": "SRC-RULE-006",
+      "source_location": "rulebook p.1 section 6",
+      "status": "ACTIVE",
+      "subject": "record supersession",
+      "text": "A newer record supersedes an older record only when it has the same authority, subject, and applicable period."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 7: Household names, demographic labels, or narrative sympathy may not alter priority unless a supplied rule expressly makes them relevant.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 7,
+      "rule_id": "R-NEUTRAL",
+      "source_id": "SRC-RULE-007",
+      "source_location": "rulebook p.1 section 7",
+      "status": "ACTIVE",
+      "subject": "identity neutrality",
+      "text": "Household names, demographic labels, or narrative sympathy may not alter priority unless a supplied rule expressly makes them relevant."
+    }
+  ],
+  "bound_rule_count": 7,
+  "bound_rules": [
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 2: A confirmed accessibility need must be accommodated when a feasible resource exists.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 2,
+      "rule_id": "R-ACCESS",
+      "source_id": "SRC-RULE-002",
+      "source_location": "rulebook p.1 section 2",
+      "subject": "accessibility accommodation",
+      "text": "A confirmed accessibility need must be accommodated when a feasible resource exists."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 3: Family unity should be preserved when feasible and consistent with safety.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 3,
+      "rule_id": "R-FAMILY",
+      "source_id": "SRC-RULE-003",
+      "source_location": "rulebook p.1 section 3",
+      "subject": "family unity",
+      "text": "Family unity should be preserved when feasible and consistent with safety."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 7: Household names, demographic labels, or narrative sympathy may not alter priority unless a supplied rule expressly makes them relevant.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 7,
+      "rule_id": "R-NEUTRAL",
+      "source_id": "SRC-RULE-007",
+      "source_location": "rulebook p.1 section 7",
+      "subject": "identity neutrality",
+      "text": "Household names, demographic labels, or narrative sympathy may not alter priority unless a supplied rule expressly makes them relevant."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 1: A confirmed immediate safety need outranks convenience.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 1,
+      "rule_id": "R-SAFETY",
+      "source_id": "SRC-RULE-001",
+      "source_location": "rulebook p.1 section 1",
+      "subject": "immediate safety priority",
+      "text": "A confirmed immediate safety need outranks convenience."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 6: A newer record supersedes an older record only when it has the same authority, subject, and applicable period.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 6,
+      "rule_id": "R-SUPERSESSION",
+      "source_id": "SRC-RULE-006",
+      "source_location": "rulebook p.1 section 6",
+      "subject": "record supersession",
+      "text": "A newer record supersedes an older record only when it has the same authority, subject, and applicable period."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 5: Unverified information is neither confirmed nor disproved.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 5,
+      "rule_id": "R-UNCERTAIN",
+      "source_id": "SRC-RULE-005",
+      "source_location": "rulebook p.1 section 5",
+      "subject": "uncertainty preservation",
+      "text": "Unverified information is neither confirmed nor disproved."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 4: A resource may not be assigned to more than one household.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 4,
+      "rule_id": "R-UNIQUE",
+      "source_id": "SRC-RULE-004",
+      "source_location": "rulebook p.1 section 4",
+      "subject": "resource uniqueness",
+      "text": "A resource may not be assigned to more than one household."
+    }
+  ],
+  "errors": [],
+  "priority_order": [
+    {
+      "priority_level": 1,
+      "rule_id": "R-SAFETY",
+      "subject": "immediate safety priority"
+    },
+    {
+      "priority_level": 2,
+      "rule_id": "R-ACCESS",
+      "subject": "accessibility accommodation"
+    },
+    {
+      "priority_level": 3,
+      "rule_id": "R-FAMILY",
+      "subject": "family unity"
+    },
+    {
+      "priority_level": 4,
+      "rule_id": "R-UNIQUE",
+      "subject": "resource uniqueness"
+    },
+    {
+      "priority_level": 5,
+      "rule_id": "R-UNCERTAIN",
+      "subject": "uncertainty preservation"
+    },
+    {
+      "priority_level": 6,
+      "rule_id": "R-SUPERSESSION",
+      "subject": "record supersession"
+    },
+    {
+      "priority_level": 7,
+      "rule_id": "R-NEUTRAL",
+      "subject": "identity neutrality"
+    }
+  ],
+  "schema": "shelterwise-rulebinder-output-v1",
+  "status": "PASS",
+  "superseded_rules": []
+}

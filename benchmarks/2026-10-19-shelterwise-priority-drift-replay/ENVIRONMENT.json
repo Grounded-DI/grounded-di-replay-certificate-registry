@@ -1,0 +1,16 @@
+{
+  "captured_at_utc": "2026-10-19T15:37:02.665642Z",
+  "external_data_sources": [],
+  "network_calls_in_replay": false,
+  "os_name": "posix",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "python_implementation": "CPython",
+  "python_version": "3.12.14",
+  "relevant_environment": {
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "TZ": "America/Chicago"
+  },
+  "working_directory": "/workspace/scratch/df960f3d4324/repo/benchmarks/2026-10-19-shelterwise-priority-drift-replay"
+}

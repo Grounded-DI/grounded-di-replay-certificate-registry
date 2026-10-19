@@ -1,0 +1,83 @@
+{
+  "altered_control_result": {
+    "actual_intermediate_tamper_executions": 1,
+    "actual_mutated_input_pipeline_executions": 15,
+    "control_count": 16,
+    "fail_count": 0,
+    "pass_count": 16,
+    "status": "PASS"
+  },
+  "canonical_execution_count": 2,
+  "environment_record": "ENVIRONMENT.json",
+  "execution_records": [
+    "executions/run_1/execution.json",
+    "executions/run_2/execution.json",
+    "independent_evaluator.execution.json",
+    "controls.execution.json"
+  ],
+  "final_chain_replay_identity": true,
+  "final_disposition": "REVIEW_REQUIRED",
+  "final_drift_events": [
+    "CAPACITY_OVER_ALLOCATION",
+    "DUPLICATE_ASSIGNMENT"
+  ],
+  "independent_evaluator": {
+    "comparisons": {
+      "allocations": true,
+      "capacity_duplicates": true,
+      "capacity_error_count": true,
+      "capacity_ledger": true,
+      "final_disposition": true,
+      "intake_households": true,
+      "intake_supported_confirmations": true,
+      "rule_active_ids": true,
+      "rule_error_count": true
+    },
+    "imports_primary_stage_logic": false,
+    "status": "PASS"
+  },
+  "observed_replay_divergence": false,
+  "record_mismatches": [],
+  "schema": "shelterwise-replay-results-v1",
+  "stage_execution_counts": {
+    "allocationbridge": 2,
+    "capacityledger": 2,
+    "driftshield": 2,
+    "final_chain": 2,
+    "intakebinder": 2,
+    "rulebinder": 2
+  },
+  "stage_output_identity": {
+    "allocationbridge": {
+      "identical": true,
+      "run_1_sha256": "c6237abf5099ebe40ace4715cac296b7f6dd187891f1061e8b72f3a8a21a5f87",
+      "run_2_sha256": "c6237abf5099ebe40ace4715cac296b7f6dd187891f1061e8b72f3a8a21a5f87"
+    },
+    "capacityledger": {
+      "identical": true,
+      "run_1_sha256": "241f29c2cb44d3b22eeea177d74d09d173bf4b9fc5b57cbc593f672af53c31b9",
+      "run_2_sha256": "241f29c2cb44d3b22eeea177d74d09d173bf4b9fc5b57cbc593f672af53c31b9"
+    },
+    "driftshield": {
+      "identical": true,
+      "run_1_sha256": "d50fe1fe0e0e6581bd694b9cb75f280396f235fefc5e05b2b842ae254549cf09",
+      "run_2_sha256": "d50fe1fe0e0e6581bd694b9cb75f280396f235fefc5e05b2b842ae254549cf09"
+    },
+    "final_chain": {
+      "identical": true,
+      "run_1_sha256": "3e3d4f94d71759ab8eff99fbd93e5e718f0089bc7b78ec10848daf792d740cb5",
+      "run_2_sha256": "3e3d4f94d71759ab8eff99fbd93e5e718f0089bc7b78ec10848daf792d740cb5"
+    },
+    "intakebinder": {
+      "identical": true,
+      "run_1_sha256": "48d684c571eeab1d55153928aef93caaeec25bed7b0bf4712db442c1c0b21604",
+      "run_2_sha256": "48d684c571eeab1d55153928aef93caaeec25bed7b0bf4712db442c1c0b21604"
+    },
+    "rulebinder": {
+      "identical": true,
+      "run_1_sha256": "65ba5ea6f4b9765ff08521382b1a2af470d8ad6171accd5dd4c6205591b25b4a",
+      "run_2_sha256": "65ba5ea6f4b9765ff08521382b1a2af470d8ad6171accd5dd4c6205591b25b4a"
+    }
+  },
+  "synthetic_fixture": true
+}

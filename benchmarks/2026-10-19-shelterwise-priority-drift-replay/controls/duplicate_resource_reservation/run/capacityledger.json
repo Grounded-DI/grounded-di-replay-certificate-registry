@@ -1,0 +1,193 @@
+{
+  "duplicate_reservations": [
+    {
+      "household_ids": [
+        "H-002",
+        "H-006"
+      ],
+      "reservation_ids": [
+        "RES-003",
+        "RES-004"
+      ],
+      "resource_id": "COT-ACCESS-001"
+    },
+    {
+      "household_ids": [
+        "H-001",
+        "H-006"
+      ],
+      "reservation_ids": [
+        "RES-001",
+        "RES-008"
+      ],
+      "resource_id": "COT-STD-001"
+    }
+  ],
+  "errors": [],
+  "over_allocations": [
+    {
+      "capacity": 1,
+      "reserved_quantity": 2,
+      "resource_id": "COT-ACCESS-001"
+    },
+    {
+      "capacity": 1,
+      "reserved_quantity": 2,
+      "resource_id": "COT-STD-001"
+    }
+  ],
+  "reservation_count": 8,
+  "resource_count": 7,
+  "resource_ledger": [
+    {
+      "accessible": false,
+      "available_capacity": 0,
+      "capacity": 1,
+      "exclusive": true,
+      "reservation_ids": [
+        "RES-005"
+      ],
+      "reserved_by": [
+        "H-003"
+      ],
+      "reserved_quantity": 1,
+      "resource_id": "CHILDCARE-001",
+      "resource_type": "child_care_slot",
+      "status": "AVAILABLE"
+    },
+    {
+      "accessible": true,
+      "available_capacity": -1,
+      "capacity": 1,
+      "exclusive": true,
+      "reservation_ids": [
+        "RES-003",
+        "RES-004"
+      ],
+      "reserved_by": [
+        "H-002",
+        "H-006"
+      ],
+      "reserved_quantity": 2,
+      "resource_id": "COT-ACCESS-001",
+      "resource_type": "cot",
+      "status": "AVAILABLE"
+    },
+    {
+      "accessible": false,
+      "available_capacity": -1,
+      "capacity": 1,
+      "exclusive": true,
+      "reservation_ids": [
+        "RES-001",
+        "RES-008"
+      ],
+      "reserved_by": [
+        "H-001",
+        "H-006"
+      ],
+      "reserved_quantity": 2,
+      "resource_id": "COT-STD-001",
+      "resource_type": "cot",
+      "status": "AVAILABLE"
+    },
+    {
+      "accessible": false,
+      "available_capacity": 0,
+      "capacity": 1,
+      "exclusive": true,
+      "reservation_ids": [
+        "RES-002"
+      ],
+      "reserved_by": [
+        "H-003"
+      ],
+      "reserved_quantity": 1,
+      "resource_id": "COT-STD-002",
+      "resource_type": "cot",
+      "status": "AVAILABLE"
+    },
+    {
+      "accessible": false,
+      "available_capacity": 1,
+      "capacity": 1,
+      "exclusive": true,
+      "reservation_ids": [],
+      "reserved_by": [],
+      "reserved_quantity": 0,
+      "resource_id": "COT-STD-003",
+      "resource_type": "cot",
+      "status": "AVAILABLE"
+    },
+    {
+      "accessible": false,
+      "available_capacity": 2,
+      "capacity": 5,
+      "exclusive": false,
+      "reservation_ids": [
+        "RES-006",
+        "RES-007"
+      ],
+      "reserved_by": [
+        "H-001",
+        "H-003"
+      ],
+      "reserved_quantity": 3,
+      "resource_id": "MEAL-001",
+      "resource_type": "meal_pack",
+      "status": "AVAILABLE"
+    },
+    {
+      "accessible": false,
+      "available_capacity": 2,
+      "capacity": 2,
+      "exclusive": false,
+      "reservation_ids": [],
+      "reserved_by": [],
+      "reserved_quantity": 0,
+      "resource_id": "TRANS-001",
+      "resource_type": "transport_seat",
+      "status": "AVAILABLE"
+    }
+  ],
+  "schema": "shelterwise-capacityledger-output-v1",
+  "status": "REVIEW_REQUIRED",
+  "unresolved_capacity_conflicts": [
+    {
+      "household_ids": [
+        "H-002",
+        "H-006"
+      ],
+      "kind": "DUPLICATE_ASSIGNMENT",
+      "reservation_ids": [
+        "RES-003",
+        "RES-004"
+      ],
+      "resource_id": "COT-ACCESS-001"
+    },
+    {
+      "household_ids": [
+        "H-001",
+        "H-006"
+      ],
+      "kind": "DUPLICATE_ASSIGNMENT",
+      "reservation_ids": [
+        "RES-001",
+        "RES-008"
+      ],
+      "resource_id": "COT-STD-001"
+    },
+    {
+      "capacity": 1,
+      "kind": "CAPACITY_OVER_ALLOCATION",
+      "reserved_quantity": 2,
+      "resource_id": "COT-ACCESS-001"
+    },
+    {
+      "capacity": 1,
+      "kind": "CAPACITY_OVER_ALLOCATION",
+      "reserved_quantity": 2,
+      "resource_id": "COT-STD-001"
+    }
+  ]
+}

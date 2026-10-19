@@ -1,0 +1,317 @@
+{
+  "baseline_question": "Which supplied household/resource assignments are supportable under the synthetic Northbank rules at the baseline snapshot?",
+  "boundaries": [
+    "household identity != priority",
+    "need allegation != confirmed need",
+    "resource reservation != unique assignment",
+    "capacity != feasibility when evidence is missing",
+    "unverified information != disproved information"
+  ],
+  "cleanest_record_basis": "The synthetic record preserves rule bindings, intake uncertainty, resource conflicts, and assignment-level dispositions; unresolved conflicts prevent an all-assignable result.",
+  "disposition": "REVIEW_REQUIRED",
+  "drift_events": [
+    "CAPACITY_OVER_ALLOCATION",
+    "DUPLICATE_ASSIGNMENT",
+    "MISSING_EVIDENCE_COLLAPSE"
+  ],
+  "household_dispositions": [
+    {
+      "disposition": "ASSIGNABLE",
+      "household_id": "H-001",
+      "priority_level": 1
+    },
+    {
+      "disposition": "HOLD_FOR_HUMAN_DECISION",
+      "household_id": "H-002",
+      "priority_level": 5
+    },
+    {
+      "disposition": "INSUFFICIENT_RECORD",
+      "household_id": "H-003",
+      "priority_level": 3
+    },
+    {
+      "disposition": "ASSIGNABLE",
+      "household_id": "H-004",
+      "priority_level": 7
+    },
+    {
+      "disposition": "HOLD_FOR_HUMAN_DECISION",
+      "household_id": "H-005",
+      "priority_level": 5
+    },
+    {
+      "disposition": "REVIEW_REQUIRED",
+      "household_id": "H-006",
+      "priority_level": 2
+    }
+  ],
+  "intake_summary": [
+    {
+      "duplicate_key": "FP-001",
+      "family_size": 1,
+      "household_id": "H-001",
+      "needs": [
+        {
+          "accessible": false,
+          "need_type": "immediate_safety",
+          "observed_statuses": [
+            "CONFIRMED"
+          ],
+          "quantity": 1,
+          "record_ids": [
+            "INT-H001-SAFETY"
+          ],
+          "required_resource": "cot",
+          "status": "CONFIRMED",
+          "values": [
+            "immediate_safety_present"
+          ]
+        }
+      ],
+      "priority_basis": [
+        "immediate_safety"
+      ],
+      "priority_level": 1
+    },
+    {
+      "duplicate_key": "FP-002",
+      "family_size": 1,
+      "household_id": "H-002",
+      "needs": [
+        {
+          "accessible": true,
+          "need_type": "accessibility",
+          "observed_statuses": [
+            "CONFIRMED",
+            "CONTRADICTED"
+          ],
+          "quantity": 1,
+          "record_ids": [
+            "INT-H002-A",
+            "INT-H002-B"
+          ],
+          "required_resource": "cot",
+          "status": "DISPUTED",
+          "values": [
+            "accessible_cot_not_required",
+            "accessible_cot_required"
+          ]
+        }
+      ],
+      "priority_basis": [],
+      "priority_level": 5
+    },
+    {
+      "duplicate_key": "FP-003",
+      "family_size": 2,
+      "household_id": "H-003",
+      "needs": [
+        {
+          "accessible": false,
+          "need_type": "childcare",
+          "observed_statuses": [
+            "CONFIRMED"
+          ],
+          "quantity": 1,
+          "record_ids": [
+            "INT-H003-CARE"
+          ],
+          "required_resource": "child_care_slot",
+          "status": "CONFIRMED",
+          "values": [
+            "childcare_required"
+          ]
+        },
+        {
+          "accessible": false,
+          "need_type": "family_unity",
+          "observed_statuses": [
+            "CONFIRMED"
+          ],
+          "quantity": 2,
+          "record_ids": [
+            "INT-H003-FAMILY"
+          ],
+          "required_resource": "cot",
+          "status": "CONFIRMED",
+          "values": [
+            "two_members_together"
+          ]
+        },
+        {
+          "accessible": false,
+          "need_type": "meal_support",
+          "observed_statuses": [],
+          "quantity": 2,
+          "record_ids": [],
+          "required_resource": "meal_pack",
+          "status": "MISSING",
+          "values": []
+        }
+      ],
+      "priority_basis": [
+        "family_unity",
+        "childcare"
+      ],
+      "priority_level": 3
+    },
+    {
+      "duplicate_key": "FP-004",
+      "family_size": 1,
+      "household_id": "H-004",
+      "needs": [
+        {
+          "accessible": false,
+          "need_type": "transport",
+          "observed_statuses": [
+            "CONFIRMED"
+          ],
+          "quantity": 1,
+          "record_ids": [
+            "INT-H004-TRANS"
+          ],
+          "required_resource": "transport_seat",
+          "status": "CONFIRMED",
+          "values": [
+            "transport_seat_requested"
+          ]
+        }
+      ],
+      "priority_basis": [
+        "transport"
+      ],
+      "priority_level": 7
+    },
+    {
+      "duplicate_key": "FP-005",
+      "family_size": 2,
+      "household_id": "H-005",
+      "needs": [
+        {
+          "accessible": false,
+          "need_type": "childcare",
+          "observed_statuses": [
+            "CONFIRMED",
+            "CONTRADICTED"
+          ],
+          "quantity": 1,
+          "record_ids": [
+            "INT-H005-A",
+            "INT-H005-B"
+          ],
+          "required_resource": "child_care_slot",
+          "status": "DISPUTED",
+          "values": [
+            "childcare_not_required",
+            "childcare_required"
+          ]
+        }
+      ],
+      "priority_basis": [],
+      "priority_level": 5
+    },
+    {
+      "duplicate_key": "FP-006",
+      "family_size": 1,
+      "household_id": "H-006",
+      "needs": [
+        {
+          "accessible": true,
+          "need_type": "accessibility",
+          "observed_statuses": [
+            "CONFIRMED"
+          ],
+          "quantity": 1,
+          "record_ids": [
+            "INT-H006-ACCESS"
+          ],
+          "required_resource": "cot",
+          "status": "CONFIRMED",
+          "values": [
+            "accessible_cot_required"
+          ]
+        }
+      ],
+      "priority_basis": [
+        "accessibility"
+      ],
+      "priority_level": 2
+    }
+  ],
+  "matter_id": "SHELTERWISE-NORTHBANK-001",
+  "measured_results_are_not_real_world_advice": true,
+  "resource_conflicts": [
+    {
+      "household_ids": [
+        "H-002",
+        "H-006"
+      ],
+      "kind": "DUPLICATE_ASSIGNMENT",
+      "reservation_ids": [
+        "RES-003",
+        "RES-004"
+      ],
+      "resource_id": "COT-ACCESS-001"
+    },
+    {
+      "capacity": 1,
+      "kind": "CAPACITY_OVER_ALLOCATION",
+      "reserved_quantity": 2,
+      "resource_id": "COT-ACCESS-001"
+    }
+  ],
+  "schema": "shelterwise-final-chain-output-v1",
+  "stage_hashes": {
+    "allocationbridge": "9c76867397950d892e25129abadcafd572a907d97f1a394edc59c4f332c36d9c",
+    "capacityledger": "36664c6b268a677b48f1c0e433e91433e391f68028d2bb8d63184ee1c9c5ff54",
+    "driftshield": "6533724a88f9e02a3cb3a78bd3db75ec055ae04acea2a3ea5b2aea999f21f918",
+    "intakebinder": "ffc6bb4dd0a754a7849a222edcadab96831eade57660c8b65cb582acea505073",
+    "rulebinder": "af3c9f4397e4b5290bd1f81c1305ba6a5d90d1f3371e49c244ffe057fc742a2a"
+  },
+  "synthetic_fixture": true,
+  "unresolved_items": [
+    {
+      "kind": "DUPLICATE_ASSIGNMENT",
+      "resource_id": "COT-ACCESS-001",
+      "stage": "CapacityLedger"
+    },
+    {
+      "kind": "CAPACITY_OVER_ALLOCATION",
+      "resource_id": "COT-ACCESS-001",
+      "stage": "CapacityLedger"
+    },
+    {
+      "disposition": "HOLD_FOR_HUMAN_DECISION",
+      "household_id": "H-002",
+      "stage": "AllocationBridge"
+    },
+    {
+      "disposition": "INSUFFICIENT_RECORD",
+      "household_id": "H-003",
+      "stage": "AllocationBridge"
+    },
+    {
+      "disposition": "HOLD_FOR_HUMAN_DECISION",
+      "household_id": "H-005",
+      "stage": "AllocationBridge"
+    },
+    {
+      "disposition": "REVIEW_REQUIRED",
+      "household_id": "H-006",
+      "stage": "AllocationBridge"
+    },
+    {
+      "event": "CAPACITY_OVER_ALLOCATION",
+      "stage": "DriftShield"
+    },
+    {
+      "event": "DUPLICATE_ASSIGNMENT",
+      "stage": "DriftShield"
+    },
+    {
+      "event": "MISSING_EVIDENCE_COLLAPSE",
+      "stage": "DriftShield"
+    }
+  ]
+}

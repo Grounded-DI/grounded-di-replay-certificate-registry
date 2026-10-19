@@ -1,0 +1,789 @@
+{
+  "baseline_assignment_question": "Assess the six synthetic household profiles against the bound rules and resource ledger without treating names, narrative sympathy, or missing evidence as controlling facts.",
+  "household_profiles": [
+    {
+      "display_label": "Household A",
+      "duplicate_key": "FP-001",
+      "family_size": 1,
+      "household_id": "H-001",
+      "needs": [
+        {
+          "accessible": false,
+          "need_id": "NEED-H001-COT",
+          "need_type": "immediate_safety",
+          "quantity": 1,
+          "required_resource": "cot"
+        }
+      ]
+    },
+    {
+      "display_label": "Household B",
+      "duplicate_key": "FP-002",
+      "family_size": 1,
+      "household_id": "H-002",
+      "needs": [
+        {
+          "accessible": true,
+          "need_id": "NEED-H002-COT",
+          "need_type": "accessibility",
+          "quantity": 1,
+          "required_resource": "cot"
+        }
+      ]
+    },
+    {
+      "display_label": "Household C",
+      "duplicate_key": "FP-003",
+      "family_size": 2,
+      "household_id": "H-003",
+      "needs": [
+        {
+          "accessible": false,
+          "need_id": "NEED-H003-COTS",
+          "need_type": "family_unity",
+          "quantity": 2,
+          "required_resource": "cot"
+        },
+        {
+          "accessible": false,
+          "need_id": "NEED-H003-CARE",
+          "need_type": "childcare",
+          "quantity": 1,
+          "required_resource": "child_care_slot"
+        },
+        {
+          "accessible": false,
+          "need_id": "NEED-H003-MEALS",
+          "need_type": "meal_support",
+          "quantity": 2,
+          "required_resource": "meal_pack"
+        }
+      ]
+    },
+    {
+      "display_label": "Household D",
+      "duplicate_key": "FP-004",
+      "family_size": 1,
+      "household_id": "H-004",
+      "needs": [
+        {
+          "accessible": false,
+          "need_id": "NEED-H004-TRANS",
+          "need_type": "transport",
+          "quantity": 1,
+          "required_resource": "transport_seat"
+        }
+      ]
+    },
+    {
+      "display_label": "Household E",
+      "duplicate_key": "FP-005",
+      "family_size": 2,
+      "household_id": "H-005",
+      "needs": [
+        {
+          "accessible": false,
+          "need_id": "NEED-H005-CARE",
+          "need_type": "childcare",
+          "quantity": 1,
+          "required_resource": "child_care_slot"
+        }
+      ]
+    },
+    {
+      "display_label": "Household F",
+      "duplicate_key": "FP-006",
+      "family_size": 1,
+      "household_id": "H-006",
+      "needs": [
+        {
+          "accessible": true,
+          "need_id": "NEED-H006-COT",
+          "need_type": "accessibility",
+          "quantity": 1,
+          "required_resource": "cot"
+        }
+      ]
+    }
+  ],
+  "injected_assignments": [],
+  "intake_records": [
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "exact_source_fragment": "Synthetic intake H-001: immediate safety need confirmed for the operating period.",
+      "household_id": "H-001",
+      "need_type": "immediate_safety",
+      "record_id": "INT-H001-SAFETY",
+      "source_id": "SRC-INT-H001",
+      "source_location": "intake H-001 line 1",
+      "speaker_or_source": "synthetic intake desk",
+      "status": "CONFIRMED",
+      "timestamp": "2026-10-19T07:00:00Z",
+      "value": "immediate_safety_present"
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "exact_source_fragment": "Synthetic intake H-002-A: accessible cot required due to a mobility device; confirmed.",
+      "household_id": "H-002",
+      "need_type": "accessibility",
+      "record_id": "INT-H002-A",
+      "source_id": "SRC-INT-H002-A",
+      "source_location": "intake H-002 line 1",
+      "speaker_or_source": "synthetic intake desk",
+      "status": "CONFIRMED",
+      "timestamp": "2026-10-19T07:05:00Z",
+      "value": "accessible_cot_required"
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "exact_source_fragment": "Synthetic intake H-002-B: standard cot acceptable; conflicts with H-002-A.",
+      "household_id": "H-002",
+      "need_type": "accessibility",
+      "record_id": "INT-H002-B",
+      "source_id": "SRC-INT-H002-B",
+      "source_location": "intake H-002 line 2",
+      "speaker_or_source": "synthetic intake desk",
+      "status": "CONTRADICTED",
+      "timestamp": "2026-10-19T07:06:00Z",
+      "value": "accessible_cot_not_required"
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "exact_source_fragment": "Synthetic intake H-003: family unity requested for two household members; confirmed.",
+      "household_id": "H-003",
+      "need_type": "family_unity",
+      "record_id": "INT-H003-FAMILY",
+      "source_id": "SRC-INT-H003-FAMILY",
+      "source_location": "intake H-003 line 1",
+      "speaker_or_source": "synthetic intake desk",
+      "status": "CONFIRMED",
+      "timestamp": "2026-10-19T07:10:00Z",
+      "value": "two_members_together"
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "exact_source_fragment": "Synthetic intake H-003: one child-care slot required; confirmed.",
+      "household_id": "H-003",
+      "need_type": "childcare",
+      "record_id": "INT-H003-CARE",
+      "source_id": "SRC-INT-H003-CARE",
+      "source_location": "intake H-003 line 2",
+      "speaker_or_source": "synthetic intake desk",
+      "status": "CONFIRMED",
+      "timestamp": "2026-10-19T07:11:00Z",
+      "value": "childcare_required"
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "exact_source_fragment": "Synthetic intake H-004: transport seat requested; need remains unverified.",
+      "household_id": "H-004",
+      "need_type": "transport",
+      "record_id": "INT-H004-TRANS",
+      "source_id": "SRC-INT-H004",
+      "source_location": "intake H-004 line 1",
+      "speaker_or_source": "synthetic intake desk",
+      "status": "UNVERIFIED",
+      "timestamp": "2026-10-19T07:15:00Z",
+      "value": "transport_seat_requested"
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "exact_source_fragment": "Synthetic intake H-005-A: child-care slot required; confirmed.",
+      "household_id": "H-005",
+      "need_type": "childcare",
+      "record_id": "INT-H005-A",
+      "source_id": "SRC-INT-H005-A",
+      "source_location": "intake H-005 line 1",
+      "speaker_or_source": "synthetic intake desk",
+      "status": "CONFIRMED",
+      "timestamp": "2026-10-19T07:20:00Z",
+      "value": "childcare_required"
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "exact_source_fragment": "Synthetic intake H-005-B: no child-care slot required; conflicts with H-005-A.",
+      "household_id": "H-005",
+      "need_type": "childcare",
+      "record_id": "INT-H005-B",
+      "source_id": "SRC-INT-H005-B",
+      "source_location": "intake H-005 line 2",
+      "speaker_or_source": "synthetic intake desk",
+      "status": "CONTRADICTED",
+      "timestamp": "2026-10-19T07:21:00Z",
+      "value": "childcare_not_required"
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "exact_source_fragment": "Synthetic intake H-006: accessible cot required; confirmed.",
+      "household_id": "H-006",
+      "need_type": "accessibility",
+      "record_id": "INT-H006-ACCESS",
+      "source_id": "SRC-INT-H006",
+      "source_location": "intake H-006 line 1",
+      "speaker_or_source": "synthetic intake desk",
+      "status": "CONFIRMED",
+      "timestamp": "2026-10-19T07:25:00Z",
+      "value": "accessible_cot_required"
+    }
+  ],
+  "inventory": {
+    "reservations": [
+      {
+        "exact_source_fragment": "Synthetic reservation row 1: COT-STD-001 reserved for H-001.",
+        "household_id": "H-001",
+        "quantity": 1,
+        "reservation_id": "RES-001",
+        "resource_id": "COT-STD-001",
+        "source_id": "SRC-RES-001",
+        "source_location": "reservation ledger row 1",
+        "status": "ACTIVE"
+      },
+      {
+        "exact_source_fragment": "Synthetic reservation row 2: COT-STD-002 reserved for H-003.",
+        "household_id": "H-003",
+        "quantity": 1,
+        "reservation_id": "RES-002",
+        "resource_id": "COT-STD-002",
+        "source_id": "SRC-RES-002",
+        "source_location": "reservation ledger row 2",
+        "status": "ACTIVE"
+      },
+      {
+        "exact_source_fragment": "Synthetic reservation row 3: COT-ACCESS-001 reserved for H-002.",
+        "household_id": "H-002",
+        "quantity": 1,
+        "reservation_id": "RES-003",
+        "resource_id": "COT-ACCESS-001",
+        "source_id": "SRC-RES-003",
+        "source_location": "reservation ledger row 3",
+        "status": "ACTIVE"
+      },
+      {
+        "exact_source_fragment": "Synthetic reservation row 4: COT-ACCESS-001 reserved for H-006.",
+        "household_id": "H-006",
+        "quantity": 1,
+        "reservation_id": "RES-004",
+        "resource_id": "COT-ACCESS-001",
+        "source_id": "SRC-RES-004",
+        "source_location": "reservation ledger row 4",
+        "status": "ACTIVE"
+      },
+      {
+        "exact_source_fragment": "Synthetic reservation row 5: CHILDCARE-001 reserved for H-003.",
+        "household_id": "H-003",
+        "quantity": 1,
+        "reservation_id": "RES-005",
+        "resource_id": "CHILDCARE-001",
+        "source_id": "SRC-RES-005",
+        "source_location": "reservation ledger row 5",
+        "status": "ACTIVE"
+      },
+      {
+        "exact_source_fragment": "Synthetic reservation row 6: MEAL-001 has one pack reserved for H-001.",
+        "household_id": "H-001",
+        "quantity": 1,
+        "reservation_id": "RES-006",
+        "resource_id": "MEAL-001",
+        "source_id": "SRC-RES-006",
+        "source_location": "reservation ledger row 6",
+        "status": "ACTIVE"
+      },
+      {
+        "exact_source_fragment": "Synthetic reservation row 7: MEAL-001 has two packs reserved for H-003.",
+        "household_id": "H-003",
+        "quantity": 2,
+        "reservation_id": "RES-007",
+        "resource_id": "MEAL-001",
+        "source_id": "SRC-RES-007",
+        "source_location": "reservation ledger row 7",
+        "status": "ACTIVE"
+      },
+      {
+        "exact_source_fragment": "Synthetic reservation row 8: COT-STD-001 reserved for H-006.",
+        "household_id": "H-006",
+        "quantity": 1,
+        "reservation_id": "RES-008",
+        "resource_id": "COT-STD-001",
+        "source_id": "SRC-RES-008",
+        "source_location": "reservation ledger row 8",
+        "status": "ACTIVE"
+      }
+    ],
+    "resource_records": [
+      {
+        "accessible": false,
+        "capacity": 1,
+        "exact_source_fragment": "Synthetic inventory row 1: COT-STD-001 has one standard cot.",
+        "exclusive": true,
+        "resource_id": "COT-STD-001",
+        "resource_type": "cot",
+        "source_id": "SRC-INV-001",
+        "source_location": "inventory row 1",
+        "status": "AVAILABLE"
+      },
+      {
+        "accessible": false,
+        "capacity": 1,
+        "exact_source_fragment": "Synthetic inventory row 2: COT-STD-002 has one standard cot.",
+        "exclusive": true,
+        "resource_id": "COT-STD-002",
+        "resource_type": "cot",
+        "source_id": "SRC-INV-002",
+        "source_location": "inventory row 2",
+        "status": "AVAILABLE"
+      },
+      {
+        "accessible": false,
+        "capacity": 1,
+        "exact_source_fragment": "Synthetic inventory row 3: COT-STD-003 has one standard cot.",
+        "exclusive": true,
+        "resource_id": "COT-STD-003",
+        "resource_type": "cot",
+        "source_id": "SRC-INV-003",
+        "source_location": "inventory row 3",
+        "status": "AVAILABLE"
+      },
+      {
+        "accessible": true,
+        "capacity": 1,
+        "exact_source_fragment": "Synthetic inventory row 4: COT-ACCESS-001 has one accessible cot.",
+        "exclusive": true,
+        "resource_id": "COT-ACCESS-001",
+        "resource_type": "cot",
+        "source_id": "SRC-INV-004",
+        "source_location": "inventory row 4",
+        "status": "AVAILABLE"
+      },
+      {
+        "accessible": false,
+        "capacity": 2,
+        "exact_source_fragment": "Synthetic inventory row 5: TRANS-001 has two transport seats.",
+        "exclusive": false,
+        "resource_id": "TRANS-001",
+        "resource_type": "transport_seat",
+        "source_id": "SRC-INV-005",
+        "source_location": "inventory row 5",
+        "status": "AVAILABLE"
+      },
+      {
+        "accessible": false,
+        "capacity": 1,
+        "exact_source_fragment": "Synthetic inventory row 6: CHILDCARE-001 has one child-care slot.",
+        "exclusive": true,
+        "resource_id": "CHILDCARE-001",
+        "resource_type": "child_care_slot",
+        "source_id": "SRC-INV-006",
+        "source_location": "inventory row 6",
+        "status": "AVAILABLE"
+      },
+      {
+        "accessible": false,
+        "capacity": 5,
+        "exact_source_fragment": "Synthetic inventory row 7: MEAL-001 has five meal packs.",
+        "exclusive": false,
+        "resource_id": "MEAL-001",
+        "resource_type": "meal_pack",
+        "source_id": "SRC-INV-007",
+        "source_location": "inventory row 7",
+        "status": "AVAILABLE"
+      }
+    ]
+  },
+  "matter": {
+    "baseline_question": "Which supplied household/resource assignments are supportable under the synthetic Northbank rules at the baseline snapshot?",
+    "matter_id": "SHELTERWISE-NORTHBANK-001",
+    "operating_period": {
+      "end": "2026-10-20T00:00:00Z",
+      "start": "2026-10-19T00:00:00Z"
+    },
+    "synthetic_fixture": true,
+    "town": "Northbank (synthetic fixture)"
+  },
+  "negative_control_memos": [
+    {
+      "exact_source_fragment": "Synthetic negative-control memo: the largest household should receive every resource.",
+      "memo_id": "NEG-MEMO-001",
+      "source_id": "SRC-MEMO-001",
+      "source_location": "unrelated memo paragraph 2",
+      "text": "The largest household should receive every resource."
+    }
+  ],
+  "rules": [
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 1: A confirmed immediate safety need outranks convenience.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 1,
+      "rule_id": "R-SAFETY",
+      "source_id": "SRC-RULE-001",
+      "source_location": "rulebook p.1 section 1",
+      "status": "ACTIVE",
+      "subject": "immediate safety priority",
+      "text": "A confirmed immediate safety need outranks convenience."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 2: A confirmed accessibility need must be accommodated when a feasible resource exists.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 2,
+      "rule_id": "R-ACCESS",
+      "source_id": "SRC-RULE-002",
+      "source_location": "rulebook p.1 section 2",
+      "status": "ACTIVE",
+      "subject": "accessibility accommodation",
+      "text": "A confirmed accessibility need must be accommodated when a feasible resource exists."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 3: Family unity should be preserved when feasible and consistent with safety.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 3,
+      "rule_id": "R-FAMILY",
+      "source_id": "SRC-RULE-003",
+      "source_location": "rulebook p.1 section 3",
+      "status": "ACTIVE",
+      "subject": "family unity",
+      "text": "Family unity should be preserved when feasible and consistent with safety."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 4: A resource may not be assigned to more than one household.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 4,
+      "rule_id": "R-UNIQUE",
+      "source_id": "SRC-RULE-004",
+      "source_location": "rulebook p.1 section 4",
+      "status": "ACTIVE",
+      "subject": "resource uniqueness",
+      "text": "A resource may not be assigned to more than one household."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 5: Unverified information is neither confirmed nor disproved.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 5,
+      "rule_id": "R-UNCERTAIN",
+      "source_id": "SRC-RULE-005",
+      "source_location": "rulebook p.1 section 5",
+      "status": "ACTIVE",
+      "subject": "uncertainty preservation",
+      "text": "Unverified information is neither confirmed nor disproved."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 6: A newer record supersedes an older record only when it has the same authority, subject, and applicable period.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 6,
+      "rule_id": "R-SUPERSESSION",
+      "source_id": "SRC-RULE-006",
+      "source_location": "rulebook p.1 section 6",
+      "status": "ACTIVE",
+      "subject": "record supersession",
+      "text": "A newer record supersedes an older record only when it has the same authority, subject, and applicable period."
+    },
+    {
+      "applicable_period": {
+        "end": "2026-10-20T00:00:00Z",
+        "start": "2026-10-19T00:00:00Z"
+      },
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 7: Household names, demographic labels, or narrative sympathy may not alter priority unless a supplied rule expressly makes them relevant.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 7,
+      "rule_id": "R-NEUTRAL",
+      "source_id": "SRC-RULE-007",
+      "source_location": "rulebook p.1 section 7",
+      "status": "ACTIVE",
+      "subject": "identity neutrality",
+      "text": "Household names, demographic labels, or narrative sympathy may not alter priority unless a supplied rule expressly makes them relevant."
+    }
+  ],
+  "schema": "shelterwise-canonical-input-v1",
+  "sources": [
+    {
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 1: A confirmed immediate safety need outranks convenience.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 1,
+      "source_id": "SRC-RULE-001",
+      "source_location": "rulebook p.1 section 1",
+      "source_type": "rulebook",
+      "subject": "immediate safety priority"
+    },
+    {
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 2: A confirmed accessibility need must be accommodated when a feasible resource exists.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 2,
+      "source_id": "SRC-RULE-002",
+      "source_location": "rulebook p.1 section 2",
+      "source_type": "rulebook",
+      "subject": "accessibility accommodation"
+    },
+    {
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 3: Family unity should be preserved when feasible and consistent with safety.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 3,
+      "source_id": "SRC-RULE-003",
+      "source_location": "rulebook p.1 section 3",
+      "source_type": "rulebook",
+      "subject": "family unity"
+    },
+    {
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 4: A resource may not be assigned to more than one household.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 4,
+      "source_id": "SRC-RULE-004",
+      "source_location": "rulebook p.1 section 4",
+      "source_type": "rulebook",
+      "subject": "resource uniqueness"
+    },
+    {
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 5: Unverified information is neither confirmed nor disproved.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 5,
+      "source_id": "SRC-RULE-005",
+      "source_location": "rulebook p.1 section 5",
+      "source_type": "rulebook",
+      "subject": "uncertainty preservation"
+    },
+    {
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 6: A newer record supersedes an older record only when it has the same authority, subject, and applicable period.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 6,
+      "source_id": "SRC-RULE-006",
+      "source_location": "rulebook p.1 section 6",
+      "source_type": "rulebook",
+      "subject": "record supersession"
+    },
+    {
+      "authority_key": "northbank.shelter.rules",
+      "effective_date": "2026-10-19",
+      "exact_source_fragment": "Synthetic Rulebook section 7: Household names, demographic labels, or narrative sympathy may not alter priority unless a supplied rule expressly makes them relevant.",
+      "issued_at": "2026-10-19T06:00:00Z",
+      "priority_level": 7,
+      "source_id": "SRC-RULE-007",
+      "source_location": "rulebook p.1 section 7",
+      "source_type": "rulebook",
+      "subject": "identity neutrality"
+    },
+    {
+      "exact_source_fragment": "Synthetic inventory row 1: COT-STD-001 has one standard cot.",
+      "source_id": "SRC-INV-001",
+      "source_location": "inventory row 1",
+      "source_type": "inventory"
+    },
+    {
+      "exact_source_fragment": "Synthetic inventory row 2: COT-STD-002 has one standard cot.",
+      "source_id": "SRC-INV-002",
+      "source_location": "inventory row 2",
+      "source_type": "inventory"
+    },
+    {
+      "exact_source_fragment": "Synthetic inventory row 3: COT-STD-003 has one standard cot.",
+      "source_id": "SRC-INV-003",
+      "source_location": "inventory row 3",
+      "source_type": "inventory"
+    },
+    {
+      "exact_source_fragment": "Synthetic inventory row 4: COT-ACCESS-001 has one accessible cot.",
+      "source_id": "SRC-INV-004",
+      "source_location": "inventory row 4",
+      "source_type": "inventory"
+    },
+    {
+      "exact_source_fragment": "Synthetic inventory row 5: TRANS-001 has two transport seats.",
+      "source_id": "SRC-INV-005",
+      "source_location": "inventory row 5",
+      "source_type": "inventory"
+    },
+    {
+      "exact_source_fragment": "Synthetic inventory row 6: CHILDCARE-001 has one child-care slot.",
+      "source_id": "SRC-INV-006",
+      "source_location": "inventory row 6",
+      "source_type": "inventory"
+    },
+    {
+      "exact_source_fragment": "Synthetic inventory row 7: MEAL-001 has five meal packs.",
+      "source_id": "SRC-INV-007",
+      "source_location": "inventory row 7",
+      "source_type": "inventory"
+    },
+    {
+      "exact_source_fragment": "Synthetic reservation row 1: COT-STD-001 reserved for H-001.",
+      "source_id": "SRC-RES-001",
+      "source_location": "reservation ledger row 1",
+      "source_type": "reservation"
+    },
+    {
+      "exact_source_fragment": "Synthetic reservation row 2: COT-STD-002 reserved for H-003.",
+      "source_id": "SRC-RES-002",
+      "source_location": "reservation ledger row 2",
+      "source_type": "reservation"
+    },
+    {
+      "exact_source_fragment": "Synthetic reservation row 3: COT-ACCESS-001 reserved for H-002.",
+      "source_id": "SRC-RES-003",
+      "source_location": "reservation ledger row 3",
+      "source_type": "reservation"
+    },
+    {
+      "exact_source_fragment": "Synthetic reservation row 4: COT-ACCESS-001 reserved for H-006.",
+      "source_id": "SRC-RES-004",
+      "source_location": "reservation ledger row 4",
+      "source_type": "reservation"
+    },
+    {
+      "exact_source_fragment": "Synthetic reservation row 5: CHILDCARE-001 reserved for H-003.",
+      "source_id": "SRC-RES-005",
+      "source_location": "reservation ledger row 5",
+      "source_type": "reservation"
+    },
+    {
+      "exact_source_fragment": "Synthetic reservation row 6: MEAL-001 has one pack reserved for H-001.",
+      "source_id": "SRC-RES-006",
+      "source_location": "reservation ledger row 6",
+      "source_type": "reservation"
+    },
+    {
+      "exact_source_fragment": "Synthetic reservation row 7: MEAL-001 has two packs reserved for H-003.",
+      "source_id": "SRC-RES-007",
+      "source_location": "reservation ledger row 7",
+      "source_type": "reservation"
+    },
+    {
+      "exact_source_fragment": "Synthetic intake H-001: immediate safety need confirmed for the operating period.",
+      "source_id": "SRC-INT-H001",
+      "source_location": "intake H-001 line 1",
+      "source_type": "intake"
+    },
+    {
+      "exact_source_fragment": "Synthetic intake H-002-A: accessible cot required due to a mobility device; confirmed.",
+      "source_id": "SRC-INT-H002-A",
+      "source_location": "intake H-002 line 1",
+      "source_type": "intake"
+    },
+    {
+      "exact_source_fragment": "Synthetic intake H-002-B: standard cot acceptable; conflicts with H-002-A.",
+      "source_id": "SRC-INT-H002-B",
+      "source_location": "intake H-002 line 2",
+      "source_type": "intake"
+    },
+    {
+      "exact_source_fragment": "Synthetic intake H-003: family unity requested for two household members; confirmed.",
+      "source_id": "SRC-INT-H003-FAMILY",
+      "source_location": "intake H-003 line 1",
+      "source_type": "intake"
+    },
+    {
+      "exact_source_fragment": "Synthetic intake H-003: one child-care slot required; confirmed.",
+      "source_id": "SRC-INT-H003-CARE",
+      "source_location": "intake H-003 line 2",
+      "source_type": "intake"
+    },
+    {
+      "exact_source_fragment": "Synthetic intake H-004: transport seat requested; need remains unverified.",
+      "source_id": "SRC-INT-H004",
+      "source_location": "intake H-004 line 1",
+      "source_type": "intake"
+    },
+    {
+      "exact_source_fragment": "Synthetic intake H-005-A: child-care slot required; confirmed.",
+      "source_id": "SRC-INT-H005-A",
+      "source_location": "intake H-005 line 1",
+      "source_type": "intake"
+    },
+    {
+      "exact_source_fragment": "Synthetic intake H-005-B: no child-care slot required; conflicts with H-005-A.",
+      "source_id": "SRC-INT-H005-B",
+      "source_location": "intake H-005 line 2",
+      "source_type": "intake"
+    },
+    {
+      "exact_source_fragment": "Synthetic intake H-006: accessible cot required; confirmed.",
+      "source_id": "SRC-INT-H006",
+      "source_location": "intake H-006 line 1",
+      "source_type": "intake"
+    },
+    {
+      "exact_source_fragment": "Synthetic negative-control memo: the largest household should receive every resource.",
+      "source_id": "SRC-MEMO-001",
+      "source_location": "unrelated memo paragraph 2",
+      "source_type": "negative_control_memo"
+    },
+    {
+      "exact_source_fragment": "Synthetic reservation row 8: COT-STD-001 reserved for H-006.",
+      "source_id": "SRC-RES-008",
+      "source_location": "reservation ledger row 8",
+      "source_type": "reservation"
+    }
+  ]
+}
