@@ -370,3 +370,14 @@ The first benchmark/replay conversion wave adds adjacent raw-text companions. So
 - [VerdictBridge Demo 3 Report — text](demos/2026-10-05-verdictbridge-punitive-control-v1/package/VerdictBridge_Demo3_Report.md) · [source PDF](demos/2026-10-05-verdictbridge-punitive-control-v1/package/VerdictBridge_Demo3_Report.pdf)
 - [Fresh Replay Report — text](demos/2026-10-07-verdictbridge-demo3-fresh-replay/package/Fresh_Replay_Report.md) · [source PDF](demos/2026-10-07-verdictbridge-demo3-fresh-replay/package/Fresh_Replay_Report.pdf)
 - [Published Replay Report — text](demos/2026-10-08-verdictbridge-demo3-published-replay/package/Published_Replay_Report.md) · [source PDF](demos/2026-10-08-verdictbridge-demo3-published-replay/package/Published_Replay_Report.pdf)
+
+## Fresh Microsoft DI² v0.3.1 Replay Audit — October 21, 2026
+
+[Public-safe exhibit book (PDF)](benchmarks/2026-10-21-microsoft-di2-v031-fresh-rerun/Grounded_DI_Replayable_Control_Points_Fresh_Rerun_Exhibit_Book.pdf) · [Markdown](benchmarks/2026-10-21-microsoft-di2-v031-fresh-rerun/Grounded_DI_Replayable_Control_Points_Fresh_Rerun_Exhibit_Book.md) · [TXT](benchmarks/2026-10-21-microsoft-di2-v031-fresh-rerun/Grounded_DI_Replayable_Control_Points_Fresh_Rerun_Exhibit_Book.txt) · [Complete package ZIP](benchmarks/2026-10-21-microsoft-di2-v031-fresh-rerun/Grounded_DI_Replayable_Control_Points_Fresh_Rerun_Exhibit_Book.zip)
+
+[Fresh rerun report](benchmarks/2026-10-21-microsoft-di2-v031-fresh-rerun/Grounded_DI_Microsoft_DI2_v031_Fresh_Rerun_Report.md) · [Verdict](benchmarks/2026-10-21-microsoft-di2-v031-fresh-rerun/Grounded_DI_Microsoft_DI2_v031_Fresh_Rerun_Verdict.md) · [Replay boundaries](benchmarks/2026-10-21-microsoft-di2-v031-fresh-rerun/Grounded_DI_Microsoft_DI2_v031_Fresh_Rerun_Replay_Instructions.md) · [Manifest](benchmarks/2026-10-21-microsoft-di2-v031-fresh-rerun/Grounded_DI_Microsoft_DI2_v031_Fresh_Rerun_Manifest.json) · [SHA-256 list](benchmarks/2026-10-21-microsoft-di2-v031-fresh-rerun/Grounded_DI_Microsoft_DI2_v031_Fresh_Rerun_SHA256SUMS.txt)
+
+Fresh local rerun of the pinned Microsoft approval/governance snapshot and the exact DI² v0.3.1 harness. The native lane recorded **216 PASS, 11 OPA-CLI skips, 0 failures**. The separate DI² sidecar recorded **64 PASS, 16 registered Microsoft safety assertions failed, 0 harness errors, and 0 load errors**. The DI² v0.3.1 self-replay and added local controls passed as recorded in the package.
+
+The sidecar observations are bounded local control-gap observations in one pinned implementation, not production incidents, live-service conclusions, or whole-product findings. This entry contains only the fresh rerun book and associated documents; earlier exhibit books and records were not modified.
+

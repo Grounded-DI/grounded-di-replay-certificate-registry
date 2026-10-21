@@ -1,0 +1,58 @@
+{
+  "artifact_hashes": {
+    "Grounded_DI_Microsoft_DI2_v031_Fresh_Rerun_Replay_Instructions.md": "d950453df9a6c9535b6d007cc24c4b9216d30bd02a37fa316ad838450347f376",
+    "Grounded_DI_Microsoft_DI2_v031_Fresh_Rerun_Report.md": "b71e4a7e74c1a72395236095121e502fc08b8014648fa77e5d97631f5283e914",
+    "Grounded_DI_Microsoft_DI2_v031_Fresh_Rerun_Report.txt": "b71e4a7e74c1a72395236095121e502fc08b8014648fa77e5d97631f5283e914",
+    "Grounded_DI_Microsoft_DI2_v031_Fresh_Rerun_Verdict.md": "b5952a0e1ef4939975e28f827a2ae0e2990a861ba57720f982e7a466076bdce6",
+    "Grounded_DI_Replayable_Control_Points_Fresh_Rerun_Exhibit_Book.md": "d12cbc54bbf58573005da89d4ddb8feb665b6667872c90faf43df4821822b0ed",
+    "Grounded_DI_Replayable_Control_Points_Fresh_Rerun_Exhibit_Book.pdf": "abfc67907db243b62abcb74e45028692f86bdf760468f641234466c2b9488ee1",
+    "Grounded_DI_Replayable_Control_Points_Fresh_Rerun_Exhibit_Book.txt": "d12cbc54bbf58573005da89d4ddb8feb665b6667872c90faf43df4821822b0ed"
+  },
+  "artifact_scope": "Only the new book and documents from this fresh rerun are included; earlier exhibit books are not included or modified.",
+  "public_safety": {
+    "executable_source_snapshots": false,
+    "exploit_ready_material": false,
+    "live_service_claims": false,
+    "microsoft_endorsement_or_response_claims": false,
+    "private_or_personal_data": false
+  },
+  "publication_action": "authorized registry append-only entry after local QA",
+  "publication_date": "2026-10-21",
+  "results": {
+    "added_controls": {
+      "pass": 9,
+      "total": 9
+    },
+    "harness_self_replay": {
+      "release_classification": "LOCAL SYNTHETIC HARDENING CANDIDATE; OPTIONAL PERSISTENT LOCAL GATE",
+      "status": "PASS"
+    },
+    "health_mutations": {
+      "detected": 10,
+      "total": 10
+    },
+    "native": {
+      "failures": 0,
+      "opa_cli_skips": 11,
+      "pass": 216
+    },
+    "sidecar": {
+      "harness_errors": 0,
+      "load_errors": 0,
+      "pass": 64,
+      "registered_microsoft_safety_assertions_failed": 16
+    }
+  },
+  "schema": "grounded-di-public-safe-fresh-rerun-manifest-1",
+  "scope": "fresh rerun only; native and DI\u00b2 sidecar lanes kept separate",
+  "source_scope": {
+    "added_plan_sha256": "11ef771aefc51c4b340a23bb08f3c01a8b61e5151a466b7bbe57b5656dffe373",
+    "commit": "bb9fd0df2aed2969a403b6d083c34185cad0eb04",
+    "frozen_case_registry_sha256": "20cf185b705fb5e49f562d1cb794eb4915bde6229e224aa37e5f0cd9e0d7d341",
+    "harness_sha256": "f45bf63b9ff622b00b697926e8cb941ebbbed763831e088423c4cab8be30c024",
+    "harness_version": "DI\u00b2 v0.3.1",
+    "repository": "https://github.com/microsoft/ai-agents-for-beginners",
+    "target_archive_sha256": "be0540c28c6a3811012c36f461e32efaec8cf91cc7200b7289917cf4f4710cbf"
+  },
+  "title": "Replayable Control Points: A Fresh Bounded AI Authorization Audit"
+}
