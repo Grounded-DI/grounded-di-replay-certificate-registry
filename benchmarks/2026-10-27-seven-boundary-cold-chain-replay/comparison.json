@@ -1,0 +1,44 @@
+[
+  {
+    "file": "01_input.json",
+    "run1_sha256": "b9d719e97bd09eecfa4592100df75602c86f3de9a2bd00d0f2fcfb7d5cf558dd",
+    "run2_sha256": "b9d719e97bd09eecfa4592100df75602c86f3de9a2bd00d0f2fcfb7d5cf558dd",
+    "direct_bytes_equal": true
+  },
+  {
+    "file": "02_calibrated.json",
+    "run1_sha256": "1a7f28e47bee4179bfb7807a77fc2b7bf16f037d668a3c8698d9b45116328752",
+    "run2_sha256": "1a7f28e47bee4179bfb7807a77fc2b7bf16f037d668a3c8698d9b45116328752",
+    "direct_bytes_equal": true
+  },
+  {
+    "file": "03_temperature.json",
+    "run1_sha256": "7bbda471b24c40c0b3555b97edf6e39cabef04d1b1b6ed6bdffd9277dd4079dc",
+    "run2_sha256": "7bbda471b24c40c0b3555b97edf6e39cabef04d1b1b6ed6bdffd9277dd4079dc",
+    "direct_bytes_equal": true
+  },
+  {
+    "file": "04_coverage.json",
+    "run1_sha256": "cf5623ba06ec6bfdb2d85477cba80509347bff7509696d6c88a94447e55b147b",
+    "run2_sha256": "cf5623ba06ec6bfdb2d85477cba80509347bff7509696d6c88a94447e55b147b",
+    "direct_bytes_equal": true
+  },
+  {
+    "file": "05_events.json",
+    "run1_sha256": "73049f23c0fa84cda7d042bd2fa8bb2a4b47a39062de970141e3d0fde5c6c3dd",
+    "run2_sha256": "73049f23c0fa84cda7d042bd2fa8bb2a4b47a39062de970141e3d0fde5c6c3dd",
+    "direct_bytes_equal": true
+  },
+  {
+    "file": "06_decision.json",
+    "run1_sha256": "61530a9893c239c72fb068f09595f03ac1286263ce54606a4b7bc31e1e8d2349",
+    "run2_sha256": "61530a9893c239c72fb068f09595f03ac1286263ce54606a4b7bc31e1e8d2349",
+    "direct_bytes_equal": true
+  },
+  {
+    "file": "07_commitment.json",
+    "run1_sha256": "06b3dd3e66767d235c83d4fd9766b331b8e3bd776e61a109b4e0202d7df63bd8",
+    "run2_sha256": "06b3dd3e66767d235c83d4fd9766b331b8e3bd776e61a109b4e0202d7df63bd8",
+    "direct_bytes_equal": true
+  }
+]

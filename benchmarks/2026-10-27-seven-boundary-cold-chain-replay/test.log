@@ -1,0 +1,13 @@
+test_altered_input (test_demo.Tests.test_altered_input) ... ok
+test_altered_output (test_demo.Tests.test_altered_output) ... ok
+test_coherent_wrong_result (test_demo.Tests.test_coherent_wrong_result) ... ok
+test_expected (test_demo.Tests.test_expected) ... ok
+test_gap_hold (test_demo.Tests.test_gap_hold) ... ok
+test_incomplete_coverage (test_demo.Tests.test_incomplete_coverage) ... ok
+test_invalid_timestamp (test_demo.Tests.test_invalid_timestamp) ... ok
+test_threshold_equality (test_demo.Tests.test_threshold_equality) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

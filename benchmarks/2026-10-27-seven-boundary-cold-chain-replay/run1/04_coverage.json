@@ -1,0 +1,1 @@
+{"all_gaps_within_limit":true,"complete":true,"end_minute":30,"gaps":[{"from_minute":0,"gap_minutes":10,"to_minute":10,"within_limit":true},{"from_minute":10,"gap_minutes":10,"to_minute":20,"within_limit":true},{"from_minute":20,"gap_minutes":10,"to_minute":30,"within_limit":true}]}

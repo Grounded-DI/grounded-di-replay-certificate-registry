@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "demo.py",
+    "--input",
+    "input.json",
+    "--out",
+    "run1"
+  ],
+  "start_utc": "2026-10-27T20:20:20.702263+00:00",
+  "end_utc": "2026-10-27T20:20:20.743803+00:00",
+  "pid": 6,
+  "python": "3.12.14",
+  "exit_code": 0,
+  "stdout": "{\"artifacts\": 7, \"integrity\": true, \"status\": \"PASS\"}\n",
+  "stderr": ""
+}
