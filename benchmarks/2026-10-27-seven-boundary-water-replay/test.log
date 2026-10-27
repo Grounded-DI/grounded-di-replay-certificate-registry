@@ -1,0 +1,12 @@
+test_01_replay (__main__.ReplayTests.test_01_replay) ... ok
+test_02_independent_expected (__main__.ReplayTests.test_02_independent_expected) ... ok
+test_03_altered_output (__main__.ReplayTests.test_03_altered_output) ... ok
+test_04_altered_input (__main__.ReplayTests.test_04_altered_input) ... ok
+test_05_zero_budget (__main__.ReplayTests.test_05_zero_budget) ... ok
+test_06_exact_demand (__main__.ReplayTests.test_06_exact_demand) ... ok
+test_07_bad_inputs (__main__.ReplayTests.test_07_bad_inputs) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.106s
+
+OK

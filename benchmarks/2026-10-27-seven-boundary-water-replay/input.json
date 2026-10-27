@@ -1,0 +1,1 @@
+{"reserve":100,"sites":[{"demand":200,"id":"warehouse","priority":3},{"demand":700,"id":"shelter","priority":2},{"demand":500,"id":"clinic","priority":1}],"supply":1100}
