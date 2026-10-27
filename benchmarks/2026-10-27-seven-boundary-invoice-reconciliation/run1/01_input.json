@@ -1,0 +1,1 @@
+{"invoices":[{"invoice":"101","limit_cents":4000,"quantity":3,"unit_cents":1200,"vendor":"A"},{"invoice":"202","limit_cents":5000,"quantity":2,"unit_cents":2500,"vendor":"B"},{"invoice":"101","limit_cents":4000,"quantity":3,"unit_cents":1200,"vendor":"A"},{"invoice":"303","limit_cents":3500,"quantity":4,"unit_cents":1000,"vendor":"C"}]}

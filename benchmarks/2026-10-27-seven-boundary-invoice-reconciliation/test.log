@@ -1,0 +1,10 @@
+test_altered_input (test_demo.Checks.test_altered_input) ... ok
+test_altered_output (test_demo.Checks.test_altered_output) ... ok
+test_coherent_wrong_result (test_demo.Checks.test_coherent_wrong_result) ... ok
+test_expected (test_demo.Checks.test_expected) ... ok
+test_limit_equality (test_demo.Checks.test_limit_equality) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

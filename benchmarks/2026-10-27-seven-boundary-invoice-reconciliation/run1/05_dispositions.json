@@ -1,0 +1,1 @@
+[{"amount_cents":3600,"row":0,"status":"PAY"},{"amount_cents":5000,"row":1,"status":"PAY"},{"amount_cents":3600,"row":2,"status":"HOLD_DUPLICATE"},{"amount_cents":4000,"row":3,"status":"HOLD_LIMIT"}]
