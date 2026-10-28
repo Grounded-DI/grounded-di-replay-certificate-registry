@@ -1,0 +1,44 @@
+{
+  "schema": "grounded-di-source-attribution-review-v1",
+  "review_date": "2026-10-28",
+  "status": "published",
+  "corrected_repository": "https://github.com/microsoft/agent-governance-toolkit",
+  "published_repository": "https://github.com/microsoft/ai-agents-for-beginners",
+  "commit": "bb9fd0df2aed2969a403b6d083c34185cad0eb04",
+  "target_archive": {
+    "sha256": "be0540c28c6a3811012c36f461e32efaec8cf91cc7200b7289917cf4f4710cbf",
+    "hash_recalculated": true,
+    "location": "Nested in retained Microsoft engineering review package",
+    "outer_package_sha256": "6b0d3207775edd0d9309b268b76dc32262f2a1fc45920b80fd7fb1e2111f42d5",
+    "source_snapshot_files_checked": 99,
+    "matching_recorded_sha256_and_git_blob_ids": 99,
+    "github_commit_blob_matches_checked": 4
+  },
+  "frozen_registry": {
+    "sha256": "20cf185b705fb5e49f562d1cb794eb4915bde6229e224aa37e5f0cd9e0d7d341",
+    "recalculated_and_matches_public_manifest": true
+  },
+  "added_control_plan": {
+    "sha256": "11ef771aefc51c4b340a23bb08f3c01a8b61e5151a466b7bbe57b5656dffe373",
+    "recalculated_and_matches_public_manifest": true
+  },
+  "github_blob_matches": {
+    "agent-governance-python/agent-mesh/src/agentmesh/governance/govern.py": "adcc7aaa5e524abe3ef518340bff1be060b8e0c4",
+    "agent-governance-python/agent-mesh/src/agentmesh/governance/approval_protocol/coordinator.py": "e66716b7344cc2e77a267cf4e2695d7e65bb2cc4",
+    "agent-governance-python/agent-mesh/tests/test_govern.py": "9d3e56fdacae0a3858aa9455d989738bae2f2a64",
+    "docs/adr/0030-action-bound-approval-protocol.md": "04bbe24477f079d91a6b4846690f81f45be43050"
+  },
+  "historical_archive_receipts": {
+    "run_final_and_run_release_summary_sha256": "aacebcc0213411ca78e2ad9d3eec8a03836001de95f946e74e110bba5fc0c4c6",
+    "recorded_assertions_pass": 64,
+    "recorded_assertions_fail": 16,
+    "note": "These are receipts contained in the identified target archive, not separately located receipts for the subsequent public fresh rerun."
+  },
+  "limitations": [
+    "No tests rerun.",
+    "The later fresh-rerun execution receipts and original harness archive were not located for this attribution review.",
+    "Four GitHub blobs were independently compared; the remaining 95 were checked against the source identities recorded in the archive, not independently fetched from GitHub.",
+    "Archive hash and matching identifiers identify bytes; they do not authenticate historical execution."
+  ],
+  "correction_sha256": "1068450f914ceaa5cf150c2d883fdf09df4b8bfcdb79951dfe66b3da85bc0af4"
+}
