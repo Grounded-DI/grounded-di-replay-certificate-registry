@@ -383,3 +383,9 @@ Fresh local rerun of the pinned Microsoft approval/governance snapshot and the e
 
 The sidecar observations are bounded local control-gap observations in one pinned implementation, not production incidents, live-service conclusions, or whole-product findings. The original entry contains the fresh rerun book and associated documents; earlier exhibit books and records were not modified.
 
+
+## Payment Retry and Uncertain Outcome — Local Replay (November 1, 2026)
+
+[Demonstration and replay evidence](demos/2026-11-01-payment-retry-replay/README.md) · [Measured report](demos/2026-11-01-payment-retry-replay/REPORT.md)
+
+A new public synthetic demonstrator held a retry of the same consumed request after a recorded local effect and lost response; a separately approved new ID with the same business payload produced another effect. Two fresh executions matched across three canonical artifacts. Nine cases matched their expected outcomes in each run, including the new-ID limitation. The separate historical private DI² gate test is not rerun by the public demonstrator. No live payment provider or real payment was tested.

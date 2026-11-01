@@ -1,0 +1,40 @@
+{
+  "canonical_artifacts": {
+    "evidence/effects.json": "e88fc257396545168705a0c27db4331f77fe965c63a23fac31fc2bc4f8ed5a52",
+    "evidence/events.json": "75cfd5d599dee48f4241b50f6942aac5fd019e1eb475913b69c28215f83c6b1a",
+    "evidence/results.json": "b58c00d61be760eb5a7073f8cf757e10554dc54028ff31c8e0a63abf174f1b74"
+  },
+  "canonical_format": "sorted-key compact UTF-8 JSON with final LF",
+  "cases_per_run": 9,
+  "checks_performed": [
+    "fresh execution twice",
+    "byte comparison of all three artifacts",
+    "sha256 comparison of all three artifacts",
+    "historical archive checksum verification"
+  ],
+  "classification": "LOCAL_SYNTHETIC_REPLAY",
+  "environment": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "fresh_processes": 2,
+  "historical_record": {
+    "corrected_run": "eight of eight expected outcomes",
+    "first_attempt": "one matched and seven fixture registration errors",
+    "private_archive_sha256": "f57994684ec25618be889db67d228b889e65fc8f5f93b4931888d5a09722144b",
+    "rerun_now": false
+  },
+  "limitations": [
+    "new public illustration does not execute historical private gate",
+    "new IDs can repeat same business payload",
+    "local recorder is not independent provider evidence",
+    "memory state does not survive process restart",
+    "no real payment or provider tested"
+  ],
+  "matched_per_run": [
+    9,
+    9
+  ],
+  "plan_sha256": "8a4cafffb97b86a2133ef3491d441412ab2c1bc8baad6ffffa0c95f99248ceba",
+  "public_demonstrator_sha256": "e51a0898a85a7408b16732ea2997f3abe2e8a316d34706c1e9a6002dcbef326e"
+}
