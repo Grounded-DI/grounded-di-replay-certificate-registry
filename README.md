@@ -389,3 +389,9 @@ The sidecar observations are bounded local control-gap observations in one pinne
 [Demonstration and replay evidence](demos/2026-11-01-payment-retry-replay/README.md) · [Measured report](demos/2026-11-01-payment-retry-replay/REPORT.md)
 
 A new public synthetic demonstrator held a retry of the same consumed request after a recorded local effect and lost response; a separately approved new ID with the same business payload produced another effect. Two fresh executions matched across three canonical artifacts. Nine cases matched their expected outcomes in each run, including the new-ID limitation. The separate historical private DI² gate test is not rerun by the public demonstrator. No live payment provider or real payment was tested.
+
+## Seven-Hash Fresh Local Replay — November 1, 2026
+
+[Replay record](benchmarks/2026-11-01-seven-hash-fresh-replay/README.md) · [Verification](benchmarks/2026-11-01-seven-hash-fresh-replay/verification.json)
+
+Two fresh computational builds matched all six frozen computational boundaries, and two independent packaging processes reconstructed the unchanged 116-member historical payload with the original ZIP bytes. Mathematical verification, 31 unit tests, and all 14 negative controls passed. The record distinguishes the current runtime from the historical environment and notes unavailable historical evidence archives.
