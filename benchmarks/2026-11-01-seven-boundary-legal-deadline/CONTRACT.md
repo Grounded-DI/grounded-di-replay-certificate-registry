@@ -1,0 +1,9 @@
+# Frozen synthetic deadline contract
+
+Fictional rule: add 10 calendar days after the service date (the starting date is excluded). If the resulting date is Saturday or Sunday, move it to the following Monday. There are no holidays. A single ISO date is required; missing or multiple dates result in HOLD with no deadline. This is not an actual court rule.
+
+Input: A service 2026-11-06; B missing; C ambiguous 2026-11-06 or 2026-11-07. Expected: A raw 2026-11-16 Monday, deadline 2026-11-16; B and C HOLD. Independent arithmetic: November 6 + 10 = November 16; 2026-11-16 is Monday. Boundary case 2026-11-05 + 10 = Sunday November 15, moved to Monday November 16.
+
+Python 3.12 standard library; fresh separate output directories. Canonical JSON UTF-8, sorted keys, compact separators, final LF. Seven ordered stages: 01 input normalization; 02 rule binding; 03 completeness decision; 04 calendar arithmetic; 05 weekend adjustment; 06 final decisions; 07 commitment manifest over stage 01-06. The first six are fresh sequential computation, the last is a fresh identity commitment; neither is an external attestation. Byte compare plus SHA-256 for all seven. No live time in canonical records.
+
+Required tests: nominal and independent expected result, missing and ambiguous dates, weekend boundary, altered date, altered output against recorded digest, coherent wrong result with rehashed commitment versus fixed expectation. Zero errors, failures or skips; fresh runs identical; all output membership and checksums verified. Public files: CONTRACT.md, input.json, demo.py, test_demo.py, README.md, run1/ and run2/ canonical records, run logs, comparison.json, environment.json, test.log, SHA256SUMS.txt. Commands: python3 -B demo.py input.json run1; python3 -B demo.py input.json run2; python3 -B -m unittest -v test_demo; sha256sum -c SHA256SUMS.txt (candidate working directory). Logs and runtime environment stored outside the seven canonical records.

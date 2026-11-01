@@ -1,0 +1,12 @@
+$ python3 -B -m unittest -v test_demo
+exit=0
+test_altered_input (test_demo.DeadlineTests.test_altered_input) ... ok
+test_altered_output (test_demo.DeadlineTests.test_altered_output) ... ok
+test_coherent_wrong_result (test_demo.DeadlineTests.test_coherent_wrong_result) ... ok
+test_expected_and_missing_ambiguous (test_demo.DeadlineTests.test_expected_and_missing_ambiguous) ... ok
+test_weekend (test_demo.DeadlineTests.test_weekend) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK
