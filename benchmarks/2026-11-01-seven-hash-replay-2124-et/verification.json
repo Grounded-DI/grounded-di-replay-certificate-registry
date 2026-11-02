@@ -1,0 +1,97 @@
+{
+  "schema": "grounded-di-sevenhash-replay-20261101-v1",
+  "status": "PASS",
+  "run_time_utc": "2026-11-02T02:23:45Z to 2026-11-02T02:24:08Z",
+  "source_archive_sha256": "497614c00216d7fe86886afdfd93aa7c08a5d65a590c38dd8a78e5380d80fa98",
+  "detached_receipt_sha256": "07412d65489b9de5447b5fa49a19fcd18433363c558cd11640d1896597f183be",
+  "contract_sha256": "9e12966efdbe8a310eaf27a209c700ade21003ec9dbe96cd8991c7a8c5813adb",
+  "repository_base_commit": "59aefeee3ea7caaa128d73343d4cf4a5898038e4",
+  "boundaries": [
+    {
+      "role": "CSV",
+      "expected": "1aaafb17af9108d2bbfd625f3d816c9e558ff3d90f114313773ef1b5d5838396",
+      "build_a": "1aaafb17af9108d2bbfd625f3d816c9e558ff3d90f114313773ef1b5d5838396",
+      "build_b": "1aaafb17af9108d2bbfd625f3d816c9e558ff3d90f114313773ef1b5d5838396"
+    },
+    {
+      "role": "NPZ",
+      "expected": "0fbb411510b0944441d7fc4a1971f9f7bb38dc82adb8c0a8c5b1c178f981907d",
+      "build_a": "0fbb411510b0944441d7fc4a1971f9f7bb38dc82adb8c0a8c5b1c178f981907d",
+      "build_b": "0fbb411510b0944441d7fc4a1971f9f7bb38dc82adb8c0a8c5b1c178f981907d"
+    },
+    {
+      "role": "PNG",
+      "expected": "96d8c6e69ba82e38075591a7a13fb0b4458c72d4f5f93ba784c019d5056b0782",
+      "build_a": "96d8c6e69ba82e38075591a7a13fb0b4458c72d4f5f93ba784c019d5056b0782",
+      "build_b": "96d8c6e69ba82e38075591a7a13fb0b4458c72d4f5f93ba784c019d5056b0782"
+    },
+    {
+      "role": "MANIFEST",
+      "expected": "6403f22883d972b0b98cf521816de3e358e7cd2b8d5206e93d53b3ac75348bd4",
+      "build_a": "6403f22883d972b0b98cf521816de3e358e7cd2b8d5206e93d53b3ac75348bd4",
+      "build_b": "6403f22883d972b0b98cf521816de3e358e7cd2b8d5206e93d53b3ac75348bd4"
+    },
+    {
+      "role": "PRIME_MASK",
+      "expected": "d809a79cdabd28521202328995a627044e15d82f9e545cabb48674c23c279d6e",
+      "build_a": "d809a79cdabd28521202328995a627044e15d82f9e545cabb48674c23c279d6e",
+      "build_b": "d809a79cdabd28521202328995a627044e15d82f9e545cabb48674c23c279d6e"
+    },
+    {
+      "role": "MERKLE_ROOT",
+      "expected": "0a130d89a09219ac86bc7589485b4f973b8c4ca1ad244b52d8b8670476e29405",
+      "build_a": "0a130d89a09219ac86bc7589485b4f973b8c4ca1ad244b52d8b8670476e29405",
+      "build_b": "0a130d89a09219ac86bc7589485b4f973b8c4ca1ad244b52d8b8670476e29405"
+    },
+    {
+      "role": "FROZEN_PAYLOAD_ZIP",
+      "expected": "497614c00216d7fe86886afdfd93aa7c08a5d65a590c38dd8a78e5380d80fa98",
+      "package_a": "497614c00216d7fe86886afdfd93aa7c08a5d65a590c38dd8a78e5380d80fa98",
+      "package_b": "497614c00216d7fe86886afdfd93aa7c08a5d65a590c38dd8a78e5380d80fa98",
+      "byte_equal_original": true,
+      "member_count": 116
+    }
+  ],
+  "direct_comparison_files": [
+    "HASHES_1_TO_6.json",
+    "density.png",
+    "manifest.json",
+    "merkle.json",
+    "merkle_root.txt",
+    "prime_mask.bin",
+    "ulam.csv",
+    "ulam.npz"
+  ],
+  "checks": {
+    "fresh_builds": 2,
+    "math_checks_each": 49,
+    "unit_tests": 31,
+    "unit_failures": 0,
+    "unit_errors": 0,
+    "unit_skips": 0,
+    "negative_controls_registered": 14,
+    "negative_controls_passed": 14,
+    "command_exit_codes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "delivery_members_checked": 116
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pillow": "12.3.0",
+    "zlib_runtime": "1.3.2",
+    "historical_python": "3.13.5",
+    "historical_zlib": "1.3.1"
+  },
+  "private_evidence_supplement_sha256": "6bf521217606f3176a111421661ce5ef623d6df8e4517ddfbbbea90796c587ab",
+  "evidence_availability": "Privately retained; no public evidence archive attached. Supplemental archive omits the two packaging ZIPs recorded as byte-identical to the separately retained original.",
+  "independence": "Separate project implementation, same host and shared standard-library primitives; not external certification."
+}

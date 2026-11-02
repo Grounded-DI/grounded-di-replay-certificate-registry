@@ -395,3 +395,10 @@ A new public synthetic demonstrator held a retry of the same consumed request af
 [Replay record](benchmarks/2026-11-01-seven-hash-fresh-replay/README.md) · [Verification](benchmarks/2026-11-01-seven-hash-fresh-replay/verification.json)
 
 Two fresh computational builds matched all six frozen computational boundaries, and two independent packaging processes reconstructed the unchanged 116-member historical payload with the original ZIP bytes. Mathematical verification, 31 unit tests, and all 14 negative controls passed. The record distinguishes the current runtime from the historical environment and notes unavailable historical evidence archives.
+
+
+## Seven-Hash Local Replay — November 1, 2026, 9:23 p.m. Eastern
+
+[Replay record](benchmarks/2026-11-01-seven-hash-replay-2124-et/README.md) · [Verification](benchmarks/2026-11-01-seven-hash-replay-2124-et/verification.json)
+
+Two fresh computational builds matched the six frozen boundaries; two separate packaging processes reconstructed the unchanged 116-member historical payload byte-for-byte. The 31-test unit suite and all 14 negative controls passed. Project-local evidence and environment qualifications are recorded in the replay record.
