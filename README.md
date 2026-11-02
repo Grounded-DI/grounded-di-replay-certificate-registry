@@ -402,3 +402,9 @@ Two fresh computational builds matched all six frozen computational boundaries, 
 [Replay record](benchmarks/2026-11-01-seven-hash-replay-2124-et/README.md) · [Verification](benchmarks/2026-11-01-seven-hash-replay-2124-et/verification.json)
 
 Two fresh computational builds matched the six frozen boundaries; two separate packaging processes reconstructed the unchanged 116-member historical payload byte-for-byte. The 31-test unit suite and all 14 negative controls passed. Project-local evidence and environment qualifications are recorded in the replay record.
+
+## Seven-Hash Independent Local Replay — November 1, 2026
+
+[Replay record](benchmarks/2026-11-01-seven-hash-independent-local-replay/README.md) · [Verification](benchmarks/2026-11-01-seven-hash-independent-local-replay/verification.json)
+
+Two fresh computations matched all six frozen computational boundaries and the retained output bytes. Two separate packaging processes reproduced the unchanged historical 116-member ZIP byte for byte. This is local project-executed evidence; see the record for test outcomes, environment, and limits.
