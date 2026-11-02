@@ -1,0 +1,61 @@
+CONTRACT.md: OK
+checker.py: OK
+compare.py: OK
+expected/1.json: OK
+expected/2.json: OK
+expected/3.json: OK
+expected/4.json: OK
+expected/5.json: OK
+expected/6.json: OK
+expected/7.json: OK
+expected_hashes.json: OK
+fixture.json: OK
+freeze.py: OK
+logs/checker1.log: OK
+logs/checker2.log: OK
+logs/commands.txt: OK
+logs/comparison.log: OK
+logs/environment.log: OK
+logs/run1.log: OK
+logs/run2.log: OK
+logs/tests.log: OK
+logs/tests_initial.log: OK
+logs/tests_initial.py: OK
+pipeline.py: OK
+prior_status.md: OK
+run1/1.json: OK
+run1/2.json: OK
+run1/3.json: OK
+run1/4.json: OK
+run1/5.json: OK
+run1/6.json: OK
+run1/7.json: OK
+run2/1.json: OK
+run2/2.json: OK
+run2/3.json: OK
+run2/4.json: OK
+run2/5.json: OK
+run2/6.json: OK
+run2/7.json: OK
+tests.py: OK
+CHECKER PASS
+CHECKER PASS
+1: bytes_equal=True hashes=['bbf51483021238928773030b29068abb18e6916f9a3e74e91deef6a90ba4bb05', 'bbf51483021238928773030b29068abb18e6916f9a3e74e91deef6a90ba4bb05', 'bbf51483021238928773030b29068abb18e6916f9a3e74e91deef6a90ba4bb05'] frozen=bbf51483021238928773030b29068abb18e6916f9a3e74e91deef6a90ba4bb05 result=PASS
+2: bytes_equal=True hashes=['3b3653a5649974bc9a564e60292a0a9847871405d34cf8283287e62510c97688', '3b3653a5649974bc9a564e60292a0a9847871405d34cf8283287e62510c97688', '3b3653a5649974bc9a564e60292a0a9847871405d34cf8283287e62510c97688'] frozen=3b3653a5649974bc9a564e60292a0a9847871405d34cf8283287e62510c97688 result=PASS
+3: bytes_equal=True hashes=['660919212207fa14a65310fb8e25a3c84b9e1c234a8d7b6278015d24d84fc304', '660919212207fa14a65310fb8e25a3c84b9e1c234a8d7b6278015d24d84fc304', '660919212207fa14a65310fb8e25a3c84b9e1c234a8d7b6278015d24d84fc304'] frozen=660919212207fa14a65310fb8e25a3c84b9e1c234a8d7b6278015d24d84fc304 result=PASS
+4: bytes_equal=True hashes=['5c28d578ba7289e4a3e1e8bc0b5b18a3581818522cc544092bacef5ff5b24f39', '5c28d578ba7289e4a3e1e8bc0b5b18a3581818522cc544092bacef5ff5b24f39', '5c28d578ba7289e4a3e1e8bc0b5b18a3581818522cc544092bacef5ff5b24f39'] frozen=5c28d578ba7289e4a3e1e8bc0b5b18a3581818522cc544092bacef5ff5b24f39 result=PASS
+5: bytes_equal=True hashes=['08712e36e6eaefb35e431afe11a6c1043245bcb754155f37e3097dd54156d01e', '08712e36e6eaefb35e431afe11a6c1043245bcb754155f37e3097dd54156d01e', '08712e36e6eaefb35e431afe11a6c1043245bcb754155f37e3097dd54156d01e'] frozen=08712e36e6eaefb35e431afe11a6c1043245bcb754155f37e3097dd54156d01e result=PASS
+6: bytes_equal=True hashes=['c90a0d582a4b621019a31fbf528b5998b83143f591473d2602ed89e39971b427', 'c90a0d582a4b621019a31fbf528b5998b83143f591473d2602ed89e39971b427', 'c90a0d582a4b621019a31fbf528b5998b83143f591473d2602ed89e39971b427'] frozen=c90a0d582a4b621019a31fbf528b5998b83143f591473d2602ed89e39971b427 result=PASS
+7: bytes_equal=True hashes=['b032367dab4cb2d46b0a87d72532e010cccdd2c68b546ab8e0169698d351de78', 'b032367dab4cb2d46b0a87d72532e010cccdd2c68b546ab8e0169698d351de78', 'b032367dab4cb2d46b0a87d72532e010cccdd2c68b546ab8e0169698d351de78'] frozen=b032367dab4cb2d46b0a87d72532e010cccdd2c68b546ab8e0169698d351de78 result=PASS
+test_capacity_exceeded (__main__.Controls.test_capacity_exceeded) ... ok
+test_intermediate_altered (__main__.Controls.test_intermediate_altered) ... ok
+test_legitimate_change (__main__.Controls.test_legitimate_change) ... ok
+test_missing_unit (__main__.Controls.test_missing_unit) ... ok
+test_road_closes (__main__.Controls.test_road_closes) ... ok
+test_unreachable (__main__.Controls.test_unreachable) ... ok
+test_wrong_rehashed (__main__.Controls.test_wrong_rehashed) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+OK
