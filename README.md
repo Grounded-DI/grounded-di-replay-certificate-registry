@@ -480,3 +480,8 @@ Two fresh local executions matched seven frozen artifacts; all seven controls an
 [Replay record](benchmarks/2026-11-02-delivery-inventory-reconciliation-replay/README.md) · [Reproducibility package](benchmarks/2026-11-02-delivery-inventory-reconciliation-replay/Delivery_Inventory_Replay.zip)
 
 Two fresh runs matched seven frozen artifacts; seven mutation and tampering controls and a clean-extraction audit passed. The shipment and receipt records are fictional.
+
+
+## Delivery-to-cold-storage synthetic replay — November 2, 2026
+
+[Replay and audit](benchmarks/2026-11-02-delivery-cold-storage-replay/README.md) — A fictional receipt and temperature-evidence workflow accounted for accepted, held and unknown units. Seven boundaries and eight controls passed under stated synthetic assumptions.

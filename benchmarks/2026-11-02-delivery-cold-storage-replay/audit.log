@@ -1,0 +1,73 @@
+$ sha256sum -c SHA256SUMS.txt
+CONTRACT.md: OK
+README.md: OK
+checker.py: OK
+compare.py: OK
+controls.py: OK
+expected/1.json: OK
+expected/2.json: OK
+expected/3.json: OK
+expected/4.json: OK
+expected/5.json: OK
+expected/6.json: OK
+expected/7.json: OK
+expected_hashes.json: OK
+fixture.json: OK
+freeze.py: OK
+logs/checker1.log: OK
+logs/checker2.log: OK
+logs/compare.log: OK
+logs/controls.log: OK
+logs/environment.log: OK
+logs/run1.log: OK
+logs/run2.log: OK
+producer.py: OK
+run1/1.json: OK
+run1/2.json: OK
+run1/3.json: OK
+run1/4.json: OK
+run1/5.json: OK
+run1/6.json: OK
+run1/7.json: OK
+run2/1.json: OK
+run2/2.json: OK
+run2/3.json: OK
+run2/4.json: OK
+run2/5.json: OK
+run2/6.json: OK
+run2/7.json: OK
+exit=0
+$ python3 producer.py fixture.json run1
+exit=0
+$ python3 producer.py fixture.json run2
+exit=0
+$ python3 checker.py fixture.json run1
+CHECKER PASS
+exit=0
+$ python3 checker.py fixture.json run2
+CHECKER PASS
+exit=0
+$ python3 compare.py
+boundary=1 direct_bytes_equal=True expected_sha256=943b3207d0870e28b8fd32e381573271040d0d4ea5b95ae378e047ea61644543 observed_run1=943b3207d0870e28b8fd32e381573271040d0d4ea5b95ae378e047ea61644543 observed_run2=943b3207d0870e28b8fd32e381573271040d0d4ea5b95ae378e047ea61644543 result=PASS
+boundary=2 direct_bytes_equal=True expected_sha256=2de4d46f31752a0d7126a4278d3c9481b78127bd5e8a6a1a54b782eef30ff049 observed_run1=2de4d46f31752a0d7126a4278d3c9481b78127bd5e8a6a1a54b782eef30ff049 observed_run2=2de4d46f31752a0d7126a4278d3c9481b78127bd5e8a6a1a54b782eef30ff049 result=PASS
+boundary=3 direct_bytes_equal=True expected_sha256=2f631b2b714b8cb28939e0dc0e77777488a8cfdbd611297ec5e3b8f65086ffae observed_run1=2f631b2b714b8cb28939e0dc0e77777488a8cfdbd611297ec5e3b8f65086ffae observed_run2=2f631b2b714b8cb28939e0dc0e77777488a8cfdbd611297ec5e3b8f65086ffae result=PASS
+boundary=4 direct_bytes_equal=True expected_sha256=cfedc71fccccb8567da23b2ff559fc59ab83ce0c91823925fc9fc5591afd2518 observed_run1=cfedc71fccccb8567da23b2ff559fc59ab83ce0c91823925fc9fc5591afd2518 observed_run2=cfedc71fccccb8567da23b2ff559fc59ab83ce0c91823925fc9fc5591afd2518 result=PASS
+boundary=5 direct_bytes_equal=True expected_sha256=c4f9781a44460d35f1bedd752d9b9547060d03691ff2241cffd8edd3b2ebdd12 observed_run1=c4f9781a44460d35f1bedd752d9b9547060d03691ff2241cffd8edd3b2ebdd12 observed_run2=c4f9781a44460d35f1bedd752d9b9547060d03691ff2241cffd8edd3b2ebdd12 result=PASS
+boundary=6 direct_bytes_equal=True expected_sha256=e4e089727c7fde2c3c8c1c3fc0f5b7655cda2d5bd85ab2bea04c794112bf6032 observed_run1=e4e089727c7fde2c3c8c1c3fc0f5b7655cda2d5bd85ab2bea04c794112bf6032 observed_run2=e4e089727c7fde2c3c8c1c3fc0f5b7655cda2d5bd85ab2bea04c794112bf6032 result=PASS
+boundary=7 direct_bytes_equal=True expected_sha256=3f49c0db73206c141a880f2392a79289af2046a121555405e4bb32ee8c0eed2f observed_run1=3f49c0db73206c141a880f2392a79289af2046a121555405e4bb32ee8c0eed2f observed_run2=3f49c0db73206c141a880f2392a79289af2046a121555405e4bb32ee8c0eed2f result=PASS
+exit=0
+$ python3 controls.py
+test_altered_intermediate (__main__.Controls.test_altered_intermediate) ... ok
+test_changed_destination (__main__.Controls.test_changed_destination) ... ok
+test_duplicate_receipt (__main__.Controls.test_duplicate_receipt) ... ok
+test_legitimate_change (__main__.Controls.test_legitimate_change) ... ok
+test_missing_temperature (__main__.Controls.test_missing_temperature) ... ok
+test_quantity_discrepancy (__main__.Controls.test_quantity_discrepancy) ... ok
+test_threshold_violation (__main__.Controls.test_threshold_violation) ... ok
+test_wrong_rehashed (__main__.Controls.test_wrong_rehashed) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.635s
+
+OK
+exit=0
