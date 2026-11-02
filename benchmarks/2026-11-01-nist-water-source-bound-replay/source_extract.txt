@@ -1,0 +1,4 @@
+NIST Chemistry WebBook, SRD 69; Water; Liquid Phase Heat Capacity (Shomate Equation)
+298. K | 75.38 J/mol*K
+Molecular weight: 18.0153
+Reference: Chase, 1998; data last reviewed March 1979.

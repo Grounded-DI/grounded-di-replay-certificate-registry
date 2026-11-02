@@ -1,0 +1,51 @@
+{
+  "01_source.json": {
+    "expected": "1d86ed71af102ead51aea5838b850632417e10b4c296db5dd3aa6e565fdc0b71",
+    "run_a": "1d86ed71af102ead51aea5838b850632417e10b4c296db5dd3aa6e565fdc0b71",
+    "run_b": "1d86ed71af102ead51aea5838b850632417e10b4c296db5dd3aa6e565fdc0b71",
+    "direct_byte_equal": true,
+    "hashes_match": true
+  },
+  "02_validation.json": {
+    "expected": "265ba044fd8c401bd70deb93610ae8a3981112236872209c51a93c832c952dd4",
+    "run_a": "265ba044fd8c401bd70deb93610ae8a3981112236872209c51a93c832c952dd4",
+    "run_b": "265ba044fd8c401bd70deb93610ae8a3981112236872209c51a93c832c952dd4",
+    "direct_byte_equal": true,
+    "hashes_match": true
+  },
+  "03_normalized.json": {
+    "expected": "0fda0a093d884a845bd656e9431fbd0c6cf76ff70ec645bae36900de05f94234",
+    "run_a": "0fda0a093d884a845bd656e9431fbd0c6cf76ff70ec645bae36900de05f94234",
+    "run_b": "0fda0a093d884a845bd656e9431fbd0c6cf76ff70ec645bae36900de05f94234",
+    "direct_byte_equal": true,
+    "hashes_match": true
+  },
+  "04_quantity.json": {
+    "expected": "54fb654540b98299bfd0c7e39745b3ef7b276ce659ffa6e52de50dc42520d53a",
+    "run_a": "54fb654540b98299bfd0c7e39745b3ef7b276ce659ffa6e52de50dc42520d53a",
+    "run_b": "54fb654540b98299bfd0c7e39745b3ef7b276ce659ffa6e52de50dc42520d53a",
+    "direct_byte_equal": true,
+    "hashes_match": true
+  },
+  "05_result.json": {
+    "expected": "7295bac7b574160d42c6a9a037a309b79dba3bd808d06ea2fe04fa3c9e63f93b",
+    "run_a": "7295bac7b574160d42c6a9a037a309b79dba3bd808d06ea2fe04fa3c9e63f93b",
+    "run_b": "7295bac7b574160d42c6a9a037a309b79dba3bd808d06ea2fe04fa3c9e63f93b",
+    "direct_byte_equal": true,
+    "hashes_match": true
+  },
+  "06_assessment.json": {
+    "expected": "9e7b01df05130d9874b1abc7a1766743daa7c5c2b72fcdc4eb90908f94a109be",
+    "run_a": "9e7b01df05130d9874b1abc7a1766743daa7c5c2b72fcdc4eb90908f94a109be",
+    "run_b": "9e7b01df05130d9874b1abc7a1766743daa7c5c2b72fcdc4eb90908f94a109be",
+    "direct_byte_equal": true,
+    "hashes_match": true
+  },
+  "07_commitment.json": {
+    "expected": "b4f07369bc62004dcfa93f4bc2ea12ccd1fe76b919ddff2dd70bc566baf1e75b",
+    "run_a": "b4f07369bc62004dcfa93f4bc2ea12ccd1fe76b919ddff2dd70bc566baf1e75b",
+    "run_b": "b4f07369bc62004dcfa93f4bc2ea12ccd1fe76b919ddff2dd70bc566baf1e75b",
+    "direct_byte_equal": true,
+    "hashes_match": true
+  }
+}

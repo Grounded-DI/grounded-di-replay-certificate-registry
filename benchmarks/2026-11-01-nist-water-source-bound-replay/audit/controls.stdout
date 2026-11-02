@@ -1,0 +1,154 @@
+{
+  "status": "PASS",
+  "registered": 9,
+  "executed": 9,
+  "passed": 9,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "records": [
+    {
+      "name": "wrong_material",
+      "change": "material water -> ethanol",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "field": "material",
+        "reason": "MATERIAL_OR_CONDITIONS",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"field\": \"material\", \"reason\": \"MATERIAL_OR_CONDITIONS\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "wrong_source_value",
+      "change": "source Cp 75.38 -> 75.39",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "reason": "SOURCE_IDENTITY",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"SOURCE_IDENTITY\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "changed_conditions",
+      "change": "reference temperature 298 -> 300 K",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "field": "reference_temperature_K",
+        "reason": "MATERIAL_OR_CONDITIONS",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"field\": \"reference_temperature_K\", \"reason\": \"MATERIAL_OR_CONDITIONS\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "missing_conditions",
+      "change": "reference temperature removed",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "field": "reference_temperature_K",
+        "reason": "MATERIAL_OR_CONDITIONS",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"field\": \"reference_temperature_K\", \"reason\": \"MATERIAL_OR_CONDITIONS\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "changed_unit",
+      "change": "heat unit kJ -> J without conversion",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "reason": "UNIT",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"UNIT\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "missing_source_reference",
+      "change": "source binding removed",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "reason": "SOURCE_REFERENCE",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"SOURCE_REFERENCE\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "legitimate_input_change",
+      "change": "mass doubled, expected delta 1/2 K",
+      "expected": "valid new result plus baseline verifier rejects",
+      "actual": {
+        "status": "PASS",
+        "temperature_change_K": "1/2"
+      },
+      "pipeline_exit": 0,
+      "pipeline_stdout": "{\"status\": \"PASS\", \"temperature_change_K\": \"1/2\"}\n",
+      "pipeline_stderr": "",
+      "checker": {
+        "exit": 1,
+        "stdout": "{\"commitment_consistent\": true, \"conditions\": true, \"fixture_frozen\": false, \"hashes_match\": false, \"math\": true, \"source_bound\": true, \"status\": \"REJECT\", \"units\": true}\n",
+        "stderr": ""
+      },
+      "assertion": "PASS"
+    },
+    {
+      "name": "altered_intermediate",
+      "change": "quantity handoff changed from 1 to 2 mol",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "reason": "HANDOFF_MISMATCH",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"HANDOFF_MISMATCH\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "coherent_wrong_result_rehashed",
+      "change": "temperature changed to 0 K and manifest updated",
+      "expected": "consistent commitment, verifier rejects bad result",
+      "actual": {
+        "commitment_consistent": true,
+        "conditions": true,
+        "fixture_frozen": true,
+        "hashes_match": false,
+        "math": false,
+        "source_bound": true,
+        "status": "REJECT",
+        "units": true
+      },
+      "pipeline_exit": 0,
+      "pipeline_stdout": "{\"status\": \"PASS\", \"temperature_change_K\": \"1\"}\n",
+      "pipeline_stderr": "",
+      "checker": {
+        "exit": 1,
+        "stdout": "{\"commitment_consistent\": true, \"conditions\": true, \"fixture_frozen\": true, \"hashes_match\": false, \"math\": false, \"source_bound\": true, \"status\": \"REJECT\", \"units\": true}\n",
+        "stderr": ""
+      },
+      "assertion": "PASS"
+    }
+  ]
+}

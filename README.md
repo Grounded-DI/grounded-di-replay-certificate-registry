@@ -440,3 +440,10 @@ Two fresh local executions reproduced seven linked calorimetry records; all nine
 [Replay record](benchmarks/2026-11-01-releasegate-v3-lost-confirmation/README.md) · [Verification](benchmarks/2026-11-01-releasegate-v3-lost-confirmation/verification.json) · [Reproducibility package](benchmarks/2026-11-01-releasegate-v3-lost-confirmation/ReleaseGate_V3_Reproducibility.zip)
 
 A local synthetic workflow tests recovery after a write succeeds but confirmation is lost. Two baselines matched seven frozen artifacts and 12 scenarios passed; the record states the durability, identity and trust limits.
+
+
+## NIST Water — Source-Bound Seven-Boundary Replay (November 1, 2026)
+
+[Replay and source](benchmarks/2026-11-01-nist-water-source-bound-replay/README.md) · [Clean-extraction audit](benchmarks/2026-11-01-nist-water-source-bound-replay/audit/AUDIT.md) · [Reproducibility ZIP](benchmarks/2026-11-01-nist-water-source-bound-replay/NIST_Water_Source_Bound_Seven_Replay.zip)
+
+A synthetic heating calculation uses the NIST 298 K liquid-water heat-capacity table value. Two fresh executions and a clean-extraction audit matched seven frozen boundaries; nine negative controls passed. The modeled 1 K result depends on stated assumptions and is not an experimental measurement.
