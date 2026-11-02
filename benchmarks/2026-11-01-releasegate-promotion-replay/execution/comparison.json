@@ -1,0 +1,51 @@
+{
+  "01_request.json": {
+    "expected_sha256": "bc4b7f2d43b9941ecd083dd032c275b65dbcea2b95b2f15044d16f26af67d97d",
+    "run_a_sha256": "bc4b7f2d43b9941ecd083dd032c275b65dbcea2b95b2f15044d16f26af67d97d",
+    "run_b_sha256": "bc4b7f2d43b9941ecd083dd032c275b65dbcea2b95b2f15044d16f26af67d97d",
+    "bytes_equal": true,
+    "match_frozen": true
+  },
+  "02_artifact.json": {
+    "expected_sha256": "97fd327e04864c9ec4f24bea42094f73e42f9c5cc0b45e8bf12e121c599161b7",
+    "run_a_sha256": "97fd327e04864c9ec4f24bea42094f73e42f9c5cc0b45e8bf12e121c599161b7",
+    "run_b_sha256": "97fd327e04864c9ec4f24bea42094f73e42f9c5cc0b45e8bf12e121c599161b7",
+    "bytes_equal": true,
+    "match_frozen": true
+  },
+  "03_tests.json": {
+    "expected_sha256": "415a9cf028f531b73fa0838bc67ac6c18c574b1e42cfeb31b2f0d5fbf98c2517",
+    "run_a_sha256": "415a9cf028f531b73fa0838bc67ac6c18c574b1e42cfeb31b2f0d5fbf98c2517",
+    "run_b_sha256": "415a9cf028f531b73fa0838bc67ac6c18c574b1e42cfeb31b2f0d5fbf98c2517",
+    "bytes_equal": true,
+    "match_frozen": true
+  },
+  "04_approval.json": {
+    "expected_sha256": "ab2247d7ff98c58b96d4eb21a8d23a07512b51d8b6a86053d310e2d2ea5245e6",
+    "run_a_sha256": "ab2247d7ff98c58b96d4eb21a8d23a07512b51d8b6a86053d310e2d2ea5245e6",
+    "run_b_sha256": "ab2247d7ff98c58b96d4eb21a8d23a07512b51d8b6a86053d310e2d2ea5245e6",
+    "bytes_equal": true,
+    "match_frozen": true
+  },
+  "05_policy.json": {
+    "expected_sha256": "db463cb2f2d3de1ce799066433e51e3d31c7fb0d7e12a9107bebfd67f197fa6f",
+    "run_a_sha256": "db463cb2f2d3de1ce799066433e51e3d31c7fb0d7e12a9107bebfd67f197fa6f",
+    "run_b_sha256": "db463cb2f2d3de1ce799066433e51e3d31c7fb0d7e12a9107bebfd67f197fa6f",
+    "bytes_equal": true,
+    "match_frozen": true
+  },
+  "06_decision.json": {
+    "expected_sha256": "6edfc47fb94539b9b91429e9b89cd25b02a5b33b0ae064afc8be08991078b6c8",
+    "run_a_sha256": "6edfc47fb94539b9b91429e9b89cd25b02a5b33b0ae064afc8be08991078b6c8",
+    "run_b_sha256": "6edfc47fb94539b9b91429e9b89cd25b02a5b33b0ae064afc8be08991078b6c8",
+    "bytes_equal": true,
+    "match_frozen": true
+  },
+  "07_commitment.json": {
+    "expected_sha256": "9e141ab98a7e23a15bc495f0648a82b37b4a2f0cf47b1db01240ff0ce387f29b",
+    "run_a_sha256": "9e141ab98a7e23a15bc495f0648a82b37b4a2f0cf47b1db01240ff0ce387f29b",
+    "run_b_sha256": "9e141ab98a7e23a15bc495f0648a82b37b4a2f0cf47b1db01240ff0ce387f29b",
+    "bytes_equal": true,
+    "match_frozen": true
+  }
+}

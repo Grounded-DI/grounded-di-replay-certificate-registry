@@ -1,0 +1,6 @@
+artifact.bin: OK
+policy.json: OK
+request.json: OK
+evidence.json: OK
+expected_hashes.json: OK
+CONTRACT.json: OK

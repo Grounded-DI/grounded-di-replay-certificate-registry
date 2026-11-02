@@ -1,0 +1,79 @@
+[
+  {
+    "control": "altered_artifact",
+    "expected": "HOLD and promotion REJECT",
+    "actual": "artifact bytes changed; decision HOLD, promotion REJECT, zero destination writes",
+    "assertion": "PASS",
+    "test": "test_altered_artifact"
+  },
+  {
+    "control": "missing_provenance",
+    "expected": "HOLD and promotion REJECT",
+    "actual": "provenance removed; HOLD, REJECT, zero destination writes",
+    "assertion": "PASS",
+    "test": "test_missing_provenance"
+  },
+  {
+    "control": "failed_test",
+    "expected": "HOLD and promotion REJECT",
+    "actual": "format test changed to FAIL; HOLD, REJECT, zero destination writes",
+    "assertion": "PASS",
+    "test": "test_failed_test"
+  },
+  {
+    "control": "missing_test",
+    "expected": "HOLD and promotion REJECT",
+    "actual": "unit test removed; HOLD, REJECT, zero destination writes",
+    "assertion": "PASS",
+    "test": "test_missing_test"
+  },
+  {
+    "control": "missing_approval",
+    "expected": "HOLD and promotion REJECT",
+    "actual": "approval removed; HOLD, REJECT, zero destination writes",
+    "assertion": "PASS",
+    "test": "test_missing_approval"
+  },
+  {
+    "control": "wrong_candidate_approval",
+    "expected": "HOLD and promotion REJECT",
+    "actual": "approval candidate changed; HOLD, REJECT, zero destination writes",
+    "assertion": "PASS",
+    "test": "test_wrong_candidate_approval"
+  },
+  {
+    "control": "changed_destination",
+    "expected": "HOLD and promotion REJECT",
+    "actual": "request destination changed; HOLD, REJECT, zero destination writes",
+    "assertion": "PASS",
+    "test": "test_changed_destination"
+  },
+  {
+    "control": "changed_policy",
+    "expected": "HOLD and promotion REJECT",
+    "actual": "policy required_tests changed, version unchanged; HOLD, REJECT, zero destination writes",
+    "assertion": "PASS",
+    "test": "test_changed_policy"
+  },
+  {
+    "control": "malformed_request",
+    "expected": "HOLD and promotion REJECT",
+    "actual": "destination absent; HOLD, REJECT, zero destination writes",
+    "assertion": "PASS",
+    "test": "test_malformed_request"
+  },
+  {
+    "control": "altered_decision",
+    "expected": "REJECT",
+    "actual": "decision mutated after baseline pipeline; promotion REJECT, zero destination writes",
+    "assertion": "PASS",
+    "test": "test_altered_decision"
+  },
+  {
+    "control": "coherent_wrong_decision",
+    "expected": "REJECT",
+    "actual": "wrong decision and corresponding manifest digest changed; promotion REJECT, checker FAIL, zero destination writes",
+    "assertion": "PASS",
+    "test": "test_coherent_wrong_decision"
+  }
+]

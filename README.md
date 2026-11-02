@@ -408,3 +408,10 @@ Two fresh computational builds matched the six frozen boundaries; two separate p
 [Replay record](benchmarks/2026-11-01-seven-hash-independent-local-replay/README.md) · [Verification](benchmarks/2026-11-01-seven-hash-independent-local-replay/verification.json)
 
 Two fresh computations matched all six frozen computational boundaries and the retained output bytes. Two separate packaging processes reproduced the unchanged historical 116-member ZIP byte for byte. This is local project-executed evidence; see the record for test outcomes, environment, and limits.
+
+
+## ReleaseGate — Seven-Boundary Synthetic Promotion Replay (November 1, 2026)
+
+[Demonstration](benchmarks/2026-11-01-releasegate-promotion-replay/README.md) · [Reproducibility archive](benchmarks/2026-11-01-releasegate-promotion-replay/ReleaseGate_Reproducibility.zip) · [Comparisons](benchmarks/2026-11-01-releasegate-promotion-replay/execution/comparison.json)
+
+Two fresh processes matched seven frozen canonical outputs; 11 local negative controls passed, and rejected candidates caused no synthetic destination writes in the tested cases. The project-local demo does not exercise a real deployment service.

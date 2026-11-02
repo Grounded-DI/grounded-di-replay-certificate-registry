@@ -1,0 +1,17 @@
+test_altered_artifact (test_releasegate.ReleaseGateTests.test_altered_artifact) ... ok
+test_altered_decision (test_releasegate.ReleaseGateTests.test_altered_decision) ... ok
+test_baseline (test_releasegate.ReleaseGateTests.test_baseline) ... ok
+test_changed_destination (test_releasegate.ReleaseGateTests.test_changed_destination) ... ok
+test_changed_policy (test_releasegate.ReleaseGateTests.test_changed_policy) ... ok
+test_coherent_wrong_decision (test_releasegate.ReleaseGateTests.test_coherent_wrong_decision) ... ok
+test_failed_test (test_releasegate.ReleaseGateTests.test_failed_test) ... ok
+test_malformed_request (test_releasegate.ReleaseGateTests.test_malformed_request) ... ok
+test_missing_approval (test_releasegate.ReleaseGateTests.test_missing_approval) ... ok
+test_missing_provenance (test_releasegate.ReleaseGateTests.test_missing_provenance) ... ok
+test_missing_test (test_releasegate.ReleaseGateTests.test_missing_test) ... ok
+test_wrong_candidate_approval (test_releasegate.ReleaseGateTests.test_wrong_candidate_approval) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.547s
+
+OK

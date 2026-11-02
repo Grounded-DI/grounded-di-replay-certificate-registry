@@ -1,0 +1,81 @@
+[
+  {
+    "name": "frozen_check",
+    "argv": [
+      "sha256sum",
+      "-c",
+      "FROZEN_SHA256SUMS.txt"
+    ],
+    "start_utc": "2026-11-02T02:42:17.038698+00:00",
+    "end_utc": "2026-11-02T02:42:17.041691+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "run_a",
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "pipeline.py",
+      "--out",
+      "<workspace>/run_c",
+      "--promote",
+      "<workspace>/promote_c"
+    ],
+    "start_utc": "2026-11-02T02:42:17.041934+00:00",
+    "end_utc": "2026-11-02T02:42:17.103530+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "run_b",
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "pipeline.py",
+      "--out",
+      "<workspace>/run_d"
+    ],
+    "start_utc": "2026-11-02T02:42:17.103701+00:00",
+    "end_utc": "2026-11-02T02:42:17.142498+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "checker_a",
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "checker.py",
+      "--out",
+      "<workspace>/run_c"
+    ],
+    "start_utc": "2026-11-02T02:42:17.142668+00:00",
+    "end_utc": "2026-11-02T02:42:17.188717+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "checker_b",
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "checker.py",
+      "--out",
+      "<workspace>/run_d"
+    ],
+    "start_utc": "2026-11-02T02:42:17.188927+00:00",
+    "end_utc": "2026-11-02T02:42:17.224958+00:00",
+    "exit_code": 0
+  },
+  {
+    "name": "tests",
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "-v",
+      "test_releasegate"
+    ],
+    "start_utc": "2026-11-02T02:42:17.225124+00:00",
+    "end_utc": "2026-11-02T02:42:17.845402+00:00",
+    "exit_code": 0
+  }
+]
