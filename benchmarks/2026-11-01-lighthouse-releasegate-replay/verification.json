@@ -1,0 +1,484 @@
+{
+  "baseline": "eligible",
+  "boundary_sha256": {
+    "01_request": "3fc8250967aef4701f84ddac608595f494f7ae850dd64cbe51825736fa57b0ba",
+    "02_identity": "33b07da5b42f05a07fcadd07205c644ab110449237d0732704046c9e57f21ee7",
+    "03_tests": "2327ed811036f8d10270aec5924f46696a7277613b7873a0e1350fd40605e1e9",
+    "04_approval": "701dad29c5f2e91a84aeb91db799c4d2dd64b630f5262541a4855e706e04f80a",
+    "05_destination": "54dc7429654ca8c9840a6640357afcd26ac6f36bbc4aafecbe239d9dc18a1761",
+    "06_decision": "32bc0532686c78151ce89edd15154977fa9ff6375fd92a9593b65696d4684a0e",
+    "07_commitment": "71264e68bdc50ddaad508db7dbc11312f495577334ecd98a8fd2e129caf6a2c1"
+  },
+  "checker_scope": "Independently recalculates final decision and checks commitment hashes; shares frozen inputs and policy, specification, Python and hash/JSON primitives. It does not independently recompute artifacts 1-5.",
+  "contract_sha256": "db6bbc6c9a86bd67c87ea0d3bcf7c86d2d637cc89c2bd8213eb3e530b9ef135d",
+  "controls": [
+    {
+      "actual": {
+        "commitment_valid": false,
+        "decision_matches_source": false,
+        "expected_decision": {
+          "eligible": true,
+          "reasons": []
+        },
+        "status": "FAIL"
+      },
+      "control": "altered_decision",
+      "exit": 0,
+      "expected": "checker rejects commitment and decision",
+      "passed": true,
+      "stderr": "",
+      "stdout": "{\"status\": \"EXECUTED\", \"eligible\": true, \"reasons\": []}\n"
+    },
+    {
+      "actual": {
+        "eligible": false,
+        "reasons": [
+          "artifact",
+          "provenance",
+          "approval"
+        ]
+      },
+      "checker": {
+        "commitment_valid": true,
+        "decision_matches_source": true,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "artifact",
+            "provenance",
+            "approval"
+          ]
+        },
+        "status": "PASS"
+      },
+      "control": "artifact_changed",
+      "exit": 0,
+      "expected": [
+        "artifact",
+        "provenance",
+        "approval"
+      ],
+      "files_observed": 0,
+      "passed": true,
+      "promotion": {
+        "status": "REJECTED",
+        "writes": 0
+      },
+      "stderr": "",
+      "stdout": "{\"status\": \"EXECUTED\", \"eligible\": false, \"reasons\": [\"artifact\", \"provenance\", \"approval\"]}\n"
+    },
+    {
+      "actual": {
+        "commitment_valid": true,
+        "decision_matches_source": false,
+        "expected_decision": {
+          "eligible": true,
+          "reasons": []
+        },
+        "status": "FAIL"
+      },
+      "control": "coherent_wrong_decision",
+      "exit": 0,
+      "expected": "checker rejects decision even with valid commitment",
+      "passed": true,
+      "stderr": "",
+      "stdout": "{\"status\": \"EXECUTED\", \"eligible\": true, \"reasons\": []}\n"
+    },
+    {
+      "actual": {
+        "eligible": false,
+        "reasons": [
+          "approval",
+          "destination"
+        ]
+      },
+      "checker": {
+        "commitment_valid": true,
+        "decision_matches_source": true,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "approval",
+            "destination"
+          ]
+        },
+        "status": "PASS"
+      },
+      "control": "destination_changed",
+      "exit": 0,
+      "expected": [
+        "approval",
+        "destination"
+      ],
+      "files_observed": 0,
+      "passed": true,
+      "promotion": {
+        "status": "REJECTED",
+        "writes": 0
+      },
+      "stderr": "",
+      "stdout": "{\"status\": \"EXECUTED\", \"eligible\": false, \"reasons\": [\"approval\", \"destination\"]}\n"
+    },
+    {
+      "actual": {
+        "eligible": false,
+        "reasons": [
+          "tests"
+        ]
+      },
+      "checker": {
+        "commitment_valid": true,
+        "decision_matches_source": true,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "tests"
+          ]
+        },
+        "status": "PASS"
+      },
+      "control": "failed_test",
+      "exit": 0,
+      "expected": [
+        "tests"
+      ],
+      "files_observed": 0,
+      "passed": true,
+      "promotion": {
+        "status": "REJECTED",
+        "writes": 0
+      },
+      "stderr": "",
+      "stdout": "{\"status\": \"EXECUTED\", \"eligible\": false, \"reasons\": [\"tests\"]}\n"
+    },
+    {
+      "actual": {
+        "eligible": false,
+        "reasons": [
+          "approval"
+        ]
+      },
+      "checker": {
+        "commitment_valid": true,
+        "decision_matches_source": true,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "approval"
+          ]
+        },
+        "status": "PASS"
+      },
+      "control": "missing_approval",
+      "exit": 0,
+      "expected": [
+        "approval"
+      ],
+      "files_observed": 0,
+      "passed": true,
+      "promotion": {
+        "status": "REJECTED",
+        "writes": 0
+      },
+      "stderr": "",
+      "stdout": "{\"status\": \"EXECUTED\", \"eligible\": false, \"reasons\": [\"approval\"]}\n"
+    },
+    {
+      "actual": {
+        "eligible": false,
+        "reasons": [
+          "malformed_request",
+          "approval",
+          "destination"
+        ]
+      },
+      "checker": {
+        "commitment_valid": true,
+        "decision_matches_source": true,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "malformed_request",
+            "approval",
+            "destination"
+          ]
+        },
+        "status": "PASS"
+      },
+      "control": "missing_field",
+      "exit": 0,
+      "expected": [
+        "malformed_request",
+        "approval",
+        "destination"
+      ],
+      "files_observed": 0,
+      "passed": true,
+      "promotion": {
+        "status": "REJECTED",
+        "writes": 0
+      },
+      "stderr": "",
+      "stdout": "{\"status\": \"EXECUTED\", \"eligible\": false, \"reasons\": [\"malformed_request\", \"approval\", \"destination\"]}\n"
+    },
+    {
+      "actual": {
+        "eligible": false,
+        "reasons": [
+          "provenance"
+        ]
+      },
+      "checker": {
+        "commitment_valid": true,
+        "decision_matches_source": true,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "provenance"
+          ]
+        },
+        "status": "PASS"
+      },
+      "control": "missing_provenance",
+      "exit": 0,
+      "expected": [
+        "provenance"
+      ],
+      "files_observed": 0,
+      "passed": true,
+      "promotion": {
+        "status": "REJECTED",
+        "writes": 0
+      },
+      "stderr": "",
+      "stdout": "{\"status\": \"EXECUTED\", \"eligible\": false, \"reasons\": [\"provenance\"]}\n"
+    },
+    {
+      "actual": {
+        "eligible": false,
+        "reasons": [
+          "tests"
+        ]
+      },
+      "checker": {
+        "commitment_valid": true,
+        "decision_matches_source": true,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "tests"
+          ]
+        },
+        "status": "PASS"
+      },
+      "control": "missing_test",
+      "exit": 0,
+      "expected": [
+        "tests"
+      ],
+      "files_observed": 0,
+      "passed": true,
+      "promotion": {
+        "status": "REJECTED",
+        "writes": 0
+      },
+      "stderr": "",
+      "stdout": "{\"status\": \"EXECUTED\", \"eligible\": false, \"reasons\": [\"tests\"]}\n"
+    },
+    {
+      "actual": {
+        "eligible": false,
+        "reasons": [
+          "policy"
+        ]
+      },
+      "checker": {
+        "commitment_valid": true,
+        "decision_matches_source": true,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "policy"
+          ]
+        },
+        "status": "PASS"
+      },
+      "control": "policy_changed",
+      "exit": 0,
+      "expected": [
+        "policy"
+      ],
+      "files_observed": 0,
+      "passed": true,
+      "promotion": {
+        "status": "REJECTED",
+        "writes": 0
+      },
+      "stderr": "",
+      "stdout": "{\"status\": \"EXECUTED\", \"eligible\": false, \"reasons\": [\"policy\"]}\n"
+    },
+    {
+      "actual": {
+        "eligible": false,
+        "reasons": [
+          "approval"
+        ]
+      },
+      "checker": {
+        "commitment_valid": true,
+        "decision_matches_source": true,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "approval"
+          ]
+        },
+        "status": "PASS"
+      },
+      "control": "wrong_approval",
+      "exit": 0,
+      "expected": [
+        "approval"
+      ],
+      "files_observed": 0,
+      "passed": true,
+      "promotion": {
+        "status": "REJECTED",
+        "writes": 0
+      },
+      "stderr": "",
+      "stdout": "{\"status\": \"EXECUTED\", \"eligible\": false, \"reasons\": [\"approval\"]}\n"
+    }
+  ],
+  "environment": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "errors": 0,
+  "executed_controls": 11,
+  "failed": 0,
+  "limitations": "A synthetic local sandbox; declared destination is checked in the request, while the caller supplies the local filesystem output directory. No actual deployment, external certification, production readiness, exactly-once, or universal model determinism claim.",
+  "other_checks": [
+    {
+      "name": "frozen_files",
+      "pass": true
+    },
+    {
+      "name": "fresh_A",
+      "pass": true
+    },
+    {
+      "name": "fresh_B",
+      "pass": true
+    },
+    {
+      "bytes_equal": true,
+      "name": "01_request",
+      "pass": true,
+      "sha256_a": "3fc8250967aef4701f84ddac608595f494f7ae850dd64cbe51825736fa57b0ba",
+      "sha256_b": "3fc8250967aef4701f84ddac608595f494f7ae850dd64cbe51825736fa57b0ba"
+    },
+    {
+      "bytes_equal": true,
+      "name": "02_identity",
+      "pass": true,
+      "sha256_a": "33b07da5b42f05a07fcadd07205c644ab110449237d0732704046c9e57f21ee7",
+      "sha256_b": "33b07da5b42f05a07fcadd07205c644ab110449237d0732704046c9e57f21ee7"
+    },
+    {
+      "bytes_equal": true,
+      "name": "03_tests",
+      "pass": true,
+      "sha256_a": "2327ed811036f8d10270aec5924f46696a7277613b7873a0e1350fd40605e1e9",
+      "sha256_b": "2327ed811036f8d10270aec5924f46696a7277613b7873a0e1350fd40605e1e9"
+    },
+    {
+      "bytes_equal": true,
+      "name": "04_approval",
+      "pass": true,
+      "sha256_a": "701dad29c5f2e91a84aeb91db799c4d2dd64b630f5262541a4855e706e04f80a",
+      "sha256_b": "701dad29c5f2e91a84aeb91db799c4d2dd64b630f5262541a4855e706e04f80a"
+    },
+    {
+      "bytes_equal": true,
+      "name": "05_destination",
+      "pass": true,
+      "sha256_a": "54dc7429654ca8c9840a6640357afcd26ac6f36bbc4aafecbe239d9dc18a1761",
+      "sha256_b": "54dc7429654ca8c9840a6640357afcd26ac6f36bbc4aafecbe239d9dc18a1761"
+    },
+    {
+      "bytes_equal": true,
+      "name": "06_decision",
+      "pass": true,
+      "sha256_a": "32bc0532686c78151ce89edd15154977fa9ff6375fd92a9593b65696d4684a0e",
+      "sha256_b": "32bc0532686c78151ce89edd15154977fa9ff6375fd92a9593b65696d4684a0e"
+    },
+    {
+      "bytes_equal": true,
+      "name": "07_commitment",
+      "pass": true,
+      "sha256_a": "71264e68bdc50ddaad508db7dbc11312f495577334ecd98a8fd2e129caf6a2c1",
+      "sha256_b": "71264e68bdc50ddaad508db7dbc11312f495577334ecd98a8fd2e129caf6a2c1"
+    },
+    {
+      "name": "checker_A",
+      "pass": true,
+      "result": {
+        "commitment_valid": true,
+        "decision_matches_source": true,
+        "expected_decision": {
+          "eligible": true,
+          "reasons": []
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "name": "checker_B",
+      "pass": true,
+      "result": {
+        "commitment_valid": true,
+        "decision_matches_source": true,
+        "expected_decision": {
+          "eligible": true,
+          "reasons": []
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "name": "baseline_promotion",
+      "pass": true,
+      "result": {
+        "status": "PROMOTED",
+        "writes": 1
+      }
+    }
+  ],
+  "package_sha256": "a06efddaecca527cc8ce494994a4dbaa410eb7a93724cbfe7dcb8fee7ffc3c8e",
+  "passed_controls": 11,
+  "policy_sha256": "e97812a191f51dfdeedce73b0e58080d3a873a4630a59001c2e9aec722328753",
+  "registered_controls": 11,
+  "schema": "lighthouse-releasegate-replay-v1",
+  "skipped": 0,
+  "source_artifact_sha256": "5d8e5c3f7db6071f1116faa8c875ece0c8efc77b51375afe70317f9ce918a9ff",
+  "status": "PASS",
+  "tampered_release_boundary": [
+    {
+      "case": "altered_decision",
+      "files_observed": 0,
+      "result": {
+        "status": "REJECTED",
+        "writes": 0
+      }
+    },
+    {
+      "case": "coherent_wrong_decision",
+      "files_observed": 0,
+      "result": {
+        "status": "REJECTED",
+        "writes": 0
+      }
+    }
+  ]
+}

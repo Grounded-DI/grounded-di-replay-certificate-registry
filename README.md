@@ -415,3 +415,9 @@ Two fresh computations matched all six frozen computational boundaries and the r
 [Demonstration](benchmarks/2026-11-01-releasegate-promotion-replay/README.md) · [Reproducibility archive](benchmarks/2026-11-01-releasegate-promotion-replay/ReleaseGate_Reproducibility.zip) · [Comparisons](benchmarks/2026-11-01-releasegate-promotion-replay/execution/comparison.json)
 
 Two fresh processes matched seven frozen canonical outputs; 11 local negative controls passed, and rejected candidates caused no synthetic destination writes in the tested cases. The project-local demo does not exercise a real deployment service.
+
+## Lighthouse ReleaseGate — seven-boundary local replay (November 1, 2026)
+
+[Replay and package](benchmarks/2026-11-01-lighthouse-releasegate-replay/README.md) · [Verification](benchmarks/2026-11-01-lighthouse-releasegate-replay/verification.json)
+
+A fictional release candidate passed two matching local runs across seven canonical artifacts and 11 mutation controls. The project checker and synthetic local write test are scoped in the record; no production deployment is claimed.
