@@ -1,0 +1,127 @@
+README.md: OK
+execution/a/01.json: OK
+execution/a/02.json: OK
+execution/a/03.json: OK
+execution/a/04.json: OK
+execution/a/05.json: OK
+execution/a/06.json: OK
+execution/a/07.json: OK
+execution/a.stderr: OK
+execution/a.stdout: OK
+execution/b/01.json: OK
+execution/b/02.json: OK
+execution/b/03.json: OK
+execution/b/04.json: OK
+execution/b/05.json: OK
+execution/b/06.json: OK
+execution/b/07.json: OK
+execution/b.stderr: OK
+execution/b.stdout: OK
+execution/check_a.stderr: OK
+execution/check_a.stdout: OK
+execution/check_b.stderr: OK
+execution/check_b.stdout: OK
+execution/commands.json: OK
+execution/comparisons.json: OK
+execution/controls.stderr: OK
+execution/controls.stdout: OK
+execution/environment.json: OK
+execution/frozen.stderr: OK
+execution/frozen.stdout: OK
+execution/frozen_after.stderr: OK
+execution/frozen_after.stdout: OK
+execution/summary.json: OK
+src/FROZEN.sha256: OK
+src/checker.py: OK
+src/contract.json: OK
+src/expected_hashes.json: OK
+src/fixture.json: OK
+src/freeze_expected.py: OK
+src/producer.py: OK
+src/test_controls.py: OK
+verify.py: OK
+{
+  "status": "PASS",
+  "registered": 7,
+  "executed": 7,
+  "passed": 7,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "observations": [
+    {
+      "expected": "checker rejects",
+      "actual": "checker rejects",
+      "assertion": true
+    },
+    {
+      "actual": "REVIEW_QUANTITY",
+      "assertion": true,
+      "expected": "REVIEW_QUANTITY"
+    },
+    {
+      "expected": "checker rejects",
+      "actual": "checker rejects",
+      "assertion": true
+    },
+    {
+      "actual": "REVIEW_DUPLICATE",
+      "assertion": true,
+      "expected": "REVIEW_DUPLICATE"
+    },
+    {
+      "actual": "REVIEW_MISSING",
+      "assertion": true,
+      "expected": "REVIEW_MISSING"
+    },
+    {
+      "expected": "REJECT validation",
+      "actual": "REJECT validation",
+      "assertion": true
+    },
+    {
+      "actual": "REVIEW_DESTINATION",
+      "assertion": true,
+      "expected": "REVIEW_DESTINATION"
+    }
+  ],
+  "baseline": {
+    "counts": {
+      "RECONCILED": 1,
+      "REVIEW_DESTINATION": 1,
+      "REVIEW_DUPLICATE": 1,
+      "REVIEW_MISSING": 1,
+      "REVIEW_QUANTITY": 1
+    },
+    "limitation": "synthetic records do not prove physical delivery",
+    "reconciled_quantity": 10,
+    "unknown_or_review_shipments": [
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  }
+}
+CLEAN_AUDIT_PASS
+
+Clean-extraction raw control process output:
+test_altered_intermediate (test_controls.Controls.test_altered_intermediate) ... ok
+test_changed_shipment (test_controls.Controls.test_changed_shipment) ... ok
+test_coherent_wrong_final (test_controls.Controls.test_coherent_wrong_final) ... ok
+test_duplicate_record (test_controls.Controls.test_duplicate_record) ... ok
+test_missing_receiver (test_controls.Controls.test_missing_receiver) ... ok
+test_missing_units (test_controls.Controls.test_missing_units) ... ok
+test_wrong_destination (test_controls.Controls.test_wrong_destination) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+OK
+{"expected": "checker rejects", "actual": "checker rejects", "assertion": true}
+{"actual": "REVIEW_QUANTITY", "assertion": true, "expected": "REVIEW_QUANTITY"}
+{"expected": "checker rejects", "actual": "checker rejects", "assertion": true}
+{"actual": "REVIEW_DUPLICATE", "assertion": true, "expected": "REVIEW_DUPLICATE"}
+{"actual": "REVIEW_MISSING", "assertion": true, "expected": "REVIEW_MISSING"}
+{"expected": "REJECT validation", "actual": "REJECT validation", "assertion": true}
+{"actual": "REVIEW_DESTINATION", "assertion": true, "expected": "REVIEW_DESTINATION"}

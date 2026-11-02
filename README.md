@@ -474,3 +474,9 @@ Two fresh local executions matched seven frozen artifacts; all seven controls an
 ## Flood-to-delivery alternate-route replay — November 2, 2026
 
 [Replay and reproducibility evidence](benchmarks/2026-11-02-flood-delivery-alternate-route-replay/README.md) — A synthetic closed direct road diverts supply via an intermediate node. Seven frozen boundaries and seven project controls passed; the scenario is not an emergency plan.
+
+## Delivery-to-inventory reconciliation replay — November 2, 2026
+
+[Replay record](benchmarks/2026-11-02-delivery-inventory-reconciliation-replay/README.md) · [Reproducibility package](benchmarks/2026-11-02-delivery-inventory-reconciliation-replay/Delivery_Inventory_Replay.zip)
+
+Two fresh runs matched seven frozen artifacts; seven mutation and tampering controls and a clean-extraction audit passed. The shipment and receipt records are fictional.
