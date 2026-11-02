@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "registered": 9,
+  "executed": 9,
+  "passed": 9,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "records": [
+    {
+      "name": "changed_amount",
+      "change": "amount 2 -> 3 mol",
+      "expected": "15/4 K and verifier REJECT",
+      "actual": {
+        "status": "PASS",
+        "temperature_change_K": "15/4"
+      },
+      "pipeline_exit": 0,
+      "pipeline_stdout": "{\"status\": \"PASS\", \"temperature_change_K\": \"15/4\"}\n",
+      "pipeline_stderr": "",
+      "checker": {
+        "exit": 1,
+        "stdout": "{\"commitment_consistent\": true, \"frozen_fixture\": false, \"hashes\": false, \"math\": true, \"status\": \"REJECT\", \"units\": true}\n",
+        "stderr": ""
+      },
+      "assertion": "PASS"
+    },
+    {
+      "name": "changed_energy",
+      "change": "energy 40 -> 20 kJ/mol",
+      "expected": "5/4 K and verifier REJECT",
+      "actual": {
+        "status": "PASS",
+        "temperature_change_K": "5/4"
+      },
+      "pipeline_exit": 0,
+      "pipeline_stdout": "{\"status\": \"PASS\", \"temperature_change_K\": \"5/4\"}\n",
+      "pipeline_stderr": "",
+      "checker": {
+        "exit": 1,
+        "stdout": "{\"commitment_consistent\": true, \"frozen_fixture\": false, \"hashes\": false, \"math\": true, \"status\": \"REJECT\", \"units\": true}\n",
+        "stderr": ""
+      },
+      "assertion": "PASS"
+    },
+    {
+      "name": "unit_swap",
+      "change": "unit kJ/mol -> J/mol without converting value",
+      "expected": "controlled REJECT, no output",
+      "actual": {
+        "field": "energy_per_mole",
+        "reason": "UNIT_OR_SCHEMA",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"field\": \"energy_per_mole\", \"reason\": \"UNIT_OR_SCHEMA\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "capture_outside_range",
+      "change": "capture fraction -> 3/2",
+      "expected": "controlled REJECT, no output",
+      "actual": {
+        "reason": "CAPTURE_RANGE",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"CAPTURE_RANGE\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "zero_mass",
+      "change": "water mass -> 0 kg",
+      "expected": "controlled REJECT, no output",
+      "actual": {
+        "reason": "NONPOSITIVE_DENOMINATOR",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"NONPOSITIVE_DENOMINATOR\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "zero_heat_capacity",
+      "change": "heat capacity -> 0 J/(kg*K)",
+      "expected": "controlled REJECT, no output",
+      "actual": {
+        "reason": "NONPOSITIVE_DENOMINATOR",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"NONPOSITIVE_DENOMINATOR\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "missing_unit",
+      "change": "water mass unit removed",
+      "expected": "controlled REJECT, no output",
+      "actual": {
+        "field": "water_mass",
+        "reason": "UNIT_OR_SCHEMA",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"field\": \"water_mass\", \"reason\": \"UNIT_OR_SCHEMA\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "altered_chemistry_handoff",
+      "change": "chemistry output modified from 80000 J to 80001 J",
+      "expected": "controlled REJECT, no output",
+      "actual": {
+        "reason": "CHEMISTRY_HANDOFF_MISMATCH",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"CHEMISTRY_HANDOFF_MISMATCH\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "name": "coherent_wrong_temperature_rehashed",
+      "change": "temperature changed to zero and commitment recomputed",
+      "expected": "consistent commitment, math and frozen checks REJECT",
+      "actual": {
+        "commitment_consistent": true,
+        "frozen_fixture": true,
+        "hashes": false,
+        "math": false,
+        "status": "REJECT",
+        "units": true
+      },
+      "pipeline_exit": 0,
+      "pipeline_stdout": "{\"status\": \"PASS\", \"temperature_change_K\": \"5/2\"}\n",
+      "pipeline_stderr": "",
+      "checker": {
+        "exit": 1,
+        "stdout": "{\"commitment_consistent\": true, \"frozen_fixture\": true, \"hashes\": false, \"math\": false, \"status\": \"REJECT\", \"units\": true}\n",
+        "stderr": ""
+      },
+      "assertion": "PASS"
+    }
+  ]
+}

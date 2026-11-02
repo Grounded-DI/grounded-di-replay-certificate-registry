@@ -427,3 +427,10 @@ A fictional release candidate passed two matching local runs across seven canoni
 [Replay record](benchmarks/2026-11-01-releasegate-v2-local-write/README.md) · [Verification](benchmarks/2026-11-01-releasegate-v2-local-write/verification.json) · [Reproducibility package](benchmarks/2026-11-01-releasegate-v2-local-write/ReleaseGate_V2_Reproducibility.zip)
 
 Two fresh processes matched seven frozen artifacts; 12 controls passed, including altered physical destination, traversal and coherently rehashed output tampering. The bounded local filesystem and trust assumptions are stated in the record.
+
+
+## Chemistry to Physics — Linked Seven-Boundary Replay (November 1, 2026)
+
+[Replay and assumptions](benchmarks/2026-11-01-chemistry-physics-calorimetry-replay/README.md) · [Reproducibility ZIP](benchmarks/2026-11-01-chemistry-physics-calorimetry-replay/Chemistry_Physics_Seven_Boundary_Replay.zip) · [Comparisons](benchmarks/2026-11-01-chemistry-physics-calorimetry-replay/execution/comparisons.json)
+
+Two fresh local executions reproduced seven linked calorimetry records; all nine registered controls passed. The fixture and energy assumptions are synthetic, not measurements or predictions of real reaction behavior.

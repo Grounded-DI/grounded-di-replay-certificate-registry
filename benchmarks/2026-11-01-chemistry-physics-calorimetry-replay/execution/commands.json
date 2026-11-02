@@ -1,0 +1,65 @@
+[
+  {
+    "name": "run_a",
+    "command": [
+      "python3",
+      "-B",
+      "pipeline.py",
+      "--out",
+      "run_a"
+    ],
+    "start_utc": "2026-11-02T02:51:46.247682+00:00",
+    "end_utc": "2026-11-02T02:51:46.297474+00:00",
+    "exit": 0
+  },
+  {
+    "name": "run_b",
+    "command": [
+      "python3",
+      "-B",
+      "pipeline.py",
+      "--out",
+      "run_b"
+    ],
+    "start_utc": "2026-11-02T02:51:46.297686+00:00",
+    "end_utc": "2026-11-02T02:51:46.349365+00:00",
+    "exit": 0
+  },
+  {
+    "name": "checker_a",
+    "command": [
+      "python3",
+      "-B",
+      "checker.py",
+      "--out",
+      "run_a"
+    ],
+    "start_utc": "2026-11-02T02:51:46.349586+00:00",
+    "end_utc": "2026-11-02T02:51:46.400388+00:00",
+    "exit": 0
+  },
+  {
+    "name": "checker_b",
+    "command": [
+      "python3",
+      "-B",
+      "checker.py",
+      "--out",
+      "run_b"
+    ],
+    "start_utc": "2026-11-02T02:51:46.400600+00:00",
+    "end_utc": "2026-11-02T02:51:46.462056+00:00",
+    "exit": 0
+  },
+  {
+    "name": "controls",
+    "command": [
+      "python3",
+      "-B",
+      "controls.py"
+    ],
+    "start_utc": "2026-11-02T02:51:46.462266+00:00",
+    "end_utc": "2026-11-02T02:51:47.156664+00:00",
+    "exit": 0
+  }
+]
