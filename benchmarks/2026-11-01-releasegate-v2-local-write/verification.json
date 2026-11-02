@@ -1,0 +1,604 @@
+{
+  "artifact_sha256": "8d13709e60f4a257f72b25ca5e7a3323f18e7fb89b2c95e6da43a0737498733f",
+  "boundaries": [
+    {
+      "byte_equal": true,
+      "expected": "d34e1f6f5d028b07020ed489f4570d7c6525d0f5d3348c7d10247921feb6d4ec",
+      "name": "01_request",
+      "run_a": "d34e1f6f5d028b07020ed489f4570d7c6525d0f5d3348c7d10247921feb6d4ec",
+      "run_b": "d34e1f6f5d028b07020ed489f4570d7c6525d0f5d3348c7d10247921feb6d4ec"
+    },
+    {
+      "byte_equal": true,
+      "expected": "b0b48b249670c4d4dd6b6983339311818c00660d85a266b04236acceae70ec00",
+      "name": "02_identity",
+      "run_a": "b0b48b249670c4d4dd6b6983339311818c00660d85a266b04236acceae70ec00",
+      "run_b": "b0b48b249670c4d4dd6b6983339311818c00660d85a266b04236acceae70ec00"
+    },
+    {
+      "byte_equal": true,
+      "expected": "2327ed811036f8d10270aec5924f46696a7277613b7873a0e1350fd40605e1e9",
+      "name": "03_tests",
+      "run_a": "2327ed811036f8d10270aec5924f46696a7277613b7873a0e1350fd40605e1e9",
+      "run_b": "2327ed811036f8d10270aec5924f46696a7277613b7873a0e1350fd40605e1e9"
+    },
+    {
+      "byte_equal": true,
+      "expected": "701dad29c5f2e91a84aeb91db799c4d2dd64b630f5262541a4855e706e04f80a",
+      "name": "04_approval",
+      "run_a": "701dad29c5f2e91a84aeb91db799c4d2dd64b630f5262541a4855e706e04f80a",
+      "run_b": "701dad29c5f2e91a84aeb91db799c4d2dd64b630f5262541a4855e706e04f80a"
+    },
+    {
+      "byte_equal": true,
+      "expected": "dea4f869d6ede5ad442576e9719bb1abbb2c3addc7104cf64474c52c8104cc12",
+      "name": "05_destination",
+      "run_a": "dea4f869d6ede5ad442576e9719bb1abbb2c3addc7104cf64474c52c8104cc12",
+      "run_b": "dea4f869d6ede5ad442576e9719bb1abbb2c3addc7104cf64474c52c8104cc12"
+    },
+    {
+      "byte_equal": true,
+      "expected": "32bc0532686c78151ce89edd15154977fa9ff6375fd92a9593b65696d4684a0e",
+      "name": "06_decision",
+      "run_a": "32bc0532686c78151ce89edd15154977fa9ff6375fd92a9593b65696d4684a0e",
+      "run_b": "32bc0532686c78151ce89edd15154977fa9ff6375fd92a9593b65696d4684a0e"
+    },
+    {
+      "byte_equal": true,
+      "expected": "d50b69dc997f0d8703b0dada18d055418cfc6e1dad1fac1741eb7b34542ff32c",
+      "name": "07_commitment",
+      "run_a": "d50b69dc997f0d8703b0dada18d055418cfc6e1dad1fac1741eb7b34542ff32c",
+      "run_b": "d50b69dc997f0d8703b0dada18d055418cfc6e1dad1fac1741eb7b34542ff32c"
+    }
+  ],
+  "checker": "Separate project implementation recomputes six outputs from source case, then checks the commitment. Shares project, policy, frozen contract, input records, Python runtime, JSON and SHA-256 primitives.",
+  "clean_extract_recheck": {
+    "archive_sha256": "b0c7092ec3461f3b1058f3b89c8efa7c55303b1481d7f97a340d137693c24546",
+    "counts": {
+      "errors": 0,
+      "executed": 12,
+      "failed": 0,
+      "passed": 12,
+      "registered": 12,
+      "skipped": 0
+    },
+    "status": "PASS"
+  },
+  "contract_sha256": "fe45cf8c92ef575a5151ba5cf9bed17df183c303af08bb2fa539becf6d143621",
+  "controls": [
+    {
+      "actual_decision": {
+        "eligible": false,
+        "reasons": [
+          "approval"
+        ]
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "eligible": false,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "approval"
+          ]
+        },
+        "pass": true
+      },
+      "error": null,
+      "expected": [
+        "approval"
+      ],
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "approval_changed",
+      "name": "approval_changed",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    },
+    {
+      "actual_decision": {
+        "eligible": false,
+        "reasons": [
+          "approval"
+        ]
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "eligible": false,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "approval"
+          ]
+        },
+        "pass": true
+      },
+      "error": null,
+      "expected": [
+        "approval"
+      ],
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "approval_missing",
+      "name": "approval_missing",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    },
+    {
+      "actual_decision": {
+        "eligible": false,
+        "reasons": [
+          "artifact",
+          "provenance",
+          "approval"
+        ]
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "eligible": false,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "artifact",
+            "provenance",
+            "approval"
+          ]
+        },
+        "pass": true
+      },
+      "error": null,
+      "expected": [
+        "artifact",
+        "provenance",
+        "approval"
+      ],
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "artifact_changed",
+      "name": "artifact_changed",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    },
+    {
+      "actual_decision": {
+        "eligible": true,
+        "reasons": [],
+        "tampered": true
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "commitment_valid": true,
+        "eligible": true,
+        "expected_decision": {
+          "eligible": true,
+          "reasons": []
+        },
+        "pass": false
+      },
+      "error": null,
+      "expected": "boundary_06_mismatch_commitment_valid",
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "decision_tamper",
+      "name": "decision_tamper",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    },
+    {
+      "actual_decision": {
+        "eligible": false,
+        "reasons": [
+          "approval",
+          "destination"
+        ]
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "eligible": false,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "approval",
+            "destination"
+          ]
+        },
+        "pass": true
+      },
+      "error": null,
+      "expected": [
+        "approval",
+        "destination"
+      ],
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "declared_destination_changed",
+      "name": "declared_destination_changed",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    },
+    {
+      "actual_decision": {
+        "eligible": true,
+        "reasons": []
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "eligible": true,
+        "expected_decision": {
+          "eligible": true,
+          "reasons": []
+        },
+        "pass": false
+      },
+      "error": null,
+      "expected": "boundary_02_mismatch_commitment_valid",
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "intermediate_tamper",
+      "name": "intermediate_tamper",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    },
+    {
+      "actual_decision": {
+        "eligible": false,
+        "reasons": [
+          "provenance"
+        ]
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "eligible": false,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "provenance"
+          ]
+        },
+        "pass": true
+      },
+      "error": null,
+      "expected": [
+        "provenance"
+      ],
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "missing_provenance",
+      "name": "missing_provenance",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    },
+    {
+      "actual_decision": {
+        "eligible": false,
+        "reasons": [
+          "request",
+          "approval"
+        ]
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "eligible": false,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "request",
+            "approval"
+          ]
+        },
+        "pass": true
+      },
+      "error": null,
+      "expected": [
+        "request",
+        "approval"
+      ],
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "missing_required_field",
+      "name": "missing_required_field",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    },
+    {
+      "actual_decision": {
+        "eligible": false,
+        "reasons": [
+          "tests"
+        ]
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "eligible": false,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "tests"
+          ]
+        },
+        "pass": true
+      },
+      "error": null,
+      "expected": [
+        "tests"
+      ],
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "missing_test",
+      "name": "missing_test",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    },
+    {
+      "actual_decision": {
+        "eligible": false,
+        "reasons": [
+          "physical_path"
+        ]
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "eligible": false,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "physical_path"
+          ]
+        },
+        "pass": true
+      },
+      "error": null,
+      "expected": [
+        "physical_path"
+      ],
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "path_traversal",
+      "name": "path_traversal",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    },
+    {
+      "actual_decision": {
+        "eligible": false,
+        "reasons": [
+          "physical_path"
+        ]
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "eligible": false,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "physical_path"
+          ]
+        },
+        "pass": true
+      },
+      "error": null,
+      "expected": [
+        "physical_path"
+      ],
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "physical_destination_changed",
+      "name": "physical_destination_changed",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    },
+    {
+      "actual_decision": {
+        "eligible": false,
+        "reasons": [
+          "policy"
+        ]
+      },
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "eligible": false,
+        "expected_decision": {
+          "eligible": false,
+          "reasons": [
+            "policy"
+          ]
+        },
+        "pass": true
+      },
+      "error": null,
+      "expected": [
+        "policy"
+      ],
+      "inspection": {
+        "attempted_exists": false,
+        "authorized_exists": false
+      },
+      "mutation": "policy_changed_same_label",
+      "name": "policy_changed_same_label",
+      "passed": true,
+      "process_exit": 0,
+      "write": {
+        "status": "REJECT",
+        "writes": 0
+      }
+    }
+  ],
+  "counts": {
+    "errors": 0,
+    "executed": 12,
+    "failed": 0,
+    "passed": 12,
+    "registered": 12,
+    "skipped": 0
+  },
+  "environment": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "limitations": "Trusted sandbox root and precreated parent; no concurrent filesystem modification or hostile host; no production, real deployment, external certification, exactly-once or universal model-determinism claims.",
+  "package_sha256": "3ddd5bc280d67f19fcc2234a7aeae6b610430b91c369328223bd892fd378ede3",
+  "policy_sha256": "d4d4156ed82f3d777a628147356a07280c881186754cbe8fe9552808a997e2b0",
+  "schema": "releasegate-v2-local-report-v1",
+  "status": "PASS"
+}

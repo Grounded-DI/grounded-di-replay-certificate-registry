@@ -421,3 +421,9 @@ Two fresh processes matched seven frozen canonical outputs; 11 local negative co
 [Replay and package](benchmarks/2026-11-01-lighthouse-releasegate-replay/README.md) · [Verification](benchmarks/2026-11-01-lighthouse-releasegate-replay/verification.json)
 
 A fictional release candidate passed two matching local runs across seven canonical artifacts and 11 mutation controls. The project checker and synthetic local write test are scoped in the record; no production deployment is claimed.
+
+## ReleaseGate V2 — local destination binding (November 1, 2026)
+
+[Replay record](benchmarks/2026-11-01-releasegate-v2-local-write/README.md) · [Verification](benchmarks/2026-11-01-releasegate-v2-local-write/verification.json) · [Reproducibility package](benchmarks/2026-11-01-releasegate-v2-local-write/ReleaseGate_V2_Reproducibility.zip)
+
+Two fresh processes matched seven frozen artifacts; 12 controls passed, including altered physical destination, traversal and coherently rehashed output tampering. The bounded local filesystem and trust assumptions are stated in the record.
