@@ -454,3 +454,9 @@ A synthetic heating calculation uses the NIST 298 K liquid-water heat-capacity t
 [Replay and source](benchmarks/2026-11-01-nist-water-shomate-temperature-replay/README.md) · [Clean-extraction audit](benchmarks/2026-11-01-nist-water-shomate-temperature-replay/audit/AUDIT.md) · [Reproducibility ZIP](benchmarks/2026-11-01-nist-water-shomate-temperature-replay/NIST_Water_Shomate_Seven_Replay.zip)
 
 For one synthetic mole warmed from 298 to 300 K, the NIST Shomate integral yields approximately 150.727449 J; a rounded constant-capacity approximation gives 150.76 J. Two fresh executions and a clean-extraction audit matched seven boundaries; nine controls passed. This is a calculation under stated assumptions, not an experiment.
+
+## ReleaseGate V4 — authenticated receipt and planted file (November 1, 2026)
+
+[Replay record](benchmarks/2026-11-01-releasegate-v4-authenticated-receipt/README.md) · [Verification](benchmarks/2026-11-01-releasegate-v4-authenticated-receipt/verification.json) · [Reproducibility package](benchmarks/2026-11-01-releasegate-v4-authenticated-receipt/ReleaseGate_V4_Reproducibility.zip)
+
+Two local baselines matched seven frozen artifacts and 15 scenarios passed. A planted matching file produced the same canonical outputs as the lost-confirmation baseline; the record states the test-key and trust limits.

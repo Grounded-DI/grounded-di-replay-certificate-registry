@@ -1,0 +1,984 @@
+{
+  "boundaries": [
+    {
+      "a": "fccf1320f8c0f16924bebdeadeb603fb17335d095ed14d7bfe7a864d8175c201",
+      "b": "fccf1320f8c0f16924bebdeadeb603fb17335d095ed14d7bfe7a864d8175c201",
+      "byte_equal": true,
+      "expected": "fccf1320f8c0f16924bebdeadeb603fb17335d095ed14d7bfe7a864d8175c201",
+      "name": "01_request",
+      "pass": true
+    },
+    {
+      "a": "e67b7bda9517681d1df39ad81112b4f44316b053e8909c638a654e8f381704e6",
+      "b": "e67b7bda9517681d1df39ad81112b4f44316b053e8909c638a654e8f381704e6",
+      "byte_equal": true,
+      "expected": "e67b7bda9517681d1df39ad81112b4f44316b053e8909c638a654e8f381704e6",
+      "name": "02_binding",
+      "pass": true
+    },
+    {
+      "a": "2fcf55319b68b77fa8657bdf41ee09b0edc5b7db2ae2b40351955e6c56f58d21",
+      "b": "2fcf55319b68b77fa8657bdf41ee09b0edc5b7db2ae2b40351955e6c56f58d21",
+      "byte_equal": true,
+      "expected": "2fcf55319b68b77fa8657bdf41ee09b0edc5b7db2ae2b40351955e6c56f58d21",
+      "name": "03_authorization",
+      "pass": true
+    },
+    {
+      "a": "3ed4a0b356c3b3e042115a80973ea0ec48bfd8ead8661731f8a981285bee232c",
+      "b": "3ed4a0b356c3b3e042115a80973ea0ec48bfd8ead8661731f8a981285bee232c",
+      "byte_equal": true,
+      "expected": "3ed4a0b356c3b3e042115a80973ea0ec48bfd8ead8661731f8a981285bee232c",
+      "name": "04_receipt",
+      "pass": true
+    },
+    {
+      "a": "5cea1a2bb834153ec9e2b7b8332974789cde054838a9399d690d7c802bcd652f",
+      "b": "5cea1a2bb834153ec9e2b7b8332974789cde054838a9399d690d7c802bcd652f",
+      "byte_equal": true,
+      "expected": "5cea1a2bb834153ec9e2b7b8332974789cde054838a9399d690d7c802bcd652f",
+      "name": "05_observation",
+      "pass": true
+    },
+    {
+      "a": "817a91994ccad830253b0a3a76468d25ccfe284fc7718af5073d0e216cf278ac",
+      "b": "817a91994ccad830253b0a3a76468d25ccfe284fc7718af5073d0e216cf278ac",
+      "byte_equal": true,
+      "expected": "817a91994ccad830253b0a3a76468d25ccfe284fc7718af5073d0e216cf278ac",
+      "name": "06_recovery",
+      "pass": true
+    },
+    {
+      "a": "dfe4e218f1b95c07ec82a62a67f4833556ad510355f2a8c2c24ac51d0e4fa684",
+      "b": "dfe4e218f1b95c07ec82a62a67f4833556ad510355f2a8c2c24ac51d0e4fa684",
+      "byte_equal": true,
+      "expected": "dfe4e218f1b95c07ec82a62a67f4833556ad510355f2a8c2c24ac51d0e4fa684",
+      "name": "07_commitment",
+      "pass": true
+    }
+  ],
+  "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+  "checker": "Separate project implementation recalculates baseline six boundaries from frozen request, policy and observed local files, and verifies commitment; shares test keys, source input, project, host, Python, JSON, HMAC and SHA-256 primitives.",
+  "clean_extract_recheck": {
+    "archive_sha256": "66ae924b83ca6a2592bbe4c370a8e598954d314c4cc9d75228768a9be7306f5f",
+    "counts": {
+      "errors": 0,
+      "executed": 15,
+      "failed": 0,
+      "passed": 15,
+      "registered": 15,
+      "skipped": 0
+    },
+    "status": "PASS"
+  },
+  "contract_sha256": "34e97158a064b461521d55b56788dcca63661ea337d8d6c8fab443e408fec92b",
+  "counts": {
+    "errors": 0,
+    "executed": 15,
+    "failed": 0,
+    "passed": 15,
+    "registered": 15,
+    "skipped": 0
+  },
+  "environment": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "limitations": "Both HMAC keys are PUBLIC TEST FIXTURES. HMAC demonstrates verification of key possession only under a hypothetical trusted-key assumption, not an actual trusted identity. Matching receipt and bytes do not prove who created the destination or when. The local fixture can forge tags. Trusted uncontended filesystem, no hostile actors; file fsync only, parent not fsynced. No real key custody, timestamps, real deployment, external certification, arbitrary crash safety, distributed exactly-once or universal model determinism claim.",
+  "package_sha256": "96ba9b4fdc966ad171f093e69554dde9208bc3eca21017089f6fa118bf903ea7",
+  "planted_comparison": {
+    "comparison": [
+      {
+        "baseline_sha256": "fccf1320f8c0f16924bebdeadeb603fb17335d095ed14d7bfe7a864d8175c201",
+        "equal": true,
+        "file": "01_request.json",
+        "planted_sha256": "fccf1320f8c0f16924bebdeadeb603fb17335d095ed14d7bfe7a864d8175c201"
+      },
+      {
+        "baseline_sha256": "e67b7bda9517681d1df39ad81112b4f44316b053e8909c638a654e8f381704e6",
+        "equal": true,
+        "file": "02_binding.json",
+        "planted_sha256": "e67b7bda9517681d1df39ad81112b4f44316b053e8909c638a654e8f381704e6"
+      },
+      {
+        "baseline_sha256": "2fcf55319b68b77fa8657bdf41ee09b0edc5b7db2ae2b40351955e6c56f58d21",
+        "equal": true,
+        "file": "03_authorization.json",
+        "planted_sha256": "2fcf55319b68b77fa8657bdf41ee09b0edc5b7db2ae2b40351955e6c56f58d21"
+      },
+      {
+        "baseline_sha256": "3ed4a0b356c3b3e042115a80973ea0ec48bfd8ead8661731f8a981285bee232c",
+        "equal": true,
+        "file": "04_receipt.json",
+        "planted_sha256": "3ed4a0b356c3b3e042115a80973ea0ec48bfd8ead8661731f8a981285bee232c"
+      },
+      {
+        "baseline_sha256": "5cea1a2bb834153ec9e2b7b8332974789cde054838a9399d690d7c802bcd652f",
+        "equal": true,
+        "file": "05_observation.json",
+        "planted_sha256": "5cea1a2bb834153ec9e2b7b8332974789cde054838a9399d690d7c802bcd652f"
+      },
+      {
+        "baseline_sha256": "817a91994ccad830253b0a3a76468d25ccfe284fc7718af5073d0e216cf278ac",
+        "equal": true,
+        "file": "06_recovery.json",
+        "planted_sha256": "817a91994ccad830253b0a3a76468d25ccfe284fc7718af5073d0e216cf278ac"
+      },
+      {
+        "baseline_sha256": "dfe4e218f1b95c07ec82a62a67f4833556ad510355f2a8c2c24ac51d0e4fa684",
+        "equal": true,
+        "file": "07_commitment.json",
+        "planted_sha256": "dfe4e218f1b95c07ec82a62a67f4833556ad510355f2a8c2c24ac51d0e4fa684"
+      }
+    ],
+    "fixture_planted_writes": 1,
+    "gate_write_attempts": 0,
+    "meaning": "The local snapshots and seven canonical outputs match; different historical causes are not distinguished.",
+    "status": "PASS"
+  },
+  "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+  "scenarios": [
+    {
+      "actual": {
+        "decision": "HOLD",
+        "reason": "receipt_invalid"
+      },
+      "actual_disposition": "HOLD",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "HOLD",
+        "reason": "receipt_invalid"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "altered_receipt",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "different",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "HOLD",
+        "reason": "destination_mismatch"
+      },
+      "actual_disposition": "HOLD",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "HOLD",
+        "reason": "destination_mismatch"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "different_destination_bytes",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "696e6a656374656420646966666572656e74206279746573",
+        "destination_sha256": "7d29e630addf36505f3db4b12faf80f41a350eebf726ca3d69286d9912385cc1",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "ALREADY_PRESENT",
+        "reason": "authenticated_receipt_and_matching_bytes"
+      },
+      "actual_disposition": "ALREADY_PRESENT",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "ALREADY_PRESENT"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "lost_confirmation",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "HOLD",
+        "reason": "receipt_missing"
+      },
+      "actual_disposition": "HOLD",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "HOLD",
+        "reason": "receipt_missing"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "missing_receipt",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": null,
+        "receipt_exists": false
+      }
+    },
+    {
+      "actual": {
+        "decision": "HOLD",
+        "reason": "receipt_invalid"
+      },
+      "actual_disposition": "HOLD",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "HOLD",
+        "reason": "receipt_invalid"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "new_id_same_candidate",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "ALREADY_PRESENT",
+        "reason": "authenticated_receipt_and_matching_bytes"
+      },
+      "actual_disposition": "ALREADY_PRESENT",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "ALREADY_PRESENT"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 0,
+      "initial_state": {
+        "ack_exists": true,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "normal",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": true,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "HOLD",
+        "reason": "destination_mismatch"
+      },
+      "actual_disposition": "HOLD",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "HOLD",
+        "reason": "destination_mismatch"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "partial_destination_bytes",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374",
+        "destination_sha256": "ed3c4ba43b9d9df479daae62d7c9f45ccb629ae2a086469bb0d1198692242515",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "ALREADY_PRESENT",
+        "reason": "authenticated_receipt_and_matching_bytes"
+      },
+      "actual_disposition": "ALREADY_PRESENT",
+      "checker": null,
+      "expected": {
+        "attempts": 0,
+        "decision": "ALREADY_PRESENT",
+        "reason": "authenticated_receipt_and_matching_bytes"
+      },
+      "fixture_planted_writes": 1,
+      "gate_attempts": 0,
+      "initial_exit": 70,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 0,
+        "destination_exists": false,
+        "destination_hex": null,
+        "destination_sha256": null,
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "planted_file",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 0,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "HOLD",
+        "reason": "receipt_invalid"
+      },
+      "actual_disposition": "HOLD",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "HOLD",
+        "reason": "receipt_invalid"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "receipt_other_request",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "25a2962fcc3fab8ce01cd20374d530790f7d93b1f61def7acc23e6dc1a445911",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-previous"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "ALREADY_PRESENT",
+        "reason": "authenticated_receipt_and_matching_bytes"
+      },
+      "actual_disposition": "CHECKER_REJECT",
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "commitment_valid": true,
+        "expected_decision": {
+          "decision": "ALREADY_PRESENT",
+          "reason": "authenticated_receipt_and_matching_bytes"
+        },
+        "status": "FAIL"
+      },
+      "expected": {
+        "attempts": 1,
+        "decision": "CHECKER_REJECT"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "rehash_decision_artifact",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "ALREADY_PRESENT",
+        "reason": "authenticated_receipt_and_matching_bytes"
+      },
+      "actual_disposition": "CHECKER_REJECT",
+      "checker": {
+        "boundary_matches": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ],
+        "commitment_valid": true,
+        "expected_decision": {
+          "decision": "ALREADY_PRESENT",
+          "reason": "authenticated_receipt_and_matching_bytes"
+        },
+        "status": "FAIL"
+      },
+      "expected": {
+        "attempts": 1,
+        "decision": "CHECKER_REJECT"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "rehash_receipt_artifact",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "HOLD",
+        "reason": "request_not_authorized"
+      },
+      "actual_disposition": "HOLD",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "HOLD",
+        "reason": "request_not_authorized"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "same_id_changed_candidate",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "ALREADY_PRESENT",
+        "reason": "authenticated_receipt_and_matching_bytes"
+      },
+      "actual_disposition": "ALREADY_PRESENT",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "ALREADY_PRESENT"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "same_request_retry",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "HOLD",
+        "reason": "receipt_invalid"
+      },
+      "actual_disposition": "HOLD",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "HOLD",
+        "reason": "receipt_invalid"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "unsigned_receipt",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    },
+    {
+      "actual": {
+        "decision": "HOLD",
+        "reason": "receipt_invalid"
+      },
+      "actual_disposition": "HOLD",
+      "checker": null,
+      "expected": {
+        "attempts": 1,
+        "decision": "HOLD",
+        "reason": "receipt_invalid"
+      },
+      "fixture_planted_writes": 0,
+      "gate_attempts": 1,
+      "initial_exit": 71,
+      "initial_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-1",
+          "mac": "2f917121e066870c0b9b421ae2bccecbe289f321df0973c93cca597a44c58cd2",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      },
+      "name": "untrusted_key",
+      "passed": true,
+      "retry_exit": 0,
+      "retry_state": {
+        "ack_exists": false,
+        "attempts": 1,
+        "destination_exists": true,
+        "destination_hex": "46696374696f6e616c206c69676874686f7573652072656c656173652076340a",
+        "destination_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+        "receipt": {
+          "key_id": "test-key-2",
+          "mac": "b030c9d950c6d566ca18c5317559ec203b7356b8191a92d309d449d98a7d7e06",
+          "payload": {
+            "candidate_sha256": "12109332acac1340567e77465bed045a10dccfa3d266a9d5dd92f4f1b3cbac2e",
+            "destination": "synthetic-local-release",
+            "policy_sha256": "36623078e4b1e1118d301be192d393ebb7f029fc72cd362448a84599ace3fe38",
+            "request_id": "request-001"
+          }
+        },
+        "receipt_exists": true
+      }
+    }
+  ],
+  "schema": "releasegate-v4-local-report-v1",
+  "status": "PASS"
+}
