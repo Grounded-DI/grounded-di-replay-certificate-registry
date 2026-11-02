@@ -1,0 +1,82 @@
+First extraction audit (full process output):
+
+README.md: OK
+a/01.json: OK
+a/02.json: OK
+a/03.json: OK
+a/04.json: OK
+a/05.json: OK
+a/06.json: OK
+a/07.json: OK
+b/01.json: OK
+b/02.json: OK
+b/03.json: OK
+b/04.json: OK
+b/05.json: OK
+b/06.json: OK
+b/07.json: OK
+comparison.json: OK
+initial_execution.log: OK
+run/FROZEN.sha256: OK
+run/checker.py: OK
+run/contract.json: OK
+run/expected.json: OK
+run/producer.py: OK
+run/test_controls.py: OK
+contract.json: OK
+expected.json: OK
+producer.py: OK
+checker.py: OK
+test_controls.py: OK
+PASS
+PASS
+test_capacity (test_controls.Controls.test_capacity) ... ok
+test_legitimate_change (test_controls.Controls.test_legitimate_change) ... ok
+test_missing_unit (test_controls.Controls.test_missing_unit) ... ok
+test_rehash_wrong_result (test_controls.Controls.test_rehash_wrong_result) ... ok
+test_road_closed (test_controls.Controls.test_road_closed) ... ok
+test_tampered_stage (test_controls.Controls.test_tampered_stage) ... ok
+test_unreachable (test_controls.Controls.test_unreachable) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+OK
+01.json BYTE_AND_HASH_PASS
+02.json BYTE_AND_HASH_PASS
+03.json BYTE_AND_HASH_PASS
+04.json BYTE_AND_HASH_PASS
+05.json BYTE_AND_HASH_PASS
+06.json BYTE_AND_HASH_PASS
+07.json BYTE_AND_HASH_PASS
+README.md: OK
+a/01.json: OK
+a/02.json: OK
+a/03.json: OK
+a/04.json: OK
+a/05.json: OK
+a/06.json: OK
+a/07.json: OK
+b/01.json: OK
+b/02.json: OK
+b/03.json: OK
+b/04.json: OK
+b/05.json: OK
+b/06.json: OK
+b/07.json: OK
+clean_extraction_audit.log: OK
+comparison.json: OK
+initial_execution.log: OK
+run/FROZEN.sha256: OK
+run/checker.py: OK
+run/contract.json: OK
+run/expected.json: OK
+run/producer.py: OK
+run/test_controls.py: OK
+contract.json: OK
+expected.json: OK
+producer.py: OK
+checker.py: OK
+test_controls.py: OK
+
+Final package: both producers, both checkers and 7/7 controls returned exit code 0; all seven direct byte and SHA-256 comparisons passed. Captured command response records the final control output separately in the session; output above contains the first audit and final package checksum verification.

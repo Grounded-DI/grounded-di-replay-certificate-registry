@@ -463,3 +463,9 @@ For one synthetic mole warmed from 298 to 300 K, the NIST Shomate integral yield
 [Replay record](benchmarks/2026-11-01-releasegate-v4-authenticated-receipt/README.md) · [Verification](benchmarks/2026-11-01-releasegate-v4-authenticated-receipt/verification.json) · [Reproducibility package](benchmarks/2026-11-01-releasegate-v4-authenticated-receipt/ReleaseGate_V4_Reproducibility.zip)
 
 Two local baselines matched seven frozen artifacts and 15 scenarios passed. A planted matching file produced the same canonical outputs as the lost-confirmation baseline; the record states the test-key and trust limits.
+
+## Flood-to-delivery synthetic replay — November 2, 2026
+
+[Replay record](benchmarks/2026-11-02-flood-depot-delivery-replay/README.md) · [Reproducibility package](benchmarks/2026-11-02-flood-depot-delivery-replay/Flood_Depot_Replay.zip)
+
+Two fresh local executions matched seven frozen artifacts; all seven controls and a clean-extraction audit passed. The fixture is fictional and is not an emergency plan.
