@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "registered": 9,
+  "executed": 9,
+  "passed": 9,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "records": [
+    {
+      "case": "changed_coefficient",
+      "change": "A changed after freeze",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "reason": "SOURCE_IDENTITY",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"SOURCE_IDENTITY\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "case": "outside_range",
+      "change": "end temperature 501 K",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "reason": "RANGE",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"RANGE\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "case": "reversed_bounds",
+      "change": "reverse bounds",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "reason": "RANGE",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"RANGE\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "case": "missing_bound",
+      "change": "remove upper bound",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "reason": "SCHEMA",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"SCHEMA\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "case": "celsius",
+      "change": "set unit C without conversion",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "reason": "UNIT",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"UNIT\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "case": "kilojoules",
+      "change": "set energy unit kJ without conversion",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "reason": "UNIT",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"UNIT\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "case": "valid_input_change",
+      "change": "double amount to 2 mol",
+      "expected": "valid new doubled result, baseline checker rejects",
+      "actual": {
+        "constant_J": "7538/25",
+        "difference_J": "-727520899877/11175000000000",
+        "heat_J": "3368758479100123/11175000000000",
+        "status": "PASS"
+      },
+      "pipeline_exit": 0,
+      "pipeline_stdout": "{\"constant_J\": \"7538/25\", \"difference_J\": \"-727520899877/11175000000000\", \"heat_J\": \"3368758479100123/11175000000000\", \"status\": \"PASS\"}\n",
+      "pipeline_stderr": "",
+      "checker": {
+        "exit": 1,
+        "stdout": "{\"commitment_consistent\": true, \"frozen_bindings\": false, \"hashes\": false, \"math\": true, \"status\": \"REJECT\"}\n",
+        "stderr": ""
+      },
+      "assertion": "PASS"
+    },
+    {
+      "case": "altered_intermediate",
+      "change": "alter Cp endpoint record before integral",
+      "expected": "controlled rejection before output",
+      "actual": {
+        "reason": "HANDOFF",
+        "status": "REJECT"
+      },
+      "pipeline_exit": 2,
+      "pipeline_stdout": "{\"reason\": \"HANDOFF\", \"status\": \"REJECT\"}\n",
+      "pipeline_stderr": "",
+      "checker": null,
+      "assertion": "PASS"
+    },
+    {
+      "case": "wrong_result_rehashed",
+      "change": "replace final heat with zero and recompute commitment",
+      "expected": "consistent commitment but checker rejects",
+      "actual": {
+        "commitment_consistent": true,
+        "frozen_bindings": true,
+        "hashes": false,
+        "math": false,
+        "status": "REJECT"
+      },
+      "pipeline_exit": 0,
+      "pipeline_stdout": "{\"constant_J\": \"3769/25\", \"difference_J\": \"-727520899877/22350000000000\", \"heat_J\": \"3368758479100123/22350000000000\", \"status\": \"PASS\"}\n",
+      "pipeline_stderr": "",
+      "checker": {
+        "exit": 1,
+        "stdout": "{\"commitment_consistent\": true, \"frozen_bindings\": true, \"hashes\": false, \"math\": false, \"status\": \"REJECT\"}\n",
+        "stderr": ""
+      },
+      "assertion": "PASS"
+    }
+  ]
+}

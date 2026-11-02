@@ -1,0 +1,76 @@
+[
+  {
+    "name": "manifest",
+    "argv": [
+      "sha256sum",
+      "-c",
+      "SHA256SUMS.txt"
+    ],
+    "start_utc": "2026-11-02T03:12:40.360491+00:00",
+    "end_utc": "2026-11-02T03:12:40.365007+00:00",
+    "exit": 0
+  },
+  {
+    "name": "run_a",
+    "argv": [
+      "python3",
+      "-B",
+      "pipeline.py",
+      "--out",
+      "<audit-workspace>/fresh_a"
+    ],
+    "start_utc": "2026-11-02T03:12:40.365259+00:00",
+    "end_utc": "2026-11-02T03:12:40.417592+00:00",
+    "exit": 0
+  },
+  {
+    "name": "run_b",
+    "argv": [
+      "python3",
+      "-B",
+      "pipeline.py",
+      "--out",
+      "<audit-workspace>/fresh_b"
+    ],
+    "start_utc": "2026-11-02T03:12:40.417932+00:00",
+    "end_utc": "2026-11-02T03:12:40.514771+00:00",
+    "exit": 0
+  },
+  {
+    "name": "check_a",
+    "argv": [
+      "python3",
+      "-B",
+      "checker.py",
+      "--out",
+      "<audit-workspace>/fresh_a"
+    ],
+    "start_utc": "2026-11-02T03:12:40.515125+00:00",
+    "end_utc": "2026-11-02T03:12:40.567439+00:00",
+    "exit": 0
+  },
+  {
+    "name": "check_b",
+    "argv": [
+      "python3",
+      "-B",
+      "checker.py",
+      "--out",
+      "<audit-workspace>/fresh_b"
+    ],
+    "start_utc": "2026-11-02T03:12:40.567962+00:00",
+    "end_utc": "2026-11-02T03:12:40.606157+00:00",
+    "exit": 0
+  },
+  {
+    "name": "controls",
+    "argv": [
+      "python3",
+      "-B",
+      "controls.py"
+    ],
+    "start_utc": "2026-11-02T03:12:40.606617+00:00",
+    "end_utc": "2026-11-02T03:12:41.141756+00:00",
+    "exit": 0
+  }
+]

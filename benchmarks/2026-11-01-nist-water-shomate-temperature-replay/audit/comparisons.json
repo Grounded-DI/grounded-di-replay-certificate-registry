@@ -1,0 +1,44 @@
+{
+  "01_source.json": {
+    "expected": "1958ebf0fbc2a151bd212552e08e5855774f2c8c5048e4015b7379db75880881",
+    "fresh_a": "1958ebf0fbc2a151bd212552e08e5855774f2c8c5048e4015b7379db75880881",
+    "fresh_b": "1958ebf0fbc2a151bd212552e08e5855774f2c8c5048e4015b7379db75880881",
+    "direct_equal_baseline": true
+  },
+  "02_validation.json": {
+    "expected": "10d9845217450b26065e10d943862255f2d8107446e075664ff88cf7ff9bfeb2",
+    "fresh_a": "10d9845217450b26065e10d943862255f2d8107446e075664ff88cf7ff9bfeb2",
+    "fresh_b": "10d9845217450b26065e10d943862255f2d8107446e075664ff88cf7ff9bfeb2",
+    "direct_equal_baseline": true
+  },
+  "03_fixture.json": {
+    "expected": "b69185fc7d1034786aa87cad3fead40a1f9591459729a68951e44b7e32bf0630",
+    "fresh_a": "b69185fc7d1034786aa87cad3fead40a1f9591459729a68951e44b7e32bf0630",
+    "fresh_b": "b69185fc7d1034786aa87cad3fead40a1f9591459729a68951e44b7e32bf0630",
+    "direct_equal_baseline": true
+  },
+  "04_cp.json": {
+    "expected": "4b70dfba4a77c77c6b42794ea40804422bfaa48024324dff6dd01ba22a98012c",
+    "fresh_a": "4b70dfba4a77c77c6b42794ea40804422bfaa48024324dff6dd01ba22a98012c",
+    "fresh_b": "4b70dfba4a77c77c6b42794ea40804422bfaa48024324dff6dd01ba22a98012c",
+    "direct_equal_baseline": true
+  },
+  "05_integral.json": {
+    "expected": "c53ddc0f5943e542413a24d46f90dd652a4e100fd1b5cb4c02ece15195d52a47",
+    "fresh_a": "c53ddc0f5943e542413a24d46f90dd652a4e100fd1b5cb4c02ece15195d52a47",
+    "fresh_b": "c53ddc0f5943e542413a24d46f90dd652a4e100fd1b5cb4c02ece15195d52a47",
+    "direct_equal_baseline": true
+  },
+  "06_comparison.json": {
+    "expected": "9640611157c3ff67a2e3274dc01420864ec73e378c825fa68625c30337ed301c",
+    "fresh_a": "9640611157c3ff67a2e3274dc01420864ec73e378c825fa68625c30337ed301c",
+    "fresh_b": "9640611157c3ff67a2e3274dc01420864ec73e378c825fa68625c30337ed301c",
+    "direct_equal_baseline": true
+  },
+  "07_commitment.json": {
+    "expected": "d8d968a2d07cb740e0b9cb9e5d49710efe389524d2c63a4992c7b197bce86d47",
+    "fresh_a": "d8d968a2d07cb740e0b9cb9e5d49710efe389524d2c63a4992c7b197bce86d47",
+    "fresh_b": "d8d968a2d07cb740e0b9cb9e5d49710efe389524d2c63a4992c7b197bce86d47",
+    "direct_equal_baseline": true
+  }
+}

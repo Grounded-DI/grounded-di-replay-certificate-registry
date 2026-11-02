@@ -447,3 +447,10 @@ A local synthetic workflow tests recovery after a write succeeds but confirmatio
 [Replay and source](benchmarks/2026-11-01-nist-water-source-bound-replay/README.md) · [Clean-extraction audit](benchmarks/2026-11-01-nist-water-source-bound-replay/audit/AUDIT.md) · [Reproducibility ZIP](benchmarks/2026-11-01-nist-water-source-bound-replay/NIST_Water_Source_Bound_Seven_Replay.zip)
 
 A synthetic heating calculation uses the NIST 298 K liquid-water heat-capacity table value. Two fresh executions and a clean-extraction audit matched seven frozen boundaries; nine negative controls passed. The modeled 1 K result depends on stated assumptions and is not an experimental measurement.
+
+
+## NIST Water — Temperature-Dependent Seven-Boundary Replay (November 1, 2026)
+
+[Replay and source](benchmarks/2026-11-01-nist-water-shomate-temperature-replay/README.md) · [Clean-extraction audit](benchmarks/2026-11-01-nist-water-shomate-temperature-replay/audit/AUDIT.md) · [Reproducibility ZIP](benchmarks/2026-11-01-nist-water-shomate-temperature-replay/NIST_Water_Shomate_Seven_Replay.zip)
+
+For one synthetic mole warmed from 298 to 300 K, the NIST Shomate integral yields approximately 150.727449 J; a rounded constant-capacity approximation gives 150.76 J. Two fresh executions and a clean-extraction audit matched seven boundaries; nine controls passed. This is a calculation under stated assumptions, not an experiment.
