@@ -434,3 +434,9 @@ Two fresh processes matched seven frozen artifacts; 12 controls passed, includin
 [Replay and assumptions](benchmarks/2026-11-01-chemistry-physics-calorimetry-replay/README.md) · [Reproducibility ZIP](benchmarks/2026-11-01-chemistry-physics-calorimetry-replay/Chemistry_Physics_Seven_Boundary_Replay.zip) · [Comparisons](benchmarks/2026-11-01-chemistry-physics-calorimetry-replay/execution/comparisons.json)
 
 Two fresh local executions reproduced seven linked calorimetry records; all nine registered controls passed. The fixture and energy assumptions are synthetic, not measurements or predictions of real reaction behavior.
+
+## ReleaseGate V3 — lost confirmation and recovery (November 1, 2026)
+
+[Replay record](benchmarks/2026-11-01-releasegate-v3-lost-confirmation/README.md) · [Verification](benchmarks/2026-11-01-releasegate-v3-lost-confirmation/verification.json) · [Reproducibility package](benchmarks/2026-11-01-releasegate-v3-lost-confirmation/ReleaseGate_V3_Reproducibility.zip)
+
+A local synthetic workflow tests recovery after a write succeeds but confirmation is lost. Two baselines matched seven frozen artifacts and 12 scenarios passed; the record states the durability, identity and trust limits.
