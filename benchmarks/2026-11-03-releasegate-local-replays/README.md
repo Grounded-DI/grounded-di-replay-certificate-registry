@@ -16,3 +16,14 @@ Each replay used two fresh local processes and separate output directories. The 
 The evidence archives are privately retained and are not published here. The outputs and logs in those archives were reviewed for this record; the above are historical executions, not new runs during publication review.
 
 The seven boundaries record request, artifact, tests, approval, policy, decision, and commitment. The seventh commits to the preceding six and is not an independent verification. The two processes share a host and software dependencies; the separately implemented project checker shares the specification, fixtures, and standard libraries. These synthetic local results do not establish production stability, universal model determinism, or third-party certification.
+
+## Additional local replays — November 3, 2026
+
+Four further project-executed replays used the same frozen package and followed the same synthetic process and checks described above. For each, both processes matched all seven boundaries by bytes and SHA-256; both checkers passed; and all 12 registered tests passed, including 11 negative controls, with no failures, errors or skips. The synthetic promoted file matched the candidate. The private evidence archives were inspected during publication review.
+
+| Run time (Eastern) | Private evidence ZIP SHA-256 |
+| --- | --- |
+| 7:42 a.m. | `78090cad80c4f314e437d659659f8f87b44a67196c129f54d1fefd3d0aeb66dc` |
+| 8:48 a.m. | `a11fe0185a870ca06796024f54ee8d267dab4a450f6351153d5342d6c1ceb840` |
+| 9:49 a.m. | `5e7a66a1c9bd003078f39f0931c5a5b11221c746dc9ed3add13e146d3a8f5bf9` |
+| 10:51 a.m. | `76b50163adc2854f20490258968910a24da2672eaecd5a995d549182a68e5e31` |
