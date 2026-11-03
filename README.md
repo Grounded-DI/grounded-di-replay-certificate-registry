@@ -485,3 +485,7 @@ Two fresh runs matched seven frozen artifacts; seven mutation and tampering cont
 ## Delivery-to-cold-storage synthetic replay — November 2, 2026
 
 [Replay and audit](benchmarks/2026-11-02-delivery-cold-storage-replay/README.md) — A fictional receipt and temperature-evidence workflow accounted for accepted, held and unknown units. Seven boundaries and eight controls passed under stated synthetic assumptions.
+
+## Inventory-to-recall frozen correction — November 2, 2026
+
+[Replay record](benchmarks/2026-11-02-inventory-recall-frozen-correction/README.md) — Two fresh runs matched seven frozen boundaries; nine controls and a clean-extraction audit passed. The record discloses the earlier checker failure and missing checksum freeze.
