@@ -27,3 +27,18 @@ Four further project-executed replays used the same frozen package and followed 
 | 8:48 a.m. | `a11fe0185a870ca06796024f54ee8d267dab4a450f6351153d5342d6c1ceb840` |
 | 9:49 a.m. | `5e7a66a1c9bd003078f39f0931c5a5b11221c746dc9ed3add13e146d3a8f5bf9` |
 | 10:51 a.m. | `76b50163adc2854f20490258968910a24da2672eaecd5a995d549182a68e5e31` |
+
+## Further local replays — November 3, 2026
+
+Eight further project-executed synthetic replays used the same frozen package and checks described above. For each, two fresh processes matched all seven boundaries by bytes and SHA-256; both project checkers passed; and all 12 registered tests passed, including 11 negative controls, with zero failures, errors or skips. The synthetic promoted file matched the candidate. Private evidence archives were inspected during publication review. These are historical runs, not new executions during the review.
+
+| Run time (Eastern) | Private evidence ZIP SHA-256 |
+| --- | --- |
+| 11:51 a.m. | `a9341a645b151e4187dd23a520b3bc60a1f49912960f58adbb43a2b22dab5110` |
+| 12:44 p.m. | `148be651b67139a4122c535972cb55ea659d6740fe6e10ea36cdbf4f9a9b8dac` |
+| 1:50 p.m. | `eb9402a0b0911c4c3b1a4a2140ab144146a61cfcbeb7d89aac0178e9333b8efd` |
+| 2:48 p.m. | `994deb31462bc696a2a5ab98c569b4cce1a1bfa37db133018609b48f3afa4e42` |
+| 3:49 p.m. | `c39541653dd284001fa5740f2993058e24a1f9be73b484eb2eeb0626b6b86fd9` |
+| 4:49 p.m. | `20fafe9745f4a096feb537dbe0c488f5d5baffd901b0d51905cd4773991ab279` |
+| 5:48 p.m. | `46d627f30650290935be122a9bb78def6b599242442ddac788b563f4febbcab6` |
+| 6:48 p.m. | `527756d475235b87575fcb3631db275124b94d1b628cfa3e308f94eb9badf1f4` |
