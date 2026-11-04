@@ -1,0 +1,1 @@
+[{"amount":30000,"disposition":"ROUTE_PAYMENT","id":"A"},{"amount":0,"disposition":"HOLD","id":"B"},{"amount":0,"disposition":"DENY","id":"C"},{"amount":50000,"disposition":"ROUTE_PAYMENT","id":"D"},{"amount":0,"disposition":"HOLD","id":"E"},{"amount":0,"disposition":"HOLD","id":"F"}]
