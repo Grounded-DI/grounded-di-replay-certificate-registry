@@ -489,3 +489,8 @@ Two fresh runs matched seven frozen artifacts; seven mutation and tampering cont
 ## Inventory-to-recall frozen correction — November 2, 2026
 
 [Replay record](benchmarks/2026-11-02-inventory-recall-frozen-correction/README.md) — Two fresh runs matched seven frozen boundaries; nine controls and a clean-extraction audit passed. The record discloses the earlier checker failure and missing checksum freeze.
+
+
+## Nitrate threshold screening — corrected local replay (November 4, 2026)
+
+[Demonstration, source and tests](demos/2026-11-04-nitrate-screening-replay/README.md) — A fictional nitrate screening fixture uses a published EPA table value. Two fresh local processes reproduced the frozen v2 result; 12 tests passed. The record preserves an earlier input-binding gap and states source and trust limitations. This is not a water-safety or regulatory compliance determination.

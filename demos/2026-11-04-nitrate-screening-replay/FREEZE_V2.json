@@ -1,0 +1,6 @@
+{
+  "time_utc": "2026-11-04T15:29:08.307822+00:00",
+  "fixture_sha256": "f658529516df843d0ed11e4f34f2191773163b9bb9c206a716de1792c6075e3c",
+  "expected_sha256": "943deeac75128f82d2d5d4757eb34c3cc5242a7bef9cb1f66d2b1e309fd22c59",
+  "independent_method": "Manually augment previously frozen expected decision record with SHA-256 of exact fixture bytes; serialize with frozen rules before modifying producer or checker."
+}
