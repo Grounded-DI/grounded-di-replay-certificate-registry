@@ -1,0 +1,945 @@
+{
+  "total": 28,
+  "passed": 28,
+  "failed": 0,
+  "errors": 0,
+  "skips": 0,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "cases": [
+    {
+      "name": "replay_01_source.json",
+      "expected": "identical bytes",
+      "actual": {
+        "bytes_equal": true,
+        "sha256_a": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "sha256_b": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48"
+      },
+      "before": "N/A",
+      "after": "N/A",
+      "result": "PASS"
+    },
+    {
+      "name": "replay_02_inputs.json",
+      "expected": "identical bytes",
+      "actual": {
+        "bytes_equal": true,
+        "sha256_a": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "sha256_b": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a"
+      },
+      "before": "N/A",
+      "after": "N/A",
+      "result": "PASS"
+    },
+    {
+      "name": "replay_03_eligibility.json",
+      "expected": "identical bytes",
+      "actual": {
+        "bytes_equal": true,
+        "sha256_a": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "sha256_b": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329"
+      },
+      "before": "N/A",
+      "after": "N/A",
+      "result": "PASS"
+    },
+    {
+      "name": "replay_04_comparison.json",
+      "expected": "identical bytes",
+      "actual": {
+        "bytes_equal": true,
+        "sha256_a": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "sha256_b": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a"
+      },
+      "before": "N/A",
+      "after": "N/A",
+      "result": "PASS"
+    },
+    {
+      "name": "replay_05_report.json",
+      "expected": "identical bytes",
+      "actual": {
+        "bytes_equal": true,
+        "sha256_a": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "sha256_b": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5"
+      },
+      "before": "N/A",
+      "after": "N/A",
+      "result": "PASS"
+    },
+    {
+      "name": "replay_06_commitment.json",
+      "expected": "identical bytes",
+      "actual": {
+        "bytes_equal": true,
+        "sha256_a": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7",
+        "sha256_b": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "before": "N/A",
+      "after": "N/A",
+      "result": "PASS"
+    },
+    {
+      "name": "checker_run1",
+      "change": "checker_run1",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/checker.py",
+        "/workspace/scratch/91e53684fbdb/water_replay/frozen/fixture.json",
+        "/workspace/scratch/91e53684fbdb/water_replay/evidence/run1"
+      ],
+      "expected": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": null,
+        "unchanged": true
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "stdout": "{\"status\": \"OK\"}\n",
+        "stderr": ""
+      },
+      "before": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "checker_run2",
+      "change": "checker_run2",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/checker.py",
+        "/workspace/scratch/91e53684fbdb/water_replay/frozen/fixture.json",
+        "/workspace/scratch/91e53684fbdb/water_replay/evidence/run2"
+      ],
+      "expected": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": null,
+        "unchanged": true
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "stdout": "{\"status\": \"OK\"}\n",
+        "stderr": ""
+      },
+      "before": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "manual_fixture",
+      "expected": {
+        "A": [
+          "BELOW",
+          "NUMERIC_COMPARISON"
+        ],
+        "B": [
+          "ABOVE",
+          "NUMERIC_COMPARISON"
+        ],
+        "C": [
+          "HOLD",
+          "BELOW_REPORTING_LIMIT"
+        ],
+        "D": [
+          "EQUAL",
+          "NUMERIC_COMPARISON"
+        ],
+        "E": [
+          "BELOW",
+          "NUMERIC_COMPARISON"
+        ],
+        "F": [
+          "ABOVE",
+          "NUMERIC_COMPARISON"
+        ],
+        "G": [
+          "HOLD",
+          "CONTEXT_OUT_OF_SCOPE"
+        ]
+      },
+      "actual": {
+        "A": [
+          "BELOW",
+          "NUMERIC_COMPARISON"
+        ],
+        "B": [
+          "ABOVE",
+          "NUMERIC_COMPARISON"
+        ],
+        "C": [
+          "HOLD",
+          "BELOW_REPORTING_LIMIT"
+        ],
+        "D": [
+          "EQUAL",
+          "NUMERIC_COMPARISON"
+        ],
+        "E": [
+          "BELOW",
+          "NUMERIC_COMPARISON"
+        ],
+        "F": [
+          "ABOVE",
+          "NUMERIC_COMPARISON"
+        ],
+        "G": [
+          "HOLD",
+          "CONTEXT_OUT_OF_SCOPE"
+        ]
+      },
+      "before": "N/A",
+      "after": "N/A",
+      "result": "PASS"
+    },
+    {
+      "name": "missing_source",
+      "change": "missing_source",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/tmp/water_replay_2kq7ud_n/missing_source.json",
+        "/tmp/water_replay_2kq7ud_n/missing_source_out"
+      ],
+      "expected": {
+        "exit": 2,
+        "status": "INVALID_SOURCE",
+        "sample_A": null,
+        "unchanged": false
+      },
+      "actual": {
+        "exit": 2,
+        "status": "INVALID_SOURCE",
+        "stdout": "{\"status\": \"INVALID_SOURCE\"}\n",
+        "stderr": ""
+      },
+      "before": "ABSENT",
+      "after": "ABSENT",
+      "result": "PASS"
+    },
+    {
+      "name": "changed_source",
+      "change": "changed_source",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/tmp/water_replay_2kq7ud_n/changed_source.json",
+        "/tmp/water_replay_2kq7ud_n/changed_source_out"
+      ],
+      "expected": {
+        "exit": 2,
+        "status": "INVALID_SOURCE",
+        "sample_A": null,
+        "unchanged": false
+      },
+      "actual": {
+        "exit": 2,
+        "status": "INVALID_SOURCE",
+        "stdout": "{\"status\": \"INVALID_SOURCE\"}\n",
+        "stderr": ""
+      },
+      "before": "ABSENT",
+      "after": "ABSENT",
+      "result": "PASS"
+    },
+    {
+      "name": "missing_unit",
+      "change": "missing_unit",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/tmp/water_replay_2kq7ud_n/missing_unit.json",
+        "/tmp/water_replay_2kq7ud_n/missing_unit_out"
+      ],
+      "expected": {
+        "exit": 2,
+        "status": "INVALID_INPUT",
+        "sample_A": null,
+        "unchanged": false
+      },
+      "actual": {
+        "exit": 2,
+        "status": "INVALID_INPUT",
+        "stdout": "{\"status\": \"INVALID_INPUT\"}\n",
+        "stderr": ""
+      },
+      "before": "ABSENT",
+      "after": "ABSENT",
+      "result": "PASS"
+    },
+    {
+      "name": "unsupported_unit",
+      "change": "unsupported_unit",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/tmp/water_replay_2kq7ud_n/unsupported_unit.json",
+        "/tmp/water_replay_2kq7ud_n/unsupported_unit_out"
+      ],
+      "expected": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": [
+          "HOLD",
+          "UNIT_UNSUPPORTED"
+        ],
+        "unchanged": false
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "stdout": "{\"status\": \"OK\"}\n",
+        "stderr": "",
+        "claim_A": [
+          "HOLD",
+          "UNIT_UNSUPPORTED"
+        ]
+      },
+      "before": "ABSENT",
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "e5081851219c9a558f6fe55d9786ff6e310445ae6ea604328f63ab2c63957d1f",
+        "03_eligibility.json": "9a663a15ac506fd4972dc733a16422f2f25a5126ffae1b992a711c8902941312",
+        "04_comparison.json": "d357f250affda067c97606708adeb6cdcb84464adc833108c6d812e10d433528",
+        "05_report.json": "bc2d4cf2170dc654e2a8e430bf5b7f5f790f9ac453b5d691955a792a390d110b",
+        "06_commitment.json": "6687ef5e89b49b5b49c9afa42dd2e7cb4f38684bd44f753113510a1b7ee4912d"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "boundary_equal",
+      "change": "boundary_equal",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/tmp/water_replay_2kq7ud_n/boundary_equal.json",
+        "/tmp/water_replay_2kq7ud_n/boundary_equal_out"
+      ],
+      "expected": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": [
+          "EQUAL",
+          "NUMERIC_COMPARISON"
+        ],
+        "unchanged": false
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "stdout": "{\"status\": \"OK\"}\n",
+        "stderr": "",
+        "claim_A": [
+          "EQUAL",
+          "NUMERIC_COMPARISON"
+        ]
+      },
+      "before": "ABSENT",
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "20a9c6d4e19908ff7172335cc161c17df9d98021200c749395bb19d1d1bc3527",
+        "03_eligibility.json": "844cd80de16c51c0b43ce9bbd3be733f3aace50bc79eaa8e1449a8e300e0ab5b",
+        "04_comparison.json": "419b5f5bdc091497e9423515a6e67be5041f9b380985df23f61c3854bb005238",
+        "05_report.json": "dbbea5488da1cbd7ebc5c2c7ef3e413ffd3844621424dbd3c58462b15af135bd",
+        "06_commitment.json": "cba797b5388342188d16c51845e5345457e4821da15609c8162540cd5a9777e9"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "boundary_below",
+      "change": "boundary_below",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/tmp/water_replay_2kq7ud_n/boundary_below.json",
+        "/tmp/water_replay_2kq7ud_n/boundary_below_out"
+      ],
+      "expected": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": [
+          "BELOW",
+          "NUMERIC_COMPARISON"
+        ],
+        "unchanged": false
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "stdout": "{\"status\": \"OK\"}\n",
+        "stderr": "",
+        "claim_A": [
+          "BELOW",
+          "NUMERIC_COMPARISON"
+        ]
+      },
+      "before": "ABSENT",
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "2d2e1dec16843516e10411925e75f46ad0ae3b80f4a3977b9a2d0d8749103c5b",
+        "03_eligibility.json": "b1dc16d8fa32db27ac712dd37624528ea2c5a30bc3b452ee07a0b7ccf942bab2",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "75574a5df60ba43cc3096391ec16e0685e8c714f7721f7c64b6e2e55c033d156"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "boundary_above",
+      "change": "boundary_above",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/tmp/water_replay_2kq7ud_n/boundary_above.json",
+        "/tmp/water_replay_2kq7ud_n/boundary_above_out"
+      ],
+      "expected": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": [
+          "ABOVE",
+          "NUMERIC_COMPARISON"
+        ],
+        "unchanged": false
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "stdout": "{\"status\": \"OK\"}\n",
+        "stderr": "",
+        "claim_A": [
+          "ABOVE",
+          "NUMERIC_COMPARISON"
+        ]
+      },
+      "before": "ABSENT",
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "4babaed1ed08569d92182ea29fecef434a3e12a2ba9ed2ff6b8c4b2aa8a52cdd",
+        "03_eligibility.json": "86a18a79f4c594a10a92c3f7edfeab1d1f6b5a5142d0e6b391368b63677ffa51",
+        "04_comparison.json": "9d062e741fea99a75f36842b474228e51bc830160baea3dcbaeca33c1fe04ac3",
+        "05_report.json": "6ea6daa5c4bbc22159ea1ee520e08cc03786a8a35b6925f88662bda25f6396fa",
+        "06_commitment.json": "f7ab8f0227c59cb4d4219cb17184904a5960939df7a15520783e53f1231ec14f"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "below_reporting_limit",
+      "change": "below_reporting_limit",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/tmp/water_replay_2kq7ud_n/below_reporting_limit.json",
+        "/tmp/water_replay_2kq7ud_n/below_reporting_limit_out"
+      ],
+      "expected": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": [
+          "HOLD",
+          "BELOW_REPORTING_LIMIT"
+        ],
+        "unchanged": false
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "stdout": "{\"status\": \"OK\"}\n",
+        "stderr": "",
+        "claim_A": [
+          "HOLD",
+          "BELOW_REPORTING_LIMIT"
+        ]
+      },
+      "before": "ABSENT",
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "a696c1c0d3a5a4c4118935cfa6a5936106fe6a745ef581bfc74583d3711bec82",
+        "03_eligibility.json": "da293beff8c6e8d622e9c301a5a1168f643fd418c22c20dd273c56c9ec855b8f",
+        "04_comparison.json": "722e258e253504166f8e29b4675c6b0e50759f53a4c5eebf629026e278d2f74d",
+        "05_report.json": "cf7151c9e5a7fbe0e25dce8706d0f7b8b89b27c48fca9e83b2719907ff2c2a73",
+        "06_commitment.json": "48bc74f0142b13c49ff2c75f2b4d252e03009cfad3f3e56386119547c03fbc7b"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "out_of_scope",
+      "change": "out_of_scope",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/tmp/water_replay_2kq7ud_n/out_of_scope.json",
+        "/tmp/water_replay_2kq7ud_n/out_of_scope_out"
+      ],
+      "expected": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": [
+          "HOLD",
+          "CONTEXT_OUT_OF_SCOPE"
+        ],
+        "unchanged": false
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "stdout": "{\"status\": \"OK\"}\n",
+        "stderr": "",
+        "claim_A": [
+          "HOLD",
+          "CONTEXT_OUT_OF_SCOPE"
+        ]
+      },
+      "before": "ABSENT",
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "f8f37c002b9e5fffe13dfcfd2b8a1d7530a1356b033affc9197f251c42de9bed",
+        "03_eligibility.json": "cc3b3b7adaa21a4a5516e63691e4da259d553abf99ba8a91f2c464c698bc275e",
+        "04_comparison.json": "402f62c4378de1233bd7d3d1febe3b30f765126039e2e82d99300d635874dde3",
+        "05_report.json": "563e4a6986a1a2eded07305e3618a9d4d01b1894b7d4227622a1c29680449810",
+        "06_commitment.json": "ecdea81a64a7ffc2b4d822acce7e6c224573aec6265bd4813f645f2e1ea83f41"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "inconsistent",
+      "change": "inconsistent",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/tmp/water_replay_2kq7ud_n/inconsistent.json",
+        "/tmp/water_replay_2kq7ud_n/inconsistent_out"
+      ],
+      "expected": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": [
+          "HOLD",
+          "INCONSISTENT_RESULT"
+        ],
+        "unchanged": false
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "stdout": "{\"status\": \"OK\"}\n",
+        "stderr": "",
+        "claim_A": [
+          "HOLD",
+          "INCONSISTENT_RESULT"
+        ]
+      },
+      "before": "ABSENT",
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "40d6a34df9d89564c483a80260d80ddb2ae9b1ec67cb40abbdc568114b58a8eb",
+        "03_eligibility.json": "a626a50a2f24d4fc07d23af3cd90c3c669b65325d571b4225e2400e5efac3a2e",
+        "04_comparison.json": "5420434b9b902a31739e855e1021aa1fd485a9246bb18f91fad3d1222603bbe6",
+        "05_report.json": "2496a5f77f5c98e7cb5d7b4bf7b1c37ed7c73bff6034f5af9721565a6e26958b",
+        "06_commitment.json": "3eb951fe7c51d35495a54fc8d23c74f6c23afdd2d0765841c0d051cfaeed3da9"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "changed_after_generation",
+      "change": "changed_after_generation",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/checker.py",
+        "/tmp/water_replay_2kq7ud_n/changed_input.json",
+        "/workspace/scratch/91e53684fbdb/water_replay/evidence/run1"
+      ],
+      "expected": {
+        "exit": 1,
+        "status": "CHECK_FAILED",
+        "sample_A": null,
+        "unchanged": true
+      },
+      "actual": {
+        "exit": 1,
+        "status": "CHECK_FAILED",
+        "stdout": "{\"status\": \"CHECK_FAILED\"}\n",
+        "stderr": ""
+      },
+      "before": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "changed_source_checker",
+      "change": "changed_source_checker",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/checker.py",
+        "/tmp/water_replay_2kq7ud_n/bad_source_checker.json",
+        "/workspace/scratch/91e53684fbdb/water_replay/evidence/run1"
+      ],
+      "expected": {
+        "exit": 2,
+        "status": "INVALID_SOURCE",
+        "sample_A": null,
+        "unchanged": true
+      },
+      "actual": {
+        "exit": 2,
+        "status": "INVALID_SOURCE",
+        "stdout": "{\"status\": \"INVALID_SOURCE\"}\n",
+        "stderr": ""
+      },
+      "before": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "missing_artifact",
+      "change": "missing_artifact",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/checker.py",
+        "/workspace/scratch/91e53684fbdb/water_replay/frozen/fixture.json",
+        "/tmp/water_replay_2kq7ud_n/missing"
+      ],
+      "expected": {
+        "exit": 1,
+        "status": "CHECK_FAILED",
+        "sample_A": null,
+        "unchanged": true
+      },
+      "actual": {
+        "exit": 1,
+        "status": "CHECK_FAILED",
+        "stdout": "{\"status\": \"CHECK_FAILED\"}\n",
+        "stderr": ""
+      },
+      "before": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "malformed_artifact",
+      "change": "malformed_artifact",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/checker.py",
+        "/workspace/scratch/91e53684fbdb/water_replay/frozen/fixture.json",
+        "/tmp/water_replay_2kq7ud_n/malformed"
+      ],
+      "expected": {
+        "exit": 1,
+        "status": "CHECK_FAILED",
+        "sample_A": null,
+        "unchanged": true
+      },
+      "actual": {
+        "exit": 1,
+        "status": "CHECK_FAILED",
+        "stdout": "{\"status\": \"CHECK_FAILED\"}\n",
+        "stderr": ""
+      },
+      "before": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "altered_artifact",
+      "change": "altered_artifact",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/checker.py",
+        "/workspace/scratch/91e53684fbdb/water_replay/frozen/fixture.json",
+        "/tmp/water_replay_2kq7ud_n/altered"
+      ],
+      "expected": {
+        "exit": 1,
+        "status": "CHECK_FAILED",
+        "sample_A": null,
+        "unchanged": true
+      },
+      "actual": {
+        "exit": 1,
+        "status": "CHECK_FAILED",
+        "stdout": "{\"status\": \"CHECK_FAILED\"}\n",
+        "stderr": ""
+      },
+      "before": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "9d062e741fea99a75f36842b474228e51bc830160baea3dcbaeca33c1fe04ac3",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "9d062e741fea99a75f36842b474228e51bc830160baea3dcbaeca33c1fe04ac3",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "coherent_artifact_forgery_artifact",
+      "change": "coherent_artifact_forgery_artifact",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/checker.py",
+        "/workspace/scratch/91e53684fbdb/water_replay/frozen/fixture.json",
+        "/tmp/water_replay_2kq7ud_n/coherent_artifact_forgery"
+      ],
+      "expected": {
+        "exit": 1,
+        "status": "CHECK_FAILED",
+        "sample_A": null,
+        "unchanged": true
+      },
+      "actual": {
+        "exit": 1,
+        "status": "CHECK_FAILED",
+        "stdout": "{\"status\": \"CHECK_FAILED\"}\n",
+        "stderr": ""
+      },
+      "before": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "9d062e741fea99a75f36842b474228e51bc830160baea3dcbaeca33c1fe04ac3",
+        "05_report.json": "6ea6daa5c4bbc22159ea1ee520e08cc03786a8a35b6925f88662bda25f6396fa",
+        "06_commitment.json": "a7276d27780cc7f6eb5ef9c856ffc2da0e330f25389f00fc7cb7d9779f3eceaa"
+      },
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "9d062e741fea99a75f36842b474228e51bc830160baea3dcbaeca33c1fe04ac3",
+        "05_report.json": "6ea6daa5c4bbc22159ea1ee520e08cc03786a8a35b6925f88662bda25f6396fa",
+        "06_commitment.json": "a7276d27780cc7f6eb5ef9c856ffc2da0e330f25389f00fc7cb7d9779f3eceaa"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "existing_destination",
+      "change": "existing_destination",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/workspace/scratch/91e53684fbdb/water_replay/frozen/fixture.json",
+        "/workspace/scratch/91e53684fbdb/water_replay/evidence/run1"
+      ],
+      "expected": {
+        "exit": 2,
+        "status": "OUTPUT_EXISTS",
+        "sample_A": null,
+        "unchanged": true
+      },
+      "actual": {
+        "exit": 2,
+        "status": "OUTPUT_EXISTS",
+        "stdout": "{\"status\": \"OUTPUT_EXISTS\"}\n",
+        "stderr": ""
+      },
+      "before": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "c9b79e5354b2b076608d687a5f990082311013892138b4b749ddfd36c0b0213a",
+        "03_eligibility.json": "58436570697554cf19247e4a6d644658330647ad88468ec8761fe6d760c34329",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "61fb4b58e357fb01faf5c2fe418df70483f7d7d3d1f4d91f57db62ec8556e7d7"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "changed_input_regenerated_producer",
+      "change": "changed_input_regenerated_producer",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/producer.py",
+        "/tmp/water_replay_2kq7ud_n/changed_input.json",
+        "/tmp/water_replay_2kq7ud_n/coherent_input_output"
+      ],
+      "expected": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": [
+          "BELOW",
+          "NUMERIC_COMPARISON"
+        ],
+        "unchanged": false
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "stdout": "{\"status\": \"OK\"}\n",
+        "stderr": "",
+        "claim_A": [
+          "BELOW",
+          "NUMERIC_COMPARISON"
+        ]
+      },
+      "before": "ABSENT",
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "cfbc3d1d39396fd84396cac1546b60562e646007c31ca4c8d20b4baa5bdfecca",
+        "03_eligibility.json": "05c364a160acca4c5a02e6f8fecca819a297f26d80f4d103ec8bd8892e49b053",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "65e552dfbc01cf875209eb5abaa5ea2c70dae9e0c56e54a32004dd7251273b74"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "changed_input_regenerated_checker",
+      "change": "changed_input_regenerated_checker",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/workspace/scratch/91e53684fbdb/water_replay/src/checker.py",
+        "/tmp/water_replay_2kq7ud_n/changed_input.json",
+        "/tmp/water_replay_2kq7ud_n/coherent_input_output"
+      ],
+      "expected": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": null,
+        "unchanged": true
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "stdout": "{\"status\": \"OK\"}\n",
+        "stderr": ""
+      },
+      "before": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "cfbc3d1d39396fd84396cac1546b60562e646007c31ca4c8d20b4baa5bdfecca",
+        "03_eligibility.json": "05c364a160acca4c5a02e6f8fecca819a297f26d80f4d103ec8bd8892e49b053",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "65e552dfbc01cf875209eb5abaa5ea2c70dae9e0c56e54a32004dd7251273b74"
+      },
+      "after": {
+        "01_source.json": "e72ac9eca6e82c758220b12c4b75184db9857daa4a24f8611dd31886df159f48",
+        "02_inputs.json": "cfbc3d1d39396fd84396cac1546b60562e646007c31ca4c8d20b4baa5bdfecca",
+        "03_eligibility.json": "05c364a160acca4c5a02e6f8fecca819a297f26d80f4d103ec8bd8892e49b053",
+        "04_comparison.json": "12e22e4fd0322ac523be85bd2d50e7d97380e5be608abf3c161b4870796b4b4a",
+        "05_report.json": "1f1cae316a737f3d66d35ab9a0ec69aeef2f16adf5390ef62e02f8715dee30e5",
+        "06_commitment.json": "65e552dfbc01cf875209eb5abaa5ea2c70dae9e0c56e54a32004dd7251273b74"
+      },
+      "result": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "tests": [
+    {
+      "name": "zero_result",
+      "expected": {
+        "process": [
+          0,
+          "OK"
+        ],
+        "sample_A": [
+          "BELOW",
+          "NUMERIC_COMPARISON"
+        ]
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": {
+          "comparison": "BELOW",
+          "id": "A",
+          "reason": "NUMERIC_COMPARISON"
+        },
+        "checker": {
+          "exit": 0,
+          "status": "OK"
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "mg_exact",
+      "expected": {
+        "process": [
+          0,
+          "OK"
+        ],
+        "sample_A": [
+          "EQUAL",
+          "NUMERIC_COMPARISON"
+        ]
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": {
+          "comparison": "EQUAL",
+          "id": "A",
+          "reason": "NUMERIC_COMPARISON"
+        },
+        "checker": {
+          "exit": 0,
+          "status": "OK"
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "negative",
+      "expected": {
+        "process": [
+          2,
+          "INVALID_INPUT"
+        ],
+        "sample_A": null
+      },
+      "actual": {
+        "exit": 2,
+        "status": "INVALID_INPUT",
+        "sample_A": null,
+        "checker": null
+      },
+      "pass": true
+    },
+    {
+      "name": "numeric_type",
+      "expected": {
+        "process": [
+          2,
+          "INVALID_INPUT"
+        ],
+        "sample_A": null
+      },
+      "actual": {
+        "exit": 2,
+        "status": "INVALID_INPUT",
+        "sample_A": null,
+        "checker": null
+      },
+      "pass": true
+    },
+    {
+      "name": "duplicate_id",
+      "expected": {
+        "process": [
+          2,
+          "INVALID_INPUT"
+        ],
+        "sample_A": null
+      },
+      "actual": {
+        "exit": 2,
+        "status": "INVALID_INPUT",
+        "sample_A": null,
+        "checker": null
+      },
+      "pass": true
+    },
+    {
+      "name": "missing_limit",
+      "expected": {
+        "process": [
+          2,
+          "INVALID_INPUT"
+        ],
+        "sample_A": null
+      },
+      "actual": {
+        "exit": 2,
+        "status": "INVALID_INPUT",
+        "sample_A": null,
+        "checker": null
+      },
+      "pass": true
+    },
+    {
+      "name": "extra_source",
+      "expected": {
+        "process": [
+          2,
+          "INVALID_SOURCE"
+        ],
+        "sample_A": null
+      },
+      "actual": {
+        "exit": 2,
+        "status": "INVALID_SOURCE",
+        "sample_A": null,
+        "checker": null
+      },
+      "pass": true
+    },
+    {
+      "name": "empty_unit",
+      "expected": {
+        "process": [
+          0,
+          "OK"
+        ],
+        "sample_A": [
+          "HOLD",
+          "UNIT_UNSUPPORTED"
+        ]
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": {
+          "comparison": "HOLD",
+          "id": "A",
+          "reason": "UNIT_UNSUPPORTED"
+        },
+        "checker": {
+          "exit": 0,
+          "status": "OK"
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "malformed_status",
+      "expected": {
+        "process": [
+          2,
+          "INVALID_INPUT"
+        ],
+        "sample_A": null
+      },
+      "actual": {
+        "exit": 2,
+        "status": "INVALID_INPUT",
+        "sample_A": null,
+        "checker": null
+      },
+      "pass": true
+    },
+    {
+      "name": "limit_exact",
+      "expected": {
+        "process": [
+          0,
+          "OK"
+        ],
+        "sample_A": [
+          "BELOW",
+          "NUMERIC_COMPARISON"
+        ]
+      },
+      "actual": {
+        "exit": 0,
+        "status": "OK",
+        "sample_A": {
+          "comparison": "BELOW",
+          "id": "A",
+          "reason": "NUMERIC_COMPARISON"
+        },
+        "checker": {
+          "exit": 0,
+          "status": "OK"
+        }
+      },
+      "pass": true
+    }
+  ],
+  "passed": 10,
+  "total": 10
+}

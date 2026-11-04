@@ -1,0 +1,62 @@
+{
+  "total": 8,
+  "passed": 8,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "sentence_0",
+      "expected": "Sample A: 8 µg/L is below the 10 µg/L reference.",
+      "actual": "Sample A: 8 µg/L is below the 10 µg/L reference.",
+      "pass": true
+    },
+    {
+      "name": "sentence_1",
+      "expected": "Sample B: 12 µg/L is above the 10 µg/L reference.",
+      "actual": "Sample B: 12 µg/L is above the 10 µg/L reference.",
+      "pass": true
+    },
+    {
+      "name": "sentence_2",
+      "expected": "Sample C: comparison held because the result is below the reporting limit.",
+      "actual": "Sample C: comparison held because the result is below the reporting limit.",
+      "pass": true
+    },
+    {
+      "name": "sentence_3",
+      "expected": "Sample D: 10 µg/L is equal to the 10 µg/L reference.",
+      "actual": "Sample D: 10 µg/L is equal to the 10 µg/L reference.",
+      "pass": true
+    },
+    {
+      "name": "sentence_4",
+      "expected": "Sample E: 9.999 µg/L is below the 10 µg/L reference.",
+      "actual": "Sample E: 9.999 µg/L is below the 10 µg/L reference.",
+      "pass": true
+    },
+    {
+      "name": "sentence_5",
+      "expected": "Sample F: 10.001 µg/L is above the 10 µg/L reference.",
+      "actual": "Sample F: 10.001 µg/L is above the 10 µg/L reference.",
+      "pass": true
+    },
+    {
+      "name": "sentence_6",
+      "expected": "Sample G: comparison held because the sample context is outside this demonstration.",
+      "actual": "Sample G: comparison held because the sample context is outside this demonstration.",
+      "pass": true
+    },
+    {
+      "name": "forged_sentence_recommitted",
+      "expected": {
+        "exit": 1,
+        "status": "CHECK_FAILED"
+      },
+      "actual": {
+        "exit": 1,
+        "stdout": "{\"status\": \"CHECK_FAILED\"}\n",
+        "stderr": ""
+      },
+      "pass": true
+    }
+  ]
+}
