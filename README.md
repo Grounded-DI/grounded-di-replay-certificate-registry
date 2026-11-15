@@ -1,18 +1,54 @@
 # Grounded DI Replay Certificate Registry
 
-A public technical-evidence registry for replayable decisions, rule-gated authorization, artifact identity, and audit-ready execution records.
+**#Int1100 #NYCAI #DeterministicAI #AIReplay**
 
-**Published by Grounded DI LLC · Creator / Operator: Mark S. Weinstein · Public repository established July 23, 2026**
+New York City's proposed [Introduction 1100-2026](https://legistar.council.nyc.gov/LegislationDetail.aspx?GUID=A927E066-C669-4F66-8E5A-4B610FA321E5&ID=8239233), previously T2026-2602, illustrates why repeatability is part of the AI conversation. The bill defines determinism as a model's ability to always produce the exact same output from the exact same input and includes determinism among topics for third-party assessment. It does not expressly require every model to produce identical outputs. As of November 15, 2026, the bill is in committee.
 
-## Overview
+**See how a decision was made—and check it again.**
 
-This repository preserves runnable demonstrations, certificate intake records, verification artifacts, and cryptographic manifests from Grounded DI work across legal analysis, exact mathematics, environmental routing, aviation, weather, logistics, and controlled file export.
+This repository demonstrates repeatable decisions and artifacts within specified workflows. It collects small, inspectable examples of Grounded DI's approach to replayable decisions and controlled actions. In these examples, *replay* means running a documented calculation or decision again using the specified inputs, rules, code, and conditions, then comparing the result with the recorded reference. The record may include the inputs, decisions, tests, output files, and a digital fingerprint (a SHA-256 hash) that helps identify the files. These examples concern the workflow or its artifacts; they do not establish that an underlying model always generates identical responses.
 
-The central design goal is to make an execution inspectable: bind the inputs and governing policy, evaluate explicit rules, record the resulting state, preserve the output and audit history, and verify the record through replay or source-based recalculation. In this repository, *deterministic* refers to rule-governed or reproducible behavior under the stated inputs, code, environment, and serialization conditions. It is not a claim that every underlying proposition is universally correct.
+For example, an [invoice reconciliation demo](benchmarks/2026-10-27-seven-boundary-invoice-reconciliation/README.md) processes a fictional batch: it marks eligible invoices for payment and holds a duplicate or an invoice over a stated purchase-order limit. You can inspect the rules and inputs, run the Python example, and compare its outputs with the recorded runs. It is a local demonstration, not a connection to an accounting system.
 
-The registry includes four runnable Python demonstrations and ten numbered evidence records. It also preserves later replay records for BriefWise DI² and a sealed FastPath rule-execution workload.
+The collection includes runnable source or packages, recorded results, and some historical summaries whose underlying archives are retained elsewhere. Individual records explain their own evidence and boundaries. Matching files show identity under the stated conditions; they do not by themselves prove that the inputs were true or that a decision was correct.
 
-> **Repository scope:** The public evidence supports the result stated by each record—such as byte identity, fresh local replay, boundary enforcement, or exact arithmetic. Broader conclusions are not inferred from hashes alone. Certificates in the runnable demonstrations are local, unsigned project records.
+Published by **Grounded DI LLC** · Creator / Operator: **Mark S. Weinstein**
+
+## What the controlled-action examples show
+
+The core sequence is straightforward: **authorize an exact action, check its conditions, control the action, and retain evidence to check again.**
+
+1. [Authorize an export](demos/2026-09-10-di2-authorization/README.md): bind a synthetic report and destination to an authorization; a changed destination is refused.
+2. [Check expiry and policy](demos/2026-09-10-di2-expiry-policy-v1/README.md): reject an expired authorization or changed policy before the local export path.
+3. [Handle retries and interruption](demos/2026-09-10-di2-single-use-crash-v1/README.md): reserve an authorization, record completion or uncertainty, and test competing local processes.
+4. [Check again](EVALUATOR_GUIDE.md): rerun the expiry example, inspect its decisions, and exercise altered-copy and time-boundary controls.
+
+These are separate local demonstrations, not a claim that one integrated product enforces the entire sequence. The single-use example describes at most one export-creation attempt per authorization within its cooperative local store; it does not establish exactly-once delivery.
+
+## What a certificate means here
+
+Some demonstrations include **local, self-issued project certificates** that record specified test results and artifact identities. A project-authored separate checker provides an internal cross-check and may share a specification or tools with the main implementation. Those are different from an external certification by an unaffiliated reviewer. Consult each record for its exact evidence and release status; a test result, publication, and independent certification are separate questions.
+
+| Example | Project verification described in the record | Public release | External certification |
+| --- | --- | --- | --- |
+| [Authorization](demos/2026-09-10-di2-authorization/README.md) | Local tests and fresh-process replay | Public demo package and local certificate | Not established by the record |
+| [Expiry and policy](demos/2026-09-10-di2-expiry-policy-v1/README.md) | Local verification, project reference evaluator, and altered-copy controls | Public source, package and local certificate | Not established by the record |
+| [Single use and crash recovery](demos/2026-09-10-di2-single-use-crash-v1/README.md) | Local contention and interruption scenarios with a separate history checker | Public source, package and local certificate | Not established by the record |
+
+## Choose where to start
+
+- **Business or product evaluator:** Start with the [invoice example](benchmarks/2026-10-27-seven-boundary-invoice-reconciliation/README.md) to see a pay-or-hold decision, then the [insurance claims walkthrough](demos/2026-11-04-synthetic-insurance-claims/BUYER_BRIEF.md) for a fictional coverage and payment workflow. Browse the [evidence index](EVIDENCE_INDEX.md) for other domains and evidence types.
+- **Technical evaluator:** Follow the [evaluator walkthrough](EVALUATOR_GUIDE.md) for a reproducible expiry and policy check, then inspect the [evidence matrix](EVIDENCE_MATRIX.md). Then inspect [ReleaseGate](benchmarks/2026-11-01-releasegate-promotion-replay/README.md) for a controlled local write and negative controls.
+- **Want to run one now?** Try the [nitrate screening demo](demos/2026-11-04-nitrate-screening-replay/README.md). It uses Python's standard library and fictional samples; its README has the commands, expected outputs, and tests. Work in a copy or use new output paths as instructed by the chosen example.
+
+## How to read the evidence
+
+- **Fresh run:** The documented code is executed again. A record states the input and environment conditions it used.
+- **Byte comparison:** Two files are compared directly. A hash is a compact file fingerprint; it is useful for identifying bytes, but it does not establish their origin or truth.
+- **Repackaging:** An existing set of files is assembled again. This can reproduce an archive without newly recomputing its contents.
+- **Negative control:** A test deliberately changes an input or condition to check whether the example responds as specified.
+
+The [evidence index](EVIDENCE_INDEX.md) identifies what is public and flags records whose referenced evidence is not hosted here. The records below give more detail, including their particular limits.
 
 ## Seven-Hash Replay Benchmark — Final Local Closure (October 19, 2026)
 
@@ -133,23 +169,11 @@ Authorized input and policy
 
 The detailed scope, identifiers, artifact hashes, and non-claims for each demonstration remain in the corresponding numbered intake record at the repository root.
 
-## Repository Structure
+## Repository structure
 
-```text
-.
-├── 01_... through 10_...                 # master-certificate intake records
-├── demos/
-│   ├── 2026-09-10-di2-authorization/     # packaged runnable harness
-│   ├── 2026-09-10-di2-expiry-policy-v1/  # browsable source and evidence
-│   └── 2026-09-10-di2-single-use-crash-v1/
-├── Verdictbridge_demo*/                  # corresponding run artifacts
-├── Global_Multirow_Coercivity_.../       # acceptance and integrity records
-├── BriefWise_DI2_...                     # replay post, ZIP, checksum, and PDF
-├── *Gate_Demo*.zip                       # packaged synthetic routing records
-├── FastPath_5_6_...pdf                   # replay certificate
-├── FixedCase_D347_...pdf                 # fixed-case mathematics record
-└── README.md
-```
+- [`demos/`](demos/) contains practical examples, published replay packages, and a cross-domain evidence map.
+- [`benchmarks/`](benchmarks/) contains domain-specific replay packages, historical replay summaries, and controls.
+- The [evidence index](EVIDENCE_INDEX.md) maps those directories and the original numbered intake records; the [evidence matrix](EVIDENCE_MATRIX.md) shows file-level availability cues.
 
 ## Quick Start
 
@@ -252,10 +276,12 @@ Copyright © 2026 Grounded DI LLC. Project and product names are used for identi
 
 No open-source license is granted by this repository. Publicly accessible materials remain subject to applicable copyright, trademark, contractual, and other rights except where expressly stated otherwise. Nonpublic implementation materials are outside the scope of this repository.
 
-Certain subject matter is associated in repository records with pending U.S. utility non-provisional patent applications. The filing index below is a public project record supplied by Grounded DI LLC and is preserved for chronology; it is not an assertion of issuance, allowance, priority entitlement, or claim scope.
+Certain subject matter is associated in repository records with U.S. utility non-provisional patent applications. The filing index below is a historical public project record supplied by Grounded DI LLC and is preserved for chronology; it is not an assertion of current application status, issuance, allowance, priority entitlement, or claim scope.
+
+The separately maintained [Grounded DI filing register](https://github.com/Grounded-DI/DI-Apps) also identifies its underlying source as a July 25, 2026 snapshot; it should not be treated as a current examination-status record. Consult the applicable USPTO records for current status.
 
 <details>
-<summary><strong>Public filing index — status recorded July 25, 2026</strong></summary>
+<summary><strong>Historical filing index — status recorded July 25, 2026</strong></summary>
 
 | No. | Domain / Nickname | Application No. | Received | Title |
 |---:|---|---|---|---|
