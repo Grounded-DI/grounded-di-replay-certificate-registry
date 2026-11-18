@@ -6,11 +6,11 @@ New York City's proposed [Introduction 1100-2026](https://legistar.council.nyc.g
 
 **See how a decision was made—and check it again.**
 
-This registry collects Grounded DI demonstrations of replayable decisions and controlled actions. In these examples, *replay* means running a documented calculation or decision again using the specified inputs, rules, code, and conditions, then comparing the result with the recorded reference. The record may include the inputs, decisions, tests, output files, and a digital fingerprint (a SHA-256 hash) that helps identify the files. These examples concern the workflow or its artifacts; they do not establish that an underlying model always generates identical responses.
+This registry collects Grounded DI demonstrations of replayable decisions and controlled actions. In these examples, *replay* means running a documented calculation or decision again using the specified inputs, rules, code, and conditions, then comparing the result with the recorded reference. The records identify the inputs, decisions, tests, outputs, and SHA-256 file hashes available for each demonstration.
 
 For example, an [invoice reconciliation demo](benchmarks/2026-10-27-seven-boundary-invoice-reconciliation/README.md) processes a fictional batch: it marks eligible invoices for payment and holds a duplicate or an invoice over a stated purchase-order limit. You can inspect the rules and inputs, run the Python example, and compare its outputs with the recorded runs. The example runs locally on fictional invoices.
 
-The collection includes runnable source or packages, recorded results, and some historical summaries whose underlying archives are retained elsewhere. Individual records explain their own evidence and boundaries. Matching files show identity under the stated conditions; they do not by themselves prove that the inputs were true or that a decision was correct.
+The collection includes runnable packages, recorded results, and historical summaries. Each entry links the evidence available for that result.
 
 Published by **Grounded DI LLC** · Creator / Operator: **Mark S. Weinstein**
 
@@ -23,11 +23,11 @@ The core sequence is straightforward: **authorize an exact action, check its con
 3. [Handle retries and interruption](demos/2026-09-10-di2-single-use-crash-v1/README.md): reserve an authorization, record completion or uncertainty, and test competing local processes.
 4. [Check again](EVALUATOR_GUIDE.md): rerun the expiry example, inspect its decisions, and exercise altered-copy and time-boundary controls.
 
-These are separate local demonstrations, not a claim that one integrated product enforces the entire sequence. The single-use example describes at most one export-creation attempt per authorization within its cooperative local store; it does not establish exactly-once delivery.
+Each example exercises a separate stage locally. The retry example enforces at most one export-creation attempt per authorization in its cooperative local store.
 
 ## What a certificate means here
 
-Some demonstrations include **local, self-issued project certificates** that record specified test results and artifact identities. A project-authored separate checker provides an internal cross-check and may share a specification or tools with the main implementation. Those are different from an external certification by an unaffiliated reviewer. Consult each record for its exact evidence and release status; a test result, publication, and independent certification are separate questions.
+Project certificates identify the tests, results, and artifacts for each demonstration. Separate project-authored checkers add internal cross-checks where included. The table identifies the public evidence and external review status.
 
 | Example | Project verification described in the record | Public release | External certification |
 | --- | --- | --- | --- |
@@ -44,7 +44,7 @@ Some demonstrations include **local, self-issued project certificates** that rec
 ## How to read the evidence
 
 - **Fresh run:** The documented code is executed again. A record states the input and environment conditions it used.
-- **Byte comparison:** Two files are compared directly. A hash is a compact file fingerprint; it is useful for identifying bytes, but it does not establish their origin or truth.
+- **Byte comparison:** Two files are compared directly. A hash identifies the recorded file bytes.
 - **Repackaging:** An existing set of files is assembled again. This can reproduce an archive without newly recomputing its contents.
 - **Negative control:** A test deliberately changes an input or condition to check whether the example responds as specified.
 
